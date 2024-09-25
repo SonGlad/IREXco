@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/IREXco/static/css/main.7cda0caf.css",
+    "main.js": "/IREXco/static/js/main.307d704b.js",
+    "index.html": "/IREXco/index.html",
+    "main.7cda0caf.css.map": "/IREXco/static/css/main.7cda0caf.css.map",
+    "main.307d704b.js.map": "/IREXco/static/js/main.307d704b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7cda0caf.css",
+    "static/js/main.307d704b.js"
+  ]
+}
