@@ -6,7 +6,7 @@ export const GlobalStyle = createGlobalStyle`
     html,
     body {
     height: 100%;
-    font-family: 'Poppins', sans-serif; 
+    font-family: 'Poppins', 'Racing Sans One', sans-serif; 
     font-weight: 500;
     font-size: 62,5%;
     overflow-x: hidden;
@@ -60,11 +60,20 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     ::-webkit-scrollbar {
-        width: 6px;
-        background-color: ${p => p.theme.color.main_color_rust_lighter};
+        display: none;
+        /* width: 6px;
+        background-color: ${p => p.theme.color.main_color_rust_lighter}; */
     }
     ::-webkit-scrollbar-thumb {
-        border-radius: 5px;
-        background-color: ${p => p.theme.color.main_color};
+        display: none;
+        /* border-radius: 5px;
+        background-color: ${p => p.theme.color.main_color}; */
+    }
+
+    #particles canvas{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 0;
     }
 `;

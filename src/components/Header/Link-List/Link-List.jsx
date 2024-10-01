@@ -2,7 +2,6 @@ import { NavLink } from "react-router-dom";
 import { LinkListStyled } from "./Link-List.styled";
 import { ReactComponent as HomeIcon } from "../../../images/svg-icons/home.svg";
 import { ReactComponent as AboutIcon } from "../../../images/svg-icons/user.svg";
-// import { ReactComponent as EducationIcon } from "../../../images/svg-icons/education.svg";
 import { ReactComponent as SkillsIcon } from "../../../images/svg-icons/skills.svg";
 import { ReactComponent as PortfolioIcon } from "../../../images/svg-icons/portfolio.svg";
 import { ReactComponent as ContactIcon } from "../../../images/svg-icons/contact.svg";
@@ -11,7 +10,7 @@ import { forwardRef } from "react";
 
 
 
-export const LinkList = forwardRef(({backToTopRef, toggleMenuBox}, reff) => {
+export const LinkList = forwardRef(({backToTopRef, toggleMenuBox, toAboutUsRef}, reff) => {
     const { ref, inView } = useInView({
         triggerOnce: false,
         threshold: 0.1,
@@ -38,7 +37,17 @@ export const LinkList = forwardRef(({backToTopRef, toggleMenuBox}, reff) => {
                     </NavLink>
                 </li>
                 <li className="link-list-item" style={{'--i': 2}}>
-                    <NavLink className='nav-link' to='/about' onClick={toggleMenuBox}>
+                    <NavLink className='nav-link' 
+                        onClick={() => {
+                            if (toggleMenuBox) {
+                                toggleMenuBox();
+                            }
+                            toAboutUsRef.current.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start',
+                            });
+                        }}
+                    >
                         <AboutIcon className="header-icon" width={16} height={16}/>
                         <span className="header-link-text">About Us</span>
                     </NavLink>

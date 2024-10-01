@@ -1,10 +1,20 @@
-import {SectionStyle} from './Section.styled';
+import {HeroSectionStyle, AboutSectionStyled} from './Section.styled';
 
 
-export const Section = ({children}) => {
+
+export const HeroSection = ({children}) => {
     return (
-        <SectionStyle>
+        <HeroSectionStyle>
             {children}
-        </SectionStyle>
+        </HeroSectionStyle>
+    );
+};
+
+
+export const AboutSection = ({children}) => {
+    return (
+        <AboutSectionStyled>
+            {children}
+        </AboutSectionStyled>
     );
 };

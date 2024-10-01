@@ -2,12 +2,13 @@ import { styled } from "styled-components";
 
 
 export const StyledHeader = styled.header`
-    backdrop-filter: blur(10px);
     border-radius: none;
     position: fixed;
     width: 100%;
-
-
+    z-index: 100;
+    backdrop-filter: ${props => props.$headerBackground && "blur(10px)"};
+    
+    
     .header-container{
         padding: 10px 0;
         display: flex;
@@ -15,14 +16,11 @@ export const StyledHeader = styled.header`
         justify-content: space-between;
     }
 
-    .hidden .header-container{
-        animation: none;
-    }
-
-    .visible .header-logo{
+    .header-logo{
         fill: ${p => p.theme.color.text_color};
         transition: fill ${p => p.theme.transition.main_transition};
         animation: slideLogoRight 1s ease forwards;
+
 
         &:hover, &:focus{
             fill: ${p => p.theme.color.main_color};
@@ -40,11 +38,7 @@ export const StyledHeader = styled.header`
         }
     }
 
-    .hidden .mob-menu-btn{
-        animation: none;
-    }
-
-    .visible .mob-menu-btn{
+    .mob-menu-btn{
         display: flex;
         align-items: center;
         justify-content: center;

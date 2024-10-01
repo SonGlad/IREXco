@@ -6,23 +6,14 @@ import {ReactComponent as CloseIcon} from "../../images/svg-icons/close.svg";
 import { NavLink } from "react-router-dom";
 import { LinkList } from "./Link-List/Link-List";
 import { useCallback, useEffect, useRef, useState, forwardRef } from "react";
-import { useInView } from 'react-intersection-observer';
 
 
 
-export const Header = forwardRef(({backToTopRef}, reff) => {
-    const { ref, inView } = useInView({
-        triggerOnce: false,
-        threshold: 0,
-    });
-    const { mobMenBtn, inViewMobMenBtn } = useInView({
-        triggerOnce: false,
-        threshold: 0.1,
-    });
+export const Header = forwardRef(({backToTopRef, toAboutUsRef, headerBackground}, reff) => {   
     const [mobMenu, setMobMenu] = useState(false);
     const mobileMenu = useRef();
 
-
+   
     const toggleMenuBox = () => {
         setMobMenu(!mobMenu);
     };
@@ -64,9 +55,9 @@ export const Header = forwardRef(({backToTopRef}, reff) => {
 
 
     return(
-        <StyledHeader>
+        <StyledHeader $headerBackground={headerBackground}>
             <Container>
-                <div ref={ref} className={`header-container ${inView ? 'visible' : 'hidden'}`}>
+                <div className='header-container'>
                     <NavLink className="link" to='/'
                         onClick={() => 
                             backToTopRef.current.scrollIntoView({
@@ -78,15 +69,16 @@ export const Header = forwardRef(({backToTopRef}, reff) => {
                     <div className="mobilemenu" ref={mobileMenu} onClick={stopPropagation}>
                         <button type='button'
                             onClick={toggleMenuBox} 
-                            ref={mobMenBtn} 
-                            className={`mob-menu-btn ${inViewMobMenBtn ? 'visible' : 'hidden'}`}
+                            className='mob-menu-btn'
                         >
                             {changeIcon()}
                         </button>
                         <div className={`mob-menu ${toggleMobMenuCont()}`}>
                             <nav className="navigation">
                                 <LinkList toggleMenuBox={toggleMenuBox}
-                                    backToTopRef={backToTopRef}/>
+                                    backToTopRef={backToTopRef}
+                                    toAboutUsRef={toAboutUsRef}
+                                />
                             </nav>
                         </div>
                     </div>
@@ -94,6 +86,7 @@ export const Header = forwardRef(({backToTopRef}, reff) => {
                         <nav className="navigation">
                             <LinkList
                                 backToTopRef={backToTopRef}
+                                toAboutUsRef={toAboutUsRef}
                             />
                         </nav>
                     </div>

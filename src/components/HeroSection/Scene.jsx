@@ -7,8 +7,8 @@ Source: https://sketchfab.com/3d-models/gaming-desktop-pc-d1d8282c9916438091f11a
 Title: Gaming Desktop PC
 */
 
-import React from 'react'
-import { useGLTF } from '@react-three/drei'
+import React from 'react';
+import { useGLTF } from '@react-three/drei';
 
 export function Model(props) {
   const { nodes, materials } = useGLTF("/IREXco/pc/scene.gltf");

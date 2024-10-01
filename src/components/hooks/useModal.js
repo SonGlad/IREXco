@@ -1,6 +1,5 @@
 import { useSelector } from "react-redux";
 import {
-    selectEducationalModal, 
     selectPortfolioModal,
     selectContactModal,
     selectAboutImagedata,
@@ -10,7 +9,6 @@ import {
 
 
 export const useModal = () => {
-    const isEducationModalOpen = useSelector(selectEducationalModal);
     const isPortfolioModalOpen = useSelector(selectPortfolioModal);
     const isContactModalOpen = useSelector(selectContactModal);
     const aboutPictureData = useSelector(selectAboutImagedata);
@@ -19,7 +17,6 @@ export const useModal = () => {
 
 
     return {
-        isEducationModalOpen,
         isPortfolioModalOpen,
         isContactModalOpen,
         aboutPictureData,
