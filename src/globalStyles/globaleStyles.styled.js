@@ -8,7 +8,7 @@ export const GlobalStyle = createGlobalStyle`
     height: 100%;
     font-family: 'Poppins', 'Racing Sans One', sans-serif; 
     font-weight: 500;
-    font-size: 62,5%;
+    font-size: 63%;
     overflow-x: hidden;
     letter-spacing: 0.02em;
     /* color: #000;

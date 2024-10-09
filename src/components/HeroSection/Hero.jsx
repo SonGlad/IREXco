@@ -16,7 +16,7 @@ import { useInView } from 'react-intersection-observer';
 
 
 
-export const Hero = forwardRef(({ backToTopRef, toAboutUsRef, forHeader }, reff) => {
+export const Hero = forwardRef(({ backToTopRef, toAboutUsRef, forHeader, toStackRef}, reff) => {
     const { name1, name2, text1, text2} = Profile;
     const [isModelLoaded, setIsModelLoaded] = useState(false);
 
@@ -68,9 +68,16 @@ export const Hero = forwardRef(({ backToTopRef, toAboutUsRef, forHeader }, reff)
                                 </NavLink>
                             </li>
                             <li className="redirect-item">
-                                <NavLink className="redirect-link redirect" to='/skills' style={{'--i': 4}}>
+                                <NavLink className="redirect-link redirect" style={{'--i': 4}}
+                                    onClick={() => {
+                                        toStackRef.current.scrollIntoView({
+                                        behavior: 'smooth',
+                                        block: 'start',
+                                        });
+                                    }}
+                                >
                                     <FingerIcon className="redirect-icon" width={24} height={24}/>    
-                                    <span>Our Skills</span>
+                                    <span>Stack</span>
                                 </NavLink>
                             </li>
                         </ul>
@@ -114,13 +121,27 @@ export const Hero = forwardRef(({ backToTopRef, toAboutUsRef, forHeader }, reff)
                             </NavLink>
                         </li>
                         <li className="redirect-item">
-                            <NavLink className="redirect-link redirect" to='/skills' style={{'--i': 2}}>
+                            <NavLink className="redirect-link redirect" style={{'--i': 2}}
+                                onClick={() => {
+                                    toStackRef.current.scrollIntoView({
+                                    behavior: 'smooth',
+                                    block: 'start',
+                                    });
+                                }}
+                            >
                                 <FingerIcon className="redirect-icon" width={24} height={24}/>    
-                                <span>Our Skills</span>
+                                <span>Stack</span>
                             </NavLink>
                         </li>
                         <li className="redirect-item">
-                            <NavLink className="redirect-link redirect" to='/about' style={{'--i': 3}}>
+                            <NavLink className="redirect-link redirect" style={{'--i': 3}}
+                                onClick={() => {
+                                    toAboutUsRef.current.scrollIntoView({
+                                    behavior: 'smooth',
+                                    block: 'start',
+                                    });
+                                }}
+                            >
                                 <FingerIcon className="redirect-icon" width={24} height={24}/>    
                                 <span>About Us</span>
                             </NavLink>

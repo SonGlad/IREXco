@@ -6,10 +6,11 @@
 import { useEffect, useRef, useState } from "react";
 import { Header } from "./Header/Header";
 import { ParticlesComponent }from "./particles/particles";
-import { HeroSection, AboutSection } from "./Section/Section";
+import { HeroSection, AboutSection, Section } from "./Section/Section";
 import { Container } from "./Container/Container";
 import { Hero } from "./HeroSection/Hero";
 import { AboutUsSection } from "./AboutSection/About";
+import { StackSection } from "./StackSection/StackSection";
 import { useInView } from 'react-intersection-observer';
 
 
@@ -22,6 +23,8 @@ export const App= () => {
   });
   const backToTopRef = useRef(null);
   const toAboutUsRef = useRef(null);
+  const toStackRef = useRef(null);
+
   
 
 
@@ -43,6 +46,7 @@ export const App= () => {
         backToTopRef={backToTopRef}
         toAboutUsRef={toAboutUsRef}
         headerBackground={headerBackground}
+        toStackRef={toStackRef}
       />
       <HeroSection>
         <Container>
@@ -50,6 +54,7 @@ export const App= () => {
             forHeader={ref}
             backToTopRef={backToTopRef}
             toAboutUsRef={toAboutUsRef}
+            toStackRef={toStackRef}
           /> 
         </Container>
       </HeroSection>
@@ -58,6 +63,11 @@ export const App= () => {
           <AboutUsSection toAboutUsRef={toAboutUsRef}/>
         </Container>
       </AboutSection>
+      <Section>
+        <Container>
+          <StackSection toStackRef={toStackRef}/>
+        </Container>
+      </Section>
       {/* {(isPortfolioModalOpen || isContactModalOpen) && <Modal/>} */}
     </>
   );

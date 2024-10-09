@@ -10,7 +10,7 @@ import { forwardRef } from "react";
 
 
 
-export const LinkList = forwardRef(({backToTopRef, toggleMenuBox, toAboutUsRef}, reff) => {
+export const LinkList = forwardRef(({backToTopRef, toggleMenuBox, toAboutUsRef, toStackRef}, reff) => {
     const { ref, inView } = useInView({
         triggerOnce: false,
         threshold: 0.1,
@@ -53,9 +53,19 @@ export const LinkList = forwardRef(({backToTopRef, toggleMenuBox, toAboutUsRef},
                     </NavLink>
                 </li>
                 <li className="link-list-item" style={{'--i': 3}}>
-                    <NavLink className='nav-link' to='/skills' onClick={toggleMenuBox}>
+                    <NavLink className='nav-link'
+                        onClick={() => {
+                            if (toggleMenuBox) {
+                                toggleMenuBox();
+                            }
+                            toStackRef.current.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start',
+                            });
+                        }}
+                    >
                         <SkillsIcon className="header-icon" width={16} height={16}/>
-                        <span className="header-link-text">Our Skills</span>
+                        <span className="header-link-text">Stack</span>
                     </NavLink>
                 </li>
                 <li className="link-list-item" style={{'--i': 4}}>

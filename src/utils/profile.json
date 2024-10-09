@@ -73,6 +73,22 @@
     { "id": "IconStyled",
       "value": "Styled Components",
       "link": "https://styled-components.com"
+    },
+    { "id": "IconFigma",
+      "value": "Figma",
+      "link": "https://www.figma.com"
+    },
+    { "id": "IconRender",
+      "value": "Render",
+      "link": "https://render.com"
+    },
+    { "id": "IconNetlify",
+      "value": "Netlify",
+      "link": "https://app.netlify.com"
+    },
+    { "id": "IconGoDaddy",
+      "value": "GoDaddy",
+      "link": "https://www.godaddy.com/en-uk"
     }
   ]
 }

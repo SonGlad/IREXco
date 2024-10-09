@@ -15,11 +15,7 @@ export const AboutSectionStyled = styled.section`
 `
 
 export const SectionStyled = styled.section`
-    /* position: relative;
+    width: 100%;
+    position: relative;
     z-index: 1;
-    height: auto;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; */
 `
