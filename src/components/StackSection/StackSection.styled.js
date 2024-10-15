@@ -59,7 +59,7 @@ export const StackSectionStyled = styled.div`
     }
 
     .title-descr{
-        margin: 10px 0;
+        margin: 10px 0 20px 0;
         font-size: 20px;
         line-height: 120%;
         font-weight: 400;
@@ -74,5 +74,31 @@ export const StackSectionStyled = styled.div`
             font-size: 26px;
             font-weight: 500;
         }
+    }
+
+    .projects-descr-maincont{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .projects-descr-cont{
+        background-color: #081b29;
+        border-radius: 40px;
+        padding: 20px 20px;
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px 5px;
+        max-width: 520px;
+        margin-top: 40px;
+
+        @media screen and (min-width: 1200px){
+            max-width: none;
+            width: 800px;
+        }
+    }   
+
+    .projects-descr-text{
+        font-size: 16px;
+        text-align: center;
     }
 `

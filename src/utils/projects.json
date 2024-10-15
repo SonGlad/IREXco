@@ -2,8 +2,10 @@
     {
         "id": "R_kgDOJCT8iQ",
         "name": "Web Studio",
-        "role": "Developer",
+        "type": "Landing",
+        "createdAt": "2023-02-25T11:43:34Z",
         "coverImage": "https://i.imgur.com/46xW74Z.jpg",
+        "homepageUrl": "https://songlad.github.io/goit-markup-hw-07/",
         "img_url": [
             {"url": "https://i.imgur.com/mxCRX6X.jpg"},
             {"url": "https://i.imgur.com/5KvAPSY.jpg"},
@@ -39,12 +41,37 @@
             {   "name": "jSDelivr (body-scroll-lock)",
                 "link": "https://www.jsdelivr.com/package/npm/body-scroll-lock"
             }
-        ]
+        ],
+        "languages": {
+            "totalCount": 3,
+            "edges": [
+              {
+                "size": 33831,
+                "node": {
+                  "name": "CSS"
+                }
+              },
+              {
+                "size": 114187,
+                "node": {
+                  "name": "HTML"
+                }
+              },
+              {
+                "size": 11697,
+                "node": {
+                  "name": "JavaScript"
+                }
+              }
+            ]
+          }
     },
     {
         "id": "R_kgDOJHaXKg",
         "name": "ANEMONE",
-        "role": "Team Leader, Developer",
+        "type": "Landing, Team",
+        "createdAt": "2023-03-09T13:24:51Z",
+        "homepageUrl": "https://songlad.github.io/flower-team-proj/",
         "coverImage": "https://i.imgur.com/w73bLw4.jpg",
         "img_url": [
             {"url": "https://i.imgur.com/k1bktEh.jpg"},
@@ -102,12 +129,37 @@
             {   "name": "jSDelivr (smooth-scroll)",
                 "link": "https://www.jsdelivr.com/package/npm/smooth-scroll"
             }
-        ]
+        ],
+        "languages": {
+            "totalCount": 3,
+            "edges": [
+              {
+                "size": 48523,
+                "node": {
+                  "name": "CSS"
+                }
+              },
+              {
+                "size": 117459,
+                "node": {
+                  "name": "HTML"
+                }
+              },
+              {
+                "size": 17954,
+                "node": {
+                  "name": "JavaScript"
+                }
+              }
+            ]
+          }
     },
     {
         "id": "R_kgDOJtpbxg",
         "name": "Image Search",
-        "role": "Developer",
+        "type": "Landing",
+        "createdAt": "2023-06-10T09:14:04Z",
+        "homepageUrl": "https://songlad.github.io/goit-js-hw-11/",
         "coverImage": "https://i.imgur.com/97NRxqo.jpg",
         "img_url": [
             {"url": "https://i.imgur.com/bd3nujv.jpg"},
@@ -171,13 +223,44 @@
             {   "name": "Pixabay API(as backend)",
                 "link": "https://pixabay.com/api/docs/"
             }
-        ]
+        ],
+        "languages": {
+            "totalCount": 4,
+            "edges": [
+              {
+                "size": 2411,
+                "node": {
+                  "name": "HTML"
+                }
+              },
+              {
+                "size": 5652,
+                "node": {
+                  "name": "SCSS"
+                }
+              },
+              {
+                "size": 9871,
+                "node": {
+                  "name": "JavaScript"
+                }
+              },
+              {
+                "size": 738,
+                "node": {
+                  "name": "Handlebars"
+                }
+              }
+            ]
+          }
     },
     {
         "id": "R_kgDOJytD_w",
         "name": "TastyTreats",
-        "role": "Team Leader, Developer",
+        "type": "Landing, Team",
+        "createdAt": "2023-06-22T12:21:48Z",
         "coverImage": "https://i.imgur.com/MYiU8Xk.jpg",
+        "homepageUrl": "https://songlad.github.io/tasty-treats-team-project/",
         "img_url": [
             {"url": "https://i.imgur.com/g4f15ZL.jpg"},
             {"url": "https://i.imgur.com/un4a2J4.jpg"},
@@ -251,12 +334,44 @@
             {   "name": "Tasty Treats API(as backend)",
                 "link": "https://tasty-treats-backend.p.goit.global/api-docs/"
             }
-        ]
+        ],
+        "languages": {
+            "totalCount": 4,
+            "edges": [
+              {
+                "size": 27070,
+                "node": {
+                  "name": "HTML"
+                }
+              },
+              {
+                "size": 70690,
+                "node": {
+                  "name": "SCSS"
+                }
+              },
+              {
+                "size": 58423,
+                "node": {
+                  "name": "JavaScript"
+                }
+              },
+              {
+                "size": 18677,
+                "node": {
+                  "name": "Handlebars"
+                }
+              }
+            ]
+        }
     },
     {
         "id": "R_kgDOKGJh7w",
         "name": "Ruh",
         "role": "Developer",
+        "type": "Landing",
+        "createdAt": "2023-08-11T20:45:13Z",
+        "homepageUrl": "https://songlad.github.io/ruh/",
         "coverImage": "https://i.imgur.com/PbqGDpH.jpg",
         "img_url": [
             {"url": "https://i.imgur.com/kn5pSta.jpg"},
@@ -305,13 +420,44 @@
             {   "name": "Swiper",
                 "link": "https://swiperjs.com"
             }
-        ]
+        ],
+        "languages": {
+            "totalCount": 4,
+            "edges": [
+              {
+                "size": 442270,
+                "node": {
+                  "name": "HTML"
+                }
+              },
+              {
+                "size": 13566,
+                "node": {
+                  "name": "JavaScript"
+                }
+              },
+              {
+                "size": 787,
+                "node": {
+                  "name": "SCSS"
+                }
+              },
+              {
+                "size": 94868,
+                "node": {
+                  "name": "CSS"
+                }
+              }
+            ]
+        }
     },
     {
         "id": "R_kgDOKKmljg",
         "name": "Image Finder",
-        "role": "Developer",
+        "type": "Landing",
+        "createdAt": "2023-08-23T17:11:33Z",
         "coverImage": "https://i.imgur.com/E8416Nl.jpg",
+        "homepageUrl": "https://songlad.github.io/goit-react-hw-04-image-finder/",
         "img_url": [
             {"url": "https://i.imgur.com/PvGadS9.jpg"},
             {"url": "https://i.imgur.com/6vmSxNG.jpg"},
@@ -365,12 +511,37 @@
             {   "name": "Pixabay API(as backend)",
                 "link": "https://pixabay.com/api/docs/"
             }
-        ]
+        ],
+        "languages": {
+            "totalCount": 3,
+            "edges": [
+              {
+                "size": 4831,
+                "node": {
+                  "name": "HTML"
+                }
+              },
+              {
+                "size": 22154,
+                "node": {
+                  "name": "JavaScript"
+                }
+              },
+              {
+                "size": 422,
+                "node": {
+                  "name": "CSS"
+                }
+              }
+            ]
+        }
     },
         {
         "id": "R_kgDOKQ8EIQ",
         "name": "Phonebook",
-        "role": "Developer",
+        "type": "Landing, Backend, FullStack",
+        "createdAt": "2023-09-08T08:30:47Z",
+        "homepageUrl": "https://songlad.github.io/goit-react-hw-08-phonebook/",
         "coverImage": "https://i.imgur.com/LP44Lh4.jpg",
         "img_url": [
             {"url": "https://i.imgur.com/YqiSwi1.jpg"},
@@ -414,6 +585,12 @@
             },
             {   "name": "Postman",
                 "link": "https://www.postman.com"
+            },
+            {   "name": "Node.Js",
+                "link": "https://nodejs.org/en" 
+            },
+            {   "name": "MongoDB",
+                "link": "https://account.mongodb.com/account/login" 
             }
         ],
         "libraries":[
@@ -441,120 +618,44 @@
             {   "name": "Country Codes List",
                 "link": "https://www.npmjs.com/package/country-codes-list"
             },
-            {   "name": "Herokuapp API(as beckend)",
-                "link": "https://connections-api.herokuapp.com/docs/"
-            }
-        ]
-    },
-    {
-        "id": "R_kgDOK45HWQ",
-        "name": "HEALTH_EN",
-        "role": "Team Leader, Developer",
-        "coverImage": "https://i.imgur.com/HwKGlqr.jpg",
-        "img_url": [
-            {"url": "https://i.imgur.com/ACSsviu.jpg"},
-            {"url": "https://i.imgur.com/H1oJZFN.jpg"},
-            {"url": "https://i.imgur.com/lXyIewE.jpg"},
-            {"url": "https://i.imgur.com/ggtghpK.jpg"},
-            {"url": "https://i.imgur.com/3DRo504.jpg"},
-            {"url": "https://i.imgur.com/UP6jJ4h.jpg"},
-            {"url": "https://i.imgur.com/1aJeRRQ.jpg"},
-            {"url": "https://i.imgur.com/JcBO7qF.jpg"},
-            {"url": "https://i.imgur.com/NYyLTwM.jpg"},
-            {"url": "https://i.imgur.com/Rb2NiBT.jpg"},
-            {"url": "https://i.imgur.com/r4FNqp4.jpg"},
-            {"url": "https://i.imgur.com/MI2C4ck.jpg"},
-            {"url": "https://i.imgur.com/HwKGlqr.jpg"}
-        ],
-        "figma_url": "https://www.figma.com/file/TY1tlWppyNqqV3HDMs2hWX/HealthyHub?type=design&node-id=0-1&mode=design&t=DjHVg3QtQV3TBpVF-0",
-        "description": "HEALTH_EN is a team exam project of the GoIt school. It was implemented by a team of 10 developers over a period of 2 weeks. The entire project, specifically both the Front-End and Back-End, was built from scratch based on the technical specifications and a Figma design. HEALTH_EN is an 8-page application with responsive design, fully compliant with all modern requirements. This site is designed for those who want to normalize their nutrition, monitor their daily calorie intake needed to maintain their current body mass, or according to the selected mode. This application cannot be used without a personal account. To start, the user will need to go through 5 stages of registration and enter their data such as email, password, username, height, weight, age, the diet mode the user will use, choice of gender, and the user's activity level. All this is necessary to provide the user with as accurate information as possible for calculations. In case the user forgets the password, they can easily change it even before logging in. To do this, they just need to go to the 'Forgot Your Password' page and enter their email. They will receive an email with a temporary password allowing them to log into the system. This temporary password can be easily changed on the 'Settings' page, along with any other data previously entered by the user. Also on the 'Settings' page, the user can change their avatar if desired. With daily use of this application, updating their current weight is a mandatory part. This should be the first action of the user when logging into the system for the first time each day. On the 'Recommended Food' page, there is a list of recommended products, taking into account their caloric content. The 'Dashboard' page represents a summary statistics of weight changes, the amount of water consumed, and food intake over the selected period. On the main page, the user can enter and edit the amount of water consumed per day, as well as see the necessary limits of its consumption. The same applies to food. The user is provided with the opportunity to see the required calories, fats, carbohydrates, and how much they have already consumed and how much is left. Convenient graphs help with this. On the 'Diary' page, the user can see all their food intakes throughout the day and also manage them independently. They can fill them in, edit, or even delete them.",
-        "technical_task": "https://docs.google.com/spreadsheets/d/11ue6Gk9E-Wt4ZfzEn7RdqajlrdLgEXoM/edit?usp=sharing&ouid=106322449708075322597&rtpof=true&sd=true",
-        "technologies": [
-            {   "name": "HTML5",
-                "link": "https://html.spec.whatwg.org"
-            },            
-            {   "name": "JavaScript",
-                "link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript"
-            },
-            {   "name": "React",
-                "link": "https://react.dev"
-            },
-            {   "name": "Redux",
-                "link": "https://redux.js.org"
-            },
-            {   "name": "Styled Components",
-                "link": "https://styled-components.com"
-            },
-            {   "name": "Axios",
-                "link": "https://axios-http.com/docs/api_intro"
-            },
-            {   "name": "Visual Studio",
-                "link": "https://code.visualstudio.com"
-            },
-            {   "name": "Git",
-                "link": "https://git-scm.com"
-            },
-            {   "name": "GitHub",
-                "link": "https://github.com"
-            },
-            {   "name": "Postman",
-                "link": "https://www.postman.com"
+            {   "name": "Express",
+                "link": "https://www.npmjs.com/package/express"
             },
             {   "name": "MongoDB",
-                "link": "https://www.mongodb.com/cloud/atlas/register?utm_source=google&utm_campaign=search_gs_pl_evergreen_atlas_core_prosp-brand_gic-null_emea-ua_ps-all_desktop_eng_lead&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624575&adgroup=115749710823&cq_cmp=12212624575&gad_source=1&gclid=CjwKCAiA_OetBhAtEiwAPTeQZy-VKImwt1qJHg8yNCl4a_hX5XmBxUh821Oa4HKoboH2OUpctL_ewhoCh7kQAvD_BwE"
+                "link": "https://www.npmjs.com/package/mongodb"
             },
-            {   "name": "Node.js",
-                "link": "https://nodejs.org/en"
+            {   "name": "Mongoose",
+                "link": "https://www.npmjs.com/package/mongoose"
             },
-            {   "name": "HEALTH_EN_BACKEND",
-                "link": "https://github.com/Sheremeta-Ivan/HEALTH_EN_BACKEND"
+            {   "name": "Nodemailer",
+                "link": "https://www.npmjs.com/package/nodemailer"
             }
-            
         ],
-        "libraries":[
-            {   "name": "React",
-                "link": "https://react.dev"
-            },
-            {   "name": "Redux",
-                "link": "https://redux.js.org"
-            },
-            {   "name": "React Spinners",
-                "link": "https://www.npmjs.com/package/react-spinners"
-            },
-            {   "name": "React Toastify",
-                "link": "https://www.npmjs.com/package/react-toastify"
-            },
-            {   "name": "Eslint Plugin Import",
-                "link": "https://www.npmjs.com/package/eslint-plugin-import"
-            },
-            {   "name": "Modern Normalize",
-                "link": "https://www.npmjs.com/package/modern-normalize"
-            },
-            {   "name": "Normalize.css",
-                "link": "https://www.npmjs.com/package/normalize.css?activeTab=versions"
-            },
-            {   "name": "NanoId",
-                "link": "https://www.npmjs.com/package/nanoid"
-            },
-            {   "name": "Formik",
-                "link": "https://www.npmjs.com/package/formik"
-            },
-            {   "name": "Yup",
-                "link": "https://www.npmjs.com/package/yup"
-            },
-            {   "name": "React Charts 2",
-                "link": "https://www.npmjs.com/package/react-chartjs-2"
-            },
-            {   "name": "HEALTH_EN API(swagger)",
-                "link": "https://healthy-hub-backend-fs5j.onrender.com/api-docs/"
-            }
-        ]
+        "languages": {
+            "totalCount": 2,
+            "edges": [
+              {
+                "size": 4905,
+                "node": {
+                  "name": "HTML"
+                }
+              },
+              {
+                "size": 142645,
+                "node": {
+                  "name": "JavaScript"
+                }
+              }
+            ]
+        }
     },
     {
         "id": "R_kgDOK_6p1w",
         "name": "HealthyHub",
-        "role": "Developer",
+        "type": "FullStack, Backend, Landing, Team",
+        "createdAt": "2024-01-02T12:53:42Z",
         "coverImage": "https://i.imgur.com/HwKGlqr.jpg",
+        "homepageUrl": "https://songlad.github.io/HealthyHub/",
         "img_url": [
             {"url": "https://i.imgur.com/ACSsviu.jpg"},
             {"url": "https://i.imgur.com/H1oJZFN.jpg"},
@@ -571,7 +672,7 @@
             {"url": "https://i.imgur.com/HwKGlqr.jpg"}
         ],
         "figma_url": "https://www.figma.com/file/TY1tlWppyNqqV3HDMs2hWX/HealthyHub?type=design&node-id=0-1&mode=design&t=DjHVg3QtQV3TBpVF-0",
-        "description": "HealthyHub is an enhanced version of the team project HEALTH_EN. This web application has exactly the same functionality, layout, and Back-End as HEALTH_EN. It has the same technical implementation. The difference lies in the improved functionality, bug fixes, and the addition of custom animations. Here, shortcomings in the operation of dropdowns were addressed, with the logic of their operation completely rewritten. Issues and errors on the 'Settings' page in handling requests to change user data and change user avatar were resolved. A preview of the new avatar when changing it has been added. Custom animations have been added on the main page. Redirect flaws on pages have been fixed (now when the user reloads the page, they remain on it instead of being redirected to the main page). Styling issues, particularly with scrollbars, have been resolved.",
+        "description": "HealthyHub is fullstack team project. It was implemented by a team of 10 developers over a period of 2 weeks. The entire project, specifically both the Front-End and Back-End, was built from scratch based on the technical specifications and a Figma design. HEALTH_EN is an 8-page application with responsive design, fully compliant with all modern requirements. This site is designed for those who want to normalize their nutrition, monitor their daily calorie intake needed to maintain their current body mass, or according to the selected mode. This application cannot be used without a personal account. To start, the user will need to go through 5 stages of registration and enter their data such as email, password, username, height, weight, age, the diet mode the user will use, choice of gender, and the user's activity level. All this is necessary to provide the user with as accurate information as possible for calculations. In case the user forgets the password, they can easily change it even before logging in. To do this, they just need to go to the 'Forgot Your Password' page and enter their email. They will receive an email with a temporary password allowing them to log into the system. This temporary password can be easily changed on the 'Settings' page, along with any other data previously entered by the user. Also on the 'Settings' page, the user can change their avatar if desired. With daily use of this application, updating their current weight is a mandatory part. This should be the first action of the user when logging into the system for the first time each day. On the 'Recommended Food' page, there is a list of recommended products, taking into account their caloric content. The 'Dashboard' page represents a summary statistics of weight changes, the amount of water consumed, and food intake over the selected period. On the main page, the user can enter and edit the amount of water consumed per day, as well as see the necessary limits of its consumption. The same applies to food. The user is provided with the opportunity to see the required calories, fats, carbohydrates, and how much they have already consumed and how much is left. Convenient graphs help with this. On the 'Diary' page, the user can see all their food intakes throughout the day and also manage them independently. They can fill them in, edit, or even delete them.",
         "technical_task": "https://docs.google.com/spreadsheets/d/11ue6Gk9E-Wt4ZfzEn7RdqajlrdLgEXoM/edit?usp=sharing&ouid=106322449708075322597&rtpof=true&sd=true",
         "technologies": [
             {   "name": "HTML5",
@@ -651,13 +752,50 @@
             },
             {   "name": "HEALTH_EN API(swagger)",
                 "link": "https://healthy-hub-backend-fs5j.onrender.com/api-docs/"
+            },
+            {   "name": "Bcrypt Js",
+                "link": "https://www.npmjs.com/package/bcryptjs"
+            },
+            {   "name": "Express",
+                "link": "https://www.npmjs.com/package/express"
+            },
+            {   "name": "MongoDB",
+                "link": "https://www.npmjs.com/package/mongodb"
+            },
+            {   "name": "Mongoose",
+                "link": "https://www.npmjs.com/package/mongoose"
+            },
+            {   "name": "Nodemailer",
+                "link": "https://www.npmjs.com/package/nodemailer"
+            },
+            {   "name": "Cloudinary",
+                "link": "https://www.npmjs.com/package/cloudinary"
             }
-        ]
+        ],
+        "languages": {
+            "totalCount": 2,
+            "edges": [
+              {
+                "size": 5087,
+                "node": {
+                  "name": "HTML"
+                }
+              },
+              {
+                "size": 350577,
+                "node": {
+                  "name": "JavaScript"
+                }
+              }
+            ]
+        }
     },
     {
         "id": "R_kgDOLG9kRA",
         "name": "CV_WebSite",
-        "role": "Developer",
+        "type": "Landing",
+        "createdAt": "2024-01-19T13:17:33Z",
+        "homepageUrl": "https://songlad.github.io/CV_WebSite/",
         "coverImage": "https://i.imgur.com/YsbOt42.jpg",
         "img_url": [
             {"url": "https://i.imgur.com/m5Rkpk2.png"},
@@ -752,6 +890,478 @@
             {   "name": "EmailJS",
                 "link": "https://www.npmjs.com/package/@emailjs/browser"
             }
-        ]
+        ],
+        "languages": {
+            "totalCount": 2,
+            "edges": [
+              {
+                "size": 5095,
+                "node": {
+                  "name": "HTML"
+                }
+              },
+              {
+                "size": 342048,
+                "node": {
+                  "name": "JavaScript"
+                }
+              }
+            ]
+        }
+    },
+    {
+        "id": "R_kgDOLeXpTQ",
+        "name": "Neuralink",
+        "type": "Landing",
+        "createdAt": "2024-03-10T18:57:41Z",
+        "homepageUrl": "https://songlad.github.io/neuralink/",
+        "coverImage": "",
+        "img_url": [
+            {"url": ""},
+            {"url": ""},
+            {"url": ""},
+            {"url": ""},
+            {"url": ""},
+            {"url": ""},
+            {"url": ""},
+            {"url": ""},
+            {"url": ""}
+        ],
+        "figma_url": null,
+        "description": "",
+        "technical_task": null,
+        "technologies": [
+            {   "name": "HTML5",
+                "link": "https://html.spec.whatwg.org"
+            },            
+            {   "name": "JavaScript",
+                "link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript"
+            },
+            {   "name": "React",
+                "link": "https://react.dev"
+            },
+            {   "name": "Redux",
+                "link": "https://redux.js.org"
+            },
+            {   "name": "Styled Components",
+                "link": "https://styled-components.com"
+            },
+            {   "name": "Visual Studio",
+                "link": "https://code.visualstudio.com"
+            },
+            {   "name": "Git",
+                "link": "https://git-scm.com"
+            },
+            {   "name": "GitHub",
+                "link": "https://github.com"
+            }
+            
+        ],
+        "libraries":[
+            {   "name": "React",
+                "link": "https://react.dev"
+            },
+            {   "name": "Redux",
+                "link": "https://redux.js.org"
+            },
+            {   "name": "React Spinners",
+                "link": "https://www.npmjs.com/package/react-spinners"
+            },
+            {   "name": "Eslint Plugin Import",
+                "link": "https://www.npmjs.com/package/eslint-plugin-import"
+            },
+            {   "name": "Modern Normalize",
+                "link": "https://www.npmjs.com/package/modern-normalize"
+            },
+            {   "name": "Normalize.css",
+                "link": "https://www.npmjs.com/package/normalize.css?activeTab=versions"
+            },
+            {   "name": "React Intersection Observer",
+                "link": "https://www.npmjs.com/package/react-intersection-observer"
+            },
+            {   "name": "Formik",
+                "link": "https://www.npmjs.com/package/formik"
+            },
+            {   "name": "Yup",
+                "link": "https://www.npmjs.com/package/yup"
+            },
+            {   "name": "React Phone Input 2",
+                "link": "https://www.npmjs.com/package/react-phone-input-2"
+            },
+            {   "name": "React Facebook Pixel",
+                "link": "https://www.npmjs.com/package/react-facebook-pixel"
+            },
+            {   "name": "React Ipgeolocation",
+                "link": "https://www.npmjs.com/package/react-ipgeolocation"
+            },
+            {   "name": "Crypto Js",
+                "link": "https://www.npmjs.com/package/crypto-js#crypto-js"
+            },
+            {   "name": "Video React",
+                "link": "https://www.npmjs.com/package/video-react"
+            }
+        ],
+        "languages": {
+            "totalCount": 2,
+            "edges": [
+              {
+                "size": 5093,
+                "node": {
+                  "name": "HTML"
+                }
+              },
+              {
+                "size": 118899,
+                "node": {
+                  "name": "JavaScript"
+                }
+              }
+            ]
+        }
+    },
+    {
+        "id": "R_kgDOLjpJsA",
+        "name": "CRM V1 Admin Panel",
+        "type": "CRM, FullStack, Backend",
+        "createdAt": "2024-03-21T16:28:34Z",
+        "homepageUrl": "https://songlad.github.io/landing-admin/",
+        "coverImage": "",
+        "img_url": [
+            {"url": ""},
+            {"url": ""},
+            {"url": ""},
+            {"url": ""},
+            {"url": ""},
+            {"url": ""},
+            {"url": ""},
+            {"url": ""},
+            {"url": ""}
+        ],
+        "figma_url": null,
+        "description": "",
+        "technical_task": null,
+        "technologies": [
+            {   "name": "HTML5",
+                "link": "https://html.spec.whatwg.org"
+            },            
+            {   "name": "JavaScript",
+                "link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript"
+            },
+            {   "name": "React",
+                "link": "https://react.dev"
+            },
+            {   "name": "Redux",
+                "link": "https://redux.js.org"
+            },
+            {   "name": "Styled Components",
+                "link": "https://styled-components.com"
+            },
+            {   "name": "Axios",
+                "link": "https://axios-http.com/docs/api_intro"
+            },
+            {   "name": "Visual Studio",
+                "link": "https://code.visualstudio.com"
+            },
+            {   "name": "Git",
+                "link": "https://git-scm.com"
+            },
+            {   "name": "GitHub",
+                "link": "https://github.com"
+            },
+            {   "name": "Postman",
+                "link": "https://www.postman.com"
+            },
+            {   "name": "MongoDB",
+                "link": "https://www.mongodb.com/cloud/atlas/register?utm_source=google&utm_campaign=search_gs_pl_evergreen_atlas_core_prosp-brand_gic-null_emea-ua_ps-all_desktop_eng_lead&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624575&adgroup=115749710823&cq_cmp=12212624575&gad_source=1&gclid=CjwKCAiA_OetBhAtEiwAPTeQZy-VKImwt1qJHg8yNCl4a_hX5XmBxUh821Oa4HKoboH2OUpctL_ewhoCh7kQAvD_BwE"
+            },
+            {   "name": "Node.js",
+                "link": "https://nodejs.org/en"
+            }
+        ],
+        "libraries":[
+            {   "name": "React",
+                "link": "https://react.dev"
+            },
+            {   "name": "Redux",
+                "link": "https://redux.js.org"
+            },
+            {   "name": "React Spinners",
+                "link": "https://www.npmjs.com/package/react-spinners"
+            },
+            {   "name": "Eslint Plugin Import",
+                "link": "https://www.npmjs.com/package/eslint-plugin-import"
+            },
+            {   "name": "Modern Normalize",
+                "link": "https://www.npmjs.com/package/modern-normalize"
+            },
+            {   "name": "Normalize.css",
+                "link": "https://www.npmjs.com/package/normalize.css?activeTab=versions"
+            },
+            {   "name": "Formik",
+                "link": "https://www.npmjs.com/package/formik"
+            },
+            {   "name": "Yup",
+                "link": "https://www.npmjs.com/package/yup"
+            },
+            {   "name": "React Phone Input 2",
+                "link": "https://www.npmjs.com/package/react-phone-input-2"
+            },
+            {   "name": "LibPhoneNumber Js",
+                "link": "https://www.npmjs.com/package/libphonenumber-js"
+            },
+            {   "name": "Crypto Js",
+                "link": "https://www.npmjs.com/package/crypto-js#crypto-js"
+            },
+            {   "name": "Bcrypt Js",
+                "link": "https://www.npmjs.com/package/bcryptjs"
+            },
+            {   "name": "Express",
+                "link": "https://www.npmjs.com/package/express"
+            },
+            {   "name": "MongoDB",
+                "link": "https://www.npmjs.com/package/mongodb"
+            },
+            {   "name": "Mongoose",
+                "link": "https://www.npmjs.com/package/mongoose"
+            },
+            {   "name": "Nodemailer",
+                "link": "https://www.npmjs.com/package/nodemailer"
+            },
+            {   "name": "Cloudinary",
+                "link": "https://www.npmjs.com/package/cloudinary"
+            }
+        ],
+        "languages": {
+            "totalCount": 2,
+            "edges": [
+              {
+                "size": 5093,
+                "node": {
+                  "name": "HTML"
+                }
+              },
+              {
+                "size": 118899,
+                "node": {
+                  "name": "JavaScript"
+                }
+              }
+            ]
+        }
+    },
+    {
+        "id": "R_kgDOMDIqug",
+        "name": "CRM V2.0",
+        "type": "CRM, FullStack, Backend",
+        "createdAt": "2024-05-31T11:49:58Z",
+        "homepageUrl": "https://songlad.github.io/CRM-WebApplication/",
+        "coverImage": "",
+        "img_url": [
+            {"url": ""},
+            {"url": ""},
+            {"url": ""},
+            {"url": ""},
+            {"url": ""},
+            {"url": ""},
+            {"url": ""},
+            {"url": ""},
+            {"url": ""}
+        ],
+        "figma_url": null,
+        "description": "",
+        "technical_task": null,
+        "technologies": [
+            {   "name": "HTML5",
+                "link": "https://html.spec.whatwg.org"
+            },            
+            {   "name": "JavaScript",
+                "link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript"
+            },
+            {   "name": "React",
+                "link": "https://react.dev"
+            },
+            {   "name": "Redux",
+                "link": "https://redux.js.org"
+            },
+            {   "name": "Styled Components",
+                "link": "https://styled-components.com"
+            },
+            {   "name": "Axios",
+                "link": "https://axios-http.com/docs/api_intro"
+            },
+            {   "name": "Visual Studio",
+                "link": "https://code.visualstudio.com"
+            },
+            {   "name": "Git",
+                "link": "https://git-scm.com"
+            },
+            {   "name": "GitHub",
+                "link": "https://github.com"
+            },
+            {   "name": "Postman",
+                "link": "https://www.postman.com"
+            },
+            {   "name": "MongoDB",
+                "link": "https://www.mongodb.com/cloud/atlas/register?utm_source=google&utm_campaign=search_gs_pl_evergreen_atlas_core_prosp-brand_gic-null_emea-ua_ps-all_desktop_eng_lead&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624575&adgroup=115749710823&cq_cmp=12212624575&gad_source=1&gclid=CjwKCAiA_OetBhAtEiwAPTeQZy-VKImwt1qJHg8yNCl4a_hX5XmBxUh821Oa4HKoboH2OUpctL_ewhoCh7kQAvD_BwE"
+            },
+            {   "name": "Node.js",
+                "link": "https://nodejs.org/en"
+            }
+        ],
+        "libraries":[
+            {   "name": "React",
+                "link": "https://react.dev"
+            },
+            {   "name": "Redux",
+                "link": "https://redux.js.org"
+            },
+            {   "name": "React Spinners",
+                "link": "https://www.npmjs.com/package/react-spinners"
+            },
+            {   "name": "Eslint Plugin Import",
+                "link": "https://www.npmjs.com/package/eslint-plugin-import"
+            },
+            {   "name": "Modern Normalize",
+                "link": "https://www.npmjs.com/package/modern-normalize"
+            },
+            {   "name": "Normalize.css",
+                "link": "https://www.npmjs.com/package/normalize.css?activeTab=versions"
+            },
+            {   "name": "Formik",
+                "link": "https://www.npmjs.com/package/formik"
+            },
+            {   "name": "Yup",
+                "link": "https://www.npmjs.com/package/yup"
+            },
+            {   "name": "React Phone Input 2",
+                "link": "https://www.npmjs.com/package/react-phone-input-2"
+            },
+            {   "name": "LibPhoneNumber Js",
+                "link": "https://www.npmjs.com/package/libphonenumber-js"
+            },
+            {   "name": "Date FNS",
+                "link": "https://www.npmjs.com/package/date-fns"
+            },
+            {   "name": "React Flatpickr",
+                "link": "https://www.npmjs.com/package/react-flatpickr"
+            },
+            {   "name": "Crypto Js",
+                "link": "https://www.npmjs.com/package/crypto-js#crypto-js"
+            },
+            {   "name": "Bcrypt Js",
+                "link": "https://www.npmjs.com/package/bcryptjs"
+            },
+            {   "name": "Express",
+                "link": "https://www.npmjs.com/package/express"
+            },
+            {   "name": "MongoDB",
+                "link": "https://www.npmjs.com/package/mongodb"
+            },
+            {   "name": "Mongoose",
+                "link": "https://www.npmjs.com/package/mongoose"
+            },
+            {   "name": "Nodemailer",
+                "link": "https://www.npmjs.com/package/nodemailer"
+            },
+            {   "name": "Cloudinary",
+                "link": "https://www.npmjs.com/package/cloudinary"
+            }
+        ],
+        "languages": {
+            "totalCount": 2,
+            "edges": [
+                {
+                  "size": 5076,
+                  "node": {
+                    "name": "HTML"
+                  }
+                },
+                {
+                  "size": 635164,
+                  "node": {
+                    "name": "JavaScript"
+                  }
+                }
+            ]
+        }
+    },
+    {
+        "id": "R_kgDOM6E2Sg",
+        "name": "Calendar",
+        "type": "Landing",
+        "createdAt": "2024-10-01T20:29:50Z",
+        "homepageUrl": "https://songlad.github.io/JoinToItTestTask/",
+        "coverImage": "",
+        "img_url": [
+            {"url": ""},
+            {"url": ""},
+            {"url": ""},
+            {"url": ""},
+            {"url": ""},
+            {"url": ""},
+            {"url": ""},
+            {"url": ""},
+            {"url": ""}
+        ],
+        "figma_url": null,
+        "description": "",
+        "technical_task": null,
+        "technologies": [
+            {   "name": "HTML5",
+                "link": "https://html.spec.whatwg.org"
+            },            
+            {   "name": "JavaScript",
+                "link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript"
+            },
+            {   "name": "React",
+                "link": "https://react.dev"
+            },
+            {   "name": "Styled Components",
+                "link": "https://styled-components.com"
+            },
+            {   "name": "Visual Studio",
+                "link": "https://code.visualstudio.com"
+            },
+            {   "name": "Git",
+                "link": "https://git-scm.com"
+            },
+            {   "name": "GitHub",
+                "link": "https://github.com"
+            }
+        ],
+        "libraries":[
+            {   "name": "React",
+                "link": "https://react.dev"
+            },
+            {   "name": "Eslint Plugin Import",
+                "link": "https://www.npmjs.com/package/eslint-plugin-import"
+            },
+            {   "name": "Modern Normalize",
+                "link": "https://www.npmjs.com/package/modern-normalize"
+            },
+            {   "name": "Normalize.css",
+                "link": "https://www.npmjs.com/package/normalize.css?activeTab=versions"
+            },
+            {   "name": "Full Calendar",
+                "link": "https://fullcalendar.io"
+            }
+        ],
+        "languages": {
+            "totalCount": 2,
+            "edges": [
+                {
+                  "size": 5076,
+                  "node": {
+                    "name": "HTML"
+                  }
+                },
+                {
+                  "size": 70316,
+                  "node": {
+                    "name": "JavaScript"
+                  }
+                }
+            ]
+        }
     }
 ]

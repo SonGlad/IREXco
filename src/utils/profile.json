@@ -9,10 +9,49 @@
   "about2": "Each website is not just code and design; it is the energy we invest in every project to ensure its uniqueness and effectiveness. Our team deeply understands the specifics of your business, providing a personalized approach and a full range of services to achieve your goals in the online world. Your success is our success, and we are always here to provide your brand with the highest level of attention and technical expertise.",
   "about3": "Our projects include the development of interactive and user-friendly interfaces that ensure an excellent user experience. While working on projects, we pay attention to detail and strive to write high-quality code. Our goal is not only to build efficient and aesthetically pleasing web applications but also to continuously grow in the field of development by keeping up with the latest trends and advanced methods. We are ready to embrace new challenges and opportunities that will allow us to further our growth and contribute to the advancement of innovative technologies.",
   "about4":"If you liked what you saw on my website and have suggestions, I'm ready to discuss them with you. Since I believe in the power of collaboration and am convinced that the best results are achieved when we combine our efforts and ideas, together we can create something truly impressive and meaningful. If you have any questions or are ready to start collaborating, feel free to contact me. I look forward to the opportunity to work with you!",
+  "about5": "We are specializes in creating complex web applications and backend services for various industries. Below is a summary of the projects we've completed so far:",
   "github_link": "https://github.com/SonGlad",
   "facebook_link": "https://www.facebook.com/profile.php?id=100024930558745",
   "linkedin_link": "https://www.linkedin.com/in/oleg-koshevy/",
   "telegram_link": "https://t.me/SonGlad",
+  "steps": {
+    "projectPlanning":{
+      "description": "At this stage, the project's goal and its main objectives are defined. It includes gathering your requirements, analyzing business processes, identifying the target audience, and determining the product’s functionality. We create a detailed plan, breaking the project into phases, setting deadlines, allocating resources, and assigning responsibilities. The primary aim is to establish a clear understanding of what will be developed and how it will be done",
+      "value": "10",
+      "img": "https://i.imgur.com/dCuguuB.jpg",
+      "name": "Project Planning"
+    },
+    "designPrototyping":{
+      "description": "After the planning phase, the product design process begins. At this stage, visual wireframes and prototypes are created to help visualize the structure and user interaction with the interface. Designers focus on the user interface (UI) and user experience (UX) to ensure ease of use. The prototypes are tested and discussed with you before development starts, allowing for adjustments to be made early on",
+      "value": "15",
+      "img": "https://i.imgur.com/JEUYXQG.jpg",
+      "name": "Design & Prototyping"
+    },
+    "backend":{
+      "description": "This phase is responsible for building the server-side of the application, including databases, servers, APIs, and business logic. Here, we work with backend technologies to handle data storage, process requests, manage users, and ensure system security. A key focus during this phase is ensuring smooth interaction between the client-side and server-side through the use of APIs.",
+      "value": "25",
+      "img": "https://i.imgur.com/5mW9L9u.jpg",
+      "name": "Backend Development"
+    },
+    "frontend":{
+      "description": "The frontend development phase focuses on building the interface that users interact with. We are responsible for creating the visual components and ensuring smooth user interaction with the system. The technologies previously outlined are utilized. Our main goal is to deliver a user-friendly, intuitive interface that functions properly across various devices and meets modern standards.",
+      "value": "30",
+      "img": "https://i.imgur.com/BezEQVP.jpg",
+      "name": "Frontend Development"
+    },
+    "testing":{
+      "description": "Testing involves checking all aspects of the application's functionality. We conduct tests to ensure it meets the requirements, identify bugs, and assess how the system performs in various scenarios. This phase includes both functional testing (ensuring all features work as expected) and non-functional testing (performance, security, usability). The main goal is to ensure the product is ready for release and operates without errors.",
+      "value": "10",
+      "img": "https://i.imgur.com/1O2ixNe.jpg",
+      "name": "Testing & QA"
+    },
+    "deploying":{
+      "description": "After the development and testing phases are complete, the project is deployed to a live server or hosting platform, making the product accessible to end users. At this point, the support phase begins, which includes monitoring the application's performance, fixing bugs, enhancing functionality, applying security updates, and handling other tasks to maintain and update the product throughout its lifecycle.",
+      "value": "10",
+      "img": "https://i.imgur.com/pLAlJOc.jpg",
+      "name": "Deployment & Maintenance"
+    }
+  },
   "skills":[
     { "id": "IconReact",
       "value": "React",
