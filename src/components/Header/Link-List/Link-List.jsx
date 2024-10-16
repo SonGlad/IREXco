@@ -10,7 +10,14 @@ import { forwardRef } from "react";
 
 
 
-export const LinkList = forwardRef(({backToTopRef, toggleMenuBox, toAboutUsRef, toStackRef}, reff) => {
+export const LinkList = forwardRef(({
+    backToTopRef, 
+    toggleMenuBox, 
+    toAboutUsRef, 
+    toStackRef, 
+    toPortfolioRef,
+    toContactRef
+}, reff) => {
     const { ref, inView } = useInView({
         triggerOnce: false,
         threshold: 0.1,
@@ -21,7 +28,7 @@ export const LinkList = forwardRef(({backToTopRef, toggleMenuBox, toAboutUsRef, 
         <LinkListStyled>
             <ul ref={ref} className={`link-list ${inView ? 'visible' : 'hidden'}`}>
                 <li className="link-list-item" style={{'--i': 1}}>
-                    <NavLink className='nav-link' to='/'
+                    <NavLink className='nav-link'
                         onClick={() => {
                             if (toggleMenuBox) {
                                 toggleMenuBox();
@@ -69,13 +76,33 @@ export const LinkList = forwardRef(({backToTopRef, toggleMenuBox, toAboutUsRef, 
                     </NavLink>
                 </li>
                 <li className="link-list-item" style={{'--i': 4}}>
-                    <NavLink className='nav-link' to='/portfolio' onClick={toggleMenuBox}>
+                    <NavLink className='nav-link'
+                        onClick={() => {
+                            if (toggleMenuBox) {
+                                toggleMenuBox();
+                            }
+                            toPortfolioRef.current.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start',
+                            });
+                        }}
+                    >
                         <PortfolioIcon className="header-icon" width={16} height={16}/>
                         <span className="header-link-text">Portfolio</span>
                     </NavLink>
                 </li>
                 <li className="link-list-item" style={{'--i': 5}}>
-                    <NavLink className='nav-link' to='/contact' onClick={toggleMenuBox}>
+                    <NavLink className='nav-link'
+                        onClick={() => {
+                            if (toggleMenuBox) {
+                                toggleMenuBox();
+                            }
+                            toContactRef.current.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start',
+                            });
+                        }}
+                    >
                         <ContactIcon className="header-icon" width={16} height={16}/>
                         <span className="header-link-text">Contact Us</span>
                     </NavLink>

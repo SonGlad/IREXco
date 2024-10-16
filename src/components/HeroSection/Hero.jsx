@@ -16,7 +16,14 @@ import { useInView } from 'react-intersection-observer';
 
 
 
-export const Hero = forwardRef(({ backToTopRef, toAboutUsRef, forHeader, toStackRef}, reff) => {
+export const Hero = forwardRef(({ 
+    backToTopRef, 
+    toAboutUsRef, 
+    forHeader, 
+    toStackRef, 
+    toPortfolioRef,
+    toContactRef
+}, reff) => {
     const { name1, name2, text1, text2} = Profile;
     const [isModelLoaded, setIsModelLoaded] = useState(false);
 
@@ -62,7 +69,14 @@ export const Hero = forwardRef(({ backToTopRef, toAboutUsRef, forHeader, toStack
                     <div className="left-redirect-cont">
                         <ul className="redirext-list-left">
                             <li className="redirect-item">
-                                <NavLink className="redirect-link redirect" to='/portfolio' style={{'--i': 1}}>
+                                <NavLink className="redirect-link redirect" style={{'--i': 1}}
+                                    onClick={() => {
+                                        toContactRef.current.scrollIntoView({
+                                        behavior: 'smooth',
+                                        block: 'start',
+                                        });
+                                    }}
+                                >
                                     <FingerIcon className="redirect-icon" width={24} height={24}/>    
                                     <span>Contact Us</span>
                                 </NavLink>
@@ -98,7 +112,14 @@ export const Hero = forwardRef(({ backToTopRef, toAboutUsRef, forHeader, toStack
                                 </NavLink>
                             </li>
                             <li className="redirect-item">
-                                <NavLink className="redirect-link redirect" to='/portfolio' style={{'--i': 2}}>
+                                <NavLink className="redirect-link redirect"style={{'--i': 2}}
+                                    onClick={() => {
+                                        toPortfolioRef.current.scrollIntoView({
+                                        behavior: 'smooth',
+                                        block: 'start',
+                                        });
+                                    }}
+                                >
                                     <span>Portfolio</span>
                                     <FingerIcon className="redirect-icon redirect-icon-rotate" width={24} height={24}/>    
                                 </NavLink>
@@ -147,7 +168,14 @@ export const Hero = forwardRef(({ backToTopRef, toAboutUsRef, forHeader, toStack
                             </NavLink>
                         </li>
                         <li className="redirect-item">
-                            <NavLink className="redirect-link redirect" to='/portfolio' style={{'--i': 4}}>
+                            <NavLink className="redirect-link redirect"style={{'--i': 4}}
+                                onClick={() => {
+                                    toPortfolioRef.current.scrollIntoView({
+                                    behavior: 'smooth',
+                                    block: 'start',
+                                    });
+                                }}
+                            >
                                 <FingerIcon className="redirect-icon" width={24} height={24}/>    
                                 <span>Portfolio</span>
                             </NavLink>

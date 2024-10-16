@@ -4,7 +4,7 @@ import { OrbitControls } from "@react-three/drei";
 import { useGLTF } from '@react-three/drei';
 import { CanvasLoader } from '../CustomLoaders/CustomLoaders';
 import React from "react";
-import { Model } from "./Scene";
+// import { Model } from "./Scene";
 
 
 
@@ -41,17 +41,17 @@ export const ComputerCanvas = React.memo(() => {
                     castShadow
                     shadow-mapSize={1024}
                 />
-                <Model
+                {/* <Model
                     position={[0, -2.15, -1.5]}
                     rotation={[0, -0.25, -0.15]}
                     scene={scene}
-                />
-                {/* <primitive
+                /> */}
+                <primitive
                     object={scene}
                     scale={1}
                     position={[0, -2.15, -1.5]}
                     rotation={[0, -0.25, -0.15]}
-                /> */}
+                />
             </Canvas>
         </Suspense>
     );

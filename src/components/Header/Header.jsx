@@ -9,7 +9,14 @@ import { useCallback, useEffect, useRef, useState, forwardRef } from "react";
 
 
 
-export const Header = forwardRef(({backToTopRef, toAboutUsRef, headerBackground, toStackRef}, reff) => {   
+export const Header = forwardRef(({
+    backToTopRef, 
+    toAboutUsRef, 
+    headerBackground, 
+    toStackRef, 
+    toPortfolioRef,
+    toContactRef
+}, reff) => {   
     const [mobMenu, setMobMenu] = useState(false);
     const mobileMenu = useRef();
 
@@ -79,6 +86,8 @@ export const Header = forwardRef(({backToTopRef, toAboutUsRef, headerBackground,
                                     backToTopRef={backToTopRef}
                                     toAboutUsRef={toAboutUsRef}
                                     toStackRef={toStackRef}
+                                    toPortfolioRef={toPortfolioRef}
+                                    toContactRef={toContactRef}
                                 />
                             </nav>
                         </div>
@@ -89,6 +98,8 @@ export const Header = forwardRef(({backToTopRef, toAboutUsRef, headerBackground,
                                 backToTopRef={backToTopRef}
                                 toAboutUsRef={toAboutUsRef}
                                 toStackRef={toStackRef}
+                                toPortfolioRef={toPortfolioRef}
+                                toContactRef={toContactRef}
                             />
                         </nav>
                     </div>

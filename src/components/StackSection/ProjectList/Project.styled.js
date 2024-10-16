@@ -35,11 +35,6 @@ export const ProjectStyled = styled.div`
     .item-svg{
         fill: ${p => p.theme.color.light_theme2};
     }
-
-    .hidden .item > .colored-area,
-    .hidden .item > .colored-area div {
-        animation: none;
-    }
     
 
     .visible .item > .colored-area {
@@ -59,6 +54,28 @@ export const ProjectStyled = styled.div`
         animation: showProgress 1s linear forwards;
 
         & p{
+            opacity: 1;
+        }
+    }
+
+    @keyframes showBar {
+        0%{
+            width: 0%;
+        }
+        100%{
+            width: 100%;
+        }
+    }
+
+    @keyframes showProgress {
+        0%{
+            opacity: 0;
+        }
+        50%{
+            opacity: 0;
+            width: 0%;
+        }
+        100%{
             opacity: 1;
         }
     }
@@ -105,27 +122,5 @@ export const ProjectStyled = styled.div`
         transform: translate(12px, -28px);
         background-color: ${p => p.theme.color.black}; 
         opacity: 0;
-    }
-
-    @keyframes showBar {
-        0%{
-            width: 0%;
-        }
-        100%{
-            width: 100%;
-        }
-    }
-
-    @keyframes showProgress {
-        0%{
-            opacity: 0;
-        }
-        50%{
-            opacity: 0;
-            width: 0%;
-        }
-        100%{
-            opacity: 1;
-        }
     }
 `
