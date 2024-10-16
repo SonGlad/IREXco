@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/IREXco/static/css/main.0a8d3da9.css",
-    "main.js": "/IREXco/static/js/main.9edf4894.js",
+    "main.js": "/IREXco/static/js/main.367fa1ec.js",
     "static/media/iReX_logo.png": "/IREXco/static/media/iReX_logo.bb7640ae2d9d84190796.png",
     "static/media/bg_image.jpg": "/IREXco/static/media/bg_image.b9582bcafcb2d9c85e18.jpg",
     "static/media/banner.svg": "/IREXco/static/media/banner.5f1d1c916786af0feb7e82a2c8da17d1.svg",
@@ -45,6 +45,6 @@
   },
   "entrypoints": [
     "static/css/main.0a8d3da9.css",
-    "static/js/main.9edf4894.js"
+    "static/js/main.367fa1ec.js"
   ]
 }
