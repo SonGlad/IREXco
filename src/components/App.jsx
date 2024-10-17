@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Header } from "./Header/Header";
 import { ParticlesComponent }from "./particles/particles";
-import { HeroSection, AboutSection, Section } from "./Section/Section";
+import { HeroSection, AboutSection, Section, ContactSection } from "./Section/Section";
 import { Container } from "./Container/Container";
 import { Hero } from "./HeroSection/Hero";
 import { AboutUsSection } from "./AboutSection/About";
@@ -9,6 +9,8 @@ import { StackSection } from "./StackSection/StackSection";
 import { PortfolioSection } from "./PortfolioSection/Portfolio";
 import { Contacts } from "./ContactSection/Contacts";
 import { Modal } from "./Modal/Modal";
+import { Footer } from "./Footer/Footer";
+import { FormLoading } from "./CustomLoaders/CustomLoaders";
 import { useInView } from 'react-intersection-observer';
 
 
@@ -24,11 +26,12 @@ export const App= () => {
   const [isContactModal, setContactModal] = useState(false);
   const [portfolioModalData, setPortfolioModalData] = useState(null);
   const [isSuccess, setSuccess] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
   const { ref, inView } = useInView({
     threshold: 1,
   });
  
-
+ 
 
   const openPortfolioModal = () => {
     if (isContactModal) {
@@ -64,6 +67,7 @@ export const App= () => {
   
   return (
     <>
+      {isLoading && <FormLoading/>}
       <ParticlesComponent id='particles'/>
       <Header 
         backToTopRef={backToTopRef}
@@ -104,15 +108,17 @@ export const App= () => {
           />
         </Container>
       </Section>
-      <Section>
+      <ContactSection>
         <Container>
           <Contacts
             toContactRef={toContactRef}
             openContactModal={openContactModal}
             setSuccess={setSuccess}
+            setIsLoading={setIsLoading}
           />
         </Container>
-      </Section>
+      </ContactSection>
+      <Footer backToTopRef={backToTopRef}/>
       {(isPortfolioModal || isContactModal) && 
         <Modal
           isPortfolioModal={isPortfolioModal}

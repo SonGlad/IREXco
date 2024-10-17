@@ -1,11 +1,12 @@
 import {Container} from "../Container/Container";
 import { StyledHeader } from "./Header.styled";
-import {ReactComponent as LogoSvg} from "../../images/svg-icons/banner.svg";
+// import {ReactComponent as LogoSvg} from "../../images/svg-icons/banner.svg";
 import {ReactComponent as MobMenuBurger} from "../../images/svg-icons/mobile-menu.svg";
 import {ReactComponent as CloseIcon} from "../../images/svg-icons/close.svg";
 import { NavLink } from "react-router-dom";
 import { LinkList } from "./Link-List/Link-List";
 import { useCallback, useEffect, useRef, useState, forwardRef } from "react";
+import Logo from "../../images/images/iReX_logo.png"
 
 
 
@@ -65,13 +66,14 @@ export const Header = forwardRef(({
         <StyledHeader $headerBackground={headerBackground}>
             <Container>
                 <div className='header-container'>
-                    <NavLink className="link" to='/'
+                    <NavLink className="logo-link" to='/'
                         onClick={() => 
                             backToTopRef.current.scrollIntoView({
                             behavior: 'smooth',
                             block: 'start'
                         })}>
-                        <LogoSvg className="header-logo" width={34} height={34}/>
+                        <img className="header-logo" src={Logo} alt="logo"/>
+                        {/* <LogoSvg className="header-logo" width={34} height={34}/> */}
                     </NavLink>
                     <div className="mobilemenu" ref={mobileMenu} onClick={stopPropagation}>
                         <button type='button'

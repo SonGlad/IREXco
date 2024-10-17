@@ -1,4 +1,4 @@
-import {HeroSectionStyle, AboutSectionStyled, SectionStyled} from './Section.styled';
+import {HeroSectionStyle, AboutSectionStyled, SectionStyled, ContactSectionStyled} from './Section.styled';
 
 
 
@@ -25,5 +25,13 @@ export const Section = ({children}) => {
         <SectionStyled>
             {children}
         </SectionStyled>
+    );
+};
+
+export const ContactSection = ({children}) => {
+    return (
+        <ContactSectionStyled>
+            {children}
+        </ContactSectionStyled>
     );
 };

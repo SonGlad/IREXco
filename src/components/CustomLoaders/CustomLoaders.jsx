@@ -1,5 +1,6 @@
 import ScaleLoader from "react-spinners/ScaleLoader";
-import { RingLoaderStyled } from "./CustomLoaders.styled";
+import PuffLoader from "react-spinners/PuffLoader";
+import { RingLoaderStyled, FormStyled } from "./CustomLoaders.styled";
 import { Html, useProgress } from "@react-three/drei";
 
 
@@ -36,5 +37,22 @@ export const CanvasLoader = () => {
             }} 
             >{progress.toFixed(2)}%</p>
         </Html>
+    );
+};
+
+export const FormLoading = () => {
+    return (
+        <FormStyled
+            style={{backgroundColor: 'rgba(0, 0, 0, 0.5)', backdropFilter: 'blur(5px)'}}
+        >
+            <PuffLoader
+                color={"#f1f1f1"}
+                loading = {true} 
+                size={150}
+                speedMultiplier={1}
+                aria-label="Loading Spinner"
+                data-testid="loader" 
+            />
+        </FormStyled>
     );
 };

@@ -16,7 +16,19 @@ export const StyledHeader = styled.header`
         justify-content: space-between;
     }
 
+    .logo-link{
+        position: relative;
+        width: 34px;
+        height: 34px;
+    }
+
     .header-logo{
+        position: absolute;
+        max-width: 65px;
+        height: auto;
+        z-index: 1;
+        top: -60%;
+        left: 0;
         fill: ${p => p.theme.color.text_color};
         transition: fill ${p => p.theme.transition.main_transition};
         animation: slideLogoRight 1s ease forwards;

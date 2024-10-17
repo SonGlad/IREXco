@@ -37,6 +37,7 @@ export const ContactFormStyled = styled.form`
         }
         100%{
             box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.5);
+            background-color: ${p => p.theme.color.bg_color};
         }
     }
 

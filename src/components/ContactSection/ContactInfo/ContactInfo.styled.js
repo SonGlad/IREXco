@@ -64,6 +64,7 @@ export const ContactInfoStyled = styled.div `
         text-align: justify;
         animation: ConatctTextSlideTop 1s ease forwards;
         opacity: 0;
+        background-color: ${p => p.theme.color.bg_color};
 
         &::first-letter {
             font-size: 32px;
@@ -100,7 +101,7 @@ export const ContactInfoStyled = styled.div `
 
         @media screen and (min-width: 768px){
             align-items: flex-start;
-            flex-direction: column;
+            /* flex-direction: column; */
         }
     }
 
@@ -126,8 +127,9 @@ export const ContactInfoStyled = styled.div `
         }
     }
 
-
-
+    .contact-link-item{
+        width: 35%;
+    }
 
     .contact-link{
         width: 220px;

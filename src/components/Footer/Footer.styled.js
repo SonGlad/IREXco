@@ -36,6 +36,7 @@ export const FooterStyled = styled.footer`
         margin-bottom: 20px;
         margin-right: 30px;
         opacity: 0;
+        cursor: pointer;
         animation: slideLeft 1s ease forwards;
 
         
@@ -92,7 +93,21 @@ export const FooterStyled = styled.footer`
        .order-three{
         order:3;
        }
-    } 
+    }
+    
+    .footer-text-left{
+        font-size: 24px;
+        line-height: 120%;
+        font-weight: 700;
+        text-align: center;
+
+        & span{
+            color: ${p => p.theme.color.main_color};
+            font-size: 30px;
+            font-family: "Racing Sans One";
+            font-weight: 400;
+        }
+    }
 
     .footer-text-center,
     .footer-text-right{
@@ -104,23 +119,6 @@ export const FooterStyled = styled.footer`
 
     .footer-text-right span{
         color: ${p => p.theme.color.main_color};
-    }
-
-    .footer-link{
-        display: flex;
-        align-items: center;
-        gap: 5px;
-        font-weight: 600;
-        color: ${p => p.theme.color.main_color};
-        fill: ${p => p.theme.color.text_color};
-        transition: color ${p => p.theme.transition.main_transition},
-                    fill ${p => p.theme.transition.main_transition};
-
-        &:hover,
-        &:focus{
-            color: ${p => p.theme.color.text_color};
-            fill: ${p => p.theme.color.main_color};
-        }
     }
 
     .visible .footer-center-cont{
@@ -170,8 +168,6 @@ export const FooterStyled = styled.footer`
 
     .cont-for-foo-pic{
         position: relative;
-        overflow: visible;
-        cursor: pointer;
         width: 50px;
         height: 50px;
         margin-left: 5px;
@@ -180,32 +176,12 @@ export const FooterStyled = styled.footer`
 
     .footer-img{
         position: absolute;
-        z-index: 10;
         width: 100px;
         height: auto;
         top: 50%;
         left: 50%;
         transform: translate(-36%, -50%) scale(1.3);
         transition: transform ${p => p.theme.transition.main_transition};
-    }
-
-    .img-active{
-        top: 0%;
-        left: 0%;
-        transform: translate(-50%, -350%) scale(5);
-
-        @media screen and (min-width: 400px){
-            transform: translate(30%, -400%) scale(6);
-        }
-        @media screen and (min-width: 500px){
-            transform: translate(140%, -400%) scale(7);
-        }
-        @media screen and (min-width: 634px){
-            transform: translate(250%, -400%) scale(8);
-        }
-        @media screen and (min-width: 768px){
-            transform: translate(-150%, -450%) scale(9);
-        }
     }
 
     .visible .footer-right-cont{

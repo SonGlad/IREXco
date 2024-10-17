@@ -9,7 +9,6 @@ import { ContactFormSchema } from "../../../utils/ValidationSchema";
 import { ShowRules } from "../../../utils/ShowRules";
 import { useState, useEffect } from "react";
 import emailjs from '@emailjs/browser';
-// import { openLoader, closeLoader } from "../../../redux/Data/data-slice";
 
 
 const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
@@ -17,8 +16,7 @@ const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
 const PUBLIC_KEY = process.env.REACT_APP_PUBLIC_KEY;
 
 
-
-export const ContactForm = ({openContactModal, setSuccess}) => {
+export const ContactForm = ({openContactModal, setSuccess, setIsLoading}) => {
 
     const [formChanged, setFormChanged] = useState(false);
     const {
@@ -43,7 +41,7 @@ export const ContactForm = ({openContactModal, setSuccess}) => {
         validationSchema: ContactFormSchema,
 
         onSubmit: (values) => {
-            // dispatch(openLoader());
+            setIsLoading(true);
             emailjs.send(SERVICE_ID, TEMPLATE_ID, {
                 to_name: 'Oleg',
                 from_name: values.name,
@@ -53,7 +51,7 @@ export const ContactForm = ({openContactModal, setSuccess}) => {
                 message: values.user_comment
             }, PUBLIC_KEY)
             .then(() => {
-                // dispatch(closeLoader());
+                setIsLoading(false);
                 setSuccess(true);
                 openContactModal();
                 setFormChanged(false);
@@ -68,7 +66,7 @@ export const ContactForm = ({openContactModal, setSuccess}) => {
                 })
                 }, 
                 (error) => {
-                    // dispatch(closeLoader());
+                    setIsLoading(false);
                     setSuccess(false);
                     openContactModal();
                     console.error(error);
