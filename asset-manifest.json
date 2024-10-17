@@ -1,10 +1,9 @@
 {
   "files": {
     "main.css": "/IREXco/static/css/main.0a8d3da9.css",
-    "main.js": "/IREXco/static/js/main.367fa1ec.js",
+    "main.js": "/IREXco/static/js/main.292b6884.js",
     "static/media/iReX_logo.png": "/IREXco/static/media/iReX_logo.bb7640ae2d9d84190796.png",
     "static/media/bg_image.jpg": "/IREXco/static/media/bg_image.b9582bcafcb2d9c85e18.jpg",
-    "static/media/banner.svg": "/IREXco/static/media/banner.5f1d1c916786af0feb7e82a2c8da17d1.svg",
     "static/media/open-book.svg": "/IREXco/static/media/open-book.e7022b79c1e767d89b081323a5d0b800.svg",
     "static/media/typescript.svg": "/IREXco/static/media/typescript.d18207dc773a07612961805bf30374d2.svg",
     "static/media/scss.svg": "/IREXco/static/media/scss.2a95573679d683635ee74301b9b5c401.svg",
@@ -14,7 +13,6 @@
     "static/media/handlebars.svg": "/IREXco/static/media/handlebars.4dea8dbd4aab141a3d2613c0da7407a4.svg",
     "static/media/javascript.svg": "/IREXco/static/media/javascript.cc9a7e7aab46a8fdeca77061a3ccabd3.svg",
     "static/media/link2.svg": "/IREXco/static/media/link2.013c37ef969b7f563193b248cb3d7384.svg",
-    "static/media/github.svg": "/IREXco/static/media/github.0bf91b9aef33e192fc3bdc185198844d.svg",
     "static/media/other.svg": "/IREXco/static/media/other.38de6e76a808af6842118e98d4e6bfe0.svg",
     "static/media/construction.svg": "/IREXco/static/media/construction.ce55eb4c367e15c26d5260ea523b4d1f.svg",
     "static/media/users.svg": "/IREXco/static/media/users.5c3f622d016a424e25d12c9708951a90.svg",
@@ -45,6 +43,6 @@
   },
   "entrypoints": [
     "static/css/main.0a8d3da9.css",
-    "static/js/main.367fa1ec.js"
+    "static/js/main.292b6884.js"
   ]
 }
