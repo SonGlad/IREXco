@@ -29,10 +29,12 @@ export const PortfolioModalStyled = styled.div`
         border-right: 13px solid transparent;
 
         &::-webkit-scrollbar {
+            display: block;
             width: 3px;
             background-color: transparent;
         }
         &::-webkit-scrollbar-thumb {
+            display: block;
             border-radius: 5px;
             background-color: ${p => p.theme.color.main_color};
             border-radius: 50%;
