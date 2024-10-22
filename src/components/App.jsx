@@ -12,6 +12,16 @@ import { Modal } from "./Modal/Modal";
 import { Footer } from "./Footer/Footer";
 import { FormLoading } from "./CustomLoaders/CustomLoaders";
 import { useInView } from 'react-intersection-observer';
+import useGeoLocation from "react-ipgeolocation";
+import SiteEN from "../utils/siteEn.json";
+import SiteUa from "../utils/siteUa.json";
+import SiteRu from "../utils/siteRu.json";
+import ProfileEn from "../utils/profileEn.json";
+import ProfileUa from "../utils/profileUa.json";
+import ProfileRu from "../utils/profileRu.json";
+import ProjectsEn from "../utils/projectsEn.json";
+import ProjectsUa from "../utils/projectsUa.json";
+import ProjectsRu from "../utils/projectsRu.json";
 
 
 
@@ -30,6 +40,39 @@ export const App= () => {
   const { ref, inView } = useInView({
     threshold: 1,
   });
+  const location = useGeoLocation();
+  const country = location.country ? location.country : "";
+  const [langValue, setLangValue] = useState('UA');
+  const [siteLanguage, setSiteLanguage] = useState(SiteUa);
+  const [profileLanguage, setProfileLanguage] = useState(ProfileUa);
+  const [projectLanguage, setProjectLanguage] = useState(ProjectsUa);
+
+
+  useEffect(() => {
+    if (country === 'UA') {
+      setLangValue('UA');
+    } else {
+      setLangValue('EN');
+    }
+  },[country]);
+  
+
+  useEffect(() => {
+    if (langValue === "UA") {
+      setSiteLanguage(SiteUa);
+      setProfileLanguage(ProfileUa);
+      setProjectLanguage(ProjectsUa);
+    } else if (langValue === "RU") {
+      setSiteLanguage(SiteRu);
+      setProfileLanguage(ProfileRu);
+      setProjectLanguage(ProjectsRu);
+    } else {
+      setSiteLanguage(SiteEN);
+      setProfileLanguage(ProfileEn);
+      setProjectLanguage(ProjectsEn);
+    }
+  },[langValue])
+  
  
  
 
@@ -76,6 +119,9 @@ export const App= () => {
         toStackRef={toStackRef}
         toPortfolioRef={toPortfolioRef}
         toContactRef={toContactRef}
+        langValue={langValue}
+        setLangValue={setLangValue}
+        siteLanguage={siteLanguage}
       />
       <HeroSection>
         <Container>
@@ -86,17 +132,28 @@ export const App= () => {
             toStackRef={toStackRef}
             toPortfolioRef={toPortfolioRef}
             toContactRef={toContactRef}
+            profileLanguage={profileLanguage}
+            siteLanguage={siteLanguage}
           /> 
         </Container>
       </HeroSection>
       <AboutSection >
         <Container>
-          <AboutUsSection toAboutUsRef={toAboutUsRef}/>
+          <AboutUsSection 
+            toAboutUsRef={toAboutUsRef}
+            profileLanguage={profileLanguage}
+            siteLanguage={siteLanguage}
+          />
         </Container>
       </AboutSection>
       <Section>
         <Container>
-          <StackSection toStackRef={toStackRef}/>
+          <StackSection 
+            toStackRef={toStackRef}
+            profileLanguage={profileLanguage}
+            siteLanguage={siteLanguage}
+            projectLanguage={projectLanguage}
+          />
         </Container>
       </Section>
       <Section>
@@ -105,6 +162,8 @@ export const App= () => {
             toPortfolioRef={toPortfolioRef}
             openPortfolioModal={openPortfolioModal}
             setPortfolioModalData={setPortfolioModalData}
+            siteLanguage={siteLanguage}
+            projectLanguage={projectLanguage}
           />
         </Container>
       </Section>
@@ -115,10 +174,16 @@ export const App= () => {
             openContactModal={openContactModal}
             setSuccess={setSuccess}
             setIsLoading={setIsLoading}
+            siteLanguage={siteLanguage}
+            profileLanguage={profileLanguage}
           />
         </Container>
       </ContactSection>
-      <Footer backToTopRef={backToTopRef}/>
+      <Footer 
+        backToTopRef={backToTopRef}
+        siteLanguage={siteLanguage}
+        profileLanguage={profileLanguage}
+      />
       {(isPortfolioModal || isContactModal) && 
         <Modal
           isPortfolioModal={isPortfolioModal}
@@ -127,6 +192,7 @@ export const App= () => {
           closeContactModal={closeContactModal}
           portfolioModalData={portfolioModalData}
           isSuccess={isSuccess}
+          siteLanguage={siteLanguage}
         />
       }
     </>

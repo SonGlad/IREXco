@@ -1,0 +1,1378 @@
+[
+    {
+        "id": "R_kgDOJCT8iQ",
+        "name": "Web Studio",
+        "type": "Landing",
+        "translation": "Фронтенд",
+        "createdAt": "2023-02-25T11:43:34Z",
+        "coverImage": "https://i.imgur.com/46xW74Z.jpg",
+        "homepageUrl": "https://songlad.github.io/goit-markup-hw-07/",
+        "img_url": [
+            {"url": "https://i.imgur.com/mxCRX6X.jpg"},
+            {"url": "https://i.imgur.com/5KvAPSY.jpg"},
+            {"url": "https://i.imgur.com/BkYvBDd.jpg"},
+            {"url": "https://i.imgur.com/XMYTpHN.jpg"},
+            {"url": "https://i.imgur.com/7hZNWVZ.jpg"},
+            {"url": "https://i.imgur.com/9HrluRm.jpg"}
+        ],
+        "figma_url": "https://www.figma.com/file/B1m2uk25m1eAgroESAuM2g/Web-Studio-(Version-3.0)?type=design&node-id=297046-1554&mode=design&t=1cppg2r9x6S14FlE-0",
+        "description": "Web Studio представляє собою верстку сайту, що складається з 2 сторінок. На кожній сторінці присутні Header, Main і Footer. Головна сторінка (Studio) складається з 5 секцій – Hero, Strategy, What we are doing, Our Team, Customers. Сторінка Portfolio складається лише з однієї секції та являє собою список робіт з майбутньою можливістю сортування проєктів. Верстка проєкту адаптивна та виконана повністю з урахуванням усіх сучасних вимог до адаптивності: для мобільних, планшетних і ПК пристроїв. Усі зображення ретинізовані. Також на проєкті реалізовано мобільне меню / бургер і модальне вікно.",
+        "technical_task": null,
+        "technologies": [
+            {   "name": "HTML5",
+                "link": "https://html.spec.whatwg.org"
+            },
+            {   "name": "CSS3",
+                "link": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+            },            
+            {   "name": "JavaScript",
+                "link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript"
+            },
+            {   "name": "Visual Studio",
+                "link": "https://code.visualstudio.com"
+            },
+            {   "name": "Git",
+                "link": "https://git-scm.com"
+            },
+            {   "name": "GitHub",
+                "link": "https://github.com"
+            }
+        ],
+        "libraries":[
+            {   "name": "jSDelivr (body-scroll-lock)",
+                "link": "https://www.jsdelivr.com/package/npm/body-scroll-lock"
+            }
+        ],
+        "languages": {
+            "totalCount": 3,
+            "edges": [
+              {
+                "size": 33831,
+                "node": {
+                  "name": "CSS"
+                }
+              },
+              {
+                "size": 114187,
+                "node": {
+                  "name": "HTML"
+                }
+              },
+              {
+                "size": 11697,
+                "node": {
+                  "name": "JavaScript"
+                }
+              }
+            ]
+        }
+    },
+    {
+        "id": "R_kgDOJHaXKg",
+        "name": "ANEMONE",
+        "type": "Landing, Team",
+        "translation": "Фронтенд, Командний",
+        "createdAt": "2023-03-09T13:24:51Z",
+        "homepageUrl": "https://songlad.github.io/flower-team-proj/",
+        "coverImage": "https://i.imgur.com/w73bLw4.jpg",
+        "img_url": [
+            {"url": "https://i.imgur.com/k1bktEh.jpg"},
+            {"url": "https://i.imgur.com/UGtdINk.jpg"},
+            {"url": "https://i.imgur.com/YRue2Z4.jpg"},
+            {"url": "https://i.imgur.com/ZoPZIuX.jpg"},
+            {"url": "https://i.imgur.com/jUUYUXH.jpg"},
+            {"url": "https://i.imgur.com/HqMydeG.jpg"}
+        ],
+        "figma_url": "https://www.figma.com/file/RDxxmxf8TTabgED6KpHfK2/Flower-studio?type=design&node-id=0-1&mode=design&t=3Vb3qE93FnTQX2jm-0",
+        "description": "Anemone – командний проєкт, який представляє собою односторінковий сайт з адаптивною версткою, виконаний відповідно до всіх сучасних вимог, включаючи ретинізацію зображень. У проєкті також реалізовано мобільне меню / бургер, кілька модальних вікон, підключено слайдери та анімації. Проєкт зібраний на Vite. Усі елементи додатку, а також їхні стилі, підключені модульно. Додаток Anemone складається з Header, Footer та Main. Основна частина включає 5 секцій: Hero, About, Store, Delivery, Blog. Кожна з цих секцій самодостатня та має свою окрему функціональність.",
+        "technical_task": "https://docs.google.com/document/d/1J9HpswdNyvsLUXMxBtpoSkmn8vlDLqNC/edit?usp=sharing&ouid=106322449708075322597&rtpof=true&sd=true",
+        "technologies": [
+            {   "name": "HTML5",
+                "link": "https://html.spec.whatwg.org"
+            },
+            {   "name": "CSS3",
+                "link": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+            },            
+            {   "name": "JavaScript",
+                "link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript"
+            },
+            {   "name": "Visual Studio",
+                "link": "https://code.visualstudio.com"
+            },
+            {   "name": "Git",
+                "link": "https://git-scm.com"
+            },
+            {   "name": "GitHub",
+                "link": "https://github.com"
+            }
+        ],
+        "libraries":[
+            {   "name": "Vite",
+                "link": "https://vitejs.dev"
+            },
+            {   "name": "jQuery",
+                "link": "https://jquery.com/download/"
+            },
+            {   "name": "Animate.css",
+                "link": "https://animate.style"
+            },
+            {   "name": "Animista",
+                "link": "https://animista.net"
+            },
+            {   "name": "cdnjs (simplelightbox)",
+                "link": "https://cdnjs.com/libraries/simplelightbox"
+            },
+            {   "name": "jSDelivr (slick-carousel)",
+                "link": "https://www.jsdelivr.com/package/npm/slick-carousel"
+            },
+            {   "name": "jSDelivr (body-scroll-lock)",
+                "link": "https://www.jsdelivr.com/package/npm/body-scroll-lock"
+            },
+            {   "name": "jSDelivr (smooth-scroll)",
+                "link": "https://www.jsdelivr.com/package/npm/smooth-scroll"
+            }
+        ],
+        "languages": {
+            "totalCount": 3,
+            "edges": [
+              {
+                "size": 48523,
+                "node": {
+                  "name": "CSS"
+                }
+              },
+              {
+                "size": 117459,
+                "node": {
+                  "name": "HTML"
+                }
+              },
+              {
+                "size": 17954,
+                "node": {
+                  "name": "JavaScript"
+                }
+              }
+            ]
+        }
+    },
+    {
+        "id": "R_kgDOJtpbxg",
+        "name": "Image Search",
+        "type": "Landing",
+        "translation": "Фронтенд",
+        "createdAt": "2023-06-10T09:14:04Z",
+        "homepageUrl": "https://songlad.github.io/goit-js-hw-11/",
+        "coverImage": "https://i.imgur.com/97NRxqo.jpg",
+        "img_url": [
+            {"url": "https://i.imgur.com/bd3nujv.jpg"},
+            {"url": "https://i.imgur.com/WyaS7Wi.jpg"},
+            {"url": "https://i.imgur.com/Krhd8bb.jpg"},
+            {"url": "https://i.imgur.com/4KY8TgU.jpg"},
+            {"url": "https://i.imgur.com/g5ErU4P.jpg"},
+            {"url": "https://i.imgur.com/97NRxqo.jpg"}
+        ],
+        "figma_url": null,
+        "description": "Image Search — це односторінковий адаптивний веб-додаток, створений за допомогою JS. Він дозволяє легко й швидко шукати будь-які зображення, використовуючи базу даних сервісу Pixabay API. Для цього достатньо ввести назву зображення в поле пошуку та здійснити пошук. Після успішного завершення пошуку на основі вашого запиту, разом із зображеннями буде виведено сповіщення про кількість знайдених зображень. Якщо за вашим запитом нічого не знайдено, також з'явиться відповідне сповіщення. Початковий запит включає 40 зображень. Якщо за запитом знайдено більше, інші зображення можна переглянути, натиснувши кнопку 'Load More' внизу екрану. На кожен ваш запит також буде виводитися повідомлення про кількість переглянутих зображень і тих, що залишилися. Усі сповіщення підключені за допомогою бібліотеки 'Notiflix'. При натисканні на будь-яке зображення відкривається модальне вікно з вбудованим слайдером, що дозволяє переглядати зображення в їх оригінальному розмірі та прокручувати їх, не виходячи з вікна. Підключення модального вікна, а також слайдер реалізовані за допомогою бібліотеки 'Simple Lightbox'.",
+        "technical_task": null,
+        "technologies": [
+            {   "name": "HTML5",
+                "link": "https://html.spec.whatwg.org"
+            },
+            {   "name": "CSS3",
+                "link": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+            },            
+            {   "name": "JavaScript",
+                "link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript"
+            },
+            {   "name": "Visual Studio",
+                "link": "https://code.visualstudio.com"
+            },
+            {   "name": "Handlebars",
+                "link": "https://handlebarsjs.com"
+            },
+            {   "name": "SASS / SCSS",
+                "link": "https://sass-lang.com"
+            },
+            {   "name": "Axios",
+                "link": "https://axios-http.com/docs/api_intro"
+            },
+            {   "name": "Git",
+                "link": "https://git-scm.com"
+            },
+            {   "name": "GitHub",
+                "link": "https://github.com"
+            }
+        ],
+        "libraries":[
+            {   "name": "Parcel",
+                "link": "https://parceljs.org"
+            },
+            {   "name": "cdnjs (TweenMax.min.js)",
+                "link": "https://www.cdnpkg.com/gsap/file/TweenMax.min.js/"
+            },
+            {   "name": "GSAP",
+                "link": "https://gsap.com"
+            },
+            {   "name": "Notiflix",
+                "link": "https://notiflix.github.io/notify"
+            },
+            {   "name": "SimpleLightbox",
+                "link": "https://simplelightbox.com"
+            },
+            {   "name": "Modern Normalizer",
+                "link": "https://www.npmjs.com/package/modern-normalize"
+            },
+            {   "name": "Pixabay API(as backend)",
+                "link": "https://pixabay.com/api/docs/"
+            }
+        ],
+        "languages": {
+            "totalCount": 4,
+            "edges": [
+              {
+                "size": 2411,
+                "node": {
+                  "name": "HTML"
+                }
+              },
+              {
+                "size": 5652,
+                "node": {
+                  "name": "SCSS"
+                }
+              },
+              {
+                "size": 9871,
+                "node": {
+                  "name": "JavaScript"
+                }
+              },
+              {
+                "size": 738,
+                "node": {
+                  "name": "Handlebars"
+                }
+              }
+            ]
+        }
+    },
+    {
+        "id": "R_kgDOJytD_w",
+        "name": "TastyTreats",
+        "type": "Landing, Team",
+        "translation": "Фронтенд, Командний",
+        "createdAt": "2023-06-22T12:21:48Z",
+        "coverImage": "https://i.imgur.com/MYiU8Xk.jpg",
+        "homepageUrl": "https://songlad.github.io/tasty-treats-team-project/",
+        "img_url": [
+            {"url": "https://i.imgur.com/g4f15ZL.jpg"},
+            {"url": "https://i.imgur.com/un4a2J4.jpg"},
+            {"url": "https://i.imgur.com/pdXklVW.jpg"},
+            {"url": "https://i.imgur.com/617BZIy.jpg"},
+            {"url": "https://i.imgur.com/3tVYzTB.jpg"},
+            {"url": "https://i.imgur.com/kCWCnSw.jpg"},
+            {"url": "https://i.imgur.com/4xmzH0d.jpg"},
+            {"url": "https://i.imgur.com/jxSgJSv.jpg"}
+        ],
+        "figma_url": "https://www.figma.com/file/DfLTK1bjDwKKxkEJ1FTyFF/TastyTreats?type=design&mode=design&t=fsIaT2Kuqvs18w7F-0",
+        "description": "TastyTrearts - це кулінарна майстерність, яка поєднується з онлайн-освітою! Командою шеф-майстерів, пристрасно захоплених ділитися своїми знаннями через захоплюючі кулінарні майстер-класи, було прийнято рішення, про створення сайту-додатку для того, щоб забезпечити всіх бажаючих бездоганним досвідом, де люди зможуть дослідити світ смачних рецептів та покрокових відеоуроків. Це веб-додаток є командним проєктом, термін реалізації якого склав 7 днів. TastyTreats це двохсторінковий сайт-додаток, який містить кілька розділів. Вони допоможуть користувачу легко та зручно зробити вибір, та замовити смачні рецепти страв з отриманням покрокового відеокерівництва з його приготування. На головній сторінці сайту є можливість вибору теми сайту: це світлі чи темні кольори та зручна корзина замовлення. У розділі 'ALL CATEGORIES', користувачі мають можливість вибирати страви та інгредієнти. Шляхом вибору конкретних інгредієнтів сайт надасть користувачеві страви, які включають ці інгредієнти. Розділ 'Галерея' має зручний фільтр та функцію пошуку, які дозволяють користувачам знаходити конкретні страви, а також застосовувати фільтри за часом приготування, країною походження та інгредієнтами. Крім того, надаються фотографії страв разом з їх рейтингом серед користувачів. Також у розділі 'Галерея' передбачена можливість натискання на фото будь-якої страви, при цьому відбудеться відкриття вікна, де буде доступне відео з інструкцією з приготування цієї страви. Також будуть вказані необхідні інгредієнти та їх пропорції, з описом процесу приготування даної страви. Плюс до всього вказано час її приготування та рейтинг. Після відвідування 'Галереї', вибору страви та перегляду навчального відео, у користувача є можливість написати відгук про дану страву та поставити оцінку. І ця можливість відкривається у зручному модальному вікні. Розділ 'POPULAR RECIPES' відображає фото, назву та опис найпопулярніших страв. На другій сторінці, за назвою 'FAVORITES', користувачі можуть побачити страви, які вони відзначили як цікаві в розділі 'Галерея'. Також на сторінці доступний зручний фільтр, який дозволяє знайти страви за категоріями. Плюс, якщо страва більше не цікавить користувача, вона може бути легко видалена з цього розділу.",
+        "technical_task": "https://docs.google.com/spreadsheets/d/1kRAq5bP7X4DqQ-ORzrWMvcqrqwqlXRTe5dba0VHEkK4/edit?usp=sharing",
+        "technologies": [
+            {   "name": "HTML5",
+                "link": "https://html.spec.whatwg.org"
+            },
+            {   "name": "CSS3",
+                "link": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+            },            
+            {   "name": "JavaScript",
+                "link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript"
+            },
+            {   "name": "Visual Studio",
+                "link": "https://code.visualstudio.com"
+            },
+            {   "name": "Handlebars",
+                "link": "https://handlebarsjs.com"
+            },
+            {   "name": "SASS / SCSS",
+                "link": "https://sass-lang.com"
+            },
+            {   "name": "Axios",
+                "link": "https://axios-http.com/docs/api_intro"
+            },
+            {   "name": "Git",
+                "link": "https://git-scm.com"
+            },
+            {   "name": "GitHub",
+                "link": "https://github.com"
+            },
+            {   "name": "Postman",
+                "link": "https://www.postman.com"
+            }
+        ],
+        "libraries":[
+            {   "name": "Parcel",
+                "link": "https://parceljs.org"
+            },
+            {   "name": "Modern Normalizer",
+                "link": "https://www.npmjs.com/package/modern-normalize"
+            },
+            {   "name": "Notiflix",
+                "link": "https://notiflix.github.io/notify"
+            },
+            {   "name": "Swiper",
+                "link": "https://swiperjs.com"
+            },
+            {   "name": "Tui Pagination",
+                "link": "https://www.npmjs.com/package/tui-pagination"
+            },
+            {   "name": "jSDelivr (body-scroll-lock)",
+                "link": "https://www.jsdelivr.com/package/npm/body-scroll-lock"
+            },
+            {   "name": "cdnjs (animate.min.css)",
+                "link": "https://cdnjs.com/libraries/animate.css"
+            },
+            {   "name": "lodash.debounce",
+                "link": "https://www.npmjs.com/package/lodash.debounce"
+            },
+            {   "name": "Tasty Treats API(as backend)",
+                "link": "https://tasty-treats-backend.p.goit.global/api-docs/"
+            }
+        ],
+        "languages": {
+            "totalCount": 4,
+            "edges": [
+              {
+                "size": 27070,
+                "node": {
+                  "name": "HTML"
+                }
+              },
+              {
+                "size": 70690,
+                "node": {
+                  "name": "SCSS"
+                }
+              },
+              {
+                "size": 58423,
+                "node": {
+                  "name": "JavaScript"
+                }
+              },
+              {
+                "size": 18677,
+                "node": {
+                  "name": "Handlebars"
+                }
+              }
+            ]
+        }
+    },
+    {
+        "id": "R_kgDOKGJh7w",
+        "name": "Ruh",
+        "role": "Developer",
+        "type": "Landing",
+        "translation": "Фронтенд",
+        "createdAt": "2023-08-11T20:45:13Z",
+        "homepageUrl": "https://songlad.github.io/ruh/",
+        "coverImage": "https://i.imgur.com/PbqGDpH.jpg",
+        "img_url": [
+            {"url": "https://i.imgur.com/kn5pSta.jpg"},
+            {"url": "https://i.imgur.com/NAH7cBn.jpg"},
+            {"url": "https://i.imgur.com/QcIyyPS.jpg"},
+            {"url": "https://i.imgur.com/Vjl6GlU.jpg"},
+            {"url": "https://i.imgur.com/gBs9fxh.jpg"},
+            {"url": "https://i.imgur.com/PbqGDpH.jpg"}
+        ],
+        "figma_url": "https://www.figma.com/file/lIqGEEOrEBBk5otVi1NG64/%7C-R-O-O-H-%7C-(Copy)-(Copy)?type=design&node-id=0-1&mode=design&t=3GjejMOtxEJxewxC-0",
+        "description": "Ruh - це 3-сторінковий веб-додаток, верстка якого виконана в адаптивному режимі за допомогою HTML, CSS та JS. Використання JS у цьому проєкті зводиться до мінімального керування додатком, такого як відкриття та закриття модального вікна, рендеринг файлів у самому модальному вікні, а також акордеоном на головній сторінці в секції Hero. На головній сторінці є 2 слайдери, підключені за допомогою бібліотеки 'Swiper'. Інша частина JS коду використовується для більш гнучкого та плавного керування слайдерами, а також налаштування адаптивного дизайну на 2-й сторінці.",
+        "technical_task": null,
+        "technologies": [
+            {   "name": "HTML5",
+                "link": "https://html.spec.whatwg.org"
+            },
+            {   "name": "CSS3",
+                "link": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+            },            
+            {   "name": "JavaScript",
+                "link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript"
+            },
+            {   "name": "Visual Studio",
+                "link": "https://code.visualstudio.com"
+            },
+            {   "name": "SASS / SCSS",
+                "link": "https://sass-lang.com"
+            },
+            {   "name": "Git",
+                "link": "https://git-scm.com"
+            },
+            {   "name": "GitHub",
+                "link": "https://github.com"
+            },
+            {   "name": "Postman",
+                "link": "https://www.postman.com"
+            }
+        ],
+        "libraries":[
+            {   "name": "Parcel",
+                "link": "https://parceljs.org"
+            },
+            {   "name": "Modern Normalizer",
+                "link": "https://www.npmjs.com/package/modern-normalize"
+            },
+            {   "name": "Swiper",
+                "link": "https://swiperjs.com"
+            }
+        ],
+        "languages": {
+            "totalCount": 4,
+            "edges": [
+              {
+                "size": 442270,
+                "node": {
+                  "name": "HTML"
+                }
+              },
+              {
+                "size": 13566,
+                "node": {
+                  "name": "JavaScript"
+                }
+              },
+              {
+                "size": 787,
+                "node": {
+                  "name": "SCSS"
+                }
+              },
+              {
+                "size": 94868,
+                "node": {
+                  "name": "CSS"
+                }
+              }
+            ]
+        }
+    },
+    {
+        "id": "R_kgDOKKmljg",
+        "name": "Image Finder",
+        "type": "Landing",
+        "translation": "Фронтенд",
+        "createdAt": "2023-08-23T17:11:33Z",
+        "coverImage": "https://i.imgur.com/E8416Nl.jpg",
+        "homepageUrl": "https://songlad.github.io/goit-react-hw-04-image-finder/",
+        "img_url": [
+            {"url": "https://i.imgur.com/PvGadS9.jpg"},
+            {"url": "https://i.imgur.com/6vmSxNG.jpg"},
+            {"url": "https://i.imgur.com/RuYfswy.jpg"},
+            {"url": "https://i.imgur.com/E8416Nl.jpg"},
+            {"url": "https://i.imgur.com/gJwYoCj.jpg"},
+            {"url": "https://i.imgur.com/BuFsFaZ.jpg"}
+        ],
+        "figma_url": null,
+        "description": "Image Finder — це односторінковий, адаптивний веб-додаток, створений повністю за допомогою бібліотеки React. Він дозволяє легко й просто здійснити пошук будь-яких зображень, використовуючи базу даних сервісу Pixabay API. Для цього достатньо ввести в поле введення назву зображення і виконати пошук. Коли, на основі вашого запиту, пошук буде успішно завершений, разом із зображеннями буде виведено повідомлення. У разі, якщо за вашим запитом нічого не було знайдено, також з'явиться відповідне повідомлення. Початковий запит включає 12 зображень. Якщо ж на основі пошуку було знайдено більше, інші зображення можна переглянути, натиснувши на кнопку “Load More” в нижній частині екрана. Усі повідомлення підключені за допомогою бібліотеки 'React Toastify'. При натисканні на будь-яке зображення відкриється модальне вікно, яке дозволяє переглядати зображення в їх оригінальному розмірі. При низьких швидкостях інтернету, під час очікування, можна спостерігати індикатор завантаження (Loader), підключений за допомогою бібліотеки 'React Spinners'.",
+        "technical_task": null,
+        "technologies": [
+            {   "name": "HTML5",
+                "link": "https://html.spec.whatwg.org"
+            },
+            {   "name": "CSS3",
+                "link": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+            },            
+            {   "name": "JavaScript",
+                "link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript"
+            },
+            {   "name": "React",
+                "link": "https://react.dev"
+            },
+            {   "name": "Styled Components",
+                "link": "https://styled-components.com"
+            },
+            {   "name": "Axios",
+                "link": "https://axios-http.com/docs/api_intro"
+            },
+            {   "name": "Visual Studio",
+                "link": "https://code.visualstudio.com"
+            },
+            {   "name": "Git",
+                "link": "https://git-scm.com"
+            },
+            {   "name": "GitHub",
+                "link": "https://github.com"
+            }
+        ],
+        "libraries":[
+            {   "name": "React",
+                "link": "https://react.dev"
+            },
+            {   "name": "React Spinners",
+                "link": "https://www.npmjs.com/package/react-spinners"
+            },
+            {   "name": "React Toastify",
+                "link": "https://www.npmjs.com/package/react-toastify"
+            },
+            {   "name": "Pixabay API(as backend)",
+                "link": "https://pixabay.com/api/docs/"
+            }
+        ],
+        "languages": {
+            "totalCount": 3,
+            "edges": [
+              {
+                "size": 4831,
+                "node": {
+                  "name": "HTML"
+                }
+              },
+              {
+                "size": 22154,
+                "node": {
+                  "name": "JavaScript"
+                }
+              },
+              {
+                "size": 422,
+                "node": {
+                  "name": "CSS"
+                }
+              }
+            ]
+        }
+    },
+        {
+        "id": "R_kgDOKQ8EIQ",
+        "name": "Phonebook",
+        "type": "Landing, Backend, FullStack",
+        "translation": "Фронтенд, Бекенд, Full-Stack",
+        "createdAt": "2023-09-08T08:30:47Z",
+        "homepageUrl": "https://songlad.github.io/goit-react-hw-08-phonebook/",
+        "coverImage": "https://i.imgur.com/LP44Lh4.jpg",
+        "img_url": [
+            {"url": "https://i.imgur.com/YqiSwi1.jpg"},
+            {"url": "https://i.imgur.com/AUsJIgf.jpg"},
+            {"url": "https://i.imgur.com/f7zZ11m.jpg"},
+            {"url": "https://i.imgur.com/gfgPs6R.jpg"},
+            {"url": "https://i.imgur.com/AiVxNyF.jpg"},
+            {"url": "https://i.imgur.com/ckgWgGg.jpg"},
+            {"url": "https://i.imgur.com/LP44Lh4.jpg"}
+        ],
+        "figma_url": null,
+        "description": "Phonebook — це трьохсторінковий адаптивний веб-додаток, створений за допомогою бібліотек REACT/REDUX. Він адаптований тільки для ПК і планшетів та не призначений для використання на мобільних пристроях. Додатком не можна користуватися, якщо ви не зареєстровані. Однак це скоріше плюс, ніж мінус, адже ваші контакти залишаться конфіденційними, і тільки ви матимете можливість їх переглядати та керувати ними. Сайт має зручну навігацію, яка дозволяє легко переміщуватися та орієнтуватися на ньому. Усі основні параметри та дані легко доступні й інтуїтивно зрозумілі. У додатку вбудована база даних усіх країн світу з їхніми телефонними кодами, що дозволяє вам не лише легко знайти потрібний код країни, а й саму країну. Також є фільтрація та пошук як країн (за назвою або кодом країни), так і контактів. Передбачене групове керування контактами. Ви також можете редагувати контакти через спливаюче вікно керування. Для цього достатньо навести курсор на контакт і клікнути на нього. У вікні редагування ви можете змінити код країни, ім'я користувача та його номер телефону.",
+        "technical_task": null,
+        "technologies": [
+            {   "name": "HTML5",
+                "link": "https://html.spec.whatwg.org"
+            },            
+            {   "name": "JavaScript",
+                "link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript"
+            },
+            {   "name": "React",
+                "link": "https://react.dev"
+            },
+            {   "name": "Redux",
+                "link": "https://redux.js.org"
+            },
+            {   "name": "Styled Components",
+                "link": "https://styled-components.com"
+            },
+            {   "name": "Axios",
+                "link": "https://axios-http.com/docs/api_intro"
+            },
+            {   "name": "Visual Studio",
+                "link": "https://code.visualstudio.com"
+            },
+            {   "name": "Git",
+                "link": "https://git-scm.com"
+            },
+            {   "name": "GitHub",
+                "link": "https://github.com"
+            },
+            {   "name": "Postman",
+                "link": "https://www.postman.com"
+            },
+            {   "name": "Node.Js",
+                "link": "https://nodejs.org/en" 
+            },
+            {   "name": "MongoDB",
+                "link": "https://account.mongodb.com/account/login" 
+            }
+        ],
+        "libraries":[
+            {   "name": "React",
+                "link": "https://react.dev"
+            },
+            {   "name": "Redux",
+                "link": "https://redux.js.org"
+            },
+            {   "name": "React Spinners",
+                "link": "https://www.npmjs.com/package/react-spinners"
+            },
+            {   "name": "React Toastify",
+                "link": "https://www.npmjs.com/package/react-toastify"
+            },
+            {   "name": "Eslint Plugin Import",
+                "link": "https://www.npmjs.com/package/eslint-plugin-import"
+            },
+            {   "name": "Modern Normalize",
+                "link": "https://www.npmjs.com/package/modern-normalize"
+            },
+            {   "name": "NanoId",
+                "link": "https://www.npmjs.com/package/nanoid"
+            },
+            {   "name": "Country Codes List",
+                "link": "https://www.npmjs.com/package/country-codes-list"
+            },
+            {   "name": "Express",
+                "link": "https://www.npmjs.com/package/express"
+            },
+            {   "name": "MongoDB",
+                "link": "https://www.npmjs.com/package/mongodb"
+            },
+            {   "name": "Mongoose",
+                "link": "https://www.npmjs.com/package/mongoose"
+            },
+            {   "name": "Nodemailer",
+                "link": "https://www.npmjs.com/package/nodemailer"
+            }
+        ],
+        "languages": {
+            "totalCount": 2,
+            "edges": [
+              {
+                "size": 4905,
+                "node": {
+                  "name": "HTML"
+                }
+              },
+              {
+                "size": 142645,
+                "node": {
+                  "name": "JavaScript"
+                }
+              }
+            ]
+        }
+    },
+    {
+        "id": "R_kgDOK_6p1w",
+        "name": "HealthyHub",
+        "type": "FullStack, Backend, Landing, Team",
+        "translation": "Фронтенд, Бекенд, Full-Stack, Командний",
+        "createdAt": "2024-01-02T12:53:42Z",
+        "coverImage": "https://i.imgur.com/HwKGlqr.jpg",
+        "homepageUrl": "https://songlad.github.io/HealthyHub/",
+        "img_url": [
+            {"url": "https://i.imgur.com/ACSsviu.jpg"},
+            {"url": "https://i.imgur.com/H1oJZFN.jpg"},
+            {"url": "https://i.imgur.com/lXyIewE.jpg"},
+            {"url": "https://i.imgur.com/ggtghpK.jpg"},
+            {"url": "https://i.imgur.com/3DRo504.jpg"},
+            {"url": "https://i.imgur.com/UP6jJ4h.jpg"},
+            {"url": "https://i.imgur.com/1aJeRRQ.jpg"},
+            {"url": "https://i.imgur.com/JcBO7qF.jpg"},
+            {"url": "https://i.imgur.com/NYyLTwM.jpg"},
+            {"url": "https://i.imgur.com/Rb2NiBT.jpg"},
+            {"url": "https://i.imgur.com/r4FNqp4.jpg"},
+            {"url": "https://i.imgur.com/MI2C4ck.jpg"},
+            {"url": "https://i.imgur.com/HwKGlqr.jpg"}
+        ],
+        "figma_url": "https://www.figma.com/file/TY1tlWppyNqqV3HDMs2hWX/HealthyHub?type=design&node-id=0-1&mode=design&t=DjHVg3QtQV3TBpVF-0",
+        "description": "HealthyHub — це командний Full-Stack проєкт, реалізований командою з 10 розробників протягом 2 тижнів. Весь проєкт, а саме весь Front-End та Back-End, був написаний з нуля від початку до кінця, спираючись на технічне завдання та макет з Figma. HealthyHub являє собою 8-сторінковий додаток, розроблений з адаптивною версткою та виконаний відповідно до всіх сучасних вимог до неї. Цей сайт створений для тих, хто хоче нормалізувати своє харчування, стежити за щоденною нормою калорій, необхідною для підтримання поточної маси тіла або відповідно до обраного режиму. Користуватися цим додатком неможливо без особистого облікового запису. Для початку користувачеві потрібно пройти 5 етапів реєстрації та ввести свої дані: email, пароль, ім'я користувача, зріст, вагу, вік, режим дієти, вибір статі та рівень активності. Усе це необхідно для того, щоб надати користувачу якомога більш точну інформацію щодо розрахунків. У випадку, якщо користувач забув пароль, він може легко його змінити ще до входу в систему. Для цього достатньо перейти на сторінку 'Forgot Your Password' і ввести свій email. На пошту надійде лист із тимчасовим паролем, що дозволяє увійти в систему. Цей тимчасовий пароль можна буде легко змінити на сторінці 'Settings', так само як і змінити будь-які інші дані, раніше введені користувачем. На сторінці 'Settings' користувач може змінити свій аватар за бажанням. При щоденному використанні цього додатка обов'язковою складовою є оновлення свого поточного ваги. Це має бути першим дією користувача при вході в систему вперше за поточний день. На сторінці 'Recommended Food' представлений список рекомендованих продуктів з урахуванням їх калорійності. Сторінка 'Dashboard' містить підсумкову статистику зміни ваги, кількість випитої води та спожитої їжі за вибраний період. На головній сторінці користувач може вносити і редагувати кількість випитої води за день, а також бачити необхідні ліміти її споживання. Це ж стосується й їжі. Користувачеві надається можливість бачити кількість необхідних калорій, жирів, вуглеводів, а також скільки він їх уже спожив і скільки ще залишилося. У цьому допомагають зручні графіки. На сторінці 'Diary' користувач може бачити всі свої прийоми їжі протягом дня, а також самостійно ними керувати: заповнювати, коригувати або навіть видаляти.",
+        "technical_task": "https://docs.google.com/spreadsheets/d/11ue6Gk9E-Wt4ZfzEn7RdqajlrdLgEXoM/edit?usp=sharing&ouid=106322449708075322597&rtpof=true&sd=true",
+        "technologies": [
+            {   "name": "HTML5",
+                "link": "https://html.spec.whatwg.org"
+            },            
+            {   "name": "JavaScript",
+                "link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript"
+            },
+            {   "name": "React",
+                "link": "https://react.dev"
+            },
+            {   "name": "Redux",
+                "link": "https://redux.js.org"
+            },
+            {   "name": "Styled Components",
+                "link": "https://styled-components.com"
+            },
+            {   "name": "Axios",
+                "link": "https://axios-http.com/docs/api_intro"
+            },
+            {   "name": "Visual Studio",
+                "link": "https://code.visualstudio.com"
+            },
+            {   "name": "Git",
+                "link": "https://git-scm.com"
+            },
+            {   "name": "GitHub",
+                "link": "https://github.com"
+            },
+            {   "name": "Postman",
+                "link": "https://www.postman.com"
+            },
+            {   "name": "MongoDB",
+                "link": "https://www.mongodb.com/cloud/atlas/register?utm_source=google&utm_campaign=search_gs_pl_evergreen_atlas_core_prosp-brand_gic-null_emea-ua_ps-all_desktop_eng_lead&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624575&adgroup=115749710823&cq_cmp=12212624575&gad_source=1&gclid=CjwKCAiA_OetBhAtEiwAPTeQZy-VKImwt1qJHg8yNCl4a_hX5XmBxUh821Oa4HKoboH2OUpctL_ewhoCh7kQAvD_BwE"
+            },
+            {   "name": "Node.js",
+                "link": "https://nodejs.org/en"
+            },
+            {   "name": "HEALTH_EN_BACKEND",
+                "link": "https://github.com/Sheremeta-Ivan/HEALTH_EN_BACKEND"
+            }
+            
+        ],
+        "libraries":[
+            {   "name": "React",
+                "link": "https://react.dev"
+            },
+            {   "name": "Redux",
+                "link": "https://redux.js.org"
+            },
+            {   "name": "React Spinners",
+                "link": "https://www.npmjs.com/package/react-spinners"
+            },
+            {   "name": "React Toastify",
+                "link": "https://www.npmjs.com/package/react-toastify"
+            },
+            {   "name": "Eslint Plugin Import",
+                "link": "https://www.npmjs.com/package/eslint-plugin-import"
+            },
+            {   "name": "Modern Normalize",
+                "link": "https://www.npmjs.com/package/modern-normalize"
+            },
+            {   "name": "Normalize.css",
+                "link": "https://www.npmjs.com/package/normalize.css?activeTab=versions"
+            },
+            {   "name": "NanoId",
+                "link": "https://www.npmjs.com/package/nanoid"
+            },
+            {   "name": "Formik",
+                "link": "https://www.npmjs.com/package/formik"
+            },
+            {   "name": "Yup",
+                "link": "https://www.npmjs.com/package/yup"
+            },
+            {   "name": "React Charts 2",
+                "link": "https://www.npmjs.com/package/react-chartjs-2"
+            },
+            {   "name": "HEALTH_EN API(swagger)",
+                "link": "https://healthy-hub-backend-fs5j.onrender.com/api-docs/"
+            },
+            {   "name": "Bcrypt Js",
+                "link": "https://www.npmjs.com/package/bcryptjs"
+            },
+            {   "name": "Express",
+                "link": "https://www.npmjs.com/package/express"
+            },
+            {   "name": "MongoDB",
+                "link": "https://www.npmjs.com/package/mongodb"
+            },
+            {   "name": "Mongoose",
+                "link": "https://www.npmjs.com/package/mongoose"
+            },
+            {   "name": "Nodemailer",
+                "link": "https://www.npmjs.com/package/nodemailer"
+            },
+            {   "name": "Cloudinary",
+                "link": "https://www.npmjs.com/package/cloudinary"
+            }
+        ],
+        "languages": {
+            "totalCount": 2,
+            "edges": [
+              {
+                "size": 5087,
+                "node": {
+                  "name": "HTML"
+                }
+              },
+              {
+                "size": 350577,
+                "node": {
+                  "name": "JavaScript"
+                }
+              }
+            ]
+        }
+    },
+    {
+        "id": "R_kgDOLG9kRA",
+        "name": "CV_WebSite",
+        "type": "Landing",
+        "translation": "Фронтенд",
+        "createdAt": "2024-01-19T13:17:33Z",
+        "homepageUrl": "https://songlad.github.io/CV_WebSite/",
+        "coverImage": "https://i.imgur.com/YsbOt42.jpg",
+        "img_url": [
+            {"url": "https://i.imgur.com/m5Rkpk2.png"},
+            {"url": "https://i.imgur.com/YsbOt42.jpg"},
+            {"url": "https://i.imgur.com/dBu2OU2.jpg"},
+            {"url": "https://i.imgur.com/CTGCKYu.jpg"},
+            {"url": "https://i.imgur.com/YPv9yKZ.jpg"},
+            {"url": "https://i.imgur.com/HOE7VaU.jpg"},
+            {"url": "https://i.imgur.com/nRPvSFS.jpg"},
+            {"url": "https://i.imgur.com/KG2Ygne.jpg"},
+            {"url": "https://i.imgur.com/qWlTjD5.jpg"}
+        ],
+        "figma_url": null,
+        "description": "CV_WebSite — це 6-сторінковий веб-додаток, створений як сайт портфоліо для розробника. Він може бути як основним, так і додатковим інструментом вашого резюме. Сайт повністю адаптивний і виконаний відповідно до всіх сучасних вимог до такої розробки. Він однаково добре виглядає на всіх видах пристроїв. Додаток створено за допомогою бібліотеки REACT/REDUX з повною імітацією роботи з сервером. Усі дані, що відображаються в додатку, знаходяться в трьох JSON-файлах (імітація отримання даних з бэкенда) і з легкістю можуть бути змінені або адаптовані під іншого користувача. У разі необхідності або наявності розгорнутого бэкенда це додаток можна легко підключити до нього, завдяки заздалегідь налаштованій бібліотеці управління станом REDUX. Кожна сторінка цього сайту є самодостатньою та містить усю необхідну інформацію про розробника. При вході на сайт вас зустрічає сторінка 'Home' з іменем розробника, його коротким описом та можливістю переглянути його резюме. Сторінка 'About' містить розширену інформацію про розробника, включаючи статистику з GitHub. Також на цій сторінці є легка ненав'язлива анімація, яка надає їй більш живий вигляд. На сторінці 'Education' знаходиться інформація про освіту розробника та навчальні заклади, які він закінчив. На цій сторінці також присутні анімовані слайдери, що надають їй більш атмосферний вигляд. Усі фотографії можна переглянути в окремому вікні, просто клікнувши на кнопку на самій фотографії. Сторінка 'Skills' містить інформацію про професійні навички розробника, а також офіційну статистику з GitHub по всіх репозиторіях і мовах програмування. Сторінка 'Portfolio' представляє собою колекцію всіх проектів розробника. Щоб отримати інформацію про той чи інший проект, над яким працював розробник, достатньо навести курсор на цікавий проект і відкрити його, після чого відкриється окреме вікно з усією детальною інформацією про проект. Сторінка 'Contact' дозволяє зв'язатися з самим розробником.",
+        "technical_task": null,
+        "technologies": [
+            {   "name": "HTML5",
+                "link": "https://html.spec.whatwg.org"
+            },            
+            {   "name": "JavaScript",
+                "link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript"
+            },
+            {   "name": "React",
+                "link": "https://react.dev"
+            },
+            {   "name": "Redux",
+                "link": "https://redux.js.org"
+            },
+            {   "name": "Styled Components",
+                "link": "https://styled-components.com"
+            },
+            {   "name": "Visual Studio",
+                "link": "https://code.visualstudio.com"
+            },
+            {   "name": "Git",
+                "link": "https://git-scm.com"
+            },
+            {   "name": "GitHub",
+                "link": "https://github.com"
+            }
+            
+        ],
+        "libraries":[
+            {   "name": "React",
+                "link": "https://react.dev"
+            },
+            {   "name": "Redux",
+                "link": "https://redux.js.org"
+            },
+            {   "name": "React Spinners",
+                "link": "https://www.npmjs.com/package/react-spinners"
+            },
+            {   "name": "Eslint Plugin Import",
+                "link": "https://www.npmjs.com/package/eslint-plugin-import"
+            },
+            {   "name": "Modern Normalize",
+                "link": "https://www.npmjs.com/package/modern-normalize"
+            },
+            {   "name": "Normalize.css",
+                "link": "https://www.npmjs.com/package/normalize.css?activeTab=versions"
+            },
+            {   "name": "NanoId",
+                "link": "https://www.npmjs.com/package/nanoid"
+            },
+            {   "name": "React Charts 2",
+                "link": "https://www.npmjs.com/package/react-chartjs-2"
+            },
+            {   "name": "Anime.js",
+                "link": "https://www.npmjs.com/package/animejs"
+            },
+            {   "name": "React GitHub Calendar",
+                "link": "https://www.npmjs.com/package/react-github-calendar"
+            },
+            {   "name": "React Intersection Observer",
+                "link": "https://www.npmjs.com/package/react-intersection-observer"
+            },
+            {   "name": "React Tooltip",
+                "link": "https://www.npmjs.com/package/react-tooltip"
+            },
+            {   "name": "Typewriter Effect",
+                "link": "https://www.npmjs.com/package/typewriter-effect"
+            },
+            {   "name": "Swiper",
+                "link": "https://swiperjs.com"
+            },
+            {   "name": "Formik",
+                "link": "https://www.npmjs.com/package/formik"
+            },
+            {   "name": "Yup",
+                "link": "https://www.npmjs.com/package/yup"
+            },
+            {   "name": "EmailJS",
+                "link": "https://www.npmjs.com/package/@emailjs/browser"
+            }
+        ],
+        "languages": {
+            "totalCount": 2,
+            "edges": [
+              {
+                "size": 5095,
+                "node": {
+                  "name": "HTML"
+                }
+              },
+              {
+                "size": 342048,
+                "node": {
+                  "name": "JavaScript"
+                }
+              }
+            ]
+        }
+    },
+    {
+        "id": "R_kgDOLeXpTQ",
+        "name": "Neuralink",
+        "type": "Landing",
+        "translation": "Фронтенд",
+        "createdAt": "2024-03-10T18:57:41Z",
+        "homepageUrl": "https://songlad.github.io/neuralink/",
+        "coverImage": "https://i.imgur.com/JC8ENHh.jpg",
+        "img_url": [
+            {"url": "https://i.imgur.com/JC8ENHh.jpg"},
+            {"url": "https://i.imgur.com/tpRRXoc.jpg"},
+            {"url": "https://i.imgur.com/AYnZGEO.jpg"},
+            {"url": "https://i.imgur.com/88majMv.jpg"},
+            {"url": "https://i.imgur.com/F3kownq.jpg"}
+        ],
+        "figma_url": null,
+        "description": "NEURALINK — це відмінне рішення для ефективної реклами вашого бізнесу. Він привертає увагу з перших секунд, грамотно виділяє ключові переваги вашої пропозиції та спонукає до дії. Проста і зрозуміла структура дозволяє користувачам легко орієнтуватися, а акцент на інноваційності та вигоді допомагає створити позитивне враження. Такий формат реклами підсилює довіру до вашого продукту, створює відчуття ексклюзивності та вигідно виділяє вас серед конкурентів. Це ідеальний інструмент для просування, який поєднує в собі привабливий дизайн і потужні маркетингові посили.",
+        "technical_task": null,
+        "technologies": [
+            {   "name": "HTML5",
+                "link": "https://html.spec.whatwg.org"
+            },            
+            {   "name": "JavaScript",
+                "link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript"
+            },
+            {   "name": "React",
+                "link": "https://react.dev"
+            },
+            {   "name": "Redux",
+                "link": "https://redux.js.org"
+            },
+            {   "name": "Styled Components",
+                "link": "https://styled-components.com"
+            },
+            {   "name": "Visual Studio",
+                "link": "https://code.visualstudio.com"
+            },
+            {   "name": "Git",
+                "link": "https://git-scm.com"
+            },
+            {   "name": "GitHub",
+                "link": "https://github.com"
+            }
+            
+        ],
+        "libraries":[
+            {   "name": "React",
+                "link": "https://react.dev"
+            },
+            {   "name": "Redux",
+                "link": "https://redux.js.org"
+            },
+            {   "name": "React Spinners",
+                "link": "https://www.npmjs.com/package/react-spinners"
+            },
+            {   "name": "Eslint Plugin Import",
+                "link": "https://www.npmjs.com/package/eslint-plugin-import"
+            },
+            {   "name": "Modern Normalize",
+                "link": "https://www.npmjs.com/package/modern-normalize"
+            },
+            {   "name": "Normalize.css",
+                "link": "https://www.npmjs.com/package/normalize.css?activeTab=versions"
+            },
+            {   "name": "React Intersection Observer",
+                "link": "https://www.npmjs.com/package/react-intersection-observer"
+            },
+            {   "name": "Formik",
+                "link": "https://www.npmjs.com/package/formik"
+            },
+            {   "name": "Yup",
+                "link": "https://www.npmjs.com/package/yup"
+            },
+            {   "name": "React Phone Input 2",
+                "link": "https://www.npmjs.com/package/react-phone-input-2"
+            },
+            {   "name": "React Facebook Pixel",
+                "link": "https://www.npmjs.com/package/react-facebook-pixel"
+            },
+            {   "name": "React Ipgeolocation",
+                "link": "https://www.npmjs.com/package/react-ipgeolocation"
+            },
+            {   "name": "Crypto Js",
+                "link": "https://www.npmjs.com/package/crypto-js#crypto-js"
+            },
+            {   "name": "Video React",
+                "link": "https://www.npmjs.com/package/video-react"
+            }
+        ],
+        "languages": {
+            "totalCount": 2,
+            "edges": [
+              {
+                "size": 5093,
+                "node": {
+                  "name": "HTML"
+                }
+              },
+              {
+                "size": 118899,
+                "node": {
+                  "name": "JavaScript"
+                }
+              }
+            ]
+        }
+    },
+    {
+        "id": "R_kgDOLjpJsA",
+        "name": "CRM V1.0",
+        "type": "CRM, FullStack, Backend",
+        "translation": "CRM, Full-Stack, Бекенд",
+        "createdAt": "2024-03-21T16:28:34Z",
+        "homepageUrl": "https://songlad.github.io/landing-admin/",
+        "coverImage": "https://i.imgur.com/oKRKFqU.jpg",
+        "img_url": [
+            {"url": "https://i.imgur.com/oKRKFqU.jpg"},
+            {"url": "https://i.imgur.com/mZvg3EE.jpg"},
+            {"url": "https://i.imgur.com/sN4fM90.jpg"},
+            {"url": "https://i.imgur.com/5JwxU5G.jpg"},
+            {"url": "https://i.imgur.com/UwuRGc1.jpg"},
+            {"url": "https://i.imgur.com/5X8bB1m.jpg"},
+            {"url": "https://i.imgur.com/wmQFjoH.jpg"},
+            {"url": "https://i.imgur.com/DaOD097.jpg"}
+        ],
+        "figma_url": null,
+        "description": "CRM V1.0 — це легка CRM-система (веб-додаток), розроблена для управління та обробки даних з лендинг-сторінок, подібних до NEURALINK. Вона створена виключно для використання на ПК і не адаптована для планшетів або мобільних пристроїв. Реєстрація в цій CRM-системі зовні неможлива, оскільки вона призначена лише для певних користувачів. Якщо у вас є всього кілька лендинг-сторінок, на яких ви рекламуєте свій продукт, або ви хочете почати залучати клієнтів для торгівлі на фінансовій біржі, ця система ідеально вам підійде. Зручний і простий інтерфейс дозволяє легко керувати даними користувачів, які залишили свої контакти для зворотного зв'язку. У системі реалізовано зручну фільтрацію, пошук і сортування даних залежно від джерела, з якого вони надійшли. Ви також можете вручну додавати дані користувачів і легко їх редагувати.",
+        "technical_task": null,
+        "technologies": [
+            {   "name": "HTML5",
+                "link": "https://html.spec.whatwg.org"
+            },            
+            {   "name": "JavaScript",
+                "link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript"
+            },
+            {   "name": "React",
+                "link": "https://react.dev"
+            },
+            {   "name": "Redux",
+                "link": "https://redux.js.org"
+            },
+            {   "name": "Styled Components",
+                "link": "https://styled-components.com"
+            },
+            {   "name": "Axios",
+                "link": "https://axios-http.com/docs/api_intro"
+            },
+            {   "name": "Visual Studio",
+                "link": "https://code.visualstudio.com"
+            },
+            {   "name": "Git",
+                "link": "https://git-scm.com"
+            },
+            {   "name": "GitHub",
+                "link": "https://github.com"
+            },
+            {   "name": "Postman",
+                "link": "https://www.postman.com"
+            },
+            {   "name": "MongoDB",
+                "link": "https://www.mongodb.com/cloud/atlas/register?utm_source=google&utm_campaign=search_gs_pl_evergreen_atlas_core_prosp-brand_gic-null_emea-ua_ps-all_desktop_eng_lead&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624575&adgroup=115749710823&cq_cmp=12212624575&gad_source=1&gclid=CjwKCAiA_OetBhAtEiwAPTeQZy-VKImwt1qJHg8yNCl4a_hX5XmBxUh821Oa4HKoboH2OUpctL_ewhoCh7kQAvD_BwE"
+            },
+            {   "name": "Node.js",
+                "link": "https://nodejs.org/en"
+            }
+        ],
+        "libraries":[
+            {   "name": "React",
+                "link": "https://react.dev"
+            },
+            {   "name": "Redux",
+                "link": "https://redux.js.org"
+            },
+            {   "name": "React Spinners",
+                "link": "https://www.npmjs.com/package/react-spinners"
+            },
+            {   "name": "Eslint Plugin Import",
+                "link": "https://www.npmjs.com/package/eslint-plugin-import"
+            },
+            {   "name": "Modern Normalize",
+                "link": "https://www.npmjs.com/package/modern-normalize"
+            },
+            {   "name": "Normalize.css",
+                "link": "https://www.npmjs.com/package/normalize.css?activeTab=versions"
+            },
+            {   "name": "Formik",
+                "link": "https://www.npmjs.com/package/formik"
+            },
+            {   "name": "Yup",
+                "link": "https://www.npmjs.com/package/yup"
+            },
+            {   "name": "React Phone Input 2",
+                "link": "https://www.npmjs.com/package/react-phone-input-2"
+            },
+            {   "name": "LibPhoneNumber Js",
+                "link": "https://www.npmjs.com/package/libphonenumber-js"
+            },
+            {   "name": "Crypto Js",
+                "link": "https://www.npmjs.com/package/crypto-js#crypto-js"
+            },
+            {   "name": "Bcrypt Js",
+                "link": "https://www.npmjs.com/package/bcryptjs"
+            },
+            {   "name": "Express",
+                "link": "https://www.npmjs.com/package/express"
+            },
+            {   "name": "MongoDB",
+                "link": "https://www.npmjs.com/package/mongodb"
+            },
+            {   "name": "Mongoose",
+                "link": "https://www.npmjs.com/package/mongoose"
+            },
+            {   "name": "Nodemailer",
+                "link": "https://www.npmjs.com/package/nodemailer"
+            },
+            {   "name": "Cloudinary",
+                "link": "https://www.npmjs.com/package/cloudinary"
+            }
+        ],
+        "languages": {
+            "totalCount": 2,
+            "edges": [
+              {
+                "size": 5093,
+                "node": {
+                  "name": "HTML"
+                }
+              },
+              {
+                "size": 118899,
+                "node": {
+                  "name": "JavaScript"
+                }
+              }
+            ]
+        }
+    },
+    {
+        "id": "R_kgDOMDIqug",
+        "name": "CRM V2.0",
+        "type": "CRM, FullStack, Backend",
+        "translation": "CRM, Full-Stack, Бекенд",
+        "createdAt": "2024-05-31T11:49:58Z",
+        "homepageUrl": "https://songlad.github.io/CRM-WebApplication/",
+        "coverImage": "https://i.imgur.com/UdnKEcO.jpg",
+        "img_url": [
+            {"url": "https://i.imgur.com/UdnKEcO.jpg"},
+            {"url": "https://i.imgur.com/MnvEJB3.jpg"},
+            {"url": "https://i.imgur.com/L2MCHJF.jpg"},
+            {"url": "https://i.imgur.com/w90YVGU.jpg"},
+            {"url": "https://i.imgur.com/jmBQeXy.jpg"},
+            {"url": "https://i.imgur.com/wZ6r5Gs.jpg"},
+            {"url": "https://i.imgur.com/Pefnbfc.jpg"},
+            {"url": "https://i.imgur.com/K5JgNoy.jpg"},
+            {"url": "https://i.imgur.com/dMqPhGK.jpg"},
+            {"url": "https://i.imgur.com/Y9eGRZJ.jpg"},
+            {"url": "https://i.imgur.com/ERczuo8.jpg"},
+            {"url": "https://i.imgur.com/coj4QNG.jpg"},
+            {"url": "https://i.imgur.com/bbvDGsa.jpg"},
+            {"url": "https://i.imgur.com/7LbYE1t.jpg"}
+        ],
+        "figma_url": null,
+        "description": "CRM V-2.0 представляє собою потужну та багатофункціональну платформу, розроблену для оптимізації процесів управління взаємодією з клієнтами. Ця система забезпечує повний цикл обробки даних про користувачів та ліди, а також надає інструменти для їх ефективного управління. Ось ключові можливості та функції CRM V-2.0: (1) Реєстрація користувачів: а) Зовнішня реєстрація: Система дозволяє здійснювати реєстрацію основних користувачів, таких як 'Розробник', 'Адміністратор' і 'Менеджер', за строго визначеними електронними адресами та паролями. б) Внутрішня реєстрація: Здійснюється через користувачів з вищим рівнем доступу, що гарантує контроль і безпеку процесу. (2) Підтвердження реєстрації: Після реєстрації нового користувача адміністратор отримує повідомлення на електронну пошту для підтвердження. Без цього підтвердження новий користувач не зможе увійти в систему. (3) Авторизація та управління сесіями: а) Система вимагає для авторизації email та пароль, в результаті чого створюється унікальний токен доступу, який включає ідентифікатор користувача, його роль і гілку бази даних. б) При вході в систему користувач отримує базові дані про себе, такі як ім'я, аватар, роль і гілка. (4) Отримання даних про поточного користувача: При перезавантаженні сторінки система автоматично отримує інформацію про поточного користувача на основі наданого токена, що виключає необхідність повторного введення даних. (5) Управління аватаром та даними користувача: а) Можливість зміни аватара користувача шляхом надсилання файлу зображення та отримання посилання на нове зображення. б) Користувачі можуть змінювати свої дані, включаючи зміну пароля, з підтвердженням поточного пароля. (6) Управління офісами та ролями: Система надає інформацію про доступні офіси та ролі, грунтуючись на рівні доступу користувача. Користувачі з вищим рівнем доступу можуть переглядати більше ролей та офісів. (7) Робота з лідами та контактами: а) CRM V-2.0 дозволяє користувачам отримувати інформацію про призначені та створені ліди. Для користувачів з високим рівнем доступу (наприклад, 'Адміністратори' та 'Менеджери') доступні розширені функції з управління лідами, включаючи призначення їх конкретним менеджерам або агентам. б) Система підтримує створення контактів з зовнішніх ресурсів та розподіл їх по офісах. (8) Управління верифікацією та скиданням пароля: Система дозволяє надсилати повторні листи для верифікації, а також здійснювати скидання пароля, що забезпечує безпеку та зручність для користувачів. (9) Видалення користувачів: Доступ до видалення користувачів обмежений для користувачів з найвищим рівнем доступу. При видаленні користувача система автоматично очищає всі прив'язки до лідів та додає коментарі до відповідних записів. (10) Аналіз та фільтрація даних: Користувачі можуть фільтрувати дані за різними параметрами, що дозволяє їм отримувати актуальну інформацію залежно від їх рівня доступу та ролей. CRM V-2.0 — це універсальне рішення для управління взаємовідносинами з клієнтами, яке забезпечує безпеку, контроль і зручність для всіх рівнів користувачів. Система пропонує потужні інструменти для управління даними та оптимізації бізнес-процесів, що робить її незамінним інструментом для сучасних компаній.",
+        "technical_task": null,
+        "technologies": [
+            {   "name": "HTML5",
+                "link": "https://html.spec.whatwg.org"
+            },            
+            {   "name": "JavaScript",
+                "link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript"
+            },
+            {   "name": "React",
+                "link": "https://react.dev"
+            },
+            {   "name": "Redux",
+                "link": "https://redux.js.org"
+            },
+            {   "name": "Styled Components",
+                "link": "https://styled-components.com"
+            },
+            {   "name": "Axios",
+                "link": "https://axios-http.com/docs/api_intro"
+            },
+            {   "name": "Visual Studio",
+                "link": "https://code.visualstudio.com"
+            },
+            {   "name": "Git",
+                "link": "https://git-scm.com"
+            },
+            {   "name": "GitHub",
+                "link": "https://github.com"
+            },
+            {   "name": "Postman",
+                "link": "https://www.postman.com"
+            },
+            {   "name": "MongoDB",
+                "link": "https://www.mongodb.com/cloud/atlas/register?utm_source=google&utm_campaign=search_gs_pl_evergreen_atlas_core_prosp-brand_gic-null_emea-ua_ps-all_desktop_eng_lead&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624575&adgroup=115749710823&cq_cmp=12212624575&gad_source=1&gclid=CjwKCAiA_OetBhAtEiwAPTeQZy-VKImwt1qJHg8yNCl4a_hX5XmBxUh821Oa4HKoboH2OUpctL_ewhoCh7kQAvD_BwE"
+            },
+            {   "name": "Node.js",
+                "link": "https://nodejs.org/en"
+            }
+        ],
+        "libraries":[
+            {   "name": "React",
+                "link": "https://react.dev"
+            },
+            {   "name": "Redux",
+                "link": "https://redux.js.org"
+            },
+            {   "name": "React Spinners",
+                "link": "https://www.npmjs.com/package/react-spinners"
+            },
+            {   "name": "Eslint Plugin Import",
+                "link": "https://www.npmjs.com/package/eslint-plugin-import"
+            },
+            {   "name": "Modern Normalize",
+                "link": "https://www.npmjs.com/package/modern-normalize"
+            },
+            {   "name": "Normalize.css",
+                "link": "https://www.npmjs.com/package/normalize.css?activeTab=versions"
+            },
+            {   "name": "Formik",
+                "link": "https://www.npmjs.com/package/formik"
+            },
+            {   "name": "Yup",
+                "link": "https://www.npmjs.com/package/yup"
+            },
+            {   "name": "React Phone Input 2",
+                "link": "https://www.npmjs.com/package/react-phone-input-2"
+            },
+            {   "name": "LibPhoneNumber Js",
+                "link": "https://www.npmjs.com/package/libphonenumber-js"
+            },
+            {   "name": "Date FNS",
+                "link": "https://www.npmjs.com/package/date-fns"
+            },
+            {   "name": "React Flatpickr",
+                "link": "https://www.npmjs.com/package/react-flatpickr"
+            },
+            {   "name": "Crypto Js",
+                "link": "https://www.npmjs.com/package/crypto-js#crypto-js"
+            },
+            {   "name": "Bcrypt Js",
+                "link": "https://www.npmjs.com/package/bcryptjs"
+            },
+            {   "name": "Express",
+                "link": "https://www.npmjs.com/package/express"
+            },
+            {   "name": "MongoDB",
+                "link": "https://www.npmjs.com/package/mongodb"
+            },
+            {   "name": "Mongoose",
+                "link": "https://www.npmjs.com/package/mongoose"
+            },
+            {   "name": "Nodemailer",
+                "link": "https://www.npmjs.com/package/nodemailer"
+            },
+            {   "name": "Cloudinary",
+                "link": "https://www.npmjs.com/package/cloudinary"
+            }
+        ],
+        "languages": {
+            "totalCount": 2,
+            "edges": [
+                {
+                  "size": 5076,
+                  "node": {
+                    "name": "HTML"
+                  }
+                },
+                {
+                  "size": 635164,
+                  "node": {
+                    "name": "JavaScript"
+                  }
+                }
+            ]
+        }
+    },
+    {
+        "id": "R_kgDOM6E2Sg",
+        "name": "Calendar",
+        "type": "Landing",
+        "translation": "Фронтенд",
+        "createdAt": "2024-10-01T20:29:50Z",
+        "homepageUrl": "https://songlad.github.io/JoinToItTestTask/",
+        "coverImage": "https://i.imgur.com/EHTkRS1.jpg",
+        "img_url": [
+            {"url": "https://i.imgur.com/EHTkRS1.jpg"},
+            {"url": "https://i.imgur.com/USPDVs8.jpg"},
+            {"url": "https://i.imgur.com/gMcZiTF.jpg"},
+            {"url": "https://i.imgur.com/6PtOnYV.jpg"},
+            {"url": "https://i.imgur.com/pz1L6uc.jpg"},
+            {"url": "https://i.imgur.com/00FxqMb.jpg"},
+            {"url": "https://i.imgur.com/CbYbb7S.jpg"}
+        ],
+        "figma_url": null,
+        "description": "Calendar — це лише невелика частина розробки веб-додатка, створена, щоб показати, як легко і просто можна реалізувати ваш щоденник. Цей додаток дає вам можливість вносити заплановані справи на кожен день тижня, розмежовуючи їх за пріоритетом і часом. Ви можете вносити свої завдання як на цілий день, так і на конкретний час. І всі ці завдання автоматично відображатимуться як на щомісячному календарі, так і на тижневому, включаючи завдання на цілий день, розписані по годинах. Тут присутня зручна навігація, що дозволяє вам переключатися між місяцями через кнопки 'Back' і 'Next', а також можливість швидкого повернення на поточний місяць через кнопку 'Today'. Також є навігація, яка дозволяє вам швидко перемикатися між вкладками відображення подій у вигляді місяця, тижня або навіть дня, включаючи вкладку списку всіх доступних подій на поточний день. Присутня дуже зручна форма введення та редагування даних. Ви також можете змінювати колір своїх подій для визначення пріоритету події. Обов'язковими полями введення є лише назва події та нотатки. Дата і час вказувати не обов'язково, оскільки події підстрояться під вас і будуть відповідно відображені. Якщо дата не вказана, дата події автоматично визначиться по тій даті, на якій ви викликали форму заповнення. Якщо час не зазначено, подія буде розцінюватися як подія, яка запланована на цілий день. Якщо ж вказати точну дату і час, то ваше подія буде автоматично призначено на ту дату та час, які ви вказали у формі. Ви також можете вільно переміщати свої події по різним датам і часам. Для видалення події достатньо просто відкрити редагування події і натиснути кнопку 'Discard'.",
+        "technical_task": null,
+        "technologies": [
+            {   "name": "HTML5",
+                "link": "https://html.spec.whatwg.org"
+            },            
+            {   "name": "JavaScript",
+                "link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript"
+            },
+            {   "name": "React",
+                "link": "https://react.dev"
+            },
+            {   "name": "Styled Components",
+                "link": "https://styled-components.com"
+            },
+            {   "name": "Visual Studio",
+                "link": "https://code.visualstudio.com"
+            },
+            {   "name": "Git",
+                "link": "https://git-scm.com"
+            },
+            {   "name": "GitHub",
+                "link": "https://github.com"
+            }
+        ],
+        "libraries":[
+            {   "name": "React",
+                "link": "https://react.dev"
+            },
+            {   "name": "Eslint Plugin Import",
+                "link": "https://www.npmjs.com/package/eslint-plugin-import"
+            },
+            {   "name": "Modern Normalize",
+                "link": "https://www.npmjs.com/package/modern-normalize"
+            },
+            {   "name": "Normalize.css",
+                "link": "https://www.npmjs.com/package/normalize.css?activeTab=versions"
+            },
+            {   "name": "Full Calendar",
+                "link": "https://fullcalendar.io"
+            }
+        ],
+        "languages": {
+            "totalCount": 2,
+            "edges": [
+                {
+                  "size": 5076,
+                  "node": {
+                    "name": "HTML"
+                  }
+                },
+                {
+                  "size": 70316,
+                  "node": {
+                    "name": "JavaScript"
+                  }
+                }
+            ]
+        }
+    }
+]

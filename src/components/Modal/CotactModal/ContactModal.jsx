@@ -5,8 +5,8 @@ import {ReactComponent as ErrorIcon} from "../../../images/svg-icons/error-logo.
 
 
 
-export const ContactModal = ({handleClickClose, isSuccess}) => {
-
+export const ContactModal = ({handleClickClose, isSuccess, siteLanguage}) => {
+    const { contactModal } = siteLanguage;
 
     return(
         <ContactModalStyled>
@@ -18,22 +18,22 @@ export const ContactModal = ({handleClickClose, isSuccess}) => {
                     <div className="shadow-div">
                         <div className="content">
                             <SuccsessIcon className="modal-icon" width={24} height={24}/>
-                            <p className="contact-modal-text sucsess">Thank you for contact us!</p>
+                            <p className="contact-modal-text sucsess">{contactModal.text1}</p>
                         </div>
-                        <p className="contact-modal-text">We will get back to you as soon as possible!</p>
+                        <p className="contact-modal-text">{contactModal.text2}</p>
                     </div>
-                    <button type='button' className="continue-btn" onClick={handleClickClose}>Continue</button>
+                    <button type='button' className="continue-btn" onClick={handleClickClose}>{contactModal.buttonText}</button>
                 </div>
             ):(
                 <div className="content-container">
                     <div className="shadow-div">
                         <div className="content">
                             <ErrorIcon className="modal-icon" width={24} height={24}/>
-                            <p className="contact-modal-text error">Oops... Something went wrong.</p>
+                            <p className="contact-modal-text error">{contactModal.text3}</p>
                         </div>
-                        <p className="contact-modal-text">Please try again later...</p>
+                        <p className="contact-modal-text">{contactModal.text4}</p>
                     </div>
-                    <button type='button' className="continue-btn" onClick={handleClickClose}>Continue</button>
+                    <button type='button' className="continue-btn" onClick={handleClickClose}>{contactModal.buttonText}</button>
                 </div>
             )}
         </ContactModalStyled>

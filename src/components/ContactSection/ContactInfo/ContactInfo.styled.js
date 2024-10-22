@@ -128,7 +128,18 @@ export const ContactInfoStyled = styled.div `
     }
 
     .contact-link-item{
-        width: 35%;
+        @media screen and (min-width: 1448px){
+            width: 35%;
+        }
+    }
+
+    .contact-link-mail2{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        @media screen and (min-width: 1548px){
+            width: 49%;
+        }
     }
 
     .contact-link{
@@ -145,6 +156,10 @@ export const ContactInfoStyled = styled.div `
             color: ${p => p.theme.color.main_color};
             fill: ${p => p.theme.color.main_color};
         }
+    }
+
+    .email2{
+        width: 375px;
     }
 
 

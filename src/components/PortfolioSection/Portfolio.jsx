@@ -2,12 +2,17 @@ import { PortfolioStyled } from "./Portfolio.styled";
 import BackgroundImg from "../../images/images/bg_image.jpg";
 import {ReactComponent as BookIcon} from "../../images/svg-icons/open-book.svg";
 import { useEffect, useState, useMemo, forwardRef } from "react";
-import Projects from "../../utils/projects.json";
 import { useInView } from 'react-intersection-observer';
 
 
 
-export const PortfolioSection = forwardRef(({toPortfolioRef, openPortfolioModal, setPortfolioModalData}, reff) => {
+export const PortfolioSection = forwardRef(({
+    toPortfolioRef, 
+    openPortfolioModal, 
+    setPortfolioModalData,
+    siteLanguage,
+    projectLanguage
+}, reff) => {
     const [filterType, setFilterType] = useState('All');
     const [portfolioData, setPortfolioData] = useState([]);
     const [buttonName, setButtonName] = useState([]);
@@ -17,26 +22,33 @@ export const PortfolioSection = forwardRef(({toPortfolioRef, openPortfolioModal,
         triggerOnce: true,
         threshold: 0.2,
     });
+    const { portfolio } = siteLanguage;
     
 
     useEffect(() => {
-        if (Projects) {
-            setPortfolioData(Projects);
+        if (projectLanguage) {
+            setPortfolioData(projectLanguage);
         }
-    },[]);
+    },[projectLanguage]);
 
 
     const buttonValue = useMemo(() => {
         return portfolioData
-            .flatMap(({ id, type }) => {
+            .flatMap(({ id, type, translation }) => {
+                const result = [];
+
                 if (type) {
                     const types = type.split(',').map(t => t.trim());
-                    return types.map(singleType => ({
-                        id,
-                        type: singleType,
-                    }));
+                    const translatedTypes = translation.split(',').map(t => t.trim());
+
+                    types.forEach((singleType, typeIndex) => {
+                        result.push({
+                            type: singleType,
+                            value: translatedTypes[typeIndex] || translation,  
+                        });
+                    });
                 }
-                return [];
+                return result;
             })
             .filter((component, index, self) =>
                 index === self.findIndex((item) => item.type === component.type));
@@ -93,25 +105,25 @@ export const PortfolioSection = forwardRef(({toPortfolioRef, openPortfolioModal,
 
     return(
         <PortfolioStyled ref={toPortfolioRef}>
-            <h1 className="potfolio-title"><span>Our </span>Projects</h1>
+            <h1 className="potfolio-title"><span>{portfolio.sectionTitle1} </span>{portfolio.sectionTitle2}</h1>
             <ul className="filter-list">
                 <li className="filter-item">
                     <button className="filter-button indi-animation" type="button" 
                         onClick={() => handleFilter('All')}
-                    >All
+                    >{portfolio.buttonAll}
                     </button>
                 </li>
-                {buttonName && buttonName.map(({id, type}, index) => (
+                {buttonName && buttonName.map(({type, value}, index) => (
                     <li className="filter-item" key={index}>
                         <button className="filter-button indi-animation" type="button" 
                             onClick={() => handleFilter(type)}
-                        >{type}
+                        >{value}
                         </button>
                     </li>
                 ))}
             </ul>
             <ul className={`cols ${inView ? 'active' : ''} ${isAnimated ? 'animate' : ''}`} ref={ref}>
-                {filteredComponents.map(({id, name, coverImage, type, description}, index) => (
+                {filteredComponents.map(({id, name, coverImage, description, translation}, index) => (
                     <li key={`${id}-${filterType}-${index}`} className="col" style={{'--i': index + 1}}>
                         <div className="container">
                             <div className="front" style={{backgroundImage: 
@@ -120,7 +132,7 @@ export const PortfolioSection = forwardRef(({toPortfolioRef, openPortfolioModal,
                                 >
                                 <div className="inner">
                                     <p>{name}</p>
-                                    <span>{type}</span>
+                                    <span>{translation}</span>
                                 </div>
                             </div>
                             <div className="back">
@@ -128,7 +140,7 @@ export const PortfolioSection = forwardRef(({toPortfolioRef, openPortfolioModal,
                                     <p>{description}</p>
                                     <button type="button" className="open-button" onClick={() => openModal(id)}>
                                         <BookIcon className="icon" width={24} height={24}/>
-                                        See More
+                                        {portfolio.seeMore}
                                     </button>
                                 </div>
                             </div>

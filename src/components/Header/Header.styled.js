@@ -33,7 +33,6 @@ export const StyledHeader = styled.header`
         transition: fill ${p => p.theme.transition.main_transition};
         animation: slideLogoRight 1s ease forwards;
 
-
         &:hover, &:focus{
             fill: ${p => p.theme.color.main_color};
         } 
@@ -49,6 +48,64 @@ export const StyledHeader = styled.header`
             transform: translateX(0px);
         }
     }
+
+    .lang-cont{
+        margin-left: auto;
+        margin-right: 30px;
+        position: relative;
+    }
+
+    .lang-btn{
+        padding: 5px 10px;
+        border-radius: 15px;
+        font-size: 16px;
+        font-weight: 700;
+        background-color: ${p => p.theme.color.text_color};
+        color: ${p => p.theme.color.main_color};
+    }
+
+    .chose-lang-cont{
+        position: absolute;
+        z-index: 10;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%) scale(0);
+        margin-top: 5px;
+        transform-origin: top;
+        transition: transform ${p => p.theme.transition.main_transition};
+    }
+    
+    .open{
+        transform: translateX(-50%) scale(1);
+    }
+    
+    
+    .lang-list{
+        background-color: ${p => p.theme.color.second_bg_color};
+        border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px 5px;
+    }
+
+    
+    .lang-item{
+        padding: 5px 10px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        background-color: transparent;
+        color: ${p => p.theme.color.text_color};
+        transition: color ${p => p.theme.transition.main_transition};
+
+        &:hover{
+            color: ${p => p.theme.color.main_color};
+        }
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+
+
 
     .mob-menu-btn{
         display: flex;

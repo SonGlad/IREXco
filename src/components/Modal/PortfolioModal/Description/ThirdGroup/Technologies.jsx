@@ -5,9 +5,10 @@ import {ReactComponent as LinkSvg} from "../../../../../images/svg-icons/link2.s
 import { useState, useEffect, useRef } from "react";
 
 
-export const Technologies = ({technologies}) => {
+export const Technologies = ({technologies, siteLanguage}) => {
     const [expanded, setExpanded] = useState();
     const collaboratorsRef = useRef();
+    const { portfolioModal } = siteLanguage;
 
 
     const handleButtonClick = () => {
@@ -36,20 +37,19 @@ export const Technologies = ({technologies}) => {
     return(
         <ThirdGroupStyled>
             <div className="collaborators-text">
-                <p><strong>Technologies:</strong></p>
+                <p><strong>{portfolioModal.technologies}:</strong></p>
             </div>
             <div className="collaborators-div" ref={collaboratorsRef}>
                 <ul className={`collaborators-list ${expanded ? 'list-2' : ''}`}>
                     <button className={`drop-btn ${expanded ? 'active' : ''}`} 
-                        type="button" onClick={handleButtonClick}>See All
+                        type="button" onClick={handleButtonClick}>{portfolioModal.seaAllButton}
                     </button>
                     {technologies.map(({name, link}) => (
                         <li key={nanoid()} className="collaborators-item" onClick={handleButtonClose}>
                             <NavLink className="repository-link" to={link}
                                 aria-label="technical task link"
                                 target="_blank"
-                                rel="noreferrer noopener"
-                                
+                                rel="noreferrer noopener" 
                             >
                                 <LinkSvg className="svg-link" width={16} height={16}/>
                                 {name}

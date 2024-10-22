@@ -21,6 +21,8 @@ export const MainGroupStyled = styled.ul`
         margin-bottom: 20px;
         font-weight: 400;
         font-size: 18px;
+        display: flex;
+        gap: 10px;
 
         @media screen and (min-width: 550px){
             font-weight: 500;

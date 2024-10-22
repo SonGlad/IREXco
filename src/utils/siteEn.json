@@ -1,0 +1,118 @@
+{
+    "header": {
+        "navMenu1": "Welcome",
+        "navMenu2": "About Us",
+        "navMenu3": "Stack",
+        "navMenu4": "Portfolio",
+        "navMenu5": "Contact Us"
+    },
+    "hero":{
+        "navMenu1": "About Us",
+        "navMenu2": "Stack",
+        "navMenu3": "Portfolio",
+        "navMenu4": "Contact Us",
+        "descriptionTitle1": "No templates!",
+        "description1":"Each website design is created from scratch, we design a site that solves the specific tasks of your business.",
+        "descriptionTitle2": "No website builders!",
+        "description2":"Only modern development solutions for achieving maximum optimization and reliability.",
+        "descriptionTitle3": "24/7 support!",
+        "description3":"We provide continuous technical support so that you can always count on us."
+    },
+    "about":{
+        "sectionTitle1": "About",
+        "sectionTitle2": "Us"
+    },
+    "stack":{
+        "sectionTitle1": "Our",
+        "sectionTitle2": "Arsenal",
+        "buttonAll": "All",
+        "category": "Category",
+        "subTitle1": "Development",
+        "subTitle2": "Statistics",
+        "subAubTitle1": "Completed",
+        "subAubTitle2": "Projects",
+        "subAubTitle3": "Overview",
+        "subAubTitle4": "Project",
+        "subAubTitle5": "Phases",
+        "subAubTitle6": "Breakdown",
+        "lastTitle1": "Effort",
+        "lastTitle2": "Distribution",
+        "lastTitle3": "Across",
+        "lastTitle4": "Project",
+        "lastTitle5": "Phases",
+        "total": "Total Completed Projects",
+        "fullStack": "Full-Stack Applications",
+        "backend": "Backend Services",
+        "landing": "Frontend-Only Applications / Landing Sites",
+        "team": "Team Projects",
+        "crm": "CRM Applications",
+        "projectTime": "Project Time:"
+    },
+    "portfolio": {
+        "sectionTitle1": "Our",
+        "sectionTitle2": "Projects",
+        "seeMore": "See More",
+        "buttonAll": "All"
+    },
+    "portfolioModal": {
+        "livePage": "Live Page",
+        "type": "Type",
+        "techTask": "Technical Task",
+        "available": "Available",
+        "na": "N/A",
+        "figmaLink": "Figma Link",
+        "technologies": "Technologies",
+        "seaAllButton": "See All",
+        "libraries": "Libraries"
+    },
+    "contactModal": {
+        "text1": "Thank you for contact us!",
+        "text2": "We will get back to you as soon as possible!",
+        "text3": "Oops... Something went wrong.",
+        "text4": "Please try again later...",
+        "buttonText": "Continue"
+    },
+    "contact":{
+        "title1": "Contact",
+        "title2": "Us",
+        "subTitle": "Let's Work Together!",
+        "form":{
+            "labelValue1": "Name",
+            "placeholdervalue1": "Enter your name",
+            "labelValue2": "Email",
+            "placeholdervalue2": "Enter your email",
+            "labelValue3": "Phone",
+            "placeholdervalue3": "Enter your phone",
+            "labelValue4": "Subject",
+            "placeholdervalue4": "Enter your subject",
+            "labelValue5": "Your message",
+            "placeholdervalue5": "Enter your msg",
+            "checkBox": "Check to confirm your data",
+            "submitBtn": "Send",
+            "validationNameMatches": "Name can only contain letters and spaces",
+            "validationNameMin": "Name is too short",
+            "validationNameMax": "Name is too long",
+            "validationNameRequired": "Name is required",
+            "validationEmailMatches": "Invalid email",
+            "validationEmail": "Invalid email",
+            "validationEmailRequired": "Email is required",
+            "validationPhoneMatches": "Phone number can only contain digits",
+            "validationPhoneMin": "Number is too short",
+            "validationPhoneMax": "Number is too long",
+            "validationPhoneRequired": "Please enter valid phone number",
+            "validationSubjectMin": "Subject is too short",
+            "validationSubjectMax": "Subject is too long",
+            "validationSubjectRequired": "Subject is required",
+            "agreementRequired": "You must accept the entered data",
+            "nameCorrect": "is correct",
+            "emailCorrect": "is correct",
+            "phoneCorrect": "is correct",
+            "subjectCorrect": "is correct"
+        }
+    },
+    "footer":{
+        "text1": "Find",
+        "text2": "Us",
+        "text3": "On"
+    }
+}

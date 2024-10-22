@@ -14,6 +14,7 @@ export const DescriptionDiv = ({
     technical, 
     technologies, 
     libraries, 
+    siteLanguage
 }) => {
 
 
@@ -22,19 +23,24 @@ export const DescriptionDiv = ({
             <MainGroup 
                 name={name}
                 homepage={homepage}
+                siteLanguage={siteLanguage}
             />
             <GroupRoleType
                 type={type}
+                siteLanguage={siteLanguage}
             />
             <GroupLink
                 technical={technical}
                 figma={figma}
+                siteLanguage={siteLanguage}
             />
             <Technologies
                 technologies={technologies}
+                siteLanguage={siteLanguage}
             />
             <Libraries
                 libraries={libraries}
+                siteLanguage={siteLanguage}
             />
         </DescriptionStyled>
     )

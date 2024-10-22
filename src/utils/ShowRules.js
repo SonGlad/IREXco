@@ -1,4 +1,33 @@
-export const ShowRules = (values, touched, errors) => {
+export const ShowRules = (values, touched, errors, form) => {
+  const getFieldName = (fieldName, form) => {
+    switch (fieldName) {
+      case 'name':
+        return {
+          label: form.labelValue1,
+          message: form.nameCorrect
+        };
+      case 'email':
+        return {
+          label: form.labelValue2,
+          message: form.emailCorrect
+        };
+      case 'phone':
+        return {
+          label: form.labelValue3,
+          message: form.phoneCorrect
+        };
+      case 'subject':
+        return {
+          label: form.labelValue4,
+          message: form.subjectCorrect
+        };
+      default:
+        return {
+          label: fieldName.charAt(0).toUpperCase() + fieldName.slice(1),
+          message: 'is correct'
+        };
+    }
+  };
 
   const getInputClass = (fieldName) => {
     return !values[fieldName]
@@ -9,6 +38,7 @@ export const ShowRules = (values, touched, errors) => {
   };
 
   const getInputAlert = (fieldName) => {
+    const { label, message } = getFieldName(fieldName, form)
     return !values[fieldName] ? (
       ""
     ) : touched && errors[fieldName] ? (
@@ -18,7 +48,7 @@ export const ShowRules = (values, touched, errors) => {
       </>
     ) : (
       <>
-        <p className="SuccessText">{`${fieldName} is correct`}</p>
+        <p className="SuccessText">{`${label} ${message}`}</p>
         <div className="ImgCorrect" />
       </>
     );

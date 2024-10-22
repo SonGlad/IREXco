@@ -6,7 +6,7 @@ import { DescriptionDiv } from "./Description/Description";
 
 
 
-export const PortfolioModal = ({handleClickClose, portfolioModalData}) => {
+export const PortfolioModal = ({handleClickClose, portfolioModalData, siteLanguage}) => {
 
 
  
@@ -21,12 +21,13 @@ export const PortfolioModal = ({handleClickClose, portfolioModalData}) => {
                     <ChartDiv languages={portfolioModalData.languages}/>
                     <DescriptionDiv
                         name={portfolioModalData.name}
-                        type={portfolioModalData.type}
+                        type={portfolioModalData.translation}
                         homepage={portfolioModalData.homepageUrl}
                         figma={portfolioModalData.figma_url}
                         technical={portfolioModalData.technical_task}
                         technologies={portfolioModalData.technologies}
                         libraries={portfolioModalData.libraries}
+                        siteLanguage={siteLanguage}
                     />
                 </div>
                 <div className="description-cont">

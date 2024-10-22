@@ -1,13 +1,11 @@
 import { CodingChartsStyled } from "./CodingCharts.styled";
 import { Chart } from "./Charts/Charts";
 import { useInView } from 'react-intersection-observer';
-import Profile from "../../../utils/profile.json";
 import DefaultPicture from "../../../images/images/bg_image.jpg";
 
 
-
-export const CodingCharts = () => {
-    const { steps } = Profile;
+export const CodingCharts = ({siteLanguage, profileLanguage}) => {
+    const { steps } = profileLanguage;
     const [refItem1, refItem1InView] = useInView({ 
         triggerOnce: false, 
         threshold: 0.3,
@@ -72,6 +70,7 @@ export const CodingCharts = () => {
                                 </div>
                                 <Chart
                                     value={steps.projectPlanning}
+                                    siteLanguage={siteLanguage}
                                 />
                             </div>
                         </div>
@@ -111,6 +110,7 @@ export const CodingCharts = () => {
                                 </div>
                                 <Chart
                                     value={steps.designPrototyping}
+                                    siteLanguage={siteLanguage}
                                 />
                             </div>
                         </div>
@@ -150,6 +150,7 @@ export const CodingCharts = () => {
                                 </div>
                                 <Chart
                                     value={steps.backend}
+                                    siteLanguage={siteLanguage}
                                 />
                             </div>
                         </div>
@@ -189,6 +190,7 @@ export const CodingCharts = () => {
                                 </div>
                                 <Chart
                                     value={steps.frontend}
+                                    siteLanguage={siteLanguage}
                                 />
                             </div>
                         </div>
@@ -228,6 +230,7 @@ export const CodingCharts = () => {
                                 </div>
                                 <Chart
                                     value={steps.testing}
+                                    siteLanguage={siteLanguage}
                                 />
                             </div>
                         </div>
@@ -267,6 +270,7 @@ export const CodingCharts = () => {
                                 </div>
                                 <Chart
                                     value={steps.deploying}
+                                    siteLanguage={siteLanguage}
                                 />
                             </div>
                         </div>

@@ -25,7 +25,6 @@ import IconFigma from "./IconsList/FigmaIcon";
 import IconGodaddy from "./IconsList/GoDaddyIcon";
 import IconNetlify from "./IconsList/IconNetlify";
 import IconCoronarenderer from "./IconsList/RenderIcon";
-import Profile from "../../../utils/profile.json";
 import { useEffect, useState, useMemo } from "react";
 import { useInView } from 'react-intersection-observer';
 import { Tooltip as ReactTooltip } from 'react-tooltip';
@@ -33,39 +32,50 @@ import React from "react";
 
 
 const IconComponents = [
-    {"id": "IconHTML", Element: IconHTML, "type": "Frontend", "description": "The main foundation for creating web pages"}, 
-    {"id": "IconCSS", Element: IconCSS, "type": "Frontend", "description": "Styling for web pages"}, 
-    {"id": "IconJavaScript", Element: IconJavaScript, "type": "Frontend", "description": "The main language for frontend development"}, 
-    {"id": "IconReact", Element: IconReact, "type": "Frontend", "description": "A library for building user interfaces"}, 
-    {"id": "IconRedux", Element: IconRedux, "type": "Frontend", "description": "State management for React applications"}, 
-    {"id": "IconGit", Element: IconGit, "type": "DevOps", "description": "A version control system for tracking changes in code"}, 
-    {"id": "IconGitHub", Element: IconGitHub, "type": "DevOps", "description": "A platform for hosting and managing repositories."}, 
-    {"id": "IconNode", Element: IconNode, "type": "Backend", "description": "A runtime for executing JavaScript on the server side"}, 
-    {"id": "IconVS", Element: IconVS, "type": "Dev-Tools", "description": "A popular code editor for web developers"}, 
-    {"id": "IconSASS", Element: IconSASS, "type": "Frontend", "description": "A CSS preprocessor for enhanced styling"}, 
-    {"id": "IconStyled", Element: IconStyled, "type": "Frontend", "description": "A library for styled components in React"}, 
-    {"id": "IconHandlebars", Element: IconHandlebars, "type": "Frontend, Backend", "description": "A template engine for server-side & front-end rendering"}, 
-    {"id": "IconMongoDB", Element: IconMongoDB, "type": "Backend", "description": "A document-oriented NoSQL database"}, 
-    {"id": "IconAxios", Element: IconAxios, "type": "Backend", "description": "An HTTP client for API interaction"}, 
-    {"id": "IconPostman", Element: IconPostman, "type": "DevOps", "description": "A tool for testing and interacting with APIs"}, 
-    {"id": "IconFigma", Element: IconFigma, "type": "Dev-Tools", "description": "A tool for creating designs and prototypes"},
-    {"id": "IconNetlify", Element: IconNetlify, "type": "DevOps", "description": "A platform for automatically deploying static sites"},
-    {"id": "IconGoDaddy", Element: IconGodaddy, "type": "DevOps", "description": "A provider of domains and hosting services"},
-    {"id": "IconRender", Element: IconCoronarenderer, "type": "DevOps", "description": "A cloud platform for hosting and automatic application deployment"},
-    {"id": "IconReactNative", Element: IconReactNative, "type": "Frontend, Mobile-Development", "description": "A framework for building cross-platform mobile applications"}, 
-    {"id": "IconTypeScript", Element: IconTypeScript, "type": "Frontend", "description": "A typed version of JavaScript, used in large projects & React Native for type safety"}, 
-    {"id": "IconVue", Element: IconVue, "type": "Frontend", "description": "A framework for building user interfaces"}, 
-    {"id": "IconNext", Element: IconNext, "type": "Frontend", "description": "A framework for server-rendered and static React applications"},
-    {"id": "IconGraphql", Element: IconGraphql, "type": "Backend", "description": "A query language for APIs, used as an alternative to REST"},
+    {"id": "IconHTML", Element: IconHTML, "type": "Frontend"}, 
+    {"id": "IconCSS", Element: IconCSS, "type": "Frontend"}, 
+    {"id": "IconJavaScript", Element: IconJavaScript, "type": "Frontend, Backend"}, 
+    {"id": "IconReact", Element: IconReact, "type": "Frontend"}, 
+    {"id": "IconRedux", Element: IconRedux, "type": "Frontend"}, 
+    {"id": "IconGit", Element: IconGit, "type": "DevOps"}, 
+    {"id": "IconGitHub", Element: IconGitHub, "type": "DevOps"}, 
+    {"id": "IconNode", Element: IconNode, "type": "Backend"}, 
+    {"id": "IconVS", Element: IconVS, "type": "Dev-Tools"}, 
+    {"id": "IconSASS", Element: IconSASS, "type": "Frontend"}, 
+    {"id": "IconStyled", Element: IconStyled, "type": "Frontend"}, 
+    {"id": "IconHandlebars", Element: IconHandlebars, "type": "Frontend, Backend"}, 
+    {"id": "IconMongoDB", Element: IconMongoDB, "type": "Backend"}, 
+    {"id": "IconAxios", Element: IconAxios, "type": "Backend, Frontend"}, 
+    {"id": "IconPostman", Element: IconPostman, "type": "DevOps"}, 
+    {"id": "IconFigma", Element: IconFigma, "type": "Dev-Tools"},
+    {"id": "IconNetlify", Element: IconNetlify, "type": "DevOps"},
+    {"id": "IconGoDaddy", Element: IconGodaddy, "type": "DevOps"},
+    {"id": "IconRender", Element: IconCoronarenderer, "type": "DevOps"},
+    {"id": "IconReactNative", Element: IconReactNative, "type": "Frontend, Mobile-Development"}, 
+    {"id": "IconTypeScript", Element: IconTypeScript, "type": "Frontend"}, 
+    {"id": "IconVue", Element: IconVue, "type": "Frontend"}, 
+    {"id": "IconNext", Element: IconNext, "type": "Frontend"},
+    {"id": "IconGraphql", Element: IconGraphql, "type": "Backend"},
 ];
 
+// NONE ACTIVE DESCRIPTION TO BE ADDEDED TO TRANSLATION JSON FILE
+    // React Native: "type": "Frontend, "description": "A framework for building cross-platform mobile applications.";
+    // TypeScript: "type": "Frontend", "description": "A typed version of JavaScript, used in large projects & React Native for type safety.";
+    // Vue: "type": "Frontend", "description": "A framework for building user interfaces.";
+    // Next: "type": "Frontend", "description": "A framework for server-rendered and static React applications";
+    // GraphQL: "type": "Backend", "description": "A query language for APIs, used as an alternative to REST"
 
-export const Icons = () => {
-    const {skills} = Profile;
+
+
+export const Icons = ({profileLanguage, siteLanguage}) => {
+    const { skills } = profileLanguage;
+    const { stack } = siteLanguage;
+    
     const [components, setComponents] = useState([]);
     const [buttonName, setButtonName] = useState([]);
     const [filterType, setFilterType] = useState('All');
     const [isAnimated, setIsAnimated] = useState(false);
+   
 
     
     const { ref, inView } = useInView({
@@ -74,14 +84,14 @@ export const Icons = () => {
     });
 
     const newIconComponents = useMemo(() => {
-        return IconComponents.map(({id, type, description, Element}) => {
+        return IconComponents.map(({id, type, Element}) => {
             const skill = skills.find((skill) => skill.id === id);
     
             if (!skill) {
                 return {};
             }
     
-            const {value, link } = skill;
+            const {value, link, translatedType, description} = skill;
     
             return {
                 id,
@@ -89,6 +99,7 @@ export const Icons = () => {
                 value,
                 link,
                 type,
+                translatedType,
                 description,
             };
         }).filter(({ value, link }) => value !== undefined && link !== undefined);
@@ -97,16 +108,24 @@ export const Icons = () => {
 
     const buttonValue = useMemo(() => {
         return components
-            .flatMap(({ id, type }, index) => {
+            .flatMap(({ id, type, translatedType}, index) => {
+                const result = [];
+
                 if (type) {
                     const types = type.split(',').map(t => t.trim());
-                    return types.map(singleType => ({
-                        id,
-                        type: singleType,
-                        index
-                    }));
+                    const translatedTypes = translatedType.split(',').map(t => t.trim());
+    
+                    types.forEach((singleType, typeIndex) => {
+                        result.push({
+                            id,
+                            type: singleType,
+                            value: translatedTypes[typeIndex] || translatedType,
+                            index
+                        });
+                    });
                 }
-                return [];
+    
+                return result;
             })
             .filter((component, index, self) =>
                 index === self.findIndex((item) => item.type === component.type));
@@ -164,24 +183,24 @@ export const Icons = () => {
                 <li className="filter-item">
                     <button className="filter-button" type="button"
                         onClick={() => handleFilter('All')}
-                    >All
+                    >{stack.buttonAll}
                     </button>
                 </li>
-                {buttonName.map(({id, type}) => (
+                {buttonName.map(({id, type, value}) => (
                     <li className="filter-item" key={id}>
                         <button className="filter-button" type="button"
                             onClick={() => handleFilter(type)}
-                        >{type}
+                        >{value}
                         </button>
                     </li>
                 ))}
             </ul>
             </div>
             <ul className={`icon-list ${inView ? 'active' : ''} ${isAnimated ? 'animate' : ''}`} ref={ref}>
-                {filteredComponents.map(({id, Element, value, link, type, description}, index) => (
+                {filteredComponents.map(({id, Element, value, link, translatedType, description}, index) => (
                     <li key={`${id}-${filterType}-${index}`} className={`icons-item`} style={{'--i': index + 1}}
                         data-tooltip-id="my-tooltip-data-html"
-                        data-tooltip-content={type}
+                        data-tooltip-content={translatedType}
                         data-relevant-attr={description}
                     >
                         <Element className='icons'/>
@@ -203,7 +222,7 @@ export const Icons = () => {
                 className="tool-tip"
                 render={({ content, activeAnchor }) => (
                     <span>
-                        <p className="tooltip-title">Category: {content}</p>
+                        <p className="tooltip-title">{stack.category}: {content}</p>
                         <p className="tooltip-text">{activeAnchor?.getAttribute('data-relevant-attr') || 'not set'}</p>
                     </span>
                 )}

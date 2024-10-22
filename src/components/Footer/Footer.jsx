@@ -4,20 +4,29 @@ import { NavLink } from "react-router-dom";
 import { ReactComponent as FacebookIcon } from "../../images/svg-icons/facebook.svg";
 import { ReactComponent as TelegramIcon } from "../../images/svg-icons/telegram.svg";
 import { ReactComponent as LinkedinIcon } from "../../images/svg-icons/linkedin.svg";
+import { ReactComponent as InstagramIcon } from "../../images/svg-icons/instagram.svg";
 import Logo from "../../images/images/iReX_logo.png";
-import Profile from "../../utils/profile.json";
 import { useInView } from 'react-intersection-observer';
 import { forwardRef } from "react";
 
 
 
-export const Footer = forwardRef(({backToTopRef}, reff) => {
+export const Footer = forwardRef(({backToTopRef, siteLanguage, profileLanguage}, reff) => {
     const { ref, inView } = useInView({
         triggerOnce: false,
         threshold: 0.1,
     });
+    const { footer } = siteLanguage;
 
-    const {facebook_link, linkedin_link, telegram_link, name1, name2} = Profile;
+    const {
+        facebook_link, 
+        linkedin_link, 
+        telegram_link, 
+        telegram_link2, 
+        instagram_link, 
+        name1, 
+        name2
+    } = profileLanguage;
 
 
 
@@ -42,7 +51,7 @@ export const Footer = forwardRef(({backToTopRef}, reff) => {
                         </div>
                     </div>
                     <div className="footer-right-cont order-three">
-                        <p className="footer-text-right">Find <span>Us</span> On:</p>
+                        <p className="footer-text-right">{footer.text1} <span>{footer.text2}</span> {footer.text3}:</p>
                         <ul className="footer-social-list">
                             <li className="footer-social-item">
                                 <NavLink className="footer-social-link" to={facebook_link}
@@ -66,6 +75,22 @@ export const Footer = forwardRef(({backToTopRef}, reff) => {
                                     target="_blank"
                                     rel="noreferrer noopener">
                                     <TelegramIcon className="footer-icon" width={20} height={20}/>
+                                </NavLink>
+                            </li>
+                            <li className="footer-social-item">
+                                <NavLink className="footer-social-link" to={telegram_link2}
+                                    aria-label="Telegram link"
+                                    target="_blank"
+                                    rel="noreferrer noopener">
+                                    <TelegramIcon className="footer-icon" width={20} height={20}/>
+                                </NavLink>
+                            </li>
+                            <li className="footer-social-item">
+                                <NavLink className="footer-social-link" to={instagram_link}
+                                    aria-label="Telegram link"
+                                    target="_blank"
+                                    rel="noreferrer noopener">
+                                    <InstagramIcon className="footer-icon" width={20} height={20}/>
                                 </NavLink>
                             </li>
                         </ul>

@@ -7,11 +7,9 @@ import {ReactComponent as OpenIcon} from "../../../images/svg-icons/openfolder.s
 import {ReactComponent as EducationalIcon} from "../../../images/svg-icons/education.svg";
 import { useCallback, useEffect, useState } from "react";
 import { useInView } from 'react-intersection-observer';
-import AllProjects from "../../../utils/projects.json";
 
 
-
-export const Projects = () => {
+export const Projects = ({siteLanguage, projectLanguage}) => {
     const [typeCounts, setTypeCounts] = useState({})
     const [totalPercent, setTotalPercent] = useState();
     const [fullStackPercent, setFullStackPercent] = useState();
@@ -19,17 +17,18 @@ export const Projects = () => {
     const [landingPercent, setLandingPercent] = useState();
     const [teamPercent, setTeamPercent] = useState();
     const [crmPercent, setCrmPercent] = useState();
-    
+      
     const { ref, inView } = useInView({
         triggerOnce: false,
         threshold: 0.5,
     });
+    const { stack } = siteLanguage;
 
     
     useEffect(() => {
         const counts = {};
     
-        AllProjects.forEach((project) => {
+        projectLanguage.forEach((project) => {
           const types = project.type.split(',').map(type => type.trim());
           
           types.forEach((type) => {
@@ -42,43 +41,43 @@ export const Projects = () => {
         });
     
         setTypeCounts(counts);
-    },[]);
+    },[projectLanguage]);
 
 
     const calculateTotalPercent = useCallback(() => {
-        const totalPercent = Math.round((AllProjects.length / AllProjects.length) * 100);
+        const totalPercent = Math.round((projectLanguage.length / projectLanguage.length) * 100);
         setTotalPercent(totalPercent);
-    },[]);
+    },[projectLanguage.length]);
 
 
     const calculateFullStackPercent = useCallback(() => {
-        const fullstackPercent = Math.round((typeCounts.FullStack / AllProjects.length) * 100);
+        const fullstackPercent = Math.round((typeCounts.FullStack / projectLanguage.length) * 100);
         setFullStackPercent(fullstackPercent);
-    }, [typeCounts.FullStack]);
+    }, [projectLanguage.length, typeCounts.FullStack]);
 
 
     const calculateBackendPercent = useCallback(() => {
-        const backendPercent = Math.round((typeCounts.Backend / AllProjects.length) * 100);
+        const backendPercent = Math.round((typeCounts.Backend / projectLanguage.length) * 100);
         setBackendPercent(backendPercent);
-    }, [typeCounts.Backend]);
+    }, [projectLanguage.length, typeCounts.Backend]);
 
 
     const calculateLandingPercent = useCallback(() => {
-        const landingPercent = Math.round((typeCounts.Landing / AllProjects.length) * 100);
+        const landingPercent = Math.round((typeCounts.Landing / projectLanguage.length) * 100);
         setLandingPercent(landingPercent);
-    }, [typeCounts.Landing]);
+    }, [projectLanguage.length, typeCounts.Landing]);
 
 
     const calculateTeamPercent = useCallback(() => {
-        const teamPercent = Math.round((typeCounts.Team / AllProjects.length) * 100);
+        const teamPercent = Math.round((typeCounts.Team / projectLanguage.length) * 100);
         setTeamPercent(teamPercent);
-    }, [typeCounts.Team]);
+    }, [projectLanguage.length, typeCounts.Team]);
 
 
     const calculateCrmPercent = useCallback(() => {
-        const crmPercent = Math.round((typeCounts.CRM / AllProjects.length) * 100);
+        const crmPercent = Math.round((typeCounts.CRM / projectLanguage.length) * 100);
         setCrmPercent(crmPercent);
-    }, [typeCounts.CRM]);
+    }, [projectLanguage.length, typeCounts.CRM]);
 
 
     useEffect(() => {
@@ -112,7 +111,7 @@ export const Projects = () => {
                 <li className="item">
                     <div className="descr-cont">
                         <TotalIcon className="item-svg" width={20} height={20}/>
-                        <p className="text">Total Completed Projects</p>
+                        <p className="text">{stack.total}</p>
                     </div>
                     <div className="colored-area">
                         <div className="area-for-total"
@@ -120,14 +119,14 @@ export const Projects = () => {
                             style={{ width: `${validTotalPercent}%`}}
                         >
                             <span></span>
-                            <p>{AllProjects.length}</p>
+                            <p>{projectLanguage.length}</p>
                         </div>
                     </div>
                 </li>
                 <li className="item">
                     <div className="descr-cont">
                         <EducationalIcon className="item-svg" width={20} height={20}/>
-                        <p className="text">Full-Stack Applications</p>
+                        <p className="text">{stack.fullStack}</p>
                     </div>
                     <div className="colored-area">
                         <div className="area-for-educational"
@@ -142,7 +141,7 @@ export const Projects = () => {
                 <li className="item">
                     <div className="descr-cont">
                         <IndividualIcon className="item-svg" width={20} height={20}/>
-                        <p className="text">Backend Services</p>
+                        <p className="text">{stack.backend}</p>
                     </div>
                     <div className="colored-area">
                         <div className="area-for-individual"
@@ -157,7 +156,7 @@ export const Projects = () => {
                 <li className="item">
                     <div className="descr-cont">
                         <TeamIcon className="item-svg" width={20} height={20}/>
-                        <p className="text">Frontend-Only Applications / Landing Sites</p>
+                        <p className="text">{stack.landing}</p>
                     </div>
                     <div className="colored-area">
                         <div className="area-for-team"
@@ -172,7 +171,7 @@ export const Projects = () => {
                 <li className="item">
                     <div className="descr-cont">
                         <OtherIcon className="item-svg" width={20} height={20}/>
-                        <p className="text">Team Projects</p>
+                        <p className="text">{stack.team}</p>
                     </div>
                     <div className="colored-area">
                         <div className="area-for-other"
@@ -187,7 +186,7 @@ export const Projects = () => {
                 <li className="item">
                     <div className="descr-cont">
                         <OpenIcon className="item-svg" width={20} height={20}/>
-                        <p className="text">CRM Applications</p>
+                        <p className="text">{stack.crm}</p>
                     </div>
                     <div className="colored-area">
                         <div className="area-for-open"

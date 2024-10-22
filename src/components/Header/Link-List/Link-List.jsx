@@ -16,13 +16,15 @@ export const LinkList = forwardRef(({
     toAboutUsRef, 
     toStackRef, 
     toPortfolioRef,
-    toContactRef
+    toContactRef,
+    siteLanguage
 }, reff) => {
     const { ref, inView } = useInView({
         triggerOnce: false,
         threshold: 0.1,
     });
-
+    const {header} = siteLanguage;
+      
 
     return(
         <LinkListStyled>
@@ -40,7 +42,7 @@ export const LinkList = forwardRef(({
                         }}
                     >
                         <HomeIcon className="header-icon" width={16} height={16}/>
-                        <span className="header-link-text">Welcome</span>
+                        <span className="header-link-text">{header.navMenu1}</span>
                     </NavLink>
                 </li>
                 <li className="link-list-item" style={{'--i': 2}}>
@@ -56,7 +58,7 @@ export const LinkList = forwardRef(({
                         }}
                     >
                         <AboutIcon className="header-icon" width={16} height={16}/>
-                        <span className="header-link-text">About Us</span>
+                        <span className="header-link-text">{header.navMenu2}</span>
                     </NavLink>
                 </li>
                 <li className="link-list-item" style={{'--i': 3}}>
@@ -72,7 +74,7 @@ export const LinkList = forwardRef(({
                         }}
                     >
                         <SkillsIcon className="header-icon" width={16} height={16}/>
-                        <span className="header-link-text">Stack</span>
+                        <span className="header-link-text">{header.navMenu3}</span>
                     </NavLink>
                 </li>
                 <li className="link-list-item" style={{'--i': 4}}>
@@ -88,7 +90,7 @@ export const LinkList = forwardRef(({
                         }}
                     >
                         <PortfolioIcon className="header-icon" width={16} height={16}/>
-                        <span className="header-link-text">Portfolio</span>
+                        <span className="header-link-text">{header.navMenu4}</span>
                     </NavLink>
                 </li>
                 <li className="link-list-item" style={{'--i': 5}}>
@@ -104,7 +106,7 @@ export const LinkList = forwardRef(({
                         }}
                     >
                         <ContactIcon className="header-icon" width={16} height={16}/>
-                        <span className="header-link-text">Contact Us</span>
+                        <span className="header-link-text">{header.navMenu5}</span>
                     </NavLink>
                 </li>
             </ul>

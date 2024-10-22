@@ -43,6 +43,8 @@ export const ContactFormStyled = styled.form`
 
 
     .form-label{
+        position: relative;
+        z-index: 1;
         display: block;
         margin-bottom: 10px;
         font-weight: 400;
@@ -51,7 +53,8 @@ export const ContactFormStyled = styled.form`
         letter-spacing: 0.01em;
         transform: scale(0.5);
         opacity: 0;
-        animation: OpacityAppear 1s ease forwards;
+        animation: OpacityAppear 1s ease;
+        animation-fill-mode: both, forwards, none;
         animation-delay: calc((0.3s * var(--i) + 2.5s));
 
         @media screen and (min-width: 768px){
@@ -60,10 +63,13 @@ export const ContactFormStyled = styled.form`
             line-height: 24px;
         }
     }
+    
+
 
     .form-group{
         position: relative;
         margin-top: 5px;
+        width: 100%;
     }
 
     .form-field{
@@ -91,6 +97,109 @@ export const ContactFormStyled = styled.form`
         }
     }
 
+
+    .react-tel-input .form-control {
+        position: relative;
+        font-size: 16px;
+        padding: 5px 30px 5px 68px;
+        border-radius: 10px;
+        outline: none;
+        line-height: calc(24 / 16);
+        letter-spacing: 0.04em;
+
+
+        &::placeholder{
+            color: rgba(117, 117, 117, 0.8);
+            font-size: 14px;
+            line-height: calc(16 / 14);
+            letter-spacing: 0.04em;
+            font-family: "Poppins";
+        }
+    }
+
+    .react-tel-input .form-control:hover,
+    .react-tel-input .form-control:focus,
+    .react-tel-input .form-control:focus-visible{
+        border: 2px solid ${p => p.theme.color.dark_theme3};
+        outline: none;
+    }
+
+    .form-group:hover .form-icon{
+        fill: ${p => p.theme.color.main_color};
+
+    }
+    .form-group:focus-within .form-icon{
+        fill: ${p => p.theme.color.main_color};
+    }
+
+    .react-tel-input .selected-flag {
+        outline: none;
+        position: relative;
+        width: 38px;
+        height: 100%;
+        padding: 0 0 0 8px;
+        z-index: 5;
+    }
+
+    .react-tel-input .flag-dropdown {
+        position: absolute;
+        margin-left: 30px;
+        height: 90%;
+        transform: translateY(2px);
+        top: 0;
+        bottom: 0;
+        padding: 0;
+        background-color: transparent;
+        border: none;
+        border-radius: none;
+    }
+
+    .react-tel-input .flag-dropdown.open {
+        z-index: 2;
+        background: transparent;
+        border-radius: none;
+    }
+
+    .react-tel-input .flag-dropdown.open .selected-flag {
+        background: transparent;
+        border-radius: none;
+    }
+
+    .react-tel-input .selected-flag:hover, 
+    .react-tel-input .selected-flag:focus {
+        background-color: transparent;
+    }
+
+
+    .react-tel-input .country-list {
+        outline: none;
+        list-style: none;
+        position: absolute;
+        z-index: 999;
+        padding: 0;
+        margin-top: 2px;
+        left: -28px;
+        box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.35);
+        background-color: ${p => p.theme.color.text_color};
+        width: 300px;
+        max-height: 200px;
+        overflow-y: scroll;
+        border-radius: 10px;
+    }
+
+    .react-tel-input .country-list .country-name {
+        color: ${p => p.theme.color.bg_color};
+        font-family: "Poppins";
+        font-weight: 400;
+    }
+
+    .react-tel-input .country-list .search {
+        background-color: ${p => p.theme.color.text_color};
+    }
+
+
+
+
     .form-field:hover,
     .form-field:focus,
     .form-field:focus-visible{
@@ -99,6 +208,7 @@ export const ContactFormStyled = styled.form`
     }
 
     .form-icon{
+        z-index: 2;
         position: absolute;
         left: 8px;
         top: 50%;
@@ -114,7 +224,6 @@ export const ContactFormStyled = styled.form`
     }
     .form-field:focus-within + .form-icon{
         fill: ${p => p.theme.color.main_color};
-
     }
 
     .form-comment{

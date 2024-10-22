@@ -15,6 +15,7 @@ export const Modal = ({
     closeContactModal,
     portfolioModalData,
     isSuccess,
+    siteLanguage
 }) => {
 
 
@@ -61,12 +62,14 @@ export const Modal = ({
                     <PortfolioModal 
                         handleClickClose={handleClickClose}
                         portfolioModalData={portfolioModalData}
+                        siteLanguage={siteLanguage}
                     />
                 )}
                 {isContactModal && (
                     <ContactModal 
                         handleClickClose={handleClickClose}
                         isSuccess={isSuccess}
+                        siteLanguage={siteLanguage}
                     />
                 )}
             </ModalStyled>

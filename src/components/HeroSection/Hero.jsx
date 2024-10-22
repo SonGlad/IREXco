@@ -1,7 +1,6 @@
 import { HeroStyled } from "./Hero.styled";
 import { forwardRef } from "react";
 import { ComputerCanvas } from "./ComputerCanvas";
-import Profile from "../../utils/profile.json";
 import { NavLink } from "react-router-dom";
 import Typewriter from 'typewriter-effect';
 import {ReactComponent as FingerIcon} from "../../images/svg-icons/finger.svg";
@@ -15,16 +14,18 @@ import { useInView } from 'react-intersection-observer';
 
 
 
-
 export const Hero = forwardRef(({ 
     backToTopRef, 
     toAboutUsRef, 
     forHeader, 
     toStackRef, 
     toPortfolioRef,
-    toContactRef
+    toContactRef,
+    profileLanguage,
+    siteLanguage,
 }, reff) => {
-    const { name1, name2, text1, text2} = Profile;
+    const { name1, name2, text1, text2} = profileLanguage;
+    const { hero } = siteLanguage;
     const [isModelLoaded, setIsModelLoaded] = useState(false);
 
 
@@ -78,7 +79,7 @@ export const Hero = forwardRef(({
                                     }}
                                 >
                                     <FingerIcon className="redirect-icon" width={24} height={24}/>    
-                                    <span>Contact Us</span>
+                                    <span>{hero.navMenu4}</span>
                                 </NavLink>
                             </li>
                             <li className="redirect-item">
@@ -91,7 +92,7 @@ export const Hero = forwardRef(({
                                     }}
                                 >
                                     <FingerIcon className="redirect-icon" width={24} height={24}/>    
-                                    <span>Stack</span>
+                                    <span>{hero.navMenu2}</span>
                                 </NavLink>
                             </li>
                         </ul>
@@ -107,7 +108,7 @@ export const Hero = forwardRef(({
                                         });
                                     }}
                                 >
-                                    <span>About Us</span>
+                                    <span>{hero.navMenu1}</span>
                                     <FingerIcon className="redirect-icon redirect-icon-rotate" width={24} height={24}/>    
                                 </NavLink>
                             </li>
@@ -120,7 +121,7 @@ export const Hero = forwardRef(({
                                         });
                                     }}
                                 >
-                                    <span>Portfolio</span>
+                                    <span>{hero.navMenu3}</span>
                                     <FingerIcon className="redirect-icon redirect-icon-rotate" width={24} height={24}/>    
                                 </NavLink>
                             </li>
@@ -138,7 +139,7 @@ export const Hero = forwardRef(({
                         <li className="redirect-item">
                             <NavLink className="redirect-link redirect" to='/portfolio' style={{'--i': 1}}>
                                 <FingerIcon className="redirect-icon" width={24} height={24}/>    
-                                <span>Contact Us</span>
+                                <span>{hero.navMenu4}</span>
                             </NavLink>
                         </li>
                         <li className="redirect-item">
@@ -151,7 +152,7 @@ export const Hero = forwardRef(({
                                 }}
                             >
                                 <FingerIcon className="redirect-icon" width={24} height={24}/>    
-                                <span>Stack</span>
+                                <span>{hero.navMenu2}</span>
                             </NavLink>
                         </li>
                         <li className="redirect-item">
@@ -164,7 +165,7 @@ export const Hero = forwardRef(({
                                 }}
                             >
                                 <FingerIcon className="redirect-icon" width={24} height={24}/>    
-                                <span>About Us</span>
+                                <span>{hero.navMenu1}</span>
                             </NavLink>
                         </li>
                         <li className="redirect-item">
@@ -177,7 +178,7 @@ export const Hero = forwardRef(({
                                 }}
                             >
                                 <FingerIcon className="redirect-icon" width={24} height={24}/>    
-                                <span>Portfolio</span>
+                                <span>{hero.navMenu3}</span>
                             </NavLink>
                         </li>
                     </ul>
@@ -186,21 +187,21 @@ export const Hero = forwardRef(({
                     <ul className="description-list">
                         <li className="description-item">
                             <TemplateIcon className="description-icon" width={24} height={24}/>
-                            <h3 className="description-title">No templates!</h3>
-                            <p className="description-text">Each website design is created from scratch, we design a site that solves the specific tasks of your business.</p>
+                            <h3 className="description-title">{hero.descriptionTitle1}</h3>
+                            <p className="description-text">{hero.description1}</p>
                         </li>
                         <li className="description-item">
                             <Construction className="description-icon" width={24} height={24}/>
-                            <h3 className="description-title">No website builders!</h3>
-                            <p className="description-text">Only modern development solutions for achieving maximum optimization and reliability.</p>
+                            <h3 className="description-title">{hero.descriptionTitle2}</h3>
+                            <p className="description-text">{hero.description2}</p>
                         </li>
                         <li className="description-item">
                             <div className="icon-cont">
                                 <UserIcon className="description-icon-user" width={24} height={24}/>
                                 <IconHandsBound className="description-icon-hands" width={24} height={24}/>
                             </div>
-                            <h3 className="description-title">24/7 support!</h3>
-                            <p className="description-text">We provide continuous technical support so that you can always count on us.</p>
+                            <h3 className="description-title">{hero.descriptionTitle3}</h3>
+                            <p className="description-text">{hero.description3}</p>
                         </li>
                     </ul>
                 </div>

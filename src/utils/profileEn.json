@@ -2,7 +2,9 @@
   "name1": "iReX",
   "name2": "Web-Development",
   "email": "okoshevy@gmail.com",
+  "email2": "aleksandr.shatalin048.work1@gmail.com",
   "phone": "+38 (067) 483-89-65",
+  "phone2": "+38 (063) 196-69-91",
   "text1": "We build websites that stand out!",
   "text2": "Empowering your online presence with creative websites!",
   "about1": "We are the iReX team, where technical expertise intertwines with the magic of creativity. Our projects are not just websites; they are unique platforms that help brands grow and thrive in the digital world. Over the years of working on various projects, we have created our own success story.",
@@ -15,15 +17,17 @@
   "facebook_link": "https://www.facebook.com/profile.php?id=100024930558745",
   "linkedin_link": "https://www.linkedin.com/in/oleg-koshevy/",
   "telegram_link": "https://t.me/SonGlad",
+  "telegram_link2": "https://t.me/mentholitty048",
+  "instagram_link": "https://www.instagram.com/mentholitty048?igsh=MWZqMHB5a2x4azR2aw==",
   "steps": {
     "projectPlanning":{
-      "description": "At this stage, the project's goal and its main objectives are defined. It includes gathering your requirements, analyzing business processes, identifying the target audience, and determining the product’s functionality. We create a detailed plan, breaking the project into phases, setting deadlines, allocating resources, and assigning responsibilities. The primary aim is to establish a clear understanding of what will be developed and how it will be done",
+      "description": "At this stage, the project's goal and its main objectives are defined. It includes gathering your requirements, analyzing business processes, identifying the target audience, and determining the product’s functionality. We create a detailed plan, breaking the project into phases, setting deadlines, allocating resources, and assigning responsibilities. The primary aim is to establish a clear understanding of what will be developed and how it will be done.",
       "value": "10",
       "img": "https://i.imgur.com/dCuguuB.jpg",
       "name": "Project Planning"
     },
     "designPrototyping":{
-      "description": "After the planning phase, the product design process begins. At this stage, visual wireframes and prototypes are created to help visualize the structure and user interaction with the interface. Designers focus on the user interface (UI) and user experience (UX) to ensure ease of use. The prototypes are tested and discussed with you before development starts, allowing for adjustments to be made early on",
+      "description": "After the planning phase, the product design process begins. At this stage, visual wireframes and prototypes are created to help visualize the structure and user interaction with the interface. Designers focus on the user interface (UI) and user experience (UX) to ensure ease of use. The prototypes are tested and discussed with you before development starts, allowing for adjustments to be made early on.",
       "value": "15",
       "img": "https://i.imgur.com/JEUYXQG.jpg",
       "name": "Design & Prototyping"
@@ -56,79 +60,117 @@
   "skills":[
     { "id": "IconReact",
       "value": "React",
-      "link": "https://react.dev"
+      "link": "https://react.dev",
+      "translatedType": "Frontend",
+      "description": "A library for building user interfaces."
     },
     { "id": "IconRedux",
       "value": "Redux",
-      "link": "https://redux.js.org"
+      "link": "https://redux.js.org",
+      "translatedType": "Frontend",
+      "description": "State management for React applications."
     },
     { "id": "IconHTML",
       "value": "HTML 5",
-      "link": "https://html.spec.whatwg.org"
+      "link": "https://html.spec.whatwg.org",
+      "translatedType": "Frontend",
+      "description": "The main foundation for creating web pages."
     },
     { "id": "IconJavaScript",
       "value": "JavaScript",
-      "link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript"
+      "link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript",
+      "translatedType": "Frontend, Backend",
+      "description": "The main language for frontend & backend development."
     },
     { "id": "IconCSS",
       "value": "CSS 3",
-      "link": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+      "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+      "translatedType": "Frontend",
+      "description": "Styling for web pages."
     },
     { "id": "IconGit",
       "value": "Git",
-      "link": "https://git-scm.com"
+      "link": "https://git-scm.com",
+      "translatedType": "DevOps",
+      "description": "A version control system for tracking changes in code."
     },
     { "id": "IconGitHub",
       "value": "GitHub",
-      "link": "https://github.com"
+      "link": "https://github.com",
+      "translatedType": "DevOps",
+      "description": "A platform for hosting and managing repositories."
     },
     { "id": "IconVS",
       "value": "Visual Studio",
-      "link": "https://code.visualstudio.com"
+      "link": "https://code.visualstudio.com",
+      "translatedType": "Dev-Tools",
+      "description": "A popular code editor for web developers."
     },
     { "id": "IconNode",
       "value": "Node.js",
-      "link": "https://nodejs.org/en"
+      "link": "https://nodejs.org/en",
+      "translatedType": "Backend",
+      "description": "A runtime for executing JavaScript on the server side."
     },
     { "id": "IconSASS",
       "value": "SASS / SCSS",
-      "link": "https://sass-lang.com"
+      "link": "https://sass-lang.com",
+      "translatedType": "Frontend",
+      "description": "A CSS preprocessor for enhanced styling."
     },
     { "id": "IconHandlebars",
       "value": "Handlebars",
-      "link": "https://handlebarsjs.com"
+      "link": "https://handlebarsjs.com",
+      "translatedType": "Frontend, Backend",
+      "description": "A template engine for server-side & front-end rendering."
     },
     { "id": "IconMongoDB",
       "value": "MongoDB",
-      "link": "https://www.mongodb.com/cloud/atlas/register?utm_source=google&utm_campaign=search_gs_pl_evergreen_atlas_core_prosp-brand_gic-null_emea-ua_ps-all_desktop_eng_lead&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624575&adgroup=115749710823&cq_cmp=12212624575&gad_source=1&gclid=CjwKCAiA_OetBhAtEiwAPTeQZy-VKImwt1qJHg8yNCl4a_hX5XmBxUh821Oa4HKoboH2OUpctL_ewhoCh7kQAvD_BwE"
+      "link": "https://www.mongodb.com/cloud/atlas/register?utm_source=google&utm_campaign=search_gs_pl_evergreen_atlas_core_prosp-brand_gic-null_emea-ua_ps-all_desktop_eng_lead&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624575&adgroup=115749710823&cq_cmp=12212624575&gad_source=1&gclid=CjwKCAiA_OetBhAtEiwAPTeQZy-VKImwt1qJHg8yNCl4a_hX5XmBxUh821Oa4HKoboH2OUpctL_ewhoCh7kQAvD_BwE",
+      "translatedType": "Backend",
+      "description": "A document-oriented NoSQL database."
     },
     { "id": "IconAxios",
       "value": "Axios",
-      "link": "https://axios-http.com/docs/api_intro"
+      "link": "https://axios-http.com/docs/api_intro",
+      "translatedType": "Backend, Frontend",
+      "description": "An HTTP client for API interaction."
     },
     { "id": "IconPostman",
       "value": "Postman",
-      "link": "https://www.postman.com"
+      "link": "https://www.postman.com",
+      "translatedType": "DevOps",
+      "description": "A tool for testing and interacting with APIs."
     },
     { "id": "IconStyled",
       "value": "Styled Components",
-      "link": "https://styled-components.com"
+      "link": "https://styled-components.com",
+      "translatedType": "Frontend",
+      "description": "A library for styled components in React."
     },
     { "id": "IconFigma",
       "value": "Figma",
-      "link": "https://www.figma.com"
+      "link": "https://www.figma.com",
+      "translatedType": "Dev-Tools",
+      "description": "A tool for creating designs and prototypes."
     },
     { "id": "IconRender",
       "value": "Render",
-      "link": "https://render.com"
+      "link": "https://render.com",
+      "translatedType": "DevOps",
+      "description": "A cloud platform for hosting and automatic application deployment."
     },
     { "id": "IconNetlify",
       "value": "Netlify",
-      "link": "https://app.netlify.com"
+      "link": "https://app.netlify.com",
+      "translatedType": "DevOps",
+      "description": "A platform for automatically deploying static sites."
     },
     { "id": "IconGoDaddy",
       "value": "GoDaddy",
-      "link": "https://www.godaddy.com/en-uk"
+      "link": "https://www.godaddy.com/en-uk",
+      "translatedType": "DevOps",
+      "description": "A provider of domains and hosting services."
     }
   ]
 }

@@ -3,13 +3,14 @@ import { NavLink } from "react-router-dom";
 import {ReactComponent as LinkSvg} from "../../../../../images/svg-icons/link2.svg"
 
 
-export const GroupLink = ({technical, figma}) => {
+export const GroupLink = ({technical, figma, siteLanguage}) => {
+    const { portfolioModal } = siteLanguage;
 
     
     return(
         <SecondaryGroupStyled>
             <li className="seconadry-group-item">
-                <p><strong>Technical Task:</strong></p>
+                <p><strong>{portfolioModal.techTask}:</strong></p>
                 {technical ? (
                     <NavLink className="repository-link" to={technical}
                         aria-label="technical task link"
@@ -17,14 +18,14 @@ export const GroupLink = ({technical, figma}) => {
                         rel="noreferrer noopener"
                     >
                         <LinkSvg className="svg-link" width={16} height={16}/>
-                        Available
+                        {portfolioModal.available}
                     </NavLink>
                 ) : (
-                    <p>N/A</p>
+                    <p>{portfolioModal.na}</p>
                 )}
             </li>
             <li className="seconadry-group-item">
-                <p><strong>Figma Link:</strong></p>
+                <p><strong>{portfolioModal.figmaLink}:</strong></p>
                 {figma ? (
                     <NavLink className="repository-link" to={figma}
                         aria-label="repository link"
@@ -32,10 +33,10 @@ export const GroupLink = ({technical, figma}) => {
                         rel="noreferrer noopener"
                     >
                         <LinkSvg className="svg-link" width={16} height={16}/>
-                        Available
+                        {portfolioModal.available}
                     </NavLink>
                 ) : (
-                    <p>N/A</p>
+                    <p>{portfolioModal.na}</p>
                 )}
             </li>
         </SecondaryGroupStyled>

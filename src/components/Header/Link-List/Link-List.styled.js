@@ -11,6 +11,10 @@ export const LinkListStyled = styled.div`
             display: flex;
             align-items: center;
             justify-content: center;
+            gap: 5px;
+        }
+
+        @media screen and (min-width: 840px){
             gap: 20px;
         }
     }
@@ -58,7 +62,7 @@ export const LinkListStyled = styled.div`
         display: flex;
         align-items: center;
         gap: 3px;
-        max-width: 130px;
+        max-width: 160px;
         fill: ${p => p.theme.color.text_color};
         transition: color ${p => p.theme.transition.main_transition},
                     fill ${p => p.theme.transition.main_transition};

@@ -16,12 +16,27 @@ export const Header = forwardRef(({
     headerBackground, 
     toStackRef, 
     toPortfolioRef,
-    toContactRef
+    toContactRef,
+    langValue,
+    setLangValue,
+    siteLanguage
 }, reff) => {   
     const [mobMenu, setMobMenu] = useState(false);
     const mobileMenu = useRef();
+    const langCont = useRef(null);
+    const [activeLangCont, setActiveLangCont] = useState(false);
 
    
+    const toggleLangMenu = () => {
+        setActiveLangCont(prevState => !prevState);
+    };
+
+    const chosenlanguage = (value) => {
+        setLangValue(value);
+        toggleLangMenu();
+    };
+    
+
     const toggleMenuBox = () => {
         setMobMenu(!mobMenu);
     };
@@ -43,22 +58,35 @@ export const Header = forwardRef(({
         event.stopPropagation();
     };
 
+    const handleKeyPress = useCallback(event => {
+        if (event.key === 'Escape') {
+            if(activeLangCont){
+                setActiveLangCont(false);
+            }
+        }
+    },[activeLangCont]);
+
 
     const onBackdropClick = useCallback(event => {
         event.stopPropagation();
         if(mobileMenu.current && !mobileMenu.current.contains(event.target)){
             setMobMenu(false);
         }
+        if (langCont.current && !langCont.current.contains(event.target)) {
+            setActiveLangCont(false);
+        }
     },[setMobMenu]);
 
 
     useEffect(() => {
         document.addEventListener('click', onBackdropClick);
+        document.addEventListener('keydown', handleKeyPress);
 
         return () => {
             document.removeEventListener('click', onBackdropClick);
+            document.removeEventListener('keydown', handleKeyPress);
         }
-    },[onBackdropClick]);
+    },[handleKeyPress, onBackdropClick]);
 
 
 
@@ -75,6 +103,22 @@ export const Header = forwardRef(({
                         <img className="header-logo" src={Logo} alt="logo"/>
                         {/* <LogoSvg className="header-logo" width={34} height={34}/> */}
                     </NavLink>
+                    <div className="lang-cont" ref={langCont}>
+                        <button className="lang-btn" onClick={toggleLangMenu}>{langValue}</button>
+                        <div className={`chose-lang-cont ${activeLangCont ? 'open' : ''}`}>
+                            <ul className="lang-list">
+                                <li className="lang-item" onClick={() => chosenlanguage('UA')}>
+                                    <p className="lang-text">UA</p>
+                                </li>
+                                <li className="lang-item"  onClick={() => chosenlanguage('EN')}>
+                                    <p className="lang-text">EN</p>
+                                </li>
+                                <li className="lang-item" onClick={() => chosenlanguage('RU')}>
+                                    <p className="lang-text">RU</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                     <div className="mobilemenu" ref={mobileMenu} onClick={stopPropagation}>
                         <button type='button'
                             onClick={toggleMenuBox} 
@@ -90,6 +134,7 @@ export const Header = forwardRef(({
                                     toStackRef={toStackRef}
                                     toPortfolioRef={toPortfolioRef}
                                     toContactRef={toContactRef}
+                                    siteLanguage={siteLanguage}
                                 />
                             </nav>
                         </div>
@@ -102,6 +147,7 @@ export const Header = forwardRef(({
                                 toStackRef={toStackRef}
                                 toPortfolioRef={toPortfolioRef}
                                 toContactRef={toContactRef}
+                                siteLanguage={siteLanguage}
                             />
                         </nav>
                     </div>

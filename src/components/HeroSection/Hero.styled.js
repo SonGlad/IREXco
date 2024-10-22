@@ -206,7 +206,7 @@ export const HeroStyled = styled.div`
 
          @media screen and (min-width: 1200px){
             margin-top: 0;
-            max-width: 285px;
+            max-width: 295px;
          }
 
          & .description-title{

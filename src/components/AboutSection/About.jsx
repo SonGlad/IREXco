@@ -2,14 +2,18 @@ import { AboutStyled } from "./About.styled";
 import { LeftAnimation } from "./LeftAnimation/LeftAnimation";
 import { RightAnimation } from "./RightAnimation/RightAnimation";
 import IrexLogo from "../../images/images/iReX_logo.png";
-import profile from "../../utils/profile.json";
 import { forwardRef } from "react";
 import { useInView } from 'react-intersection-observer';
 
 
 
-export const AboutUsSection = forwardRef(({toAboutUsRef}, reff) => {
-    const { about1, about2, about3 } = profile;
+export const AboutUsSection = forwardRef(({
+    toAboutUsRef,    
+    profileLanguage,
+    siteLanguage,}, 
+    reff) => {
+    const { about1, about2, about3 } = profileLanguage;
+    const { about } = siteLanguage;
 
 
     const { ref, inView } = useInView({
@@ -31,7 +35,7 @@ export const AboutUsSection = forwardRef(({toAboutUsRef}, reff) => {
       
     return (
         <AboutStyled ref={toAboutUsRef}>
-            <h1 className="about-title">About <span>Us</span></h1>
+            <h1 className="about-title">{about.sectionTitle1} <span>{about.sectionTitle2}</span></h1>
             <div className='animation-container'>
                 <div className={`about-cont ${inView ? 'active' : ''}`} ref={ref}>
                     <div className="shadow0">

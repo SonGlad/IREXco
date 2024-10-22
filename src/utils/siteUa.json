@@ -1,0 +1,118 @@
+{
+    "header": {
+        "navMenu1": "Вітаємо",
+        "navMenu2": "Про нас",
+        "navMenu3": "Технології",
+        "navMenu4": "Портфоліо",
+        "navMenu5": "Контакти"
+    },
+    "hero":{
+        "navMenu1": "Про нас",
+        "navMenu2": "Технології",
+        "navMenu3": "Портфоліо",
+        "navMenu4": "Контакти",
+        "descriptionTitle1": "Ніяких шаблонів!",
+        "description1":"Кожен дизайн сайту створюється з нуля, ми розробляємо сайт, який вирішує конкретні завдання вашого бізнесу",
+        "descriptionTitle2": "Жодних конструкторів!",
+        "description2":"Тільки сучасні рішення в розробці для досягнення максимальної оптимізації та надійності.",
+        "descriptionTitle3": "Підтримка 24/7",
+        "description3":"Ми надаємо постійну технічну підтримку, щоб ви завжди могли на нас розраховувати."
+    },
+    "about":{
+        "sectionTitle1": "Про",
+        "sectionTitle2": "Нас"
+    },
+    "stack":{
+        "sectionTitle1": "Наш",
+        "sectionTitle2": "Інструментарій",
+        "buttonAll": "Усі",
+        "category": "Категорія",
+        "subTitle1": "Статистика",
+        "subTitle2": "Розробки",
+        "subAubTitle1": "Огляд",
+        "subAubTitle2": "Завершених",
+        "subAubTitle3": "Проектів",
+        "subAubTitle4": "Розподіл",
+        "subAubTitle5": "Фаз",
+        "subAubTitle6": "Проекту",
+        "lastTitle1": "Розподіл",
+        "lastTitle2": "Зусиль",
+        "lastTitle3": "За",
+        "lastTitle4": "Фазами",
+        "lastTitle5": "Проекту",
+        "total": "Усього Завершених Проектів",
+        "fullStack": "Повноцінні Додатки (Full-Stack)",
+        "backend": "Бекенд-Сервіси",
+        "landing": "Лише Фронтенд-Додатки / Лендінг-сторінки",
+        "team": "Командні Проекти",
+        "crm": "CRM Програми",
+        "projectTime": "Час Проекту:"
+    },
+    "portfolio": {
+        "sectionTitle1": "Наші",
+        "sectionTitle2": "Проекти",
+        "seeMore": "Докладніше",
+        "buttonAll": "Усі"
+    },
+    "portfolioModal": {
+        "livePage": "Жива Сторінка",
+        "type": "Тип",
+        "techTask": "Технічне Завдання",
+        "available": "В наявності",
+        "na": "Відсутнє",
+        "figmaLink": "Посылання на Макет",
+        "technologies": "Технології",
+        "seaAllButton": "Переглянути усі",
+        "libraries": "Бібліотеки"
+    },
+    "contactModal": {
+        "text1": "Дякуємо, що зв'язалися з нами!",
+        "text2": "Ми зв'яжемося з вами якнайшвидше!",
+        "text3": "Упс... Щось пішло не так.",
+        "text4": "Будь ласка, спробуйте пізніше...",
+        "buttonText": "Продовжити"
+    },
+    "contact":{
+        "title1": "Зв'яжіться",
+        "title2": "З нами",
+        "subTitle": "Давайте працювати разом!",
+        "form":{
+            "labelValue1": "Ім'я",
+            "placeholdervalue1": "Введіть ваше ім'я",
+            "labelValue2": "Email",
+            "placeholdervalue2": "Введіть ваш email",
+            "labelValue3": "Телефон",
+            "placeholdervalue3": "Введіть ваш телефон",
+            "labelValue4": "Тема",
+            "placeholdervalue4": "Введіть тему повідомлення",
+            "labelValue5": "Ваше повідомлення",
+            "placeholdervalue5": "Введіть ваше повідомлення",
+            "checkBox": "Позначте, щоб підтвердити ваші дані",
+            "submitBtn": "Відправити",
+            "validationNameMatches": "Ім'я може містити тільки літери та пробіли",
+            "validationNameMin": "Ім'я занадто коротке",
+            "validationNameMax": "Ім'я занадто довге",
+            "validationNameRequired": "Ім'я обов'язкове",
+            "validationEmailMatches": "Неправильний email",
+            "validationEmail": "Неправильний email",
+            "validationEmailRequired": "Email обов'язковий",
+            "validationPhoneMatches": "Номер телефону може містити тільки цифри",
+            "validationPhoneMin": "Номер занадто короткий",
+            "validationPhoneMax": "Номер занадто довгий",
+            "validationPhoneRequired": "Будь ласка, введіть дійсний номер телефону",
+            "validationSubjectMin": "Тема занадто коротка",
+            "validationSubjectMax": "Тема занадто довга",
+            "validationSubjectRequired": "Тема обов'язкова",
+            "agreementRequired": "Ви повинні прийняти введені дані",
+            "nameCorrect": "введено вірно",
+            "emailCorrect": "введено вірно",
+            "phoneCorrect": "введено вірно",
+            "subjectCorrect": "введена вірно"
+        }
+    },
+    "footer":{
+        "text1": "Знайдіть",
+        "text2": "Нас",
+        "text3": "На"
+    }
+}

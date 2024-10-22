@@ -6,7 +6,8 @@ import { StyledChart } from './Charts.styled';
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 
-export const Chart = ({value}) => {
+export const Chart = ({value, siteLanguage}) => {
+  const { stack } = siteLanguage;
   const otherSize = 100 - value.value;
 
   const data = {
@@ -35,7 +36,7 @@ export const Chart = ({value}) => {
 
   return (
     <StyledChart>
-      <p className='chart-title'>Project Time:</p>
+      <p className='chart-title'>{stack.projectTime}</p>
       <div className='chart-wrapper'>
         <Doughnut data={data} options={options}/>
           <div>

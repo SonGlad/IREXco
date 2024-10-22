@@ -1,0 +1,118 @@
+{
+    "header": {
+        "navMenu1": "Приветствие",
+        "navMenu2": "О нас",
+        "navMenu3": "Технологии",
+        "navMenu4": "Портфолио",
+        "navMenu5": "Контакты"
+    },
+    "hero": {
+        "navMenu1": "О нас",
+        "navMenu2": "Технологии",
+        "navMenu3": "Портфолио",
+        "navMenu4": "Контакты",
+        "descriptionTitle1": "Никаких шаблонов!",
+        "description1":"Каждый дизайн сайта создается с нуля, мы разрабатываем сайт, который решает конкретные задачи вашего бизнеса.",
+        "descriptionTitle2": "Никаких конструкторов!",
+        "description2":"Только современные решения в разработке для достижения максимальной оптимизации и надежности.",
+        "descriptionTitle3": "Поддердка 24/7!",
+        "description3":"Мы предоставляем постоянную техническую поддержку, чтобы вы всегда могли на нас рассчитывать."
+    },
+    "about":{
+        "sectionTitle1": "O",
+        "sectionTitle2": "Нас"
+    },
+    "stack":{
+        "sectionTitle1": "Наш",
+        "sectionTitle2": "Инструментарий",
+        "buttonAll": "Все",
+        "category": "Категория",
+        "subTitle1": "Статистика",
+        "subTitle2": "Разработки",
+        "subAubTitle1": "Обзор",
+        "subAubTitle2": "Завершённых",
+        "subAubTitle3": "Проектов",
+        "subAubTitle4": "Разделение",
+        "subAubTitle5": "Фаз",
+        "subAubTitle6": "Проекта",
+        "lastTitle1": "Распределение",
+        "lastTitle2": "Усилий",
+        "lastTitle3": "По",
+        "lastTitle4": "Фазам",
+        "lastTitle5": "Проекта",
+        "total": "Всего Завершенных Проектов",
+        "fullStack": "Полноценные Приложения (Full-Stack)",
+        "backend": "Бэкенд-Сервисы",
+        "landing": "Только Фронтенд-Приложения / Лендинг-страницы",
+        "team": "Командные Проекты",
+        "crm": "CRM Приложения",
+        "projectTime": "Время Проекта:"
+    },
+    "portfolio": {
+        "sectionTitle1": "Наши",
+        "sectionTitle2": "Проекты",
+        "seeMore": "Подробнее",
+        "buttonAll": "Все"
+    },
+    "portfolioModal": {
+        "livePage": "Живая Страница",
+        "type": "Тип",
+        "techTask": "Техническое Задание",
+        "available": "Доступно",
+        "na": "Отсутствует",
+        "figmaLink": "Ссылка на Макет",
+        "technologies": "Технологии",
+        "seaAllButton": "Смотреть все",
+        "libraries": "Библиотеки"
+    },
+    "contactModal": {
+        "text1": "Благодарим за то, что связались с нами!",
+        "text2": "Мы свяжемся с вами в ближайшее время!",
+        "text3": "Упс... Что-то пошло не так.",
+        "text4": "Пожалуйста, попробуйте позже...",
+        "buttonText": "Продолжить"
+    },
+    "contact":{
+        "title1": "Свяжитесь",
+        "title2": "С нами",
+        "subTitle": "Давайте работать вместе!",
+        "form":{
+            "labelValue1": "Имя",
+            "placeholdervalue1": "Введите ваше имя",
+            "labelValue2": "Email",
+            "placeholdervalue2": "Введите ваш email",
+            "labelValue3": "Телефон",
+            "placeholdervalue3": "Введите ваш телефон",
+            "labelValue4": "Тема",
+            "placeholdervalue4": "Введите тему сообщения",
+            "labelValue5": "Ваше сообщение",
+            "placeholdervalue5": "Введите текст вашего сообщения",
+            "checkBox": "Отметьте, чтобы подтвердить ваши данные",
+            "submitBtn": "Отправить",
+            "validationNameMatches": "Имя может содержать только буквы и пробелы",
+            "validationNameMin": "Имя слишком короткое",
+            "validationNameMax": "Имя слишком длинное",
+            "validationNameRequired": "Имя обязательно",
+            "validationEmailMatches": "Неверный email",
+            "validationEmail": "Неверный email",
+            "validationEmailRequired": "Email обязателен",
+            "validationPhoneMatches": "Номер телефона может содержать только цифры",
+            "validationPhoneMin": "Номер слишком короткий",
+            "validationPhoneMax": "Номер слишком длинный",
+            "validationPhoneRequired": "Пожалуйста, введите действующий номер телефона",
+            "validationSubjectMin": "Тема слишком короткая",
+            "validationSubjectMax": "Тема слишком длинная",
+            "validationSubjectRequired": "Тема обязательна",
+            "agreementRequired": "Вы должны принять введенные данные",
+            "nameCorrect": "введено верно",
+            "emailCorrect": "введён верно",
+            "phoneCorrect": "введён верно",
+            "subjectCorrect": "введена верно"
+        }
+    },
+    "footer":{
+        "text1": "Найдите",
+        "text2": "Нас",
+        "text3": "На"
+    }
+}
