@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/IREXco/static/css/main.06c344c2.css",
-    "main.js": "/IREXco/static/js/main.75cd810f.js",
+    "main.js": "/IREXco/static/js/main.c71b6020.js",
     "static/media/iReX_logo.png": "/IREXco/static/media/iReX_logo.bb7640ae2d9d84190796.png",
     "static/media/bg_image.jpg": "/IREXco/static/media/bg_image.b9582bcafcb2d9c85e18.jpg",
     "static/media/open-book.svg": "/IREXco/static/media/open-book.e7022b79c1e767d89b081323a5d0b800.svg",
     "static/media/instagram.svg": "/IREXco/static/media/instagram.f443f5d26af5c22a3c38bf1c0ef59277.svg",
     "static/media/typescript.svg": "/IREXco/static/media/typescript.d18207dc773a07612961805bf30374d2.svg",
-    "index.html": "/IREXco/index.html",
     "static/media/scss.svg": "/IREXco/static/media/scss.2a95573679d683635ee74301b9b5c401.svg",
+    "index.html": "/IREXco/index.html",
     "static/media/check.svg": "/IREXco/static/media/check.06056f26853bb6de02e666a58fb8377b.svg",
     "static/media/finger.svg": "/IREXco/static/media/finger.bf256c1cb92ae8e33c63e8b09f80e37b.svg",
     "static/media/handlebars.svg": "/IREXco/static/media/handlebars.4dea8dbd4aab141a3d2613c0da7407a4.svg",
@@ -44,6 +44,6 @@
   },
   "entrypoints": [
     "static/css/main.06c344c2.css",
-    "static/js/main.75cd810f.js"
+    "static/js/main.c71b6020.js"
   ]
 }
