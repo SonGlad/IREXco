@@ -20,14 +20,16 @@ export const StackSection = forwardRef(({
         triggerOnce: true,
         threshold: 0.1,
     });
+    console.log(inViewContent);
+    
 
 
     return(
         <StackSectionStyled ref={toStackRef}>
+            <h1 className="main-education-title">{stack.sectionTitle1} <span>{stack.sectionTitle2}</span></h1>
             <div className="content-div" ref={contentRef}>
                 {inViewContent && (
                     <>
-                        <h1 className="main-education-title">{stack.sectionTitle1} <span>{stack.sectionTitle2}</span></h1>
                         <Icons 
                             profileLanguage={profileLanguage}
                             siteLanguage={siteLanguage}

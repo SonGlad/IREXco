@@ -4,7 +4,7 @@ import { OrbitControls } from "@react-three/drei";
 import { useGLTF } from '@react-three/drei';
 import { CanvasLoader } from '../CustomLoaders/CustomLoaders';
 import React from "react";
-// import { Model } from "./Scene";
+import { Model } from "./Scene";
 
 
 
@@ -20,6 +20,17 @@ export const ComputerCanvas = React.memo(() => {
                 camera={{ position: [20, 3, 5], fov: 25 }}
                 gl={{preserveDrawingBuffer: true}}
             >
+                {/* <primitive
+                    object={scene}
+                    scale={1}
+                    position={[0, -2.15, -1.5]}
+                    rotation={[0, -0.25, -0.15]}
+                /> */}
+                <Model
+                    position={[0, -2.15, -1.5]}
+                    rotation={[0, -0.25, -0.15]}
+                    scene={scene}
+                />
                 <OrbitControls
                     enableZoom={false}
                     maxPolarAngle={Math.PI / 2}
@@ -29,10 +40,6 @@ export const ComputerCanvas = React.memo(() => {
                     intensity={2.5}
                     groundColor="black"
                 />
-                <pointLight
-                    intensity={2}
-                    position={[-0.5, 2.1, 1.1]}
-                />
                 <spotLight
                     position={[-20, 50, 10]}
                     angle={0.12}
@@ -41,16 +48,9 @@ export const ComputerCanvas = React.memo(() => {
                     castShadow
                     shadow-mapSize={1024}
                 />
-                {/* <Model
-                    position={[0, -2.15, -1.5]}
-                    rotation={[0, -0.25, -0.15]}
-                    scene={scene}
-                /> */}
-                <primitive
-                    object={scene}
-                    scale={1}
-                    position={[0, -2.15, -1.5]}
-                    rotation={[0, -0.25, -0.15]}
+                <pointLight
+                    intensity={2}
+                    position={[-0.5, 2.1, 1.1]}
                 />
             </Canvas>
         </Suspense>

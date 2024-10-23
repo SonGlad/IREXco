@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 export const StackSectionStyled = styled.div`
-    padding: 20px 10px 0 10px;
+    padding: 20px 10px;
 
 
     @media screen and (min-width: 768px){

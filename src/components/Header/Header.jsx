@@ -104,7 +104,7 @@ export const Header = forwardRef(({
                         {/* <LogoSvg className="header-logo" width={34} height={34}/> */}
                     </NavLink>
                     <div className="lang-cont" ref={langCont}>
-                        <button className="lang-btn" onClick={toggleLangMenu}>{langValue}</button>
+                        <button className="lang-btn" aria-label="Language Button" onClick={toggleLangMenu}>{langValue}</button>
                         <div className={`chose-lang-cont ${activeLangCont ? 'open' : ''}`}>
                             <ul className="lang-list">
                                 <li className="lang-item" onClick={() => chosenlanguage('UA')}>
@@ -123,6 +123,7 @@ export const Header = forwardRef(({
                         <button type='button'
                             onClick={toggleMenuBox} 
                             className='mob-menu-btn'
+                            aria-label="Mobile Menu"
                         >
                             {changeIcon()}
                         </button>

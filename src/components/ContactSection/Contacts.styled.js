@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 export const ContactsStyled = styled.div`
-    padding: 20px 0;
+    padding: 20px 10px;
     
     @media screen and (min-width: 768px){
         padding: 60px 0 10px 0;

@@ -75,7 +75,6 @@ export const PortfolioStyled = styled.div`
         gap: 32px;
         padding: 20px 0;
 
-
         @media screen and (min-width: 480px){
             gap: 17px;
         }
@@ -89,11 +88,12 @@ export const PortfolioStyled = styled.div`
 
     .col {
         width: 100%;
-        opacity: 0;
-        visibility: hidden;
-        
         @media screen and (min-width: 480px){
             max-width: 48%;
+        }
+        @media screen and (min-width: 768px){
+            opacity: 0;
+            visibility: hidden;
         }
         @media screen and (min-width: 900px){
             max-width: 31%;
@@ -105,17 +105,21 @@ export const PortfolioStyled = styled.div`
     }
 
     .active .col{
-        opacity: 01;
-        visibility: hidden;
-        animation: slideColTop 1s ease forwards;
-        animation-delay: calc((0.2s * var(--i) + 0.2s));
+        @media screen and (min-width: 768px){
+            opacity: 01;
+            visibility: hidden;
+            animation: slideColTop 1s ease forwards;
+            animation-delay: calc((0.2s * var(--i) + 0.2s));
+        }
     }
 
     .animate .col{
-        visibility: hidden;
-        opacity: 0;
-        animation: slideColTop 1s ease forwards;
-        animation-delay: calc((0.2s * var(--i) + 0.2s));
+        @media screen and (min-width: 768px){
+            visibility: hidden;
+            opacity: 0;
+            animation: slideColTop 1s ease forwards;
+            animation-delay: calc((0.2s * var(--i) + 0.2s));
+        }
     }
 
 

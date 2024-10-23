@@ -2,14 +2,22 @@ import { styled } from "styled-components";
 
 
 export const AboutStyled = styled.div`
-    padding: 20px 0;
+    padding: 20px 10px 0 10px;
     
     @media screen and (min-width: 768px){
-        padding: 60px 0;
+        padding: 60px 0 60px 0;
     }
     
     .content-div{
-        min-height: 860px;
+        @media (min-width: 360px) and (max-width: 767px) {
+            min-height: calc(1380px + ((1860 - 1380) * ((767px - 100vw) / (767 - 360))));
+        }
+        @media (min-width: 768px) and (max-width: 1199px) {
+            min-height: calc(960px + ((1108- 960) * ((1199px - 100vw) / (1199 - 768))));
+        }
+        @media screen and (min-width: 1200px){
+            min-height: 960px;
+        }
     }
 
     .about-title{
@@ -24,21 +32,14 @@ export const AboutStyled = styled.div`
         }
     }
 
-    .animation-container{
-        margin-bottom: 30px;
-
-        @media screen and (min-width: 768px){
-            margin-bottom: 50px;
-        }
-    }
 
     .about-cont {
         margin-bottom: 30px;
-        opacity: 0;
-        scale: 0.6;
-        transition: opacity 1s ease,
-                    scale 1s ease;
         @media screen and (min-width: 768px){
+            opacity: 0;
+            scale: 0.6;
+            transition: opacity 1s ease,
+                    scale 1s ease;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -51,12 +52,11 @@ export const AboutStyled = styled.div`
 
 
     .coding-container-right{
-        margin-bottom: 30px;
-        opacity: 0;
-        scale: 0.6;
-        transition: opacity 1s ease,
-                    scale 1s ease;
         @media screen and (min-width: 768px){
+            opacity: 0;
+            scale: 0.6;
+            transition: opacity 1s ease,
+                        scale 1s ease;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -70,11 +70,11 @@ export const AboutStyled = styled.div`
 
     .coding-container-left{
         margin-bottom: 30px;
-        opacity: 0;
-        scale: 1.4;
-        transition: opacity 1s ease,
-                    scale 1s ease;
         @media screen and (min-width: 768px){
+            opacity: 0;
+            scale: 1.4;
+            transition: opacity 1s ease,
+                    scale 1s ease;
             display: flex;
             align-items: center;
             justify-content: center;
