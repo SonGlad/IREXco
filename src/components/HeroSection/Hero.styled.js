@@ -167,19 +167,23 @@ export const HeroStyled = styled.div`
       align-items: center;
       justify-content: center;
       opacity: 0;
-      transform: translateY(25%);
-      transition: opacity 1s ease,
-                  transform 1s ease;
+      transition: opacity 1s ease;
  
       @media screen and (min-width: 1200px){
+         transform: translateY(25%);
+         transition: opacity 1s ease,
+                     transform 1s ease;
          margin-top: 15px;
       }
    }
 
    .active .description-cont{
       opacity: 1;
-      transform: translateY(0%);
+      @media screen and (min-width: 1200px){
+         transform: translateY(0%);
+      }
    }
+   
 
    .description-list{
       background-color: ${p => p.theme.color.bg_color};
