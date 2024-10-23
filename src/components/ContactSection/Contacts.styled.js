@@ -3,10 +3,12 @@ import styled from "styled-components";
 
 export const ContactsStyled = styled.div`
     padding: 20px 0;
-    min-height: 750px;
+    min-height: 460px;
 
+    
     @media screen and (min-width: 768px){
         padding: 60px 0 10px 0;
+        min-height: 750px;
     }
 
     .about-title{
