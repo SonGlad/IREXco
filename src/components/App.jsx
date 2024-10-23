@@ -22,6 +22,8 @@ import ProfileRu from "../utils/profileRu.json";
 import ProjectsEn from "../utils/projectsEn.json";
 import ProjectsUa from "../utils/projectsUa.json";
 import ProjectsRu from "../utils/projectsRu.json";
+// import Facebook1 from "../tracking/Facebook1";
+// import Facebook2 from "../tracking/Facebook2";
 
 
 
@@ -46,7 +48,9 @@ export const App= () => {
   const [siteLanguage, setSiteLanguage] = useState(SiteUa);
   const [profileLanguage, setProfileLanguage] = useState(ProfileUa);
   const [projectLanguage, setProjectLanguage] = useState(ProjectsUa);
-
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [isParticles, setParticles] = useState(false);
+ 
 
   useEffect(() => {
     if (country === 'UA') {
@@ -71,11 +75,29 @@ export const App= () => {
       setProfileLanguage(ProfileEn);
       setProjectLanguage(ProjectsEn);
     }
-  },[langValue])
+  },[langValue]);
+
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  },[]);
+
+  useEffect(() => {
+    if (windowWidth >= 1200) {
+      setParticles(true);
+    } else {
+      setParticles(false);
+    }
+  },[windowWidth])
   
  
- 
-
   const openPortfolioModal = () => {
     if (isContactModal) {
       setContactModal(false);
@@ -96,8 +118,6 @@ export const App= () => {
   };
   
  
-
-
   useEffect(() => {
     if (inView && headerBackground) {
       setHeaderBackground(false);
@@ -110,8 +130,10 @@ export const App= () => {
   
   return (
     <>
+      {/* <Facebook1/> */}
+      {/* {isContactModal && <Facebook2/>} */}
       {isLoading && <FormLoading/>}
-      <ParticlesComponent id='particles'/>
+      {isParticles && <ParticlesComponent id='particles'/>}
       <Header 
         backToTopRef={backToTopRef}
         toAboutUsRef={toAboutUsRef}
