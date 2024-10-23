@@ -163,7 +163,7 @@ export const Hero = forwardRef(({
                             </NavLink>
                         </li>
                         <li className="redirect-item">
-                            <NavLink className="redirect-link redirect" style={{'--i': 3}}
+                            <button className="redirect-link redirect" style={{'--i': 3}}
                                 onClick={() => {
                                     toAboutUsRef.current.scrollIntoView({
                                     behavior: 'smooth',
@@ -173,10 +173,10 @@ export const Hero = forwardRef(({
                             >
                                 <FingerIcon className="redirect-icon" width={24} height={24}/>    
                                 <span>{hero.navMenu1}</span>
-                            </NavLink>
+                            </button>
                         </li>
                         <li className="redirect-item">
-                            <NavLink className="redirect-link redirect"style={{'--i': 4}}
+                            <button className="redirect-link redirect"style={{'--i': 4}}
                                 onClick={() => {
                                     toPortfolioRef.current.scrollIntoView({
                                     behavior: 'smooth',
@@ -186,7 +186,7 @@ export const Hero = forwardRef(({
                             >
                                 <FingerIcon className="redirect-icon" width={24} height={24}/>    
                                 <span>{hero.navMenu3}</span>
-                            </NavLink>
+                            </button>
                         </li>
                     </ul>
                 </div>
