@@ -50,6 +50,9 @@ export const App= () => {
   const [projectLanguage, setProjectLanguage] = useState(ProjectsUa);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [isParticles, setParticles] = useState(false);
+  console.log(toAboutUsRef);
+  console.log(toPortfolioRef);
+  
  
 
   useEffect(() => {

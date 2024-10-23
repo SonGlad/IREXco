@@ -103,9 +103,7 @@ export const Projects = ({siteLanguage, projectLanguage}) => {
     const validLandingPercent = isNaN(landingPercent) ? 0 : landingPercent;
     const validTeamPercent = isNaN(teamPercent) ? 0 : teamPercent;
     const validCrmPercent = isNaN(crmPercent) ? 0 : crmPercent;
-    console.log(validTotalPercent);
-    
-
+   
 
     return(
         <ProjectStyled>

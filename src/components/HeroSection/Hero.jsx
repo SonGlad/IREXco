@@ -137,7 +137,14 @@ export const Hero = forwardRef(({
                 <div className="redirect-cont-small-screen">
                     <ul className="redirext-list">
                         <li className="redirect-item">
-                            <NavLink className="redirect-link redirect" to='/portfolio' style={{'--i': 1}}>
+                            <NavLink className="redirect-link redirect" style={{'--i': 1}}
+                                onClick={() => {
+                                    toContactRef.current.scrollIntoView({
+                                    behavior: 'smooth',
+                                    block: 'start',
+                                    });
+                                }}
+                            >
                                 <FingerIcon className="redirect-icon" width={24} height={24}/>    
                                 <span>{hero.navMenu4}</span>
                             </NavLink>

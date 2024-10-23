@@ -6,8 +6,8 @@ export const FooterStyled = styled.footer`
     
     .footer-container{
         padding: 40px 0;
+        opacity: 0;
         
-
         @media screen and (min-width: 768px){
             padding: 40px 0 40px 0;
             display: flex;
@@ -19,6 +19,10 @@ export const FooterStyled = styled.footer`
         @media screen and (min-width: 981px) {
             padding: 40px 0 20px 0;
         }
+    }
+
+    .visible{
+        opacity: 1;
     }
 
     
@@ -180,6 +184,7 @@ export const FooterStyled = styled.footer`
         transform: translate(-36%, -50%) scale(1.3);
         transition: transform ${p => p.theme.transition.main_transition};
     }
+
 
     .visible .footer-right-cont{
         display: flex;

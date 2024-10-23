@@ -94,7 +94,7 @@ export const Header = forwardRef(({
         <StyledHeader $headerBackground={headerBackground}>
             <Container>
                 <div className='header-container'>
-                    <NavLink className="logo-link" to='/'
+                    <NavLink className="logo-link"
                         onClick={() => 
                             backToTopRef.current.scrollIntoView({
                             behavior: 'smooth',
