@@ -22,6 +22,10 @@ export const PortfolioSection = forwardRef(({
         triggerOnce: true,
         threshold: 0.1,
     });
+    const { ref: contentRef, inView: inViewContent } = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
     const { portfolio } = siteLanguage;
     
 
@@ -106,48 +110,54 @@ export const PortfolioSection = forwardRef(({
     return(
         <PortfolioStyled ref={toPortfolioRef}>
             <h1 className="potfolio-title"><span>{portfolio.sectionTitle1} </span>{portfolio.sectionTitle2}</h1>
-            <ul className="filter-list">
-                <li className="filter-item">
-                    <button className="filter-button indi-animation" type="button" 
-                        onClick={() => handleFilter('All')}
-                    >{portfolio.buttonAll}
-                    </button>
-                </li>
-                {buttonName && buttonName.map(({type, value}, index) => (
-                    <li className="filter-item" key={index}>
-                        <button className="filter-button indi-animation" type="button" 
-                            onClick={() => handleFilter(type)}
-                        >{value}
-                        </button>
-                    </li>
-                ))}
-            </ul>
-            <ul className={`cols ${inView ? 'active' : ''} ${isAnimated ? 'animate' : ''}`} ref={ref}>
-                {filteredComponents.map(({id, name, coverImage, description, translation}, index) => (
-                    <li key={`${id}-${filterType}-${index}`} className="col" style={{'--i': index + 1}}>
-                        <div className="container">
-                            <div className="front" style={{backgroundImage: 
-                                `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-                                url(${coverImage || BackgroundImg})`}}
-                                >
-                                <div className="inner">
-                                    <p>{name}</p>
-                                    <span>{translation}</span>
-                                </div>
-                            </div>
-                            <div className="back">
-                                <div className="inner">
-                                    <p>{description}</p>
-                                    <button type="button" className="open-button" onClick={() => openModal(id)}>
-                                        <BookIcon className="icon" width={24} height={24}/>
-                                        {portfolio.seeMore}
+            <div className="content-div" ref={contentRef}>
+                {inViewContent && (
+                    <>
+                        <ul className="filter-list">
+                            <li className="filter-item">
+                                <button className="filter-button indi-animation" type="button" 
+                                    onClick={() => handleFilter('All')}
+                                >{portfolio.buttonAll}
+                                </button>
+                            </li>
+                            {buttonName && buttonName.map(({type, value}, index) => (
+                                <li className="filter-item" key={index}>
+                                    <button className="filter-button indi-animation" type="button" 
+                                        onClick={() => handleFilter(type)}
+                                    >{value}
                                     </button>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                ))}
-			</ul>
+                                </li>
+                            ))}
+                        </ul>
+                        <ul className={`cols ${inView ? 'active' : ''} ${isAnimated ? 'animate' : ''}`} ref={ref}>
+                            {filteredComponents.map(({id, name, coverImage, description, translation}, index) => (
+                                <li key={`${id}-${filterType}-${index}`} className="col" style={{'--i': index + 1}}>
+                                    <div className="container">
+                                        <div className="front" style={{backgroundImage: 
+                                            `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                                            url(${coverImage || BackgroundImg})`}}
+                                            >
+                                            <div className="inner">
+                                                <p>{name}</p>
+                                                <span>{translation}</span>
+                                            </div>
+                                        </div>
+                                        <div className="back">
+                                            <div className="inner">
+                                                <p>{description}</p>
+                                                <button type="button" className="open-button" onClick={() => openModal(id)}>
+                                                    <BookIcon className="icon" width={24} height={24}/>
+                                                    {portfolio.seeMore}
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            ))}
+                        </ul>
+                    </>
+                )}
+            </div>
         </PortfolioStyled>
     )
 });

@@ -3,12 +3,9 @@ import styled from "styled-components";
 
 export const ContactsStyled = styled.div`
     padding: 20px 0;
-    min-height: 460px;
-
     
     @media screen and (min-width: 768px){
         padding: 60px 0 10px 0;
-        min-height: 750px;
     }
 
     .about-title{
@@ -23,6 +20,8 @@ export const ContactsStyled = styled.div`
     }
 
     .content-container{
+        min-height: 700px;
+
         @media screen and (min-width: 768px){
             display: flex;
             column-gap: 20px;
