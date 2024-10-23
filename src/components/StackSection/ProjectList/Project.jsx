@@ -20,7 +20,7 @@ export const Projects = ({siteLanguage, projectLanguage}) => {
       
     const { ref, inView } = useInView({
         triggerOnce: false,
-        threshold: 0.5,
+        threshold: 0.3,
     });
     const { stack } = siteLanguage;
 
@@ -103,6 +103,8 @@ export const Projects = ({siteLanguage, projectLanguage}) => {
     const validLandingPercent = isNaN(landingPercent) ? 0 : landingPercent;
     const validTeamPercent = isNaN(teamPercent) ? 0 : teamPercent;
     const validCrmPercent = isNaN(crmPercent) ? 0 : crmPercent;
+    console.log(validTotalPercent);
+    
 
 
     return(

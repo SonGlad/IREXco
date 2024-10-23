@@ -136,7 +136,12 @@ export const ContactInfoStyled = styled.div `
     .contact-link-mail2{
         width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
+
+        @media screen and (min-width: 400px){
+            justify-content: center;
+        }
+
         @media screen and (min-width: 1548px){
             width: 49%;
         }

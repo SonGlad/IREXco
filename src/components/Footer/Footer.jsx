@@ -33,7 +33,7 @@ export const Footer = forwardRef(({backToTopRef, siteLanguage, profileLanguage},
     return (
         <FooterStyled>
             <Container>
-                <div ref={ref} className={`footer-container ${inView ? 'visible' : 'hidden'}`}>
+                <div ref={ref} className={`footer-container ${inView ? 'visible' : ''}`}>
                     <div className="footer-left-cont order-one"
                         onClick={() => {
                             backToTopRef.current.scrollIntoView({

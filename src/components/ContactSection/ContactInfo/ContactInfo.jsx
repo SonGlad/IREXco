@@ -27,7 +27,7 @@ export const ContactInfo = ({ siteLanguage, profileLanguage}) => {
 
     return(
         <ContactInfoStyled>
-            <h2 className="container-title">{contact.subtitle}</h2>
+            <h2 className="container-title">{contact.subTitle}</h2>
             <p className="contact-description">{about4}</p>
             <p className="contact-description">{about6}</p>
             <address className="page-contact">

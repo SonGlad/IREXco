@@ -56,6 +56,10 @@ export const ProjectStyled = styled.div`
         & p{
             opacity: 1;
         }
+
+        & span{
+            opacity: 1;
+        }
     }
 
     @keyframes showBar {
@@ -80,26 +84,6 @@ export const ProjectStyled = styled.div`
         }
     }
 
-    
-    .area-for-total{
-        width: ${props => props.width}%;
-    }
-    .area-for-individual{
-        width: ${props => props.width}%;
-    }
-    .area-for-educational{
-        width: ${props => props.width}%;
-    }
-    .area-for-team{
-        width: ${props => props.width}%;
-    }
-    .area-for-other{
-        width: ${props => props.width}%;
-    }
-    .area-for-open{
-        width: ${props => props.width}%;
-    }
-
 
     .colored-area div span{
         position: absolute;
@@ -110,13 +94,14 @@ export const ProjectStyled = styled.div`
         border-top-width: 10px;
         border-bottom-width: 0px;
         border-top-color: ${p => p.theme.color.black};
+        opacity: 0;
     }
 
     .colored-area div p{
+        position: absolute;
         display: block;
         text-align: center;
         width: 24px;
-        position: absolute;
         top: 0;
         right: 0;
         transform: translate(12px, -28px);

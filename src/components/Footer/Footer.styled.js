@@ -3,7 +3,6 @@ import { styled } from "styled-components";
 
 export const FooterStyled = styled.footer`
     padding-bottom: 3px;
-    /* overflow: hidden; */
     
     .footer-container{
         padding: 40px 0;
@@ -22,13 +21,7 @@ export const FooterStyled = styled.footer`
         }
     }
 
-    .hidden .footer-left-cont,
-    .hidden .footer-center-cont,
-    .hidden .footer-right-cont{
-        animation: none;
-    }
     
-
     .visible .footer-left-cont{
         display: flex;
         align-items: center;
@@ -36,12 +29,14 @@ export const FooterStyled = styled.footer`
         margin-bottom: 20px;
         margin-right: 30px;
         opacity: 0;
+        transform: translateX(100px);
         cursor: pointer;
         animation: slideLeft 1s ease forwards;
 
         
         @media screen and (min-width: 768px){
             margin-bottom: 0;
+            transform: translate(-50px, 20px);
             animation: slideTopRight 1s ease forwards;
         }
         @media screen and (min-width: 981px){
@@ -126,6 +121,7 @@ export const FooterStyled = styled.footer`
         align-items: center;
         margin-bottom: 20px;
         opacity: 0;
+        transform: translateX(-100px);
         animation: slideRight 1s ease forwards;
         
         & span{
@@ -134,6 +130,7 @@ export const FooterStyled = styled.footer`
         }
         
         @media screen and (min-width: 768px){
+            transform: translate(0px, 30px);
             margin-bottom: 0;
             margin-left: auto;
             margin-right: auto;
@@ -189,9 +186,11 @@ export const FooterStyled = styled.footer`
         align-items: center;
         gap: 20px;
         opacity: 0;
+        transform: translateX(100px);
         animation: slideContLeft 1s ease forwards;
 
         @media screen and (min-width: 768px){
+            transform: translate(50px, 20px);
             animation: slideTopLeft 1s ease forwards;
         }
     }

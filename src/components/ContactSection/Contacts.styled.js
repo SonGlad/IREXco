@@ -29,7 +29,7 @@ export const ContactsStyled = styled.div`
 
     .form-container{
         width: 100%;
-        padding: 50px 20px 0 20px;
+        padding: 20px 20px 0 20px;
         display: flex;
         justify-content: center;
 
