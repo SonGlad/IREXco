@@ -6,110 +6,68 @@ import { ReactComponent as SkillsIcon } from "../../../images/svg-icons/skills.s
 import { ReactComponent as PortfolioIcon } from "../../../images/svg-icons/portfolio.svg";
 import { ReactComponent as ContactIcon } from "../../../images/svg-icons/contact.svg";
 import { useInView } from 'react-intersection-observer';
-import { forwardRef } from "react";
+import ScrollIntoView from 'react-scroll-into-view';
 
 
 
-export const LinkList = forwardRef(({
-    backToTopRef, 
-    toggleMenuBox, 
-    toAboutUsRef, 
-    toStackRef, 
-    toPortfolioRef,
-    toContactRef,
-    siteLanguage
-}, reff) => {
+export const LinkList = ({toggleMenuBox, siteLanguage}) => {
     const { ref, inView } = useInView({
         triggerOnce: false,
         threshold: 0.1,
     });
-    const {header} = siteLanguage;
-      
+    const { header } = siteLanguage;
+
+
+    const toggle = () => {
+        if (toggleMenuBox) {
+            toggleMenuBox();
+        }
+    }
 
     return(
         <LinkListStyled>
             <ul ref={ref} className={`link-list ${inView ? 'visible' : 'hidden'}`}>
                 <li className="link-list-item" style={{'--i': 1}}>
-                    <NavLink className='nav-link'
-                        onClick={() => {
-                            if (toggleMenuBox) {
-                                toggleMenuBox();
-                            }
-                            backToTopRef.current.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start',
-                            });
-                        }}
-                    >
-                        <HomeIcon className="header-icon" width={16} height={16}/>
-                        <span className="header-link-text">{header.navMenu1}</span>
-                    </NavLink>
+                    <ScrollIntoView selector="#hero">
+                        <NavLink className='nav-link' onClick={toggle}>
+                            <HomeIcon className="header-icon" width={16} height={16}/>
+                            <span className="header-link-text">{header.navMenu1}</span>
+                        </NavLink>
+                    </ScrollIntoView>
                 </li>
                 <li className="link-list-item" style={{'--i': 2}}>
-                    <NavLink className='nav-link' 
-                        onClick={() => {
-                            if (toggleMenuBox) {
-                                toggleMenuBox();
-                            }
-                            toAboutUsRef.current.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start',
-                            });
-                        }}
-                    >
-                        <AboutIcon className="header-icon" width={16} height={16}/>
-                        <span className="header-link-text">{header.navMenu2}</span>
-                    </NavLink>
+                    <ScrollIntoView selector="#about">
+                        <NavLink className='nav-link' onClick={toggle}>
+                            <AboutIcon className="header-icon" width={16} height={16}/>
+                            <span className="header-link-text">{header.navMenu2}</span>
+                        </NavLink>
+                    </ScrollIntoView>
                 </li>
                 <li className="link-list-item" style={{'--i': 3}}>
-                    <NavLink className='nav-link'
-                        onClick={() => {
-                            if (toggleMenuBox) {
-                                toggleMenuBox();
-                            }
-                            toStackRef.current.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start',
-                            });
-                        }}
-                    >
-                        <SkillsIcon className="header-icon" width={16} height={16}/>
-                        <span className="header-link-text">{header.navMenu3}</span>
-                    </NavLink>
+                    <ScrollIntoView selector="#stack">
+                        <NavLink className='nav-link' onClick={toggle}>
+                            <SkillsIcon className="header-icon" width={16} height={16}/>
+                            <span className="header-link-text">{header.navMenu3}</span>
+                        </NavLink>
+                    </ScrollIntoView>
                 </li>
                 <li className="link-list-item" style={{'--i': 4}}>
-                    <NavLink className='nav-link'
-                        onClick={() => {
-                            if (toggleMenuBox) {
-                                toggleMenuBox();
-                            }
-                            toPortfolioRef.current.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start',
-                            });
-                        }}
-                    >
-                        <PortfolioIcon className="header-icon" width={16} height={16}/>
-                        <span className="header-link-text">{header.navMenu4}</span>
-                    </NavLink>
+                    <ScrollIntoView selector="#portfolio">
+                        <NavLink className='nav-link' onClick={toggle}>
+                            <PortfolioIcon className="header-icon" width={16} height={16}/>
+                            <span className="header-link-text">{header.navMenu4}</span>
+                        </NavLink>
+                    </ScrollIntoView>
                 </li>
                 <li className="link-list-item" style={{'--i': 5}}>
-                    <NavLink className='nav-link'
-                        onClick={() => {
-                            if (toggleMenuBox) {
-                                toggleMenuBox();
-                            }
-                            toContactRef.current.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start',
-                            });
-                        }}
-                    >
-                        <ContactIcon className="header-icon" width={16} height={16}/>
-                        <span className="header-link-text">{header.navMenu5}</span>
-                    </NavLink>
+                    <ScrollIntoView selector="#contact">
+                        <NavLink className='nav-link' onClick={toggle}>
+                            <ContactIcon className="header-icon" width={16} height={16}/>
+                            <span className="header-link-text">{header.navMenu5}</span>
+                        </NavLink>
+                    </ScrollIntoView>
                 </li>
             </ul>
         </LinkListStyled>
     )
-});
+};

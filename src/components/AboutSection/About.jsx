@@ -2,16 +2,11 @@ import { AboutStyled } from "./About.styled";
 import { LeftAnimation } from "./LeftAnimation/LeftAnimation";
 import { RightAnimation } from "./RightAnimation/RightAnimation";
 import IrexLogo from "../../images/images/iReX_logo.png";
-import { forwardRef } from "react";
 import { useInView } from 'react-intersection-observer';
 
 
 
-export const AboutUsSection = forwardRef(({
-    toAboutUsRef,    
-    profileLanguage,
-    siteLanguage,}, 
-    reff) => {
+export const AboutUsSection = ({profileLanguage, siteLanguage}) => {
     const { about1, about2, about3 } = profileLanguage;
     const { about } = siteLanguage;
 
@@ -38,7 +33,7 @@ export const AboutUsSection = forwardRef(({
 
       
     return (
-        <AboutStyled ref={toAboutUsRef}>
+        <AboutStyled id="about">
             <h1 className="about-title">{about.sectionTitle1} <span>{about.sectionTitle2}</span></h1>
             <div className="content-div" ref={contentRef}>
                 {inViewContent && (
@@ -77,4 +72,4 @@ export const AboutUsSection = forwardRef(({
             </div>
         </AboutStyled>
     )
-});
+};

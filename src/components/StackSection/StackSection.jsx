@@ -1,5 +1,4 @@
 import { StackSectionStyled } from "./StackSection.styled";
-import { forwardRef } from "react";
 import { Icons } from "./ReactIcons/Icons";
 import { Projects } from "./ProjectList/Project";
 import { CodingCharts } from "./CodingCharts/CodingCharts";
@@ -7,25 +6,18 @@ import { useInView } from 'react-intersection-observer';
 
 
 
-export const StackSection = forwardRef(({
-    toStackRef, 
-    profileLanguage, 
-    siteLanguage, 
-    projectLanguage
-}, ref) => {
+export const StackSection = ({profileLanguage, siteLanguage, projectLanguage}) => {
     const { about5 } = profileLanguage;
     const { stack } = siteLanguage;
 
     const { ref: contentRef, inView: inViewContent } = useInView({
         triggerOnce: true,
         threshold: 0.1,
-    });
-    console.log(inViewContent);
-    
+    });  
 
 
     return(
-        <StackSectionStyled ref={toStackRef}>
+        <StackSectionStyled id="stack">
             <h1 className="main-education-title">{stack.sectionTitle1} <span>{stack.sectionTitle2}</span></h1>
             <div className="content-div" ref={contentRef}>
                 {inViewContent && (
@@ -56,4 +48,4 @@ export const StackSection = forwardRef(({
             </div>
         </StackSectionStyled>
     )
-});
+};

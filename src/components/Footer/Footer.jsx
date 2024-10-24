@@ -7,11 +7,11 @@ import { ReactComponent as LinkedinIcon } from "../../images/svg-icons/linkedin.
 import { ReactComponent as InstagramIcon } from "../../images/svg-icons/instagram.svg";
 import Logo from "../../images/images/iReX_logo.png";
 import { useInView } from 'react-intersection-observer';
-import { forwardRef } from "react";
+import ScrollIntoView from 'react-scroll-into-view';
 
 
 
-export const Footer = forwardRef(({backToTopRef, siteLanguage, profileLanguage}, reff) => {
+export const Footer = ({siteLanguage, profileLanguage}) => {
     const { ref, inView } = useInView({
         triggerOnce: false,
         threshold: 0.1,
@@ -25,7 +25,9 @@ export const Footer = forwardRef(({backToTopRef, siteLanguage, profileLanguage},
         telegram_link2, 
         instagram_link, 
         name1, 
-        name2
+        name2,
+        userName1,
+        userName2,
     } = profileLanguage;
 
 
@@ -34,16 +36,11 @@ export const Footer = forwardRef(({backToTopRef, siteLanguage, profileLanguage},
         <FooterStyled>
             <Container>
                 <div ref={ref} className={`footer-container ${inView ? 'visible' : ''}`}>
-                    <div className="footer-left-cont order-one"
-                        onClick={() => {
-                            backToTopRef.current.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start',
-                            });
-                        }}
-                    >
-                        <p className="footer-text-left"><span>{name1}</span> {name2}</p>
-                    </div>
+                    <ScrollIntoView selector="#hero">
+                        <div className="footer-left-cont order-one">
+                            <p className="footer-text-left"><span>{name1}</span> {name2}</p>
+                        </div>
+                    </ScrollIntoView>
                     <div className="footer-center-cont order-two">
                         <p className="footer-text-center">Copyright<span> &#169; </span>2024</p>
                         <div className="cont-for-foo-pic">
@@ -69,21 +66,26 @@ export const Footer = forwardRef(({backToTopRef, siteLanguage, profileLanguage},
                                     <LinkedinIcon className="footer-icon" width={20} height={20}/>
                                 </NavLink>
                             </li>
-                            <li className="footer-social-item">
-                                <NavLink className="footer-social-link" to={telegram_link}
-                                    aria-label="Telegram link"
-                                    target="_blank"
-                                    rel="noreferrer noopener">
-                                    <TelegramIcon className="footer-icon" width={20} height={20}/>
-                                </NavLink>
-                            </li>
-                            <li className="footer-social-item">
-                                <NavLink className="footer-social-link" to={telegram_link2}
-                                    aria-label="Telegram link"
-                                    target="_blank"
-                                    rel="noreferrer noopener">
-                                    <TelegramIcon className="footer-icon" width={20} height={20}/>
-                                </NavLink>
+                            <li className="footer-social-item relative-position">
+                                <button type='button' aria-label='Telegram Link' className="footer-social-link">
+                                    <TelegramIcon className="contact-social-icon" width={20} height={20}/>
+                                </button>
+                                <ul className="telegram-link-list">
+                                    <li className="telegram-list-item">
+                                        <NavLink className="telegram-social-link" to={telegram_link}
+                                            aria-label="Telegram link"
+                                            target="_blank"
+                                            rel="noreferrer noopener">{userName1}
+                                        </NavLink>
+                                    </li>
+                                    <li className="telegram-list-item">
+                                        <NavLink className="telegram-social-link" to={telegram_link2}
+                                            aria-label="Telegram link"
+                                            target="_blank"
+                                            rel="noreferrer noopener">{userName2}
+                                        </NavLink>
+                                    </li>
+                                </ul>
                             </li>
                             <li className="footer-social-item">
                                 <NavLink className="footer-social-link" to={instagram_link}
@@ -99,4 +101,4 @@ export const Footer = forwardRef(({backToTopRef, siteLanguage, profileLanguage},
             </Container>
         </FooterStyled>
     )
-});
+};

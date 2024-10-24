@@ -21,6 +21,8 @@ export const ContactInfo = ({ siteLanguage, profileLanguage}) => {
         email2,
         about4,
         about6,
+        userName1,
+        userName2,
     } = profileLanguage;
     const { contact } = siteLanguage;
 
@@ -75,21 +77,26 @@ export const ContactInfo = ({ siteLanguage, profileLanguage}) => {
                         <LinkedinIcon className="contact-social-icon" width={24} height={24}/>
                     </NavLink>
                 </li>
-                <li className="contact-social-item">
-                    <NavLink className="contact-social-link" to={telegram_link}
-                        aria-label="Telegram link"
-                        target="_blank"
-                        rel="noreferrer noopener">
+                <li className="contact-social-item relative-position">
+                    <button type='button' aria-label='Telegram Link' className="contact-social-link">
                         <TelegramIcon className="contact-social-icon" width={24} height={24}/>
-                    </NavLink>
-                </li>
-                <li className="contact-social-item">
-                    <NavLink className="contact-social-link" to={telegram_link2}
-                        aria-label="Telegram link"
-                        target="_blank"
-                        rel="noreferrer noopener">
-                        <TelegramIcon className="contact-social-icon" width={24} height={24}/>
-                    </NavLink>
+                    </button>
+                    <ul className="telegram-link-list">
+                        <li className="telegram-list-item">
+                            <NavLink className="telegram-social-link" to={telegram_link}
+                                aria-label="Telegram link"
+                                target="_blank"
+                                rel="noreferrer noopener">{userName1}
+                            </NavLink>
+                        </li>
+                        <li className="telegram-list-item">
+                            <NavLink className="telegram-social-link" to={telegram_link2}
+                                aria-label="Telegram link"
+                                target="_blank"
+                                rel="noreferrer noopener">{userName2}
+                            </NavLink>
+                        </li>
+                    </ul>
                 </li>
                 <li className="contact-social-item">
                     <NavLink className="contact-social-link" to={instagram_link}

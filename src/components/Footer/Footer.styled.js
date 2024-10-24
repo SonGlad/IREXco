@@ -253,4 +253,46 @@ export const FooterStyled = styled.footer`
         }
     }
 
+    .relative-position{
+        position: relative;
+    }
+
+    .telegram-link-list{
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        top: -250%;
+        left: 0;
+        z-index: 5;
+        padding: 10px 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        transform: translate(20%, 0);
+        transition: visibility ${p => p.theme.transition.main_transition},
+                    opacity ${p => p.theme.transition.main_transition};
+        @media screen and (min-width: 768px){
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+    }
+
+    .relative-position:hover .telegram-link-list{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .telegram-social-link{
+        font-weight: 400;
+        font-size: 16px;
+        transition: all ${p => p.theme.transition.main_transition};
+        &:hover{
+            color: ${p => p.theme.color.main_color};
+            font-weight: 800;
+            font-size: 20px;
+        }
+    }
+
 `

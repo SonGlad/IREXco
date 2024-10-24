@@ -177,10 +177,6 @@ export const ContactInfoStyled = styled.div `
         animation: ConatctSocialListSlideTop 1s ease forwards;
         opacity: 0;
 
-        @media screen and (min-width: 400px){
-            justify-content: center;
-            gap: 60px;
-        }
         @media screen and (max-width: 767px){
             animation: ConatctSocialListSlideDown 1s ease forwards;
         }
@@ -236,62 +232,43 @@ export const ContactInfoStyled = styled.div `
         }
     }
 
-    .redirect-cont{
+    .relative-position{
+        position: relative;
+    }
+
+    .telegram-link-list{
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        z-index: 5;
+        padding: 10px 5px;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
-
-        @media screen and (min-width: 768px){
-            margin-top: auto;
-            justify-content: flex-start;
-        }
+        gap: 10px;
+        transform: translate(-50%, 0);
+        transition: visibility ${p => p.theme.transition.main_transition},
+                    opacity ${p => p.theme.transition.main_transition};
     }
 
-    .redirect-link{
-        padding: 14px 28px;
-        border-radius: 15px;
+    .relative-position:hover .telegram-link-list{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .telegram-social-link{
+        font-weight: 400;
         font-size: 16px;
-        font-weight: 700;
-        background-color: ${p => p.theme.color.text_color};
-        color: ${p => p.theme.color.main_color};
-        box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.3) inset,
-                    0px 0px 0px 0px rgba(0,0,0,0.3);
-        transition: color ${p => p.theme.transition.main_transition}, 
-                    background-color ${p => p.theme.transition.main_transition},
-                    box-shadow ${p => p.theme.transition.main_transition};
-        animation: ConatctRedicrectLinkSlideDown 1s ease forwards;
-        opacity: 0;
-
+        transition: all ${p => p.theme.transition.main_transition};
         &:hover{
-            background-color: ${p => p.theme.color.main_color};
-            color: ${p => p.theme.color.text_color};
-            box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.3) inset,
-                        0px 0px 10px 10px rgba(0,0,0,0.3);
-        }
-
-        @media screen and (max-width: 767px){
-            animation: ConatctRedicrectLinkSlideTop 1s ease forwards;
+            color: ${p => p.theme.color.main_color};
+            font-weight: 800;
+            font-size: 20px;
         }
     }
 
-    @keyframes ConatctRedicrectLinkSlideTop {
-        0%{
-            opacity: 0;
-            transform: translateY(150%);
-        }
-        100%{
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-    @keyframes ConatctRedicrectLinkSlideDown {
-        0%{
-            opacity: 0;
-            transform: translateY(-150%);
-        }
-        100%{
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
+    
 `

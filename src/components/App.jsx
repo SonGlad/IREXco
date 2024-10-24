@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { Header } from "./Header/Header";
 import { ParticlesComponent }from "./particles/particles";
 import { HeroSection, AboutSection, Section, ContactSection } from "./Section/Section";
@@ -29,11 +29,6 @@ import ProjectsRu from "../utils/projectsRu.json";
 
 export const App= () => {
   const [headerBackground, setHeaderBackground] = useState(false);
-  const backToTopRef = useRef(null);
-  const toAboutUsRef = useRef(null);
-  const toStackRef = useRef(null);
-  const toPortfolioRef = useRef(null);
-  const toContactRef = useRef(null);
   const [isPortfolioModal, setPortfolioModal] = useState(false);
   const [isContactModal, setContactModal] = useState(false);
   const [portfolioModalData, setPortfolioModalData] = useState(null);
@@ -136,12 +131,7 @@ export const App= () => {
       {isLoading && <FormLoading/>}
       {isParticles && <ParticlesComponent id='particles'/>}
       <Header 
-        backToTopRef={backToTopRef}
-        toAboutUsRef={toAboutUsRef}
         headerBackground={headerBackground}
-        toStackRef={toStackRef}
-        toPortfolioRef={toPortfolioRef}
-        toContactRef={toContactRef}
         langValue={langValue}
         setLangValue={setLangValue}
         siteLanguage={siteLanguage}
@@ -150,11 +140,6 @@ export const App= () => {
         <Container>
           <Hero
             forHeader={ref}
-            backToTopRef={backToTopRef}
-            toAboutUsRef={toAboutUsRef}
-            toStackRef={toStackRef}
-            toPortfolioRef={toPortfolioRef}
-            toContactRef={toContactRef}
             profileLanguage={profileLanguage}
             siteLanguage={siteLanguage}
           /> 
@@ -163,7 +148,6 @@ export const App= () => {
       <AboutSection >
         <Container>
           <AboutUsSection 
-            toAboutUsRef={toAboutUsRef}
             profileLanguage={profileLanguage}
             siteLanguage={siteLanguage}
           />
@@ -172,7 +156,6 @@ export const App= () => {
       <Section>
         <Container>
           <StackSection 
-            toStackRef={toStackRef}
             profileLanguage={profileLanguage}
             siteLanguage={siteLanguage}
             projectLanguage={projectLanguage}
@@ -182,7 +165,6 @@ export const App= () => {
       <Section>
         <Container>
           <PortfolioSection 
-            toPortfolioRef={toPortfolioRef}
             openPortfolioModal={openPortfolioModal}
             setPortfolioModalData={setPortfolioModalData}
             siteLanguage={siteLanguage}
@@ -193,7 +175,6 @@ export const App= () => {
       <ContactSection>
         <Container>
           <Contacts
-            toContactRef={toContactRef}
             openContactModal={openContactModal}
             setSuccess={setSuccess}
             setIsLoading={setIsLoading}
@@ -203,7 +184,6 @@ export const App= () => {
         </Container>
       </ContactSection>
       <Footer 
-        backToTopRef={backToTopRef}
         siteLanguage={siteLanguage}
         profileLanguage={profileLanguage}
       />

@@ -1,28 +1,18 @@
 import {Container} from "../Container/Container";
 import { StyledHeader } from "./Header.styled";
-// import {ReactComponent as LogoSvg} from "../../images/svg-icons/banner.svg";
 import {ReactComponent as MobMenuBurger} from "../../images/svg-icons/mobile-menu.svg";
 import {ReactComponent as CloseIcon} from "../../images/svg-icons/close.svg";
 import { NavLink } from "react-router-dom";
 import { LinkList } from "./Link-List/Link-List";
-import { useCallback, useEffect, useRef, useState, forwardRef } from "react";
-import Logo from "../../images/images/iReX_logo.png"
+import { useCallback, useEffect, useRef, useState } from "react";
+import Logo from "../../images/images/iReX_logo.png";
+import ScrollIntoView from 'react-scroll-into-view';
 
 
 
-export const Header = forwardRef(({
-    backToTopRef, 
-    toAboutUsRef, 
-    headerBackground, 
-    toStackRef, 
-    toPortfolioRef,
-    toContactRef,
-    langValue,
-    setLangValue,
-    siteLanguage
-}, reff) => {   
+export const Header = ({headerBackground, langValue, setLangValue, siteLanguage}) => {   
     const [mobMenu, setMobMenu] = useState(false);
-    const mobileMenu = useRef();
+    const mobileMenu = useRef(null);
     const langCont = useRef(null);
     const [activeLangCont, setActiveLangCont] = useState(false);
 
@@ -94,14 +84,10 @@ export const Header = forwardRef(({
         <StyledHeader $headerBackground={headerBackground}>
             <Container>
                 <div className='header-container'>
-                    <NavLink className="logo-link"
-                        onClick={() => 
-                            backToTopRef.current.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        })}>
-                        <img className="header-logo" src={Logo} alt="logo"/>
-                        {/* <LogoSvg className="header-logo" width={34} height={34}/> */}
+                    <NavLink className="logo-link">
+                        <ScrollIntoView selector="#hero">
+                            <img className="header-logo" src={Logo} alt="logo"/>    
+                        </ScrollIntoView>
                     </NavLink>
                     <div className="lang-cont" ref={langCont}>
                         <button className="lang-btn" aria-label="Language Button" onClick={toggleLangMenu}>{langValue}</button>
@@ -129,12 +115,8 @@ export const Header = forwardRef(({
                         </button>
                         <div className={`mob-menu ${toggleMobMenuCont()}`}>
                             <nav className="navigation">
-                                <LinkList toggleMenuBox={toggleMenuBox}
-                                    backToTopRef={backToTopRef}
-                                    toAboutUsRef={toAboutUsRef}
-                                    toStackRef={toStackRef}
-                                    toPortfolioRef={toPortfolioRef}
-                                    toContactRef={toContactRef}
+                                <LinkList 
+                                    toggleMenuBox={toggleMenuBox}
                                     siteLanguage={siteLanguage}
                                 />
                             </nav>
@@ -143,11 +125,6 @@ export const Header = forwardRef(({
                     <div className="main-menu">
                         <nav className="navigation">
                             <LinkList
-                                backToTopRef={backToTopRef}
-                                toAboutUsRef={toAboutUsRef}
-                                toStackRef={toStackRef}
-                                toPortfolioRef={toPortfolioRef}
-                                toContactRef={toContactRef}
                                 siteLanguage={siteLanguage}
                             />
                         </nav>
@@ -156,4 +133,4 @@ export const Header = forwardRef(({
             </Container>
         </StyledHeader>
     )
-}); 
+}; 

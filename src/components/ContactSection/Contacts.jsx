@@ -1,19 +1,17 @@
 import { ContactsStyled } from "./Contacts.styled";
 import { ContactInfo } from "./ContactInfo/ContactInfo";
 import { ContactForm } from "./ContactForm/ContactForm";
-import { forwardRef } from "react";
 import { useInView } from 'react-intersection-observer';
 
 
 
-export const Contacts = forwardRef(({
-    toContactRef, 
+export const Contacts = ({
     openContactModal, 
     setSuccess, 
     setIsLoading,
     siteLanguage,
     profileLanguage
-}, reff) => {
+}) => {
     const { ref, inView } = useInView({
         triggerOnce: false,
         threshold: 0.1,
@@ -22,7 +20,7 @@ export const Contacts = forwardRef(({
 
 
     return(
-        <ContactsStyled ref={toContactRef}>
+        <ContactsStyled id="contact">
             <h1 className="about-title">{contact.title1} <span>{contact.title2}</span></h1>
                 <div className="content-container" ref={ref}>
                     {inView && (
@@ -48,4 +46,4 @@ export const Contacts = forwardRef(({
                 </div>
         </ContactsStyled>
     )
-});
+};

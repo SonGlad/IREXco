@@ -1,18 +1,17 @@
 import { PortfolioStyled } from "./Portfolio.styled";
 import BackgroundImg from "../../images/images/bg_image.jpg";
 import {ReactComponent as BookIcon} from "../../images/svg-icons/open-book.svg";
-import { useEffect, useState, useMemo, forwardRef } from "react";
+import { useEffect, useState, useMemo } from "react";
 import { useInView } from 'react-intersection-observer';
 
 
 
-export const PortfolioSection = forwardRef(({
-    toPortfolioRef, 
+export const PortfolioSection = ({
     openPortfolioModal, 
     setPortfolioModalData,
     siteLanguage,
     projectLanguage
-}, reff) => {
+}) => {
     const [filterType, setFilterType] = useState('All');
     const [portfolioData, setPortfolioData] = useState([]);
     const [buttonName, setButtonName] = useState([]);
@@ -108,7 +107,7 @@ export const PortfolioSection = forwardRef(({
 
 
     return(
-        <PortfolioStyled ref={toPortfolioRef}>
+        <PortfolioStyled id="portfolio">
             <h1 className="potfolio-title"><span>{portfolio.sectionTitle1} </span>{portfolio.sectionTitle2}</h1>
             <div className="content-div" ref={contentRef}>
                 {inViewContent && (
@@ -160,4 +159,4 @@ export const PortfolioSection = forwardRef(({
             </div>
         </PortfolioStyled>
     )
-});
+};
