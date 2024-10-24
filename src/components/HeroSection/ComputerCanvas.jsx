@@ -9,7 +9,7 @@ import { Model } from "./Scene";
 
 
 export const ComputerCanvas = React.memo(() => {
-    const { scene } = useGLTF('/IREXco/pc/scene.gltf');
+    const { scene } = useGLTF('/pc/scene.gltf');
         
 
     return (
