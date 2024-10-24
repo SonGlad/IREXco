@@ -1,6 +1,5 @@
 import { HeroStyled } from "./Hero.styled";
 import { ComputerCanvas } from "./ComputerCanvas";
-import { NavLink } from "react-router-dom";
 import Typewriter from 'typewriter-effect';
 import {ReactComponent as FingerIcon} from "../../images/svg-icons/finger.svg";
 import React, { useState, startTransition, useEffect } from 'react';
@@ -62,19 +61,15 @@ export const Hero = forwardRef(({forHeader, profileLanguage, siteLanguage}, reff
                     <div className="left-redirect-cont">
                         <ul className="redirext-list-left">
                             <li className="redirect-item">
-                                <ScrollIntoView selector="#contact">
-                                    <NavLink className="redirect-link redirect" style={{'--i': 1}}>
-                                        <FingerIcon className="redirect-icon" width={24} height={24}/>    
-                                        <span>{hero.navMenu4}</span>
-                                    </NavLink>
+                                <ScrollIntoView selector="#contact" className="redirect-link redirect" style={{'--i': 1}}>
+                                    <FingerIcon className="redirect-icon" width={24} height={24}/>    
+                                    <span>{hero.navMenu4}</span>
                                 </ScrollIntoView>
                             </li>
                             <li className="redirect-item">
-                                <ScrollIntoView selector="#stack">
-                                    <NavLink className="redirect-link redirect" style={{'--i': 4}}>
-                                        <FingerIcon className="redirect-icon" width={24} height={24}/>    
-                                        <span>{hero.navMenu2}</span>
-                                    </NavLink>
+                                <ScrollIntoView selector="#stack" className="redirect-link redirect" style={{'--i': 4}}>
+                                    <FingerIcon className="redirect-icon" width={24} height={24}/>    
+                                    <span>{hero.navMenu2}</span>
                                 </ScrollIntoView>
                             </li>
                         </ul>
@@ -82,19 +77,15 @@ export const Hero = forwardRef(({forHeader, profileLanguage, siteLanguage}, reff
                     <div className="left-redirect-cont">
                     <ul className="redirext-list-right">
                             <li className="redirect-item">
-                                <ScrollIntoView selector="#about">
-                                    <NavLink className="redirect-link redirect" style={{'--i': 3}}>
-                                        <span>{hero.navMenu1}</span>
-                                        <FingerIcon className="redirect-icon redirect-icon-rotate" width={24} height={24}/>    
-                                    </NavLink>
+                                <ScrollIntoView selector="#about" className="redirect-link redirect" style={{'--i': 3}}>
+                                    <span>{hero.navMenu1}</span>
+                                    <FingerIcon className="redirect-icon redirect-icon-rotate" width={24} height={24}/>    
                                 </ScrollIntoView>
                             </li>
                             <li className="redirect-item">
-                                <ScrollIntoView selector="#portfolio">
-                                    <NavLink className="redirect-link redirect"style={{'--i': 2}}>
-                                        <span>{hero.navMenu3}</span>
-                                        <FingerIcon className="redirect-icon redirect-icon-rotate" width={24} height={24}/>    
-                                    </NavLink>
+                                <ScrollIntoView selector="#portfolio" className="redirect-link redirect"style={{'--i': 2}}>
+                                    <span>{hero.navMenu3}</span>
+                                    <FingerIcon className="redirect-icon redirect-icon-rotate" width={24} height={24}/>    
                                 </ScrollIntoView>
                             </li>
                         </ul>
@@ -110,34 +101,26 @@ export const Hero = forwardRef(({forHeader, profileLanguage, siteLanguage}, reff
                     <ul className="redirext-list">
                         <li className="redirect-item">
                             <ScrollIntoView selector="#contact" className="redirect-link redirect" style={{'--i': 1}}>
-                                    <FingerIcon className="redirect-icon" width={24} height={24}/>    
-                                    <span>{hero.navMenu4}</span>
-                                {/* <Link className="redirect-link redirect" style={{'--i': 1}}>
-                                </Link> */}
+                                <FingerIcon className="redirect-icon" width={24} height={24}/>    
+                                <span>{hero.navMenu4}</span>
                             </ScrollIntoView>
                         </li>
                         <li className="redirect-item">
                             <ScrollIntoView selector="#stack" className="redirect-link redirect" style={{'--i': 2}}>
-                                    <FingerIcon className="redirect-icon" width={24} height={24}/>    
-                                    <span>{hero.navMenu2}</span>
-                                {/* <Link className="redirect-link redirect" style={{'--i': 2}}>
-                                </Link> */}
+                                <FingerIcon className="redirect-icon" width={24} height={24}/>    
+                                <span>{hero.navMenu2}</span>
                             </ScrollIntoView>
                         </li>
                         <li className="redirect-item">
                             <ScrollIntoView selector="#about" className="redirect-link redirect" style={{'--i': 3}}>
-                                    <FingerIcon className="redirect-icon" width={24} height={24}/>    
-                                    <span>{hero.navMenu1}</span>
-                                {/* <Link className="redirect-link redirect" style={{'--i': 3}}>
-                                </Link> */}
+                                <FingerIcon className="redirect-icon" width={24} height={24}/>    
+                                <span>{hero.navMenu1}</span>
                             </ScrollIntoView>
                         </li>
                         <li className="redirect-item">
                             <ScrollIntoView selector="#portfolio" className="redirect-link redirect"style={{'--i': 4}}>
-                                    <FingerIcon className="redirect-icon" width={24} height={24}/>    
-                                    <span>{hero.navMenu3}</span>
-                                {/* <Link className="redirect-link redirect"style={{'--i': 4}}>
-                                </Link> */}
+                                <FingerIcon className="redirect-icon" width={24} height={24}/>    
+                                <span>{hero.navMenu3}</span>
                             </ScrollIntoView>
                         </li>
                     </ul>
@@ -164,7 +147,6 @@ export const Hero = forwardRef(({forHeader, profileLanguage, siteLanguage}, reff
                         </li>
                     </ul>
                 </div>
-
             </div>
         </HeroStyled>
     );

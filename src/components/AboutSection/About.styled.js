@@ -35,6 +35,7 @@ export const AboutStyled = styled.div`
 
     .about-cont {
         margin-bottom: 30px;
+
         @media screen and (min-width: 768px){
             opacity: 0;
             scale: 0.6;
@@ -44,6 +45,7 @@ export const AboutStyled = styled.div`
             align-items: center;
             justify-content: center;
         }
+
         &.active{
             opacity: 1;
             scale: 1;
@@ -61,6 +63,7 @@ export const AboutStyled = styled.div`
             align-items: center;
             justify-content: center;
         }
+
         &.active{
             opacity: 1;
             scale: 1;
@@ -70,6 +73,7 @@ export const AboutStyled = styled.div`
 
     .coding-container-left{
         margin-bottom: 30px;
+
         @media screen and (min-width: 768px){
             opacity: 0;
             scale: 1.4;
@@ -86,6 +90,7 @@ export const AboutStyled = styled.div`
                 order:1;
             }
         }
+
         &.active{
             opacity: 1;
             scale: 1;
@@ -289,6 +294,7 @@ export const AboutStyled = styled.div`
 
     .shadow-div{  
         background-color: ${p => p.theme.color.bg_color};
+
         @media screen and (min-width: 768px){
             max-width: 50%;
             box-shadow: 0px 10px 10px 5px rgba(0,0,2,0.5);
@@ -330,6 +336,7 @@ export const AboutStyled = styled.div`
             border-radius: 240px / 150px;
             animation: shadowRound1 8s linear infinite;
         }
+
         @media screen and (min-width: 1100px){
             margin: 0 auto;
         }
@@ -349,6 +356,7 @@ export const AboutStyled = styled.div`
             border-radius: 240px / 150px;
             animation: shadowRound2 8s linear infinite;
         }
+        
         @media screen and (min-width: 1100px){
             margin: 0 auto;
         }

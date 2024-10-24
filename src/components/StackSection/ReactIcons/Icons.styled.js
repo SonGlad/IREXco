@@ -64,16 +64,16 @@ export const IconsStyledList = styled.div`
         box-shadow: 0px 0px 10px 10px rgba(0,0,2,0.5);
         position: relative;
         overflow: hidden;
-        opacity: 0;
-        scale: 0.3;
         background-color: ${p => p.theme.color.bg_color};
-        transition: opacity .5s ease, scale .5s ease;
-        transition-delay: calc(0.1s * var(--i));
 
 
         @media screen and (min-width: 768px){
             width: 150px;
             height: 150px;
+            opacity: 0;
+            scale: 0.3;
+            transition: opacity .5s ease, scale .5s ease;
+            transition-delay: calc(0.1s * var(--i));
         }
 
         @media screen and (min-width: 1440px){
@@ -82,17 +82,20 @@ export const IconsStyledList = styled.div`
         }
     }
 
-    .active .icons-item{
-        scale: 1;
-        opacity: 1;
+    @media screen  and (min-width: 768px){   
+        .active .icons-item{
+            scale: 1;
+            opacity: 1;
+        }
+    
+        .animate .icons-item{
+            scale: 0.3;
+            opacity: 0;
+            animation: zoomIn .5s ease forwards;
+            animation-delay: calc(0.1s * var(--i));
+        }
     }
 
-    .animate .icons-item{
-        scale: 0.3;
-        opacity: 0;
-        animation: zoomIn .5s ease forwards;
-        animation-delay: calc(0.1s * var(--i));
-    }
 
     @keyframes zoomIn {
         0%{

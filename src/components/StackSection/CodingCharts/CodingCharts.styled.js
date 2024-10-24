@@ -32,7 +32,7 @@ export const CodingChartsStyled = styled.div`
         }
     }
     .wide-screen{
-        @media screen and (max-width: 1200px) {
+        @media screen and (max-width: 1199px) {
             display: none;
         }
     }
@@ -149,8 +149,11 @@ export const CodingChartsStyled = styled.div`
     .phases-content-cont{
         width: 100%;
         padding: 15px 0;
-        opacity: 0;
-        transition: opacity 0.70s ease;
+        
+        @media screen and (min-width: 768px){
+            opacity: 0;
+            transition: opacity 0.70s ease;
+        }
 
         
         @media screen and (min-width: 1200px) {
@@ -167,7 +170,7 @@ export const CodingChartsStyled = styled.div`
     .active4 .phases-content-cont,
     .active5 .phases-content-cont,
     .active6 .phases-content-cont{
-        @media screen and (max-width: 1199px){
+        @media screen and (min-width: 768px) and (max-width: 1199px){
             opacity: 1;
             animation: slide-rotate-hor-bottom 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both;
         }
@@ -210,6 +213,7 @@ export const CodingChartsStyled = styled.div`
     }
 
     .image-padding-cont{
+
         @media screen and (min-width: 1200px){
             width: 45%;
             transform: translateX(-50%);
@@ -225,8 +229,10 @@ export const CodingChartsStyled = styled.div`
     .active4 .image-padding-cont,
     .active5 .image-padding-cont,
     .active6 .image-padding-cont{
-        transform: translateX(0%);
-        opacity: 1;
+        @media screen and (min-width: 768px){
+            transform: translateX(0%);
+            opacity: 1;
+        }
     } 
     
 
@@ -248,8 +254,10 @@ export const CodingChartsStyled = styled.div`
     .active4 .content-padding-cont,
     .active5 .content-padding-cont,
     .active6 .content-padding-cont{
-        transform: translateX(0%);
-        opacity: 1;
+        @media screen and (min-width: 768px){
+            transform: translateX(0%);
+            opacity: 1;
+        }
     }
 
 

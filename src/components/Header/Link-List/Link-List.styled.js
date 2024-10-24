@@ -19,28 +19,32 @@ export const LinkListStyled = styled.div`
         }
     }
 
-    .hidden .link-list-item{
-        animation: none;
-        visibility: hidden;
-        opacity: 0;
-    }
 
-    .visible .link-list-item{
+    .link-list-item{
         margin-top: 20px;
 
         @media screen and (min-width: 768px){
+            visibility: hidden;
+            opacity: 0;
             margin-top: 0;
             position: relative;
-            opacity: 0;
-            visibility: visible;
-            animation: slideLinkTop 0.4s ease forwards;
-            animation-delay: calc(0.1s * var(--i));
+            cursor: pointer;
+            
+            & .nav-link {
+                &:after{
+                    position: absolute;
+                }
+            }
         }
 
-        & .nav-link {
-            &:after{
-                position: absolute;
-            }
+    }
+
+    .visible .link-list-item{
+        @media screen and (min-width: 768px){  
+            opacity: 0;
+            visibility: hidden;
+            animation: slideLinkTop 0.4s ease forwards;
+            animation-delay: calc(0.1s * var(--i));
         }
     }
 

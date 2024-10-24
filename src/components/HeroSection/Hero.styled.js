@@ -3,10 +3,6 @@ import styled from "styled-components";
 export const HeroStyled = styled.div`
    padding-top: 58px;
    padding-bottom: 25px;
-   display: flex;
-   flex-direction: column;
-   min-height: 80vh;
-
 
    @media screen and (min-width: 1200px){
       padding-bottom: 60px;
@@ -40,6 +36,7 @@ export const HeroStyled = styled.div`
       @media screen and (min-width: 768px){
          font-size: 48px;
 
+
          & span {
             font-size: 68px;
          }
@@ -59,6 +56,7 @@ export const HeroStyled = styled.div`
    
    .title-below-cont{
       height: 48px;
+
       @media screen and (min-width: 610px){
          height: 25px;
       }
@@ -90,6 +88,7 @@ export const HeroStyled = styled.div`
    }
    
    .redirext-list{
+      width: 100%;
       display: flex;
       align-items: center;
       justify-content: space-evenly;
@@ -118,11 +117,9 @@ export const HeroStyled = styled.div`
                   fill ${p => p.theme.transition.main_transition}, 
                   background-color ${p => p.theme.transition.main_transition},
                   box-shadow ${p => p.theme.transition.main_transition};
-      animation: redirectLinkAppear 1s ease forwards;
-      animation-delay: calc((0.3s * var(--i) + 0.1s));
-      opacity: 0;
 
-      &:hover{
+      &:hover,
+      &:focus{
          background-color: ${p => p.theme.color.main_color};
          color: ${p => p.theme.color.text_color};
          fill: ${p => p.theme.color.text_color};
@@ -130,8 +127,10 @@ export const HeroStyled = styled.div`
                      0px 0px 10px 10px rgba(0,0,0,0.3);
       }
 
-      @media screen and (max-width: 767px){
-         margin: auto;
+      @media screen and (min-width: 768px) {
+         opacity: 0;
+         animation: redirectLinkAppear 1s ease forwards;
+         animation-delay: calc((0.3s * var(--i) + 0.1s));
       }
    }
 
@@ -179,6 +178,7 @@ export const HeroStyled = styled.div`
 
    .active .description-cont{
       opacity: 1;
+
       @media screen and (min-width: 1200px){
          transform: translateY(0%);
       }
@@ -215,14 +215,17 @@ export const HeroStyled = styled.div`
 
          & .description-title{
             font-size: 21px;
+
             @media screen and (min-width: 1200px){
                font-size: 24px;
             }
          }
+
          & .description-text{
             font-size: 14px;
             line-height: 18px;
             text-align: center;
+
             @media screen and (min-width: 1200px){
                font-size: 16px;
             }
