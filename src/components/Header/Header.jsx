@@ -27,7 +27,8 @@ export const Header = ({headerBackground, langValue, setLangValue, siteLanguage}
     };
     
 
-    const toggleMenuBox = () => {
+    const toggleMenuBox = (event) => {
+        event.stopPropagation();
         setMobMenu(!mobMenu);
     };
 
