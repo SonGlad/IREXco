@@ -1,6 +1,6 @@
 import { HeroStyled } from "./Hero.styled";
 // import { ComputerCanvas } from "./ComputerCanvas";
-import Typewriter from 'typewriter-effect';
+// import Typewriter from 'typewriter-effect';
 import {ReactComponent as FingerIcon} from "../../images/svg-icons/finger.svg";
 // import React, { useState, startTransition, useEffect } from 'react';
 // import { Loading } from '../CustomLoaders/CustomLoaders';
@@ -15,7 +15,8 @@ import { forwardRef } from "react";
 
 
 export const Hero = forwardRef(({forHeader, profileLanguage, siteLanguage}, reff) => {
-    const { name1, name2, text1, text2} = profileLanguage;
+    // const { name1, name2, text1, text2} = profileLanguage;
+    const { name1, name2} = profileLanguage;
     const { hero } = siteLanguage;
     // const [isModelLoaded, setIsModelLoaded] = useState(false);
 
@@ -35,17 +36,17 @@ export const Hero = forwardRef(({forHeader, profileLanguage, siteLanguage}, reff
     // })
 
 
-    const TypeWriterFunction = () => {
-        return <Typewriter
-                options={{
-                strings: [`${text1}`, `${text2}`],
-                autoStart: true,
-                loop: true,
-                pauseFor: 2500,
-                cursorClassName: 'Typewriter__cursor',
-            }}
-        />
-    };
+    // const TypeWriterFunction = () => {
+    //     return <Typewriter
+    //             options={{
+    //             strings: [`${text1}`, `${text2}`],
+    //             autoStart: true,
+    //             loop: true,
+    //             pauseFor: 2500,
+    //             cursorClassName: 'Typewriter__cursor',
+    //         }}
+    //     />
+    // };
 
     // const stopPropagation = (event) => {
     //     event.stopPropagation();
@@ -57,9 +58,9 @@ export const Hero = forwardRef(({forHeader, profileLanguage, siteLanguage}, reff
             <div className={`hero-for-animation ${inView ? 'active' : ''}`} ref={ref}>
                 <div className="title-contaier">
                     <h1 className="title" ref={forHeader}><span>{name1}</span><br/>{name2}</h1>
-                    <div className="title-below-cont">
+                    {/* <div className="title-below-cont">
                         <h2 className="title-below">{TypeWriterFunction()}</h2>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="canvas-container">
                     <div className="left-redirect-cont">

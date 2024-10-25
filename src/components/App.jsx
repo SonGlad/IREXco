@@ -9,7 +9,7 @@ import { StackSection } from "./StackSection/StackSection";
 import { PortfolioSection } from "./PortfolioSection/Portfolio";
 import { Contacts } from "./ContactSection/Contacts";
 import { Modal } from "./Modal/Modal";
-import { Footer } from "./Footer/Footer";
+// import { Footer } from "./Footer/Footer";
 import { FormLoading } from "./CustomLoaders/CustomLoaders";
 import { useInView } from 'react-intersection-observer';
 import useGeoLocation from "react-ipgeolocation";
@@ -183,10 +183,10 @@ export const App= () => {
           />
         </Container>
       </ContactSection>
-      <Footer 
+      {/* <Footer 
         siteLanguage={siteLanguage}
         profileLanguage={profileLanguage}
-      />
+      /> */}
       {(isPortfolioModal || isContactModal) && 
         <Modal
           isPortfolioModal={isPortfolioModal}
