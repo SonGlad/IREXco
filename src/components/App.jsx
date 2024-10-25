@@ -139,7 +139,7 @@ export const App= () => {
         setLangValue={setLangValue}
         siteLanguage={siteLanguage}
       />
-      <HeroSection>
+      <HeroSection propsId={'HeroSection'}>
         <Container>
           <Hero
             forHeader={ref}
@@ -148,7 +148,7 @@ export const App= () => {
           /> 
         </Container>
       </HeroSection>
-      <AboutSection >
+      <AboutSection propsId={'AboutSection'}>
         <Container>
           <AboutUsSection 
             profileLanguage={profileLanguage}
@@ -156,7 +156,7 @@ export const App= () => {
           />
         </Container>
       </AboutSection>
-      <Section>
+      <Section propsId={'StackSection'}>
         <Container>
           <StackSection 
             profileLanguage={profileLanguage}
@@ -165,7 +165,7 @@ export const App= () => {
           />
         </Container>
       </Section>
-      <Section>
+      <Section propsId={'PortfolioSection'}>
         <Container>
           <PortfolioSection 
             openPortfolioModal={openPortfolioModal}
@@ -175,7 +175,7 @@ export const App= () => {
           />
         </Container>
       </Section>
-      <ContactSection>
+      <ContactSection propsId={'ContactSection'}>
         <Container>
           <Contacts
             openContactModal={openContactModal}

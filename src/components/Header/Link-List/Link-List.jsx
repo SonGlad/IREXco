@@ -27,31 +27,31 @@ export const LinkList = ({toggleMenuBox, siteLanguage}) => {
         <LinkListStyled>
             <ul ref={ref} className={`link-list ${inView ? 'visible' : ''}`}>
                 <li className="link-list-item" style={{'--i': 1}}>
-                    <ScrollIntoView selector="#hero" className='nav-link' onClick={toggle}>
+                    <ScrollIntoView selector="#HeroSection" className='nav-link' onClick={toggle}>
                         <HomeIcon className="header-icon" width={16} height={16}/>
                         <span className="header-link-text">{header.navMenu1}</span>
                     </ScrollIntoView>
                 </li>
                 <li className="link-list-item" style={{'--i': 2}}>
-                    <ScrollIntoView selector="#about" className='nav-link' onClick={toggle}>
+                    <ScrollIntoView selector="#AboutSection" className='nav-link' onClick={toggle}>
                         <AboutIcon className="header-icon" width={16} height={16}/>
                         <span className="header-link-text">{header.navMenu2}</span>
                     </ScrollIntoView>
                 </li>
                 <li className="link-list-item" style={{'--i': 3}}>
-                    <ScrollIntoView selector="#stack" className='nav-link' onClick={toggle}>
+                    <ScrollIntoView selector="#StackSection" className='nav-link' onClick={toggle}>
                         <SkillsIcon className="header-icon" width={16} height={16}/>
                         <span className="header-link-text">{header.navMenu3}</span>
                     </ScrollIntoView>
                 </li>
                 <li className="link-list-item" style={{'--i': 4}}>
-                    <ScrollIntoView selector="#portfolio" className='nav-link' onClick={toggle}>
+                    <ScrollIntoView selector="#PortfolioSection" className='nav-link' onClick={toggle}>
                         <PortfolioIcon className="header-icon" width={16} height={16}/>
                         <span className="header-link-text">{header.navMenu4}</span>
                     </ScrollIntoView>
                 </li>
                 <li className="link-list-item" style={{'--i': 5}}>
-                    <ScrollIntoView selector="#contact" className='nav-link' onClick={toggle}>
+                    <ScrollIntoView selector="#ContactSection" className='nav-link' onClick={toggle}>
                         <ContactIcon className="header-icon" width={16} height={16}/>
                         <span className="header-link-text">{header.navMenu5}</span>
                     </ScrollIntoView>

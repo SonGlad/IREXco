@@ -49,7 +49,7 @@ export const Hero = forwardRef(({forHeader, profileLanguage, siteLanguage}, reff
     
 
     return (
-        <HeroStyled id="hero">
+        <HeroStyled>
             <div className={`hero-for-animation ${inView ? 'active' : ''}`} ref={ref}>
                 <div className="title-contaier">
                     <h1 className="title" ref={forHeader}><span>{name1}</span><br/>{name2}</h1>
@@ -61,13 +61,13 @@ export const Hero = forwardRef(({forHeader, profileLanguage, siteLanguage}, reff
                     <div className="left-redirect-cont">
                         <ul className="redirext-list-left">
                             <li className="redirect-item">
-                                <ScrollIntoView selector="#contact" className="redirect-link redirect" style={{'--i': 1}}>
+                                <ScrollIntoView selector="#ContactSection" className="redirect-link redirect" style={{'--i': 1}}>
                                     <FingerIcon className="redirect-icon" width={24} height={24}/>    
                                     <span>{hero.navMenu4}</span>
                                 </ScrollIntoView>
                             </li>
                             <li className="redirect-item">
-                                <ScrollIntoView selector="#stack" className="redirect-link redirect" style={{'--i': 4}}>
+                                <ScrollIntoView selector="#StackSection" className="redirect-link redirect" style={{'--i': 4}}>
                                     <FingerIcon className="redirect-icon" width={24} height={24}/>    
                                     <span>{hero.navMenu2}</span>
                                 </ScrollIntoView>
@@ -77,13 +77,13 @@ export const Hero = forwardRef(({forHeader, profileLanguage, siteLanguage}, reff
                     <div className="left-redirect-cont">
                     <ul className="redirext-list-right">
                             <li className="redirect-item">
-                                <ScrollIntoView selector="#about" className="redirect-link redirect" style={{'--i': 3}}>
+                                <ScrollIntoView selector="#AboutSection" className="redirect-link redirect" style={{'--i': 3}}>
                                     <span>{hero.navMenu1}</span>
                                     <FingerIcon className="redirect-icon redirect-icon-rotate" width={24} height={24}/>    
                                 </ScrollIntoView>
                             </li>
                             <li className="redirect-item">
-                                <ScrollIntoView selector="#portfolio" className="redirect-link redirect"style={{'--i': 2}}>
+                                <ScrollIntoView selector="#PortfolioSection" className="redirect-link redirect"style={{'--i': 2}}>
                                     <span>{hero.navMenu3}</span>
                                     <FingerIcon className="redirect-icon redirect-icon-rotate" width={24} height={24}/>    
                                 </ScrollIntoView>
@@ -100,25 +100,25 @@ export const Hero = forwardRef(({forHeader, profileLanguage, siteLanguage}, reff
                 <div className="redirect-cont-small-screen">
                     <ul className="redirext-list">
                         <li className="redirect-item">
-                            <ScrollIntoView selector="#contact" className="redirect-link redirect" style={{'--i': 1}}>
+                            <ScrollIntoView selector="#ContactSection" className="redirect-link redirect" style={{'--i': 1}}>
                                 <FingerIcon className="redirect-icon" width={24} height={24}/>    
                                 <span>{hero.navMenu4}</span>
                             </ScrollIntoView>
                         </li>
                         <li className="redirect-item">
-                            <ScrollIntoView selector="#stack" className="redirect-link redirect" style={{'--i': 2}}>
+                            <ScrollIntoView selector="#StackSection" className="redirect-link redirect" style={{'--i': 2}}>
                                 <FingerIcon className="redirect-icon" width={24} height={24}/>    
                                 <span>{hero.navMenu2}</span>
                             </ScrollIntoView>
                         </li>
                         <li className="redirect-item">
-                            <ScrollIntoView selector="#about" className="redirect-link redirect" style={{'--i': 3}}>
+                            <ScrollIntoView selector="#AboutSection" className="redirect-link redirect" style={{'--i': 3}}>
                                 <FingerIcon className="redirect-icon" width={24} height={24}/>    
                                 <span>{hero.navMenu1}</span>
                             </ScrollIntoView>
                         </li>
                         <li className="redirect-item">
-                            <ScrollIntoView selector="#portfolio" className="redirect-link redirect"style={{'--i': 4}}>
+                            <ScrollIntoView selector="#PortfolioSection" className="redirect-link redirect"style={{'--i': 4}}>
                                 <FingerIcon className="redirect-icon" width={24} height={24}/>    
                                 <span>{hero.navMenu3}</span>
                             </ScrollIntoView>

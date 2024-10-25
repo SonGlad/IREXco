@@ -33,7 +33,7 @@ export const AboutUsSection = ({profileLanguage, siteLanguage}) => {
 
       
     return (
-        <AboutStyled id="about">
+        <AboutStyled>
             <h1 className="about-title">{about.sectionTitle1} <span>{about.sectionTitle2}</span></h1>
             <div className="content-div" ref={contentRef}>
                 {inViewContent && (

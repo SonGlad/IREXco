@@ -85,7 +85,7 @@ export const Header = ({headerBackground, langValue, setLangValue, siteLanguage}
             <Container>
                 <div className='header-container'>
                     <NavLink className="logo-link">
-                        <ScrollIntoView selector="#hero">
+                        <ScrollIntoView selector="#HeroSection">
                             <img className="header-logo" src={Logo} alt="logo"/>    
                         </ScrollIntoView>
                     </NavLink>

@@ -20,7 +20,7 @@ export const Contacts = ({
 
 
     return(
-        <ContactsStyled id="contact">
+        <ContactsStyled>
             <h1 className="about-title">{contact.title1} <span>{contact.title2}</span></h1>
                 <div className="content-container" ref={ref}>
                     {inView && (

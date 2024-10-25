@@ -107,7 +107,7 @@ export const PortfolioSection = ({
 
 
     return(
-        <PortfolioStyled id="portfolio">
+        <PortfolioStyled>
             <h1 className="potfolio-title"><span>{portfolio.sectionTitle1} </span>{portfolio.sectionTitle2}</h1>
             <div className="content-div" ref={contentRef}>
                 {inViewContent && (

@@ -2,35 +2,35 @@ import {HeroSectionStyle, AboutSectionStyled, SectionStyled, ContactSectionStyle
 
 
 
-export const HeroSection = ({children}) => {
+export const HeroSection = ({children, propsId}) => {
     return (
-        <HeroSectionStyle>
+        <HeroSectionStyle id={propsId}>
             {children}
         </HeroSectionStyle>
     );
 };
 
 
-export const AboutSection = ({children}) => {
+export const AboutSection = ({children, propsId}) => {
     return (
-        <AboutSectionStyled>
+        <AboutSectionStyled id={propsId}>
             {children}
         </AboutSectionStyled>
     );
 };
 
 
-export const Section = ({children}) => {
+export const Section = ({children, propsId}) => {
     return (
-        <SectionStyled>
+        <SectionStyled id={propsId}>
             {children}
         </SectionStyled>
     );
 };
 
-export const ContactSection = ({children}) => {
+export const ContactSection = ({children, propsId}) => {
     return (
-        <ContactSectionStyled>
+        <ContactSectionStyled id={propsId}>
             {children}
         </ContactSectionStyled>
     );

@@ -1,6 +1,4 @@
-import PropTypes from 'prop-types';
 import { ContainersStyle } from './Container.styled';
-
 
 
 export const Container = ({children}) => {
@@ -11,8 +9,3 @@ export const Container = ({children}) => {
     );
 };
 
-
-
-Container.propTypes = {
-    children: PropTypes.node
-};
