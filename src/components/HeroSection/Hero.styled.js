@@ -237,9 +237,9 @@ export const HeroStyled = styled.div`
          margin-top: 0;
       }
 
-      & .icon-cont{
+      /* & .icon-cont{
          position: relative;
-      }
+      } */
 
       & .description-icon{
          width: 60px;
@@ -251,7 +251,7 @@ export const HeroStyled = styled.div`
       .description-icon-user{
          stroke: ${p => p.theme.color.main_color};
          fill: none;
-         position: absolute;
+         /* position: absolute; */
          top: -6%;
          left: 30%;
          stroke-width: 2px;
