@@ -17,7 +17,7 @@ export const StackSection = ({profileLanguage, siteLanguage, projectLanguage}) =
 
 
     return(
-        <StackSectionStyled id="stack">
+        <StackSectionStyled id="idStack">
             {/* <h1 className="main-education-title">{stack.sectionTitle1} <span>{stack.sectionTitle2}</span></h1> */}
             <h1 className="main-education-title">Contact</h1>
             <div className="content-div">

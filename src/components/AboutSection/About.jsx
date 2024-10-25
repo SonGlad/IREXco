@@ -33,7 +33,7 @@ export const AboutUsSection = ({profileLanguage, siteLanguage}) => {
 
       
     return (
-        <AboutStyled id="about">
+        <AboutStyled id="idAbout">
             {/* <h1 className="about-title">{about.sectionTitle1} <span>{about.sectionTitle2}</span></h1> */}
             <h1 className="about-title">About</h1>
             <div className="content-div">
