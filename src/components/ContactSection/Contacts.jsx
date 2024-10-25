@@ -16,12 +16,13 @@ export const Contacts = ({
     //     triggerOnce: false,
     //     threshold: 0.1,
     // });
-    const { contact } = siteLanguage;
+    // const { contact } = siteLanguage;
 
 
     return(
         <ContactsStyled id="contact">
-            <h1 className="about-title">{contact.title1} <span>{contact.title2}</span></h1>
+            <h1 className="about-title">Contact</h1>
+            {/* <h1 className="about-title">{contact.title1} <span>{contact.title2}</span></h1> */}
                 <div className="content-container">
                     {/* {inView && (
                         <>

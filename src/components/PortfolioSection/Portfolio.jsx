@@ -25,7 +25,7 @@ export const PortfolioSection = ({
     //     triggerOnce: true,
     //     threshold: 0.1,
     // });
-    const { portfolio } = siteLanguage;
+    // const { portfolio } = siteLanguage;
     
 
     // useEffect(() => {
@@ -108,7 +108,8 @@ export const PortfolioSection = ({
 
     return(
         <PortfolioStyled id="portfolio">
-            <h1 className="potfolio-title"><span>{portfolio.sectionTitle1} </span>{portfolio.sectionTitle2}</h1>
+            {/* <h1 className="potfolio-title"><span>{portfolio.sectionTitle1} </span>{portfolio.sectionTitle2}</h1> */}
+            <h1 className="potfolio-title">Potfolio</h1>
             <div className="content-div">
                 {/* {inViewContent && (
                     <>

@@ -8,7 +8,7 @@ import { StackSectionStyled } from "./StackSection.styled";
 
 export const StackSection = ({profileLanguage, siteLanguage, projectLanguage}) => {
     // const { about5 } = profileLanguage;
-    const { stack } = siteLanguage;
+    // const { stack } = siteLanguage;
 
     // const { ref: contentRef, inView: inViewContent } = useInView({
     //     triggerOnce: true,
@@ -18,7 +18,8 @@ export const StackSection = ({profileLanguage, siteLanguage, projectLanguage}) =
 
     return(
         <StackSectionStyled id="stack">
-            <h1 className="main-education-title">{stack.sectionTitle1} <span>{stack.sectionTitle2}</span></h1>
+            {/* <h1 className="main-education-title">{stack.sectionTitle1} <span>{stack.sectionTitle2}</span></h1> */}
+            <h1 className="main-education-title">Contact</h1>
             <div className="content-div">
                 {/* {inViewContent && (
                     <>

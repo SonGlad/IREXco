@@ -8,7 +8,7 @@ import { AboutStyled } from "./About.styled";
 
 export const AboutUsSection = ({profileLanguage, siteLanguage}) => {
     // const { about1, about2, about3 } = profileLanguage;
-    const { about } = siteLanguage;
+    // const { about } = siteLanguage;
 
 
     // const { ref, inView } = useInView({
@@ -34,7 +34,8 @@ export const AboutUsSection = ({profileLanguage, siteLanguage}) => {
       
     return (
         <AboutStyled id="about">
-            <h1 className="about-title">{about.sectionTitle1} <span>{about.sectionTitle2}</span></h1>
+            {/* <h1 className="about-title">{about.sectionTitle1} <span>{about.sectionTitle2}</span></h1> */}
+            <h1 className="about-title">About</h1>
             <div className="content-div">
                 {/* {inViewContent && (
                     <div className='animation-container'>
