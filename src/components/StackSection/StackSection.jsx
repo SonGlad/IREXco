@@ -1,26 +1,26 @@
 import { StackSectionStyled } from "./StackSection.styled";
-import { Icons } from "./ReactIcons/Icons";
-import { Projects } from "./ProjectList/Project";
-import { CodingCharts } from "./CodingCharts/CodingCharts";
-import { useInView } from 'react-intersection-observer';
+// import { Icons } from "./ReactIcons/Icons";
+// import { Projects } from "./ProjectList/Project";
+// import { CodingCharts } from "./CodingCharts/CodingCharts";
+// import { useInView } from 'react-intersection-observer';
 
 
 
 export const StackSection = ({profileLanguage, siteLanguage, projectLanguage}) => {
-    const { about5 } = profileLanguage;
+    // const { about5 } = profileLanguage;
     const { stack } = siteLanguage;
 
-    const { ref: contentRef, inView: inViewContent } = useInView({
-        triggerOnce: true,
-        threshold: 0.1,
-    });  
+    // const { ref: contentRef, inView: inViewContent } = useInView({
+    //     triggerOnce: true,
+    //     threshold: 0.1,
+    // });  
 
 
     return(
         <StackSectionStyled id="stack">
             <h1 className="main-education-title">{stack.sectionTitle1} <span>{stack.sectionTitle2}</span></h1>
-            <div className="content-div" ref={contentRef}>
-                {inViewContent && (
+            <div className="content-div">
+                {/* {inViewContent && (
                     <>
                         <Icons 
                             profileLanguage={profileLanguage}
@@ -44,7 +44,7 @@ export const StackSection = ({profileLanguage, siteLanguage, projectLanguage}) =
                             profileLanguage={profileLanguage}
                         />
                     </>
-                )}
+                )} */}
             </div>
         </StackSectionStyled>
     )

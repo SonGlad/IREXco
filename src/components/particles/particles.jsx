@@ -31,7 +31,7 @@ export const ParticlesComponent = React.memo((props) => {
           value: "transparent",
         },
       },
-      fpsLimit: 220,
+      fpsLimit: 60,
       interactivity: {
         events: {
           onClick: {
@@ -47,6 +47,7 @@ export const ParticlesComponent = React.memo((props) => {
           push: {
             distance: 200,
             duration: 45,
+            quantity: 4
           },
           grab: {
             distance: 150,
@@ -77,6 +78,7 @@ export const ParticlesComponent = React.memo((props) => {
         number: {
           density: {
             enable: true,
+            area: 50,
           },
           value: 200,
         },

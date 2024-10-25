@@ -9,7 +9,8 @@ export const PortfolioStyled = styled.div`
     }
     
     .content-div{
-        min-height: 860px;
+        min-height: 1000px;
+        /* min-height: 860px; */
     }
 
     .potfolio-title{

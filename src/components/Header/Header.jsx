@@ -12,9 +12,9 @@ import ScrollIntoView from 'react-scroll-into-view';
 
 export const Header = ({headerBackground, langValue, setLangValue, siteLanguage}) => {   
     const [mobMenu, setMobMenu] = useState(false);
+    const [activeLangCont, setActiveLangCont] = useState(false);
     const mobileMenu = useRef(null);
     const langCont = useRef(null);
-    const [activeLangCont, setActiveLangCont] = useState(false);
 
    
     const toggleLangMenu = () => {
@@ -28,9 +28,12 @@ export const Header = ({headerBackground, langValue, setLangValue, siteLanguage}
     
 
     const toggleMenuBox = (event) => {
-        event.stopPropagation();
-        setMobMenu(!mobMenu);
+        setMobMenu(prevState => !prevState);
+        if (!mobMenu) {
+            event.stopPropagation();
+        }
     };
+  
 
 
     const changeIcon = () => {
@@ -45,9 +48,9 @@ export const Header = ({headerBackground, langValue, setLangValue, siteLanguage}
     const toggleMobMenuCont = () => {
         return mobMenu ? 'is-active' : '';
     };
-    const stopPropagation = (event) => {
-        event.stopPropagation();
-    };
+    // const stopPropagation = (event) => {
+    //     event.stopPropagation();
+    // };
 
     const handleKeyPress = useCallback(event => {
         if (event.key === 'Escape') {
@@ -59,14 +62,14 @@ export const Header = ({headerBackground, langValue, setLangValue, siteLanguage}
 
 
     const onBackdropClick = useCallback(event => {
-        event.stopPropagation();
-        if(mobileMenu.current && !mobileMenu.current.contains(event.target)){
+        // event.stopPropagation();
+        if(mobileMenu.current && !mobileMenu.current.contains(event.target)){                        
             setMobMenu(false);
         }
-        if (langCont.current && !langCont.current.contains(event.target)) {
+        if(langCont.current && !langCont.current.contains(event.target)) {
             setActiveLangCont(false);
         }
-    },[setMobMenu]);
+    },[setMobMenu, setActiveLangCont]);
 
 
     useEffect(() => {
@@ -91,7 +94,11 @@ export const Header = ({headerBackground, langValue, setLangValue, siteLanguage}
                         </ScrollIntoView>
                     </NavLink>
                     <div className="lang-cont" ref={langCont}>
-                        <button className="lang-btn" aria-label="Language Button" onClick={toggleLangMenu}>{langValue}</button>
+                        <button className="lang-btn" type="button" 
+                            aria-label="Language Button" 
+                            onClick={toggleLangMenu}
+                            >{langValue}
+                        </button>
                         <div className={`chose-lang-cont ${activeLangCont ? 'open' : ''}`}>
                             <ul className="lang-list">
                                 <li className="lang-item" onClick={() => chosenlanguage('UA')}>
@@ -106,7 +113,7 @@ export const Header = ({headerBackground, langValue, setLangValue, siteLanguage}
                             </ul>
                         </div>
                     </div>
-                    <div className="mobilemenu" ref={mobileMenu} onClick={stopPropagation}>
+                    <div className="mobilemenu" ref={mobileMenu}>
                         <button type='button'
                             onClick={toggleMenuBox} 
                             className='mob-menu-btn'
