@@ -2,8 +2,8 @@
   "name1": "iReX",
   "name2": "Web-Development",
   "email": "okoshevy@gmail.com",
-  "userName1":"Олег",
-  "userName2":"Александр",
+  "userName1": "Олег",
+  "userName2": "Александр",
   "email2": "aleksandr.shatalin048.work1@gmail.com",
   "phone": "+38 (067) 483-89-65",
   "phone2": "+38 (063) 196-69-91",
@@ -22,153 +22,172 @@
   "telegram_link2": "https://t.me/mentholitty048",
   "instagram_link": "https://www.instagram.com/mentholitty048?igsh=MWZqMHB5a2x4azR2aw==",
   "steps": {
-    "projectPlanning":{
+    "projectPlanning": {
       "description": "На этом этапе определяются цели проекта и его основные задачи. Это включает в себя сбор ваших требований, анализ бизнес-процессов, определение целевой аудитории и установление функциональности продукта. Мы создаем подробный план, разбивая проект на этапы, устанавливая сроки, распределяя ресурсы и назначая ответственных. Основная цель заключается в том, чтобы четко понять, что будет разработано и как это будет сделано.",
       "value": "10",
       "img": "https://i.imgur.com/dCuguuB.jpg",
       "name": "Планирование Проекта"
     },
-    "designPrototyping":{
+    "designPrototyping": {
       "description": "После этапа планирования начинается процесс проектирования продукта. На этом этапе создаются визуальные каркасные модели и прототипы, которые помогают визуализировать структуру и взаимодействие пользователя с интерфейсом. Дизайнеры сосредотачиваются на пользовательском интерфейсе (UI) и пользовательском опыте (UX), чтобы обеспечить удобство использования. Прототипы тестируются и обсуждаются с вами до начала разработки, что позволяет внести изменения на раннем этапе.",
       "value": "15",
       "img": "https://i.imgur.com/JEUYXQG.jpg",
       "name": "Дизайн и Прототипирование"
     },
-    "backend":{
+    "backend": {
       "description": "Этот этап отвечает за создание серверной части приложения, включая базы данных, серверы, API и бизнес-логику. Здесь мы работаем с технологиями для бэкенда, чтобы обрабатывать хранение данных, обрабатывать запросы, управлять пользователями и обеспечивать безопасность системы. Основное внимание на этом этапе уделяется обеспечению гладкого взаимодействия между клиентской и серверной частью через использование API.",
       "value": "25",
       "img": "https://i.imgur.com/5mW9L9u.jpg",
       "name": "Разработка Сервера"
     },
-    "frontend":{
+    "frontend": {
       "description": "Этап фронтенд-разработки сосредоточен на создании интерфейса, с которым взаимодействуют пользователи. Мы отвечаем за создание визуальных компонентов и обеспечение плавного взаимодействия пользователя с системой. Используются ранее описанные технологии. Наша основная цель — предоставить удобный и интуитивно понятный интерфейс, который корректно работает на различных устройствах и соответствует современным стандартам.",
       "value": "30",
       "img": "https://i.imgur.com/BezEQVP.jpg",
       "name": "Разработка Интерфейса"
     },
-    "testing":{
+    "testing": {
       "description": "Тестирование включает в себя проверку всех аспектов функциональности приложения. Мы проводим тесты, чтобы убедиться, что приложение соответствует требованиям, выявить ошибки и оценить, как система работает в различных сценариях. Этот этап включает как функциональное тестирование (обеспечение корректной работы всех функций), так и нефункциональное тестирование (производительность, безопасность, удобство использования). Основная цель — гарантировать, что продукт готов к выпуску и работает без ошибок.",
       "value": "10",
       "img": "https://i.imgur.com/1O2ixNe.jpg",
       "name": "Тестирование и Контроль Качества"
     },
-    "deploying":{
+    "deploying": {
       "description": "После завершения этапов разработки и тестирования проект развертывается на живом сервере или хостинг-платформе, что делает продукт доступным для конечных пользователей. На этом этапе начинается фаза поддержки, которая включает в себя мониторинг производительности приложения, исправление ошибок, улучшение функциональности, применение обновлений безопасности и выполнение других задач для поддержания и обновления продукта на протяжении всего его жизненного цикла.",
       "value": "10",
       "img": "https://i.imgur.com/pLAlJOc.jpg",
       "name": "Развертывание и Обслуживание"
     }
   },
-  "skills":[
-    { "id": "IconReact",
+  "skills": [
+    {
+      "id": "IconReact",
       "value": "React",
       "link": "https://react.dev",
       "translatedType": "Фронтенд",
       "description": "Библиотека для создания пользовательских интерфейсов."
     },
-    { "id": "IconRedux",
+    {
+      "id": "IconRedux",
       "value": "Redux",
       "link": "https://redux.js.org",
       "translatedType": "Фронтенд",
       "description": "Управление состоянием для приложений на React."
     },
-    { "id": "IconHTML",
+    {
+      "id": "IconHTML",
       "value": "HTML 5",
       "link": "https://html.spec.whatwg.org",
       "translatedType": "Фронтенд",
       "description": "Основной фундамент для создания веб-страниц."
     },
-    { "id": "IconJavaScript",
+    {
+      "id": "IconJavaScript",
       "value": "JavaScript",
       "link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript",
       "translatedType": "Фронтенд, Бэкенд",
       "description": "Основной язык для разработки фронтенда и бэкенда."
     },
-    { "id": "IconCSS",
+    {
+      "id": "IconCSS",
       "value": "CSS 3",
       "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
       "translatedType": "Фронтенд",
       "description": "Стилизация веб-страниц."
     },
-    { "id": "IconGit",
+    {
+      "id": "IconGit",
       "value": "Git",
       "link": "https://git-scm.com",
       "translatedType": "ДевОпс",
       "description": "Система контроля версий для отслеживания изменений в коде."
     },
-    { "id": "IconGitHub",
+    {
+      "id": "IconGitHub",
       "value": "GitHub",
       "link": "https://github.com",
       "translatedType": "ДевОпс",
       "description": "Платформа для хостинга и управления репозиториями."
     },
-    { "id": "IconVS",
+    {
+      "id": "IconVS",
       "value": "Visual Studio",
       "link": "https://code.visualstudio.com",
       "translatedType": "Инструменты разработки",
       "description": "Популярный редактор кода для веб-разработчиков."
     },
-    { "id": "IconNode",
+    {
+      "id": "IconNode",
       "value": "Node.js",
       "link": "https://nodejs.org/en",
       "translatedType": "Бэкенд",
       "description": "Среда выполнения для запуска JavaScript на стороне сервера."
     },
-    { "id": "IconSASS",
+    {
+      "id": "IconSASS",
       "value": "SASS / SCSS",
       "link": "https://sass-lang.com",
       "translatedType": "Фронтенд",
       "description": "CSS препроцессор для улучшенного стилизования."
     },
-    { "id": "IconHandlebars",
+    {
+      "id": "IconHandlebars",
       "value": "Handlebars",
       "link": "https://handlebarsjs.com",
       "translatedType": "Фронтенд, Бэкенд",
       "description": "Шаблонизатор для серверной и фронтенд-рендеринга."
     },
-    { "id": "IconMongoDB",
+    {
+      "id": "IconMongoDB",
       "value": "MongoDB",
       "link": "https://www.mongodb.com/cloud/atlas/register?utm_source=google&utm_campaign=search_gs_pl_evergreen_atlas_core_prosp-brand_gic-null_emea-ua_ps-all_desktop_eng_lead&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624575&adgroup=115749710823&cq_cmp=12212624575&gad_source=1&gclid=CjwKCAiA_OetBhAtEiwAPTeQZy-VKImwt1qJHg8yNCl4a_hX5XmBxUh821Oa4HKoboH2OUpctL_ewhoCh7kQAvD_BwE",
       "translatedType": "Бэкенд",
       "description": "Документно-ориентированная NoSQL база данных."
     },
-    { "id": "IconAxios",
+    {
+      "id": "IconAxios",
       "value": "Axios",
       "link": "https://axios-http.com/docs/api_intro",
       "translatedType": "Бэкенд, Фронтенд",
       "description": "HTTP-клиент для взаимодействия с API."
     },
-    { "id": "IconPostman",
+    {
+      "id": "IconPostman",
       "value": "Postman",
       "link": "https://www.postman.com",
       "translatedType": "ДевОпс",
       "description": "Инструмент для тестирования и взаимодействия с API."
     },
-    { "id": "IconStyled",
+    {
+      "id": "IconStyled",
       "value": "Styled Components",
       "link": "https://styled-components.com",
       "translatedType": "Фронтенд",
       "description": "Библиотека для стилизованных компонентов в React."
     },
-    { "id": "IconFigma",
+    {
+      "id": "IconFigma",
       "value": "Figma",
       "link": "https://www.figma.com",
       "translatedType": "Инструменты разработки",
       "description": "Инструмент для создания дизайнов и прототипов."
     },
-    { "id": "IconRender",
+    {
+      "id": "IconRender",
       "value": "Render",
       "link": "https://render.com",
       "translatedType": "ДевОпс",
       "description": "Облачная платформа для хостинга и автоматического развертывания приложений."
     },
-    { "id": "IconNetlify",
+    {
+      "id": "IconNetlify",
       "value": "Netlify",
       "link": "https://app.netlify.com",
       "translatedType": "ДевОпс",
       "description": "Платформа для автоматического развертывания статических сайтов."
     },
-    { "id": "IconGoDaddy",
+    {
+      "id": "IconGoDaddy",
       "value": "GoDaddy",
       "link": "https://www.godaddy.com/en-uk",
       "translatedType": "ДевОпс",
