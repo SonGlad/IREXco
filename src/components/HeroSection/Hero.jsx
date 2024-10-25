@@ -4,10 +4,10 @@ import { HeroStyled } from "./Hero.styled";
 import {ReactComponent as FingerIcon} from "../../images/svg-icons/finger.svg";
 // import React, { useState, startTransition, useEffect } from 'react';
 // import { Loading } from '../CustomLoaders/CustomLoaders';
-import {ReactComponent as Construction} from "../../images/svg-icons/construction.svg";
-import {ReactComponent as TemplateIcon} from "../../images/svg-icons/template.svg";
-import {ReactComponent as UserIcon} from "../../images/svg-icons/user.svg";
-import IconHandsBound from "../IconList/HandsBound";
+// import {ReactComponent as Construction} from "../../images/svg-icons/construction.svg";
+// import {ReactComponent as TemplateIcon} from "../../images/svg-icons/template.svg";
+// import {ReactComponent as UserIcon} from "../../images/svg-icons/user.svg";
+// import IconHandsBound from "../IconList/HandsBound";
 import { useInView } from 'react-intersection-observer';
 import ScrollIntoView from 'react-scroll-into-view';
 import { forwardRef } from "react";
@@ -130,7 +130,7 @@ export const Hero = forwardRef(({forHeader, profileLanguage, siteLanguage}, reff
                         </li>
                     </ul>
                 </div>
-                <div className='description-cont'>
+                {/* <div className='description-cont'>
                     <ul className="description-list">
                         <li className="description-item">
                             <TemplateIcon className="description-icon" width={24} height={24}/>
@@ -151,7 +151,7 @@ export const Hero = forwardRef(({forHeader, profileLanguage, siteLanguage}, reff
                             <p className="description-text">{hero.description3}</p>
                         </li>
                     </ul>
-                </div>
+                </div> */}
             </div>
         </HeroStyled>
     );
