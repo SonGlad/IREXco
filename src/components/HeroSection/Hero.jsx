@@ -97,7 +97,7 @@ export const Hero = forwardRef(({forHeader, profileLanguage, siteLanguage}, reff
                         <Loading/>
                     )}
                 </div>
-                {/* <div className="redirect-cont-small-screen">
+                <div className="redirect-cont-small-screen">
                     <ul className="redirext-list">
                         <li className="redirect-item">
                             <ScrollIntoView selector="#ContactSection" className="redirect-link redirect" style={{'--i': 1}}>
@@ -124,7 +124,7 @@ export const Hero = forwardRef(({forHeader, profileLanguage, siteLanguage}, reff
                             </ScrollIntoView>
                         </li>
                     </ul>
-                </div> */}
+                </div>
                 <div className='description-cont'>
                     <ul className="description-list">
                         <li className="description-item">
