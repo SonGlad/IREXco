@@ -13,15 +13,15 @@ import { Modal } from "./Modal/Modal";
 import { FormLoading } from "./CustomLoaders/CustomLoaders";
 import { useInView } from 'react-intersection-observer';
 // import useGeoLocation from "react-ipgeolocation";
-import SiteEN from "../utils/siteEn.json";
-import SiteUa from "../utils/siteUa.json";
-import SiteRu from "../utils/siteRu.json";
+import SiteEn from "../utils/siteEn.json";
+// import SiteUa from "../utils/siteUa.json";
+// import SiteRu from "../utils/siteRu.json";
 import ProfileEn from "../utils/profileEn.json";
-import ProfileUa from "../utils/profileUa.json";
+// import ProfileUa from "../utils/profileUa.json";
 import ProfileRu from "../utils/profileRu.json";
 import ProjectsEn from "../utils/projectsEn.json";
-import ProjectsUa from "../utils/projectsUa.json";
-import ProjectsRu from "../utils/projectsRu.json";
+// import ProjectsUa from "../utils/projectsUa.json";
+// import ProjectsRu from "../utils/projectsRu.json";
 // import Facebook1 from "../tracking/Facebook1";
 // import Facebook2 from "../tracking/Facebook2";
 
@@ -40,9 +40,9 @@ export const App= () => {
   // const location = useGeoLocation();
   // const country = location.country ? location.country : "";
   const [langValue, setLangValue] = useState('EN');
-  const [siteLanguage, setSiteLanguage] = useState(SiteUa);
-  const [profileLanguage, setProfileLanguage] = useState(ProfileUa);
-  const [projectLanguage, setProjectLanguage] = useState(ProjectsUa);
+  const [siteLanguage, setSiteLanguage] = useState(SiteEn);
+  const [profileLanguage, setProfileLanguage] = useState(ProfileEn);
+  const [projectLanguage, setProjectLanguage] = useState(ProfileRu);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [isParticles, setParticles] = useState(false);
   
@@ -58,22 +58,22 @@ export const App= () => {
   
 
   useEffect(() => {
-    if (langValue === "UA") {
-      document.documentElement.lang = 'ua'
-      setSiteLanguage(SiteUa);
-      setProfileLanguage(ProfileUa);
-      setProjectLanguage(ProjectsUa);
-    } else if (langValue === "RU") {
-      document.documentElement.lang = 'ru'
-      setSiteLanguage(SiteRu);
-      setProfileLanguage(ProfileRu);
-      setProjectLanguage(ProjectsRu);
-    } else {
+    // if (langValue === "UA") {
+    //   document.documentElement.lang = 'ua'
+    //   setSiteLanguage(SiteUa);
+    //   setProfileLanguage(ProfileUa);
+    //   setProjectLanguage(ProjectsUa);
+    // } else if (langValue === "RU") {
+    //   document.documentElement.lang = 'ru'
+    //   setSiteLanguage(SiteRu);
+    //   setProfileLanguage(ProfileRu);
+    //   setProjectLanguage(ProjectsRu);
+    // } else {
       document.documentElement.lang = 'en'
-      setSiteLanguage(SiteEN);
+      setSiteLanguage(SiteEn);
       setProfileLanguage(ProfileEn);
       setProjectLanguage(ProjectsEn);
-    }
+    
   },[langValue]);
 
 
