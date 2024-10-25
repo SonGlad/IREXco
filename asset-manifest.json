@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.0a8d3da9.css",
-    "main.js": "/static/js/main.be23eed2.js",
+    "main.js": "/static/js/main.dda1b126.js",
     "static/media/iReX_logo.png": "/static/media/iReX_logo.bb7640ae2d9d84190796.png",
     "static/media/bg_image.jpg": "/static/media/bg_image.b9582bcafcb2d9c85e18.jpg",
     "static/media/typescript.svg": "/static/media/typescript.d18207dc773a07612961805bf30374d2.svg",
@@ -11,7 +11,6 @@
     "static/media/handlebars.svg": "/static/media/handlebars.4dea8dbd4aab141a3d2613c0da7407a4.svg",
     "static/media/javascript.svg": "/static/media/javascript.cc9a7e7aab46a8fdeca77061a3ccabd3.svg",
     "static/media/link2.svg": "/static/media/link2.013c37ef969b7f563193b248cb3d7384.svg",
-    "static/media/construction.svg": "/static/media/construction.ce55eb4c367e15c26d5260ea523b4d1f.svg",
     "static/media/error-logo.svg": "/static/media/error-logo.abe136de24828a5546a0e90b3e021724.svg",
     "static/media/skills.svg": "/static/media/skills.fab18eaf1d94bfa8aaf62c07a063fda6.svg",
     "static/media/portfolio.svg": "/static/media/portfolio.d12071f52d5fe00b1ee0a77aa9da08eb.svg",
@@ -19,7 +18,6 @@
     "static/media/close.svg": "/static/media/close.9cb1a87627ef012af4a24f1b68fb9e45.svg",
     "static/media/html.svg": "/static/media/html.43ea512eb5a421b6cc514325ac6ef56a.svg",
     "static/media/mobile-menu.svg": "/static/media/mobile-menu.f823daac856b5e7553524935093cdd2c.svg",
-    "static/media/template.svg": "/static/media/template.d96727b736162edb5c97a4f0aaeb1506.svg",
     "static/media/css.svg": "/static/media/css.e85566f26888c72c9ae7b8075b77f126.svg",
     "static/media/contact.svg": "/static/media/contact.e29bf6784e56bf85cb8958978d8fc6c9.svg",
     "static/media/vue.svg": "/static/media/vue.6c3a3240395ea288e242dc14d510bdcb.svg",
@@ -28,6 +26,6 @@
   },
   "entrypoints": [
     "static/css/main.0a8d3da9.css",
-    "static/js/main.be23eed2.js"
+    "static/js/main.dda1b126.js"
   ]
 }
