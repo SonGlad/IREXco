@@ -16,7 +16,7 @@ import { forwardRef } from "react";
 
 export const Hero = forwardRef(({forHeader, profileLanguage, siteLanguage}, reff) => {
     // const { name1, name2, text1, text2} = profileLanguage;
-    const { name1, name2} = profileLanguage;
+    // const { name1, name2} = profileLanguage;
     const { hero } = siteLanguage;
     // const [isModelLoaded, setIsModelLoaded] = useState(false);
 
@@ -57,7 +57,7 @@ export const Hero = forwardRef(({forHeader, profileLanguage, siteLanguage}, reff
         <HeroStyled id="hero">
             <div className={`hero-for-animation ${inView ? 'active' : ''}`} ref={ref}>
                 <div className="title-contaier">
-                    <h1 className="title" ref={forHeader}><span>{name1}</span><br/>{name2}</h1>
+                    {/* <h1 className="title" ref={forHeader}><span>{name1}</span><br/>{name2}</h1> */}
                     {/* <div className="title-below-cont">
                         <h2 className="title-below">{TypeWriterFunction()}</h2>
                     </div> */}
