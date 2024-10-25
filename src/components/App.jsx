@@ -12,7 +12,7 @@ import { Modal } from "./Modal/Modal";
 // import { Footer } from "./Footer/Footer";
 import { FormLoading } from "./CustomLoaders/CustomLoaders";
 import { useInView } from 'react-intersection-observer';
-import useGeoLocation from "react-ipgeolocation";
+// import useGeoLocation from "react-ipgeolocation";
 import SiteEN from "../utils/siteEn.json";
 import SiteUa from "../utils/siteUa.json";
 import SiteRu from "../utils/siteRu.json";
@@ -37,9 +37,9 @@ export const App= () => {
   const { ref, inView } = useInView({
     threshold: 1,
   });
-  const location = useGeoLocation();
-  const country = location.country ? location.country : "";
-  const [langValue, setLangValue] = useState('UA');
+  // const location = useGeoLocation();
+  // const country = location.country ? location.country : "";
+  const [langValue, setLangValue] = useState('EN');
   const [siteLanguage, setSiteLanguage] = useState(SiteUa);
   const [profileLanguage, setProfileLanguage] = useState(ProfileUa);
   const [projectLanguage, setProjectLanguage] = useState(ProjectsUa);
@@ -48,13 +48,13 @@ export const App= () => {
   
  
 
-  useEffect(() => {
-    if (country === 'UA') {
-      setLangValue('UA');
-    } else {
-      setLangValue('EN');
-    }
-  },[country]);
+  // useEffect(() => {
+  //   if (country === 'UA') {
+  //     setLangValue('UA');
+  //   } else {
+  //     setLangValue('EN');
+  //   }
+  // },[country]);
   
 
   useEffect(() => {
