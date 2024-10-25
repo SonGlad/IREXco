@@ -5,7 +5,7 @@ export const StyledHeader = styled.header`
     border-radius: none;
     /* position: fixed; */
     width: 100%;
-    z-index: 100;
+    /* z-index: 100; */
     backdrop-filter: ${props => props.$headerBackground && "blur(10px)"};
     
     

@@ -59,14 +59,17 @@ export const App= () => {
 
   useEffect(() => {
     if (langValue === "UA") {
+      document.documentElement.lang = 'ua'
       setSiteLanguage(SiteUa);
       setProfileLanguage(ProfileUa);
       setProjectLanguage(ProjectsUa);
     } else if (langValue === "RU") {
+      document.documentElement.lang = 'ru'
       setSiteLanguage(SiteRu);
       setProfileLanguage(ProfileRu);
       setProjectLanguage(ProjectsRu);
     } else {
+      document.documentElement.lang = 'en'
       setSiteLanguage(SiteEN);
       setProfileLanguage(ProfileEn);
       setProjectLanguage(ProjectsEn);

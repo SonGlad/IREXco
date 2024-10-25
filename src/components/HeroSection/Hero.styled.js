@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const HeroStyled = styled.div`
    padding-top: 58px;
    padding-bottom: 25px;
+   min-height: 1100px;
 
    @media screen and (min-width: 1200px){
       padding-bottom: 60px;
