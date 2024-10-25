@@ -9,19 +9,19 @@ import { StackSection } from "./StackSection/StackSection";
 import { PortfolioSection } from "./PortfolioSection/Portfolio";
 import { Contacts } from "./ContactSection/Contacts";
 import { Modal } from "./Modal/Modal";
-// import { Footer } from "./Footer/Footer";
+import { Footer } from "./Footer/Footer";
 import { FormLoading } from "./CustomLoaders/CustomLoaders";
 import { useInView } from 'react-intersection-observer';
-// import useGeoLocation from "react-ipgeolocation";
-import SiteEn from "../utils/siteEn.json";
-// import SiteUa from "../utils/siteUa.json";
-// import SiteRu from "../utils/siteRu.json";
+import useGeoLocation from "react-ipgeolocation";
+import SiteEN from "../utils/siteEn.json";
+import SiteUa from "../utils/siteUa.json";
+import SiteRu from "../utils/siteRu.json";
 import ProfileEn from "../utils/profileEn.json";
-// import ProfileUa from "../utils/profileUa.json";
+import ProfileUa from "../utils/profileUa.json";
 import ProfileRu from "../utils/profileRu.json";
 import ProjectsEn from "../utils/projectsEn.json";
-// import ProjectsUa from "../utils/projectsUa.json";
-// import ProjectsRu from "../utils/projectsRu.json";
+import ProjectsUa from "../utils/projectsUa.json";
+import ProjectsRu from "../utils/projectsRu.json";
 // import Facebook1 from "../tracking/Facebook1";
 // import Facebook2 from "../tracking/Facebook2";
 
@@ -37,43 +37,43 @@ export const App= () => {
   const { ref, inView } = useInView({
     threshold: 1,
   });
-  // const location = useGeoLocation();
-  // const country = location.country ? location.country : "";
-  const [langValue, setLangValue] = useState('EN');
-  const [siteLanguage, setSiteLanguage] = useState(SiteEn);
-  const [profileLanguage, setProfileLanguage] = useState(ProfileEn);
-  const [projectLanguage, setProjectLanguage] = useState(ProfileRu);
+  const location = useGeoLocation();
+  const country = location.country ? location.country : "";
+  const [langValue, setLangValue] = useState('UA');
+  const [siteLanguage, setSiteLanguage] = useState(SiteUa);
+  const [profileLanguage, setProfileLanguage] = useState(ProfileUa);
+  const [projectLanguage, setProjectLanguage] = useState(ProjectsUa);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [isParticles, setParticles] = useState(false);
   
  
 
-  // useEffect(() => {
-  //   if (country === 'UA') {
-  //     setLangValue('UA');
-  //   } else {
-  //     setLangValue('EN');
-  //   }
-  // },[country]);
+  useEffect(() => {
+    if (country === 'UA') {
+      setLangValue('UA');
+    } else {
+      setLangValue('EN');
+    }
+  },[country]);
   
 
   useEffect(() => {
-    // if (langValue === "UA") {
-    //   document.documentElement.lang = 'ua'
-    //   setSiteLanguage(SiteUa);
-    //   setProfileLanguage(ProfileUa);
-    //   setProjectLanguage(ProjectsUa);
-    // } else if (langValue === "RU") {
-    //   document.documentElement.lang = 'ru'
-    //   setSiteLanguage(SiteRu);
-    //   setProfileLanguage(ProfileRu);
-    //   setProjectLanguage(ProjectsRu);
-    // } else {
+    if (langValue === "UA") {
+      document.documentElement.lang = 'ua'
+      setSiteLanguage(SiteUa);
+      setProfileLanguage(ProfileUa);
+      setProjectLanguage(ProjectsUa);
+    } else if (langValue === "RU") {
+      document.documentElement.lang = 'ru'
+      setSiteLanguage(SiteRu);
+      setProfileLanguage(ProfileRu);
+      setProjectLanguage(ProjectsRu);
+    } else {
       document.documentElement.lang = 'en'
-      setSiteLanguage(SiteEn);
+      setSiteLanguage(SiteEN);
       setProfileLanguage(ProfileEn);
       setProjectLanguage(ProjectsEn);
-    
+    }
   },[langValue]);
 
 
@@ -186,10 +186,10 @@ export const App= () => {
           />
         </Container>
       </ContactSection>
-      {/* <Footer 
+      <Footer 
         siteLanguage={siteLanguage}
         profileLanguage={profileLanguage}
-      /> */}
+      />
       {(isPortfolioModal || isContactModal) && 
         <Modal
           isPortfolioModal={isPortfolioModal}

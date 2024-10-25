@@ -18,7 +18,6 @@ export const LinkList = ({toggleMenuBox, siteLanguage}) => {
 
 
     const toggle = () => {
-        // event.stopPropagation();
         if (toggleMenuBox) {
             toggleMenuBox();
         }

@@ -3,12 +3,10 @@ import styled from "styled-components";
 export const HeroStyled = styled.div`
    padding-top: 58px;
    padding-bottom: 25px;
-   min-height: 1100px;
 
    @media screen and (min-width: 1200px){
       padding-bottom: 60px;
    }
-
 
    .title-contaier{
       padding-top: 20px;
@@ -110,6 +108,7 @@ export const HeroStyled = styled.div`
       border-radius: 15px;
       font-size: 16px;
       font-weight: 700;
+      cursor: pointer;
       background-color: ${p => p.theme.color.text_color};
       color: ${p => p.theme.color.main_color};
       box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.3) inset,

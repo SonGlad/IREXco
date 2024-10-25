@@ -1,43 +1,42 @@
 import { AboutStyled } from "./About.styled";
-// import { LeftAnimation } from "./LeftAnimation/LeftAnimation";
-// import { RightAnimation } from "./RightAnimation/RightAnimation";
-// import IrexLogo from "../../images/images/iReX_logo.png";
-// import { useInView } from 'react-intersection-observer';
+import { LeftAnimation } from "./LeftAnimation/LeftAnimation";
+import { RightAnimation } from "./RightAnimation/RightAnimation";
+import IrexLogo from "../../images/images/iReX_logo.png";
+import { useInView } from 'react-intersection-observer';
 
 
 
 export const AboutUsSection = ({profileLanguage, siteLanguage}) => {
-    // const { about1, about2, about3 } = profileLanguage;
-    // const { about } = siteLanguage;
+    const { about1, about2, about3 } = profileLanguage;
+    const { about } = siteLanguage;
 
 
-    // const { ref, inView } = useInView({
-    //     triggerOnce: false,
-    //     threshold: 0.2,
-    // });
-    // const { ref: leftRef, inView: inViewLeft } = useInView({
-    //     triggerOnce: false,
-    //     threshold: 0.2,
-    // });
-    // const { ref: rightRef, inView: inViewRight } = useInView({
-    //     triggerOnce: false,
-    //     threshold: 0.2,
-    // });
-    // const { ref: contentRef, inView: inViewContent } = useInView({
-    //     triggerOnce: true,
-    //     threshold: 0.1,
-    // });
+    const { ref, inView } = useInView({
+        triggerOnce: false,
+        threshold: 0.2,
+    });
+    const { ref: leftRef, inView: inViewLeft } = useInView({
+        triggerOnce: false,
+        threshold: 0.2,
+    });
+    const { ref: rightRef, inView: inViewRight } = useInView({
+        triggerOnce: false,
+        threshold: 0.2,
+    });
+    const { ref: contentRef, inView: inViewContent } = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
 
 
-    // const parts = about1.split("iReX");
+    const parts = about1.split("iReX");
 
       
     return (
-        <AboutStyled id="idAbout">
-            {/* <h1 className="about-title">{about.sectionTitle1} <span>{about.sectionTitle2}</span></h1> */}
-            <h1 className="about-title">About</h1>
-            <div className="content-div">
-                {/* {inViewContent && (
+        <AboutStyled id="about">
+            <h1 className="about-title">{about.sectionTitle1} <span>{about.sectionTitle2}</span></h1>
+            <div className="content-div" ref={contentRef}>
+                {inViewContent && (
                     <div className='animation-container'>
                         <div className={`about-cont ${inView ? 'active' : ''}`} ref={ref}>
                             <div className="shadow0">
@@ -69,7 +68,7 @@ export const AboutUsSection = ({profileLanguage, siteLanguage}) => {
                             </div>
                         </div>
                     </div>
-                )} */}
+                )}
             </div>
         </AboutStyled>
     )

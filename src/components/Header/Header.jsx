@@ -48,9 +48,6 @@ export const Header = ({headerBackground, langValue, setLangValue, siteLanguage}
     const toggleMobMenuCont = () => {
         return mobMenu ? 'is-active' : '';
     };
-    // const stopPropagation = (event) => {
-    //     event.stopPropagation();
-    // };
 
     const handleKeyPress = useCallback(event => {
         if (event.key === 'Escape') {
@@ -62,7 +59,6 @@ export const Header = ({headerBackground, langValue, setLangValue, siteLanguage}
 
 
     const onBackdropClick = useCallback(event => {
-        // event.stopPropagation();
         if(mobileMenu.current && !mobileMenu.current.contains(event.target)){                        
             setMobMenu(false);
         }

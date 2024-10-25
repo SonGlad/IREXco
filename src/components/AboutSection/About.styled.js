@@ -9,8 +9,7 @@ export const AboutStyled = styled.div`
     }
     
     .content-div{
-        min-height: 1000px;
-        /* @media (min-width: 360px) and (max-width: 767px) {
+        @media (min-width: 360px) and (max-width: 767px) {
             min-height: calc(1380px + ((1860 - 1380) * ((767px - 100vw) / (767 - 360))));
         }
         @media (min-width: 768px) and (max-width: 1199px) {
@@ -18,7 +17,7 @@ export const AboutStyled = styled.div`
         }
         @media screen and (min-width: 1200px){
             min-height: 960px;
-        } */
+        }
     }
 
     .about-title{

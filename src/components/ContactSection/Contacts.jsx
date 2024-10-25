@@ -1,7 +1,7 @@
 import { ContactsStyled } from "./Contacts.styled";
-// import { ContactInfo } from "./ContactInfo/ContactInfo";
-// import { ContactForm } from "./ContactForm/ContactForm";
-// import { useInView } from 'react-intersection-observer';
+import { ContactInfo } from "./ContactInfo/ContactInfo";
+import { ContactForm } from "./ContactForm/ContactForm";
+import { useInView } from 'react-intersection-observer';
 
 
 
@@ -12,19 +12,18 @@ export const Contacts = ({
     siteLanguage,
     profileLanguage
 }) => {
-    // const { ref, inView } = useInView({
-    //     triggerOnce: false,
-    //     threshold: 0.1,
-    // });
-    // const { contact } = siteLanguage;
+    const { ref, inView } = useInView({
+        triggerOnce: false,
+        threshold: 0.1,
+    });
+    const { contact } = siteLanguage;
 
 
     return(
-        <ContactsStyled id="idContact">
-            <h1 className="about-title">Contact</h1>
-            {/* <h1 className="about-title">{contact.title1} <span>{contact.title2}</span></h1> */}
-                <div className="content-container">
-                    {/* {inView && (
+        <ContactsStyled id="contact">
+            <h1 className="about-title">{contact.title1} <span>{contact.title2}</span></h1>
+                <div className="content-container" ref={ref}>
+                    {inView && (
                         <>
                             <ContactInfo
                                 siteLanguage={siteLanguage}
@@ -43,7 +42,7 @@ export const Contacts = ({
                                 </span>
                             </div>
                         </>
-                    )} */}
+                    )}
                 </div>
         </ContactsStyled>
     )

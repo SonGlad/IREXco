@@ -10,7 +10,7 @@ export const StackSectionStyled = styled.div`
     }
     
     .content-div{
-        min-height: 1000px;
+        min-height: 860px;
     }
 
     .main-education-title{
