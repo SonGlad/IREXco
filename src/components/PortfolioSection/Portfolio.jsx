@@ -109,7 +109,7 @@ export const PortfolioSection = ({
     return(
         <PortfolioStyled id="idPortfolio">
             {/* <h1 className="potfolio-title"><span>{portfolio.sectionTitle1} </span>{portfolio.sectionTitle2}</h1> */}
-            <h1 className="potfolio-title">Potfolio</h1>
+            <h1 className="potfolio-title">My_Portfolio</h1>
             <div className="content-div">
                 {/* {inViewContent && (
                     <>

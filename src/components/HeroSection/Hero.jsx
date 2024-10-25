@@ -129,7 +129,7 @@ export const Hero = forwardRef(({forHeader, profileLanguage, siteLanguage}, reff
                             <ScrollIntoView selector="#idPortfolio" className="redirect-link redirect"style={{'--i': 4}}>
                                 <FingerIcon className="redirect-icon" width={24} height={24}/>    
                                 {/* <span>{hero.navMenu3}</span> */}
-                                <span>Portfolio</span>
+                                <span>My_Portfolio</span>
                             </ScrollIntoView>
                         </li>
                     </ul>
