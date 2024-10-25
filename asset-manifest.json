@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.0a8d3da9.css",
-    "main.js": "/static/js/main.38c81666.js",
+    "main.js": "/static/js/main.3083c2c9.js",
     "static/media/iReX_logo.png": "/static/media/iReX_logo.bb7640ae2d9d84190796.png",
     "static/media/bg_image.jpg": "/static/media/bg_image.b9582bcafcb2d9c85e18.jpg",
     "static/media/typescript.svg": "/static/media/typescript.d18207dc773a07612961805bf30374d2.svg",
@@ -26,6 +26,6 @@
   },
   "entrypoints": [
     "static/css/main.0a8d3da9.css",
-    "static/js/main.38c81666.js"
+    "static/js/main.3083c2c9.js"
   ]
 }
