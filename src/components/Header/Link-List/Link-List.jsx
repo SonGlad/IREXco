@@ -33,36 +33,38 @@ export const LinkList = ({
     }
 
     useEffect(() => {
-        const resizeObserver = new ResizeObserver(entries => {
-          entries.forEach(entry => {
-            if (entry.target.id === 'HeroSection') {
-
-            }
-            if (entry.target.id === 'AboutSection') {
-
-            }
-            if (entry.target.id === 'StackSection') {
-
-            }
-            if (entry.target.id === 'PortfolioSection') {
-
-            }
-            if (entry.target.id === 'ContactSection') {
-
-            }
-            console.log(`Изменение размера в секции: ${entry.target.id}`);
-            console.log('Новая высота:', entry.contentRect.height);
-            console.log('Новая ширина:', entry.contentRect.width);
-          });
+        const resizeObserver = new ResizeObserver(() => {
         });
+        // const resizeObserver = new ResizeObserver(entries => {
+        //     entries.forEach(entry => {
+        //     if (entry.target.id === 'HeroSection') {
+
+        //     }
+        //     if (entry.target.id === 'AboutSection') {
+
+        //     }
+        //     if (entry.target.id === 'StackSection') {
+
+        //     }
+        //     if (entry.target.id === 'PortfolioSection') {
+
+        //     }
+        //     if (entry.target.id === 'ContactSection') {
+
+        //     }
+        //     console.log(`Изменение размера в секции: ${entry.target.id}`);
+        //     console.log('Новая высота:', entry.contentRect.height);
+        //     console.log('Новая ширина:', entry.contentRect.width);
+        //     });
+        // });
     
         const sectionIds = ['#HeroSection', '#AboutSection', '#StackSection', '#PortfolioSection', '#ContactSection'];
     
         sectionIds.forEach(id => {
-          const section = document.querySelector(id);
-          if (section) {
+            const section = document.querySelector(id);
+            if (section) {
             resizeObserver.observe(section);
-          }
+            }
         });
         setSections(sectionIds);
         
@@ -84,36 +86,6 @@ export const LinkList = ({
                         </li>
                     );
                 })}
-                {/* <li className="link-list-item" style={{'--i': 1}} ref={heroRef}>
-                    <ScrollIntoView selector="#HeroSection" className='nav-link' onClick={toggle}>
-                        <HomeIcon className="header-icon" width={16} height={16}/>
-                        <span className="header-link-text">{header.navMenu1}</span>
-                    </ScrollIntoView>
-                </li>
-                <li className="link-list-item" style={{'--i': 2}}  ref={aboutRef}>
-                    <ScrollIntoView selector="#AboutSection" className='nav-link' onClick={toggle}>
-                        <AboutIcon className="header-icon" width={16} height={16}/>
-                        <span className="header-link-text">{header.navMenu2}</span>
-                    </ScrollIntoView>
-                </li>
-                <li className="link-list-item" style={{'--i': 3}} ref={stackRef}>
-                    <ScrollIntoView selector="#StackSection" className='nav-link' onClick={toggle}>
-                        <SkillsIcon className="header-icon" width={16} height={16}/>
-                        <span className="header-link-text">{header.navMenu3}</span>
-                    </ScrollIntoView>
-                </li>
-                <li className="link-list-item" style={{'--i': 4}} ref={portfolioRef}>
-                    <ScrollIntoView selector="#PortfolioSection" className='nav-link' onClick={toggle}>
-                        <PortfolioIcon className="header-icon" width={16} height={16}/>
-                        <span className="header-link-text">{header.navMenu4}</span>
-                    </ScrollIntoView>
-                </li>
-                <li className="link-list-item" style={{'--i': 5}} ref={contactRef}>
-                    <ScrollIntoView selector="#ContactSection" className='nav-link' onClick={toggle}>
-                        <ContactIcon className="header-icon" width={16} height={16}/>
-                        <span className="header-link-text">{header.navMenu5}</span>
-                    </ScrollIntoView>
-                </li> */}
             </ul>
         </LinkListStyled>
     )

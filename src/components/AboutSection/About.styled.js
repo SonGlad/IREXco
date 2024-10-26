@@ -9,15 +9,12 @@ export const AboutStyled = styled.div`
     }
     
     .content-div{
-        /* @media (min-width: 360px) and (max-width: 767px) {
-            min-height: calc(1380px + ((1860 - 1380) * ((767px - 100vw) / (767 - 360))));
-        }
         @media (min-width: 768px) and (max-width: 1199px) {
             min-height: calc(960px + ((1108- 960) * ((1199px - 100vw) / (1199 - 768))));
         }
         @media screen and (min-width: 1200px){
             min-height: 960px;
-        } */
+        }
     }
 
     .about-title{

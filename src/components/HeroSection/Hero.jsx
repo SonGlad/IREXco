@@ -14,7 +14,7 @@ import { forwardRef } from "react";
 
 
 
-export const Hero = forwardRef(({forHeader, profileLanguage, siteLanguage, langValue}, reff) => {
+export const Hero = forwardRef(({forHeader, profileLanguage, siteLanguage, langValue, isResizeObserver}, reff) => {
     const { name1, name2, text1, text2} = profileLanguage;
     const { hero } = siteLanguage;
     const [isModelLoaded, setIsModelLoaded] = useState(false);
@@ -49,26 +49,23 @@ export const Hero = forwardRef(({forHeader, profileLanguage, siteLanguage, langV
     };
 
     useEffect(() => {
-        const resizeObserver = new ResizeObserver(entries => {
-          entries.forEach(entry => {
-            console.log(`Изменение размера в секции: ${entry.target.id}`);
-            console.log('Новая высота:', entry.contentRect.height);
-            console.log('Новая ширина:', entry.contentRect.width);
-          });
-        });
-    
-        const sectionIds = ['#AboutSection', '#StackSection', '#PortfolioSection', '#ContactSection'];
-    
-        sectionIds.forEach(id => {
-          const section = document.querySelector(id);
-          if (section) {
-            resizeObserver.observe(section);
-          }
-        });
-        setSections(sectionIds);
+        if (isResizeObserver) {
+            const resizeObserver = new ResizeObserver(() => {
+            });
         
-        return () => resizeObserver.disconnect();
-    },[langValue]);
+            const sectionIds = ['#AboutSection', '#StackSection', '#PortfolioSection', '#ContactSection'];
+        
+            sectionIds.forEach(id => {
+              const section = document.querySelector(id);
+              if (section) {
+                resizeObserver.observe(section);
+              }
+            });
+            setSections(sectionIds);
+            
+            return () => resizeObserver.disconnect();
+        }
+    },[isResizeObserver, langValue]);
     
     
 
@@ -131,30 +128,6 @@ export const Hero = forwardRef(({forHeader, profileLanguage, siteLanguage, langV
                                 </ScrollIntoView>
                             </li>
                         ))}
-                        {/* <li className="redirect-item">
-                            <ScrollIntoView selector="#ContactSection" className="redirect-link redirect" style={{'--i': 1}}>
-                                <FingerIcon className="redirect-icon" width={24} height={24}/>    
-                                <span>{hero.navMenu4}</span>
-                            </ScrollIntoView>
-                        </li>
-                        <li className="redirect-item">
-                            <ScrollIntoView selector="#StackSection" className="redirect-link redirect" style={{'--i': 2}}>
-                                <FingerIcon className="redirect-icon" width={24} height={24}/>    
-                                <span>{hero.navMenu2}</span>
-                            </ScrollIntoView>
-                        </li>
-                        <li className="redirect-item">
-                            <ScrollIntoView selector="#AboutSection" className="redirect-link redirect" style={{'--i': 3}}>
-                                <FingerIcon className="redirect-icon" width={24} height={24}/>    
-                                <span>{hero.navMenu1}</span>
-                            </ScrollIntoView>
-                        </li>
-                        <li className="redirect-item">
-                            <ScrollIntoView selector="#PortfolioSection" className="redirect-link redirect" style={{'--i': 4}}>
-                                <FingerIcon className="redirect-icon" width={24} height={24}/>    
-                                <span>{hero.navMenu3}</span>
-                            </ScrollIntoView>
-                        </li> */}
                     </ul>
                 </div>
                 <div className='description-cont'>

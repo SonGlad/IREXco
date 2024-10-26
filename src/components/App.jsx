@@ -45,6 +45,7 @@ export const App= () => {
   const [projectLanguage, setProjectLanguage] = useState(ProjectsUa);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [isParticles, setParticles] = useState(false);
+  const [isResizeObserver, setResizeObserver] = useState(false);
 
  
 
@@ -94,11 +95,20 @@ export const App= () => {
     };
   },[]);
 
+
   useEffect(() => {
     if (windowWidth >= 1200) {
       setParticles(true);
     } else {
       setParticles(false);
+    }
+  },[windowWidth])
+
+  useEffect(() => {
+    if (windowWidth <= 1200) {
+      setResizeObserver(true);
+    } else {
+      setResizeObserver(false);
     }
   },[windowWidth])
   
@@ -154,6 +164,7 @@ export const App= () => {
             profileLanguage={profileLanguage}
             siteLanguage={siteLanguage}
             langValue={langValue}
+            isResizeObserver={isResizeObserver}
           /> 
         </Container>
       </HeroSection>
