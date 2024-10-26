@@ -76,6 +76,10 @@ export const App= () => {
     }
   },[langValue]);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  },[langValue]);
+
 
   useEffect(() => {
     const handleResize = () => {

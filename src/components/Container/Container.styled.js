@@ -4,7 +4,7 @@ import { styled } from 'styled-components';
 export const ContainersStyle = styled.div`
   min-width: 300px;
   margin: 0 auto;
-  /* max-width: 460px; */
+  max-width: 360px;
   padding: 0 10px;
 
   /* outline: 2px solid red;

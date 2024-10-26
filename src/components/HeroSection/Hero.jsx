@@ -46,12 +46,7 @@ export const Hero = forwardRef(({forHeader, profileLanguage, siteLanguage}, reff
             }}
         />
     };
-
-    const heroBtnClick = (event, data) => {
-        console.log('Click event:', event);
-        console.log('Clicked section:', data); 
-        
-    }
+    
     
 
     return (
@@ -106,25 +101,25 @@ export const Hero = forwardRef(({forHeader, profileLanguage, siteLanguage}, reff
                 <div className="redirect-cont-small-screen">
                     <ul className="redirext-list">
                         <li className="redirect-item">
-                            <ScrollIntoView selector="#ContactSection" className="redirect-link redirect" style={{'--i': 1}} onClick={(event) => heroBtnClick(event, 'conatact')}>
+                            <ScrollIntoView selector="#ContactSection" className="redirect-link redirect" style={{'--i': 1}}>
                                 <FingerIcon className="redirect-icon" width={24} height={24}/>    
                                 <span>{hero.navMenu4}</span>
                             </ScrollIntoView>
                         </li>
                         <li className="redirect-item">
-                            <ScrollIntoView selector="#StackSection" className="redirect-link redirect" style={{'--i': 2}} onClick={(event) => heroBtnClick(event, 'stack')}>
+                            <ScrollIntoView selector="#StackSection" className="redirect-link redirect" style={{'--i': 2}}>
                                 <FingerIcon className="redirect-icon" width={24} height={24}/>    
                                 <span>{hero.navMenu2}</span>
                             </ScrollIntoView>
                         </li>
                         <li className="redirect-item">
-                            <ScrollIntoView selector="#AboutSection" className="redirect-link redirect" style={{'--i': 3}} onClick={(event) => heroBtnClick(event, 'about')}>
+                            <ScrollIntoView selector="#AboutSection" className="redirect-link redirect" style={{'--i': 3}}>
                                 <FingerIcon className="redirect-icon" width={24} height={24}/>    
                                 <span>{hero.navMenu1}</span>
                             </ScrollIntoView>
                         </li>
                         <li className="redirect-item">
-                            <ScrollIntoView selector="#PortfolioSection" className="redirect-link redirect" style={{'--i': 4}} onClick={(event) => heroBtnClick(event, 'portfolio')}>
+                            <ScrollIntoView selector="#PortfolioSection" className="redirect-link redirect" style={{'--i': 4}}>
                                 <FingerIcon className="redirect-icon" width={24} height={24}/>    
                                 <span>{hero.navMenu3}</span>
                             </ScrollIntoView>
