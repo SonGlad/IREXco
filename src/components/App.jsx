@@ -46,7 +46,6 @@ export const App= () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [isParticles, setParticles] = useState(false);
   
- 
 
   useEffect(() => {
     if (country === 'UA') {
@@ -76,9 +75,44 @@ export const App= () => {
     }
   },[langValue]);
 
+
   useEffect(() => {
     window.scrollTo(0, 0);
   },[langValue]);
+
+
+  // useEffect(() => {
+  //   const resizeObserver = new ResizeObserver(() => {
+  //   });
+  
+  //   // Указываем id каждой секции явно
+  //   ['#HeroSection', '#AboutSection', '#StackSection', '#PortfolioSection', '#ContactSection'].forEach(id => {
+  //     const section = document.querySelector(id);
+  //     if (section) resizeObserver.observe(section);
+  //   });
+  
+  //   return () => resizeObserver.disconnect();
+  // }, [langValue]);
+
+
+  // useEffect(() => {
+  //   const resizeObserver = new ResizeObserver(entries => {
+  //     entries.forEach(entry => {
+  //       console.log(`Изменение размера в секции: ${entry.target.id}`);
+  //       console.log('Новая высота:', entry.contentRect.height);
+  //       console.log('Новая ширина:', entry.contentRect.width);
+  //     });
+  //   });
+  
+  //   ['#HeroSection', '#AboutSection', '#StackSection', '#PortfolioSection', '#ContactSection'].forEach(id => {
+  //     const section = document.querySelector(id);
+  //     if (section) {
+  //       resizeObserver.observe(section);
+  //     }
+  //   });
+  
+  //   return () => resizeObserver.disconnect();
+  // }, [langValue]);
 
 
   useEffect(() => {
@@ -149,6 +183,7 @@ export const App= () => {
             forHeader={ref}
             profileLanguage={profileLanguage}
             siteLanguage={siteLanguage}
+            langValue={langValue}
           /> 
         </Container>
       </HeroSection>

@@ -269,8 +269,13 @@ export const HeroStyled = styled.div`
    .canvas-container{
       opacity: 1;
       height: calc(100vw * 0.5);
-      max-height: 500px;
+      max-height: 180px;
       width: 100%;
+
+      @media screen and (min-width: 768px) {
+         height: calc(100vw * 0.5); 
+         max-height: 500px;  
+      }
 
       @media screen and (min-width: 1200px){
          position: relative;

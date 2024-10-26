@@ -122,6 +122,7 @@ export const Header = ({headerBackground, langValue, setLangValue, siteLanguage}
                                 <LinkList 
                                     toggleMenuBox={toggleMenuBox}
                                     siteLanguage={siteLanguage}
+                                    langValue={langValue}
                                 />
                             </nav>
                         </div>
@@ -130,6 +131,7 @@ export const Header = ({headerBackground, langValue, setLangValue, siteLanguage}
                         <nav className="navigation">
                             <LinkList
                                 siteLanguage={siteLanguage}
+                                langValue={langValue}
                             />
                         </nav>
                     </div>

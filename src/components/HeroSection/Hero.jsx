@@ -14,10 +14,13 @@ import { forwardRef } from "react";
 
 
 
-export const Hero = forwardRef(({forHeader, profileLanguage, siteLanguage}, reff) => {
+export const Hero = forwardRef(({forHeader, profileLanguage, siteLanguage, langValue}, reff) => {
     const { name1, name2, text1, text2} = profileLanguage;
     const { hero } = siteLanguage;
     const [isModelLoaded, setIsModelLoaded] = useState(false);
+    const [sections, setSections] = useState(null);
+    console.log(sections);
+    
 
 
     const { ref, inView } = useInView({
@@ -46,6 +49,28 @@ export const Hero = forwardRef(({forHeader, profileLanguage, siteLanguage}, reff
             }}
         />
     };
+
+    useEffect(() => {
+        const resizeObserver = new ResizeObserver(entries => {
+          entries.forEach(entry => {
+            console.log(`Изменение размера в секции: ${entry.target.id}`);
+            console.log('Новая высота:', entry.contentRect.height);
+            console.log('Новая ширина:', entry.contentRect.width);
+          });
+        });
+    
+        const sectionIds = ['#AboutSection', '#StackSection', '#PortfolioSection', '#ContactSection'];
+    
+        sectionIds.forEach(id => {
+          const section = document.querySelector(id);
+          if (section) {
+            resizeObserver.observe(section);
+          }
+        });
+        setSections(sectionIds);
+        
+        return () => resizeObserver.disconnect();
+    },[langValue]);
     
     
 
@@ -100,7 +125,15 @@ export const Hero = forwardRef(({forHeader, profileLanguage, siteLanguage}, reff
                 </div>
                 <div className="redirect-cont-small-screen">
                     <ul className="redirext-list">
-                        <li className="redirect-item">
+                        {sections && sections.map((id, index) => (
+                            <li className="redirect-item" key={id}>
+                                <ScrollIntoView selector={id} className="redirect-link redirect" style={{'--i': index + 1}}>
+                                    <FingerIcon className="redirect-icon" width={24} height={24}/>    
+                                    <span>{hero[`navMenu${index + 1}`]}</span>
+                                </ScrollIntoView>
+                            </li>
+                        ))}
+                        {/* <li className="redirect-item">
                             <ScrollIntoView selector="#ContactSection" className="redirect-link redirect" style={{'--i': 1}}>
                                 <FingerIcon className="redirect-icon" width={24} height={24}/>    
                                 <span>{hero.navMenu4}</span>
@@ -123,7 +156,7 @@ export const Hero = forwardRef(({forHeader, profileLanguage, siteLanguage}, reff
                                 <FingerIcon className="redirect-icon" width={24} height={24}/>    
                                 <span>{hero.navMenu3}</span>
                             </ScrollIntoView>
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
                 <div className='description-cont'>
