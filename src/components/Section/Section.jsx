@@ -1,4 +1,4 @@
-import {HeroSectionStyle, AboutSectionStyled, SectionStyled, ContactSectionStyled} from './Section.styled';
+import {HeroSectionStyle, AboutSectionStyled, StackSectionStyled, PortfolioSectionStyled, ContactSectionStyled} from './Section.styled';
 
 
 
@@ -20,11 +20,19 @@ export const AboutSection = ({children, propsId}) => {
 };
 
 
-export const Section = ({children, propsId}) => {
+export const StackSectionS = ({children, propsId}) => {
     return (
-        <SectionStyled id={propsId}>
+        <StackSectionStyled id={propsId}>
             {children}
-        </SectionStyled>
+        </StackSectionStyled>
+    );
+};
+
+export const PortfolioSectionS = ({children, propsId}) => {
+    return (
+        <PortfolioSectionStyled id={propsId}>
+            {children}
+        </PortfolioSectionStyled>
     );
 };
 

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Header } from "./Header/Header";
 import { ParticlesComponent }from "./particles/particles";
-import { HeroSection, AboutSection, Section, ContactSection } from "./Section/Section";
+import { HeroSection, AboutSection, StackSectionS, PortfolioSectionS, ContactSection } from "./Section/Section";
 import { Container } from "./Container/Container";
 import { Hero } from "./HeroSection/Hero";
 import { AboutUsSection } from "./AboutSection/About";
@@ -45,7 +45,8 @@ export const App= () => {
   const [projectLanguage, setProjectLanguage] = useState(ProjectsUa);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [isParticles, setParticles] = useState(false);
-  
+
+ 
 
   useEffect(() => {
     if (country === 'UA') {
@@ -80,39 +81,6 @@ export const App= () => {
     window.scrollTo(0, 0);
   },[langValue]);
 
-
-  // useEffect(() => {
-  //   const resizeObserver = new ResizeObserver(() => {
-  //   });
-  
-  //   // Указываем id каждой секции явно
-  //   ['#HeroSection', '#AboutSection', '#StackSection', '#PortfolioSection', '#ContactSection'].forEach(id => {
-  //     const section = document.querySelector(id);
-  //     if (section) resizeObserver.observe(section);
-  //   });
-  
-  //   return () => resizeObserver.disconnect();
-  // }, [langValue]);
-
-
-  // useEffect(() => {
-  //   const resizeObserver = new ResizeObserver(entries => {
-  //     entries.forEach(entry => {
-  //       console.log(`Изменение размера в секции: ${entry.target.id}`);
-  //       console.log('Новая высота:', entry.contentRect.height);
-  //       console.log('Новая ширина:', entry.contentRect.width);
-  //     });
-  //   });
-  
-  //   ['#HeroSection', '#AboutSection', '#StackSection', '#PortfolioSection', '#ContactSection'].forEach(id => {
-  //     const section = document.querySelector(id);
-  //     if (section) {
-  //       resizeObserver.observe(section);
-  //     }
-  //   });
-  
-  //   return () => resizeObserver.disconnect();
-  // }, [langValue]);
 
 
   useEffect(() => {
@@ -177,7 +145,9 @@ export const App= () => {
         setLangValue={setLangValue}
         siteLanguage={siteLanguage}
       />
-      <HeroSection propsId={'HeroSection'}>
+      <HeroSection 
+        propsId={'HeroSection'}
+      >
         <Container>
           <Hero
             forHeader={ref}
@@ -187,7 +157,9 @@ export const App= () => {
           /> 
         </Container>
       </HeroSection>
-      <AboutSection propsId={'AboutSection'}>
+      <AboutSection 
+        propsId={'AboutSection'}
+      >
         <Container>
           <AboutUsSection 
             profileLanguage={profileLanguage}
@@ -195,7 +167,9 @@ export const App= () => {
           />
         </Container>
       </AboutSection>
-      <Section propsId={'StackSection'}>
+      <StackSectionS 
+        propsId={'StackSection'}
+      >
         <Container>
           <StackSection 
             profileLanguage={profileLanguage}
@@ -203,8 +177,10 @@ export const App= () => {
             projectLanguage={projectLanguage}
           />
         </Container>
-      </Section>
-      <Section propsId={'PortfolioSection'}>
+      </StackSectionS>
+      <PortfolioSectionS 
+        propsId={'PortfolioSection'}
+      >
         <Container>
           <PortfolioSection 
             openPortfolioModal={openPortfolioModal}
@@ -213,8 +189,10 @@ export const App= () => {
             projectLanguage={projectLanguage}
           />
         </Container>
-      </Section>
-      <ContactSection propsId={'ContactSection'}>
+      </PortfolioSectionS>
+      <ContactSection 
+        propsId={'ContactSection'}
+      >
         <Container>
           <Contacts
             openContactModal={openContactModal}

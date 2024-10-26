@@ -10,7 +10,12 @@ import ScrollIntoView from 'react-scroll-into-view';
 
 
 
-export const Header = ({headerBackground, langValue, setLangValue, siteLanguage}) => {   
+export const Header = ({
+    headerBackground, 
+    langValue, 
+    setLangValue, 
+    siteLanguage,
+}) => {   
     const [mobMenu, setMobMenu] = useState(false);
     const [activeLangCont, setActiveLangCont] = useState(false);
     const mobileMenu = useRef(null);

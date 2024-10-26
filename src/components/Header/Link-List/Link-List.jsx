@@ -10,7 +10,11 @@ import { useEffect, useState } from "react";
 
 
 
-export const LinkList = ({toggleMenuBox, siteLanguage, langValue}) => {
+export const LinkList = ({
+    toggleMenuBox, 
+    siteLanguage, 
+    langValue,
+}) => {
     const { ref, inView } = useInView({
         triggerOnce: false,
         threshold: 0.1,
@@ -31,6 +35,21 @@ export const LinkList = ({toggleMenuBox, siteLanguage, langValue}) => {
     useEffect(() => {
         const resizeObserver = new ResizeObserver(entries => {
           entries.forEach(entry => {
+            if (entry.target.id === 'HeroSection') {
+
+            }
+            if (entry.target.id === 'AboutSection') {
+
+            }
+            if (entry.target.id === 'StackSection') {
+
+            }
+            if (entry.target.id === 'PortfolioSection') {
+
+            }
+            if (entry.target.id === 'ContactSection') {
+
+            }
             console.log(`Изменение размера в секции: ${entry.target.id}`);
             console.log('Новая высота:', entry.contentRect.height);
             console.log('Новая ширина:', entry.contentRect.width);

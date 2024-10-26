@@ -19,9 +19,7 @@ export const Hero = forwardRef(({forHeader, profileLanguage, siteLanguage, langV
     const { hero } = siteLanguage;
     const [isModelLoaded, setIsModelLoaded] = useState(false);
     const [sections, setSections] = useState(null);
-    console.log(sections);
-    
-
+   
 
     const { ref, inView } = useInView({
         triggerOnce: false,

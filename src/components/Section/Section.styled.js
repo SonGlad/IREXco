@@ -18,7 +18,15 @@ export const AboutSectionStyled = styled.section`
     }
 `
 
-export const SectionStyled = styled.section`
+export const StackSectionStyled = styled.section`
+    width: 100%;
+    @media screen and (min-width: 768px){
+        position: relative;
+        z-index: 1;
+    }
+`
+
+export const PortfolioSectionStyled = styled.section`
     width: 100%;
     @media screen and (min-width: 768px){
         position: relative;
