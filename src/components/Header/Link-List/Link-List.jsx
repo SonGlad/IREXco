@@ -47,46 +47,46 @@ export const LinkList = forwardRef(({
             });            
             if (langValue === 'UA') {
                 heroSectionRef.current.style.height = '1265px';
-                aboutSectionRef.current.style.height='2017px';
-                if (stackFilter) {
+                aboutSectionRef.current.style.height='1941px';
+                if (!stackFilter) {
+                    stackSectionRef.current.style.height='4943px';
+                } else {
                     stackSectionRef.current.style.height='auto';
-                } else {
-                    stackSectionRef.current.style.height='4942px';
                 }
-                if (portfolioFilter) {
+                if (!portfolioFilter) {
+                    portfolioSectionRef.current.style.height='4138px';
+                } else {
                     portfolioSectionRef.current.style.height='auto';
-                } else {
-                    portfolioSectionRef.current.style.height='4137px';
                 }
-                contactSectionRef.current.style.height='1531px';
+                contactSectionRef.current.style.height='1532px';
             }
             if (langValue === 'EN') {
                 heroSectionRef.current.style.height = '1265px';
-                aboutSectionRef.current.style.height='2017px';
-                if (stackFilter) {
-                    stackSectionRef.current.style.height='auto';
-                } else {
+                aboutSectionRef.current.style.height='2037px';
+                if (!stackFilter) {
                     stackSectionRef.current.style.height='4873px';
-                }
-                if (portfolioFilter) {
-                    portfolioSectionRef.current.style.height='auto';
                 } else {
-                    portfolioSectionRef.current.style.height='4137px';
+                    stackSectionRef.current.style.height='auto';
+                }
+                if (!portfolioFilter) {
+                    portfolioSectionRef.current.style.height='4138px';
+                } else {
+                    portfolioSectionRef.current.style.height='auto';
                 }
                 contactSectionRef.current.style.height='1424px';                
             }
             if (langValue === 'RU') {
                 heroSectionRef.current.style.height = '1301px';
-                aboutSectionRef.current.style.height='2041px';
-                if (stackFilter) {
+                aboutSectionRef.current.style.height='2061px';
+                if (!stackFilter) {
+                    stackSectionRef.current.style.height='5097px';
+                } else {
                     stackSectionRef.current.style.height='auto';
-                } else {
-                    stackSectionRef.current.style.height='5096px';
                 }
-                if (portfolioFilter) {
-                    portfolioSectionRef.current.style.height='auto';
-                } else {
+                if (!portfolioFilter) {
                     portfolioSectionRef.current.style.height='4193px';
+                } else {
+                    portfolioSectionRef.current.style.height='auto';
                 }
                 contactSectionRef.current.style.height='1579px';  
             }

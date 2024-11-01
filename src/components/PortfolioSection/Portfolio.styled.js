@@ -9,9 +9,9 @@ export const PortfolioStyled = styled.div`
     }
     
     .content-div{
-        @media screen and (min-width: 768px){
+        /* @media screen and (min-width: 768px){
             min-height: 860px;
-        }
+        } */
     }
 
     .potfolio-title{

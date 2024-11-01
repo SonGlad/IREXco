@@ -2,19 +2,19 @@ import { styled } from "styled-components";
 
 
 export const AboutStyled = styled.div`
-    padding: 20px 10px 0 10px;
+    padding: 20px 10px 20px 10px;
     
     @media screen and (min-width: 768px){
         padding: 60px 0 60px 0;
     }
     
     .content-div{
-        @media (min-width: 768px) and (max-width: 1199px) {
+        /* @media (min-width: 768px) and (max-width: 1199px) {
             min-height: calc(960px + ((1108- 960) * ((1199px - 100vw) / (1199 - 768))));
         }
         @media screen and (min-width: 1200px){
             min-height: 960px;
-        }
+        } */
     }
 
     .about-title{
