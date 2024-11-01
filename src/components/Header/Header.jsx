@@ -4,18 +4,21 @@ import {ReactComponent as MobMenuBurger} from "../../images/svg-icons/mobile-men
 import {ReactComponent as CloseIcon} from "../../images/svg-icons/close.svg";
 import { NavLink } from "react-router-dom";
 import { LinkList } from "./Link-List/Link-List";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState, forwardRef } from "react";
 import Logo from "../../images/images/iReX_logo.png";
 import ScrollIntoView from 'react-scroll-into-view';
 
 
 
-export const Header = ({
+export const Header = forwardRef(({
     headerBackground, 
     langValue, 
     setLangValue, 
     siteLanguage,
-}) => {   
+    isResizeObserver,
+    heroSectionRef,
+    aboutSectionRef
+},reff) => {   
     const [mobMenu, setMobMenu] = useState(false);
     const [activeLangCont, setActiveLangCont] = useState(false);
     const mobileMenu = useRef(null);
@@ -128,6 +131,9 @@ export const Header = ({
                                     toggleMenuBox={toggleMenuBox}
                                     siteLanguage={siteLanguage}
                                     langValue={langValue}
+                                    isResizeObserver={isResizeObserver}
+                                    heroSectionRef={heroSectionRef}
+                                    aboutSectionRef={aboutSectionRef}
                                 />
                             </nav>
                         </div>
@@ -137,6 +143,9 @@ export const Header = ({
                             <LinkList
                                 siteLanguage={siteLanguage}
                                 langValue={langValue}
+                                isResizeObserver={isResizeObserver}
+                                heroSectionRef={heroSectionRef}
+                                aboutSectionRef={aboutSectionRef}
                             />
                         </nav>
                     </div>
@@ -144,4 +153,4 @@ export const Header = ({
             </Container>
         </StyledHeader>
     )
-}; 
+}); 

@@ -18,14 +18,6 @@ const ContactFormSchema = (form) => Yup.object().shape({
     .min(11, form.validationPhoneMin)
     .max(15, form.validationPhoneMax)
     .required(form.validationPhoneRequired),
-  subject: Yup.string()
-    .trim()
-    .min(2, form.validationSubjectMin)
-    .max(40, form.validationSubjectMax)
-    .required(form.validationSubjectRequired),
-  user_agreement: Yup.boolean()
-    .oneOf([true], form.agreementRequired)
-    .required(form.agreementRequired)
 });
 
 

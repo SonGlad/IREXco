@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { Header } from "./Header/Header";
 import { ParticlesComponent }from "./particles/particles";
 import { HeroSection, AboutSection, StackSectionS, PortfolioSectionS, ContactSection } from "./Section/Section";
@@ -46,7 +46,9 @@ export const App= () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [isParticles, setParticles] = useState(false);
   const [isResizeObserver, setResizeObserver] = useState(false);
-
+  const heroSectionRef = useRef(null);
+  const aboutSectionRef = useRef(null);
+  
  
 
   useEffect(() => {
@@ -60,7 +62,7 @@ export const App= () => {
 
   useEffect(() => {
     if (langValue === "UA") {
-      document.documentElement.lang = 'ua'
+      document.documentElement.lang = 'uk'
       setSiteLanguage(SiteUa);
       setProfileLanguage(ProfileUa);
       setProjectLanguage(ProjectsUa);
@@ -105,7 +107,7 @@ export const App= () => {
   },[windowWidth])
 
   useEffect(() => {
-    if (windowWidth <= 1200) {
+    if (windowWidth < 768) {
       setResizeObserver(true);
     } else {
       setResizeObserver(false);
@@ -154,9 +156,13 @@ export const App= () => {
         langValue={langValue}
         setLangValue={setLangValue}
         siteLanguage={siteLanguage}
+        isResizeObserver={isResizeObserver}
+        heroSectionRef={heroSectionRef}
+        aboutSectionRef={aboutSectionRef}
       />
       <HeroSection 
         propsId={'HeroSection'}
+        heroSectionRef={heroSectionRef}
       >
         <Container>
           <Hero
@@ -170,11 +176,13 @@ export const App= () => {
       </HeroSection>
       <AboutSection 
         propsId={'AboutSection'}
+        aboutSectionRef={aboutSectionRef}
       >
         <Container>
           <AboutUsSection 
             profileLanguage={profileLanguage}
             siteLanguage={siteLanguage}
+            isResizeObserver={isResizeObserver}
           />
         </Container>
       </AboutSection>
@@ -186,6 +194,7 @@ export const App= () => {
             profileLanguage={profileLanguage}
             siteLanguage={siteLanguage}
             projectLanguage={projectLanguage}
+            isResizeObserver={isResizeObserver}
           />
         </Container>
       </StackSectionS>
@@ -198,6 +207,7 @@ export const App= () => {
             setPortfolioModalData={setPortfolioModalData}
             siteLanguage={siteLanguage}
             projectLanguage={projectLanguage}
+            isResizeObserver={isResizeObserver}
           />
         </Container>
       </PortfolioSectionS>

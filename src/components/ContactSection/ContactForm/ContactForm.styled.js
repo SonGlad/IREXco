@@ -7,16 +7,13 @@ export const ContactFormStyled = styled.form`
     width: 100%;
     max-width: 400px;
     
-    @media screen and (min-width: 468px){
-        max-width: 440px;
+
+    @media screen and (min-width: 768px){
+        max-width: 800px;
         padding: 20px;
         outline-offset: -1px;
         animation: BoxshadowAppear 1s 2s ease forwards,
         BoxShadowColorChange 3.2s 2.5s ease forwards;
-    }
-
-    @media screen and (min-width: 768px){
-        max-width: 800px;
     }
 
     @keyframes BoxshadowAppear {
@@ -256,58 +253,6 @@ export const ContactFormStyled = styled.form`
         outline: none;
     }
     
-    .form-agreement{
-        display: flex;
-        align-items: center;
-        margin-bottom: 25px;
-        gap: 10px;
-        position: relative;
-        animation: CheckboxSlideLeft 1s ease forwards 3.7s;
-        opacity: 0;
-    }
-
-    .form-checkbox {
-        width: 18px;
-        height: 18px;
-        outline: none;
-        border: none;
-        cursor: pointer;
-        opacity: 0;
-    }
-
-    .custom-checkbox-before,
-    .custom-checkbox-after{
-        position: absolute;
-        left: 0;
-        top: 0;
-        pointer-events: none;
-
-        @media screen and (min-width: 768px){
-            top: 3px;
-        }
-    }
-
-    .custom-checkbox-before{
-        opacity: 1;
-        transition: opacity ${p => p.theme.transition.main_transition};
-    }
-    .custom-checkbox-after{
-        opacity: 0;
-        transition: opacity ${p => p.theme.transition.main_transition};
-    }
-
-    .form-checkbox:focus{
-        border-radius: 2px;
-        outline-offset: -2px; 
-    }
-
-    .form-checkbox:checked + .custom-checkbox-before{
-        opacity: 0;
-    }
-    .form-checkbox:checked + .custom-checkbox-before + .custom-checkbox-after {
-        opacity: 1;
-    }
-
 
     .btn-cont{
         display: flex;

@@ -77,7 +77,7 @@ export const PortfolioStyled = styled.div`
         gap: 32px;
         padding: 20px 0;
 
-        @media screen and (min-width: 480px){
+        @media screen and (min-width: 768px){
             gap: 17px;
         }
         @media screen and (min-width: 900px){
@@ -90,10 +90,8 @@ export const PortfolioStyled = styled.div`
 
     .col {
         width: 100%;
-        @media screen and (min-width: 480px){
-            max-width: 48%;
-        }
         @media screen and (min-width: 768px){
+            max-width: 48%;
             opacity: 0;
             visibility: hidden;
         }

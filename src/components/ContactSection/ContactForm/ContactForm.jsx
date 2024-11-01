@@ -1,9 +1,6 @@
 import { ContactFormStyled } from "./ContactForm.styled";
 import {ReactComponent as UserIcon} from "../../../images/svg-icons/user.svg";
 import {ReactComponent as EmailIcon} from "../../../images/svg-icons/contact.svg";
-import {ReactComponent as SubjectIcon} from "../../../images/svg-icons/skills.svg";
-import {ReactComponent as CheckedIcon} from "../../../images/svg-icons/check.svg";
-import {ReactComponent as CheckBoxIcon} from "../../../images/svg-icons/rectangle.svg";
 import {ReactComponent as PhoneIcon} from "../../../images/svg-icons/phone.svg";
 import { useFormik } from "formik";
 import { ContactFormSchema } from "../../../utils/ValidationSchema";
@@ -45,9 +42,7 @@ export const ContactForm = ({openContactModal, setSuccess, setIsLoading, siteLan
             name: '',
             email: '',
             phone: phoneNumber,
-            subject: '',
             user_comment: '',
-            user_agreement: false,
         },
 
         validationSchema: ContactFormSchema(form),
@@ -63,7 +58,6 @@ export const ContactForm = ({openContactModal, setSuccess, setIsLoading, siteLan
                 from_email: values.email,
                 from_phone: formattedNumber,
                 to_email: 'okoshevy@gmail.com',
-                subject: values.subject,
                 message: values.user_comment
             }, PUBLIC_KEY)
             .then(() => {
@@ -76,9 +70,7 @@ export const ContactForm = ({openContactModal, setSuccess, setIsLoading, siteLan
                         name: '',
                         email: '',
                         phone: '',
-                        subject: '',
                         user_comment: '',
-                        user_agreement: false
                     },
                 })
                 setPhoneNumber('')
@@ -104,13 +96,12 @@ export const ContactForm = ({openContactModal, setSuccess, setIsLoading, siteLan
         if (
           values.name !== '' ||
           values.email !== '' ||
-          values.subject !== '' ||
-          values.phone !== '' ||
-          values.user_agreement !== false
+          values.phone !== ''
         ) {
             setFormChanged(true);
         } 
-    },[values.email, values.name, values.phone, values.subject, values.user_agreement]);
+    },[values.email, values.name, values.phone]);
+    
 
 
     return(
@@ -182,26 +173,7 @@ export const ContactForm = ({openContactModal, setSuccess, setIsLoading, siteLan
                     {getInputAlert("phone")}
                 </div>
             </label>
-            <label className="form-label" htmlFor="subject" style={{'--i': 3}}>{form.labelValue4}
-                <div className="form-group">
-                    <input
-                        className={`form-field ${getInputClass("subject")}`}
-                        type="text" 
-                        name="subject"
-                        title=""
-                        placeholder={form.placeholdervalue4}
-                        id='subject'
-                        autoComplete="off"
-                        required
-                        onChange={handleChange}
-                        value={values.subject}
-                        onBlur={handleBlur}
-                    />
-                    {getInputAlert("subject")}
-                    <SubjectIcon className="form-icon" width={20} height={20}/>
-                </div>
-            </label>
-            <label className="form-label" htmlFor="user_comment" style={{'--i': 4}}>{form.labelValue5}
+            <label className="form-label" htmlFor="user_comment" style={{'--i': 3}}>{form.labelValue5}
                 <textarea 
                     className="form-comment" 
                     name="user_comment" 
@@ -212,23 +184,6 @@ export const ContactForm = ({openContactModal, setSuccess, setIsLoading, siteLan
                     value={values.user_comment}
                     onBlur={handleBlur}
                 ></textarea>
-            </label>
-            <label className="form-label form-agreement" htmlFor="user_agreement">
-                <input 
-                    className="form-checkbox"
-                    type="checkbox"
-                    name="user_agreement"
-                    id="user_agreement"
-                    onChange={handleChange}
-                    value={values.user_agreement}
-                    onBlur={handleBlur}
-                    checked={values.user_agreement === true}
-                />
-                <CheckBoxIcon className="custom-checkbox-before" width={18} height={18}/>
-                <CheckedIcon className="custom-checkbox-after" width={18} height={18}/>
-                <span className="form-desc">
-                {form.checkBox}
-                </span> 
             </label>
             <div className="btn-cont">
                 <button type="submit" className="submit-button"

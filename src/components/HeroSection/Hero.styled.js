@@ -56,7 +56,7 @@ export const HeroStyled = styled.div`
    .title-below-cont{
       height: 48px;
 
-      @media screen and (min-width: 610px){
+      @media screen and (min-width: 768px){
          height: 25px;
       }
    }

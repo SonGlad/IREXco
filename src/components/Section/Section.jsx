@@ -1,23 +1,24 @@
 import {HeroSectionStyle, AboutSectionStyled, StackSectionStyled, PortfolioSectionStyled, ContactSectionStyled} from './Section.styled';
+import { forwardRef } from 'react';
 
 
 
-export const HeroSection = ({children, propsId}) => {
+export const HeroSection = forwardRef(({children, propsId, heroSectionRef},reff) => {
     return (
-        <HeroSectionStyle id={propsId}>
+        <HeroSectionStyle id={propsId} ref={heroSectionRef}>
             {children}
         </HeroSectionStyle>
     );
-};
+});
 
 
-export const AboutSection = ({children, propsId}) => {
+export const AboutSection = forwardRef(({children, propsId, aboutSectionRef}, reff) => {
     return (
-        <AboutSectionStyled id={propsId}>
+        <AboutSectionStyled id={propsId} ref={aboutSectionRef}>
             {children}
         </AboutSectionStyled>
     );
-};
+});
 
 
 export const StackSectionS = ({children, propsId}) => {

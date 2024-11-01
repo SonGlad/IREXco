@@ -201,9 +201,9 @@ export const CodingChartsStyled = styled.div`
         border-radius: 10px;
         box-shadow: rgba(0, 0, 2, 0.5) 0px 10px 10px 5px;
 
-        @media screen and (min-width: 468px){
+        /* @media screen and (min-width: 468px){
             height: 150px;
-        }
+        } */
         @media screen and (min-width: 768px){
             height: 250px;
         }
@@ -266,7 +266,7 @@ export const CodingChartsStyled = styled.div`
         border-radius: 10px;
         flex: 1 1 auto;
 
-        @media screen and (min-width: 468px){
+        @media screen and (min-width: 768px){
             display: flex;
             align-items: center;
             justify-content: center;

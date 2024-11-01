@@ -16,11 +16,6 @@ export const ShowRules = (values, touched, errors, form) => {
           label: form.labelValue3,
           message: form.phoneCorrect
         };
-      case 'subject':
-        return {
-          label: form.labelValue4,
-          message: form.subjectCorrect
-        };
       default:
         return {
           label: fieldName.charAt(0).toUpperCase() + fieldName.slice(1),

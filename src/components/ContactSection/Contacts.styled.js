@@ -20,9 +20,10 @@ export const ContactsStyled = styled.div`
     }
 
     .content-container{
+        min-height: 1317px;
         
         @media screen and (min-width: 768px){
-            min-height: 700px;
+            min-height: 576px;
             display: flex;
             column-gap: 20px;
         }
@@ -51,10 +52,6 @@ export const ContactsStyled = styled.div`
         border: none;
         outline: none;
         position: relative;
-
-        @media screen and (min-width: 468px){
-            max-width: 440px;
-        }
 
         @media screen and (min-width: 768px){
             max-width: 800px;

@@ -21,7 +21,7 @@ export const StyledChart = styled.div`
     }
   }
 
-  @media screen and (min-width: 468px){
+  @media screen and (min-width: 768px){
     display: block;
   }
 

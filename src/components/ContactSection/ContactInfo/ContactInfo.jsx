@@ -18,7 +18,6 @@ export const ContactInfo = ({ siteLanguage, profileLanguage}) => {
         phone,
         phone2,
         email,
-        email2,
         about4,
         about6,
         userName1,
@@ -38,12 +37,6 @@ export const ContactInfo = ({ siteLanguage, profileLanguage}) => {
                         <NavLink className="contact-link" to="mailto:okoshevy@gmail.com">
                             <EmailIcon className="contact-icon" width={18} height={18}/>
                             <span>{email}</span>
-                        </NavLink>
-                    </li>
-                    <li className="contact-link-item contact-link-mail2">
-                        <NavLink className="contact-link email2" to="mailto:okoshevy@gmail.com">
-                            <EmailIcon className="contact-icon" width={18} height={18}/>
-                            <span>{email2}</span>
                         </NavLink>
                     </li>
                     <li className="contact-link-item contact-link-tel">
