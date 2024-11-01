@@ -6,7 +6,13 @@ import { useInView } from 'react-intersection-observer';
 
 
 
-export const StackSection = ({profileLanguage, siteLanguage, projectLanguage, isResizeObserver}) => {
+export const StackSection = ({
+    profileLanguage, 
+    siteLanguage, 
+    projectLanguage, 
+    isResizeObserver,
+    setStackFilter
+}) => {
     const { about5 } = profileLanguage;
     const { stack } = siteLanguage;
 
@@ -26,6 +32,7 @@ export const StackSection = ({profileLanguage, siteLanguage, projectLanguage, is
                             <Icons 
                                 profileLanguage={profileLanguage}
                                 siteLanguage={siteLanguage}
+                                setStackFilter={setStackFilter}
                             />
                             <h2 className="statistics-title">{stack.subTitle1} <span>{stack.subTitle2}</span></h2>
                             <h3 className="title">{stack.subAubTitle1} <span>{stack.subAubTitle2}</span> {stack.subAubTitle3}</h3>

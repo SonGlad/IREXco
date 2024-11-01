@@ -17,7 +17,12 @@ export const Header = forwardRef(({
     siteLanguage,
     isResizeObserver,
     heroSectionRef,
-    aboutSectionRef
+    aboutSectionRef,
+    stackSectionRef,
+    portfolioSectionRef,
+    contactSectionRef,
+    stackFilter,
+    portfolioFilter
 },reff) => {   
     const [mobMenu, setMobMenu] = useState(false);
     const [activeLangCont, setActiveLangCont] = useState(false);
@@ -134,6 +139,11 @@ export const Header = forwardRef(({
                                     isResizeObserver={isResizeObserver}
                                     heroSectionRef={heroSectionRef}
                                     aboutSectionRef={aboutSectionRef}
+                                    stackSectionRef={ stackSectionRef}
+                                    portfolioSectionRef={portfolioSectionRef}
+                                    contactSectionRef={contactSectionRef}
+                                    stackFilter={stackFilter}
+                                    portfolioFilter={portfolioFilter}
                                 />
                             </nav>
                         </div>
@@ -146,6 +156,11 @@ export const Header = forwardRef(({
                                 isResizeObserver={isResizeObserver}
                                 heroSectionRef={heroSectionRef}
                                 aboutSectionRef={aboutSectionRef}
+                                stackSectionRef={ stackSectionRef}
+                                portfolioSectionRef={portfolioSectionRef}
+                                contactSectionRef={contactSectionRef}
+                                stackFilter={stackFilter}
+                                portfolioFilter={portfolioFilter}
                             />
                         </nav>
                     </div>

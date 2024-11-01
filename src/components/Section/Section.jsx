@@ -21,26 +21,26 @@ export const AboutSection = forwardRef(({children, propsId, aboutSectionRef}, re
 });
 
 
-export const StackSectionS = ({children, propsId}) => {
+export const StackSectionS = forwardRef(({children, propsId, stackSectionRef},reff) => {
     return (
-        <StackSectionStyled id={propsId}>
+        <StackSectionStyled id={propsId} ref={stackSectionRef}>
             {children}
         </StackSectionStyled>
     );
-};
+});
 
-export const PortfolioSectionS = ({children, propsId}) => {
+export const PortfolioSectionS = forwardRef(({children, propsId, portfolioSectionRef},reff) => {
     return (
-        <PortfolioSectionStyled id={propsId}>
+        <PortfolioSectionStyled id={propsId} ref={portfolioSectionRef}>
             {children}
         </PortfolioSectionStyled>
     );
-};
+});
 
-export const ContactSection = ({children, propsId}) => {
+export const ContactSection = forwardRef(({children, propsId, contactSectionRef},reff) => {
     return (
-        <ContactSectionStyled id={propsId}>
+        <ContactSectionStyled id={propsId} ref={contactSectionRef}>
             {children}
         </ContactSectionStyled>
     );
-};
+});

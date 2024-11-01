@@ -21,7 +21,6 @@ export const ContactInfoStyled = styled.div `
         margin-bottom: 30px;
         color: ${p => p.theme.color.main_color};
         text-align: center;
-        height: 112px;
         animation: ContactTitleSlideDown 1s ease forwards;
         opacity: 0;
 

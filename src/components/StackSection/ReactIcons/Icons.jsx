@@ -67,7 +67,7 @@ const IconComponents = [
 
 
 
-export const Icons = ({profileLanguage, siteLanguage}) => {
+export const Icons = ({profileLanguage, siteLanguage, setStackFilter}) => {
     const { skills } = profileLanguage;
     const { stack } = siteLanguage;
     
@@ -75,9 +75,9 @@ export const Icons = ({profileLanguage, siteLanguage}) => {
     const [buttonName, setButtonName] = useState([]);
     const [filterType, setFilterType] = useState('All');
     const [isAnimated, setIsAnimated] = useState(false);
-   
 
     
+   
     const { ref, inView } = useInView({
         triggerOnce: true,
         threshold: 0.2,
@@ -173,8 +173,18 @@ export const Icons = ({profileLanguage, siteLanguage}) => {
                 return true;
         }
     });
-       
 
+
+    useEffect(() => {
+        if (typeof setStackFilter === 'function') {
+            if (filterType === 'All') {
+                setStackFilter(false);
+            } else {
+                setStackFilter(true);
+            }
+        }
+    }, [filterType, setStackFilter]);
+       
 
     return(
         <IconsStyledList>

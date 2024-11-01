@@ -16,7 +16,12 @@ export const LinkList = forwardRef(({
     langValue,
     isResizeObserver,
     heroSectionRef,
-    aboutSectionRef
+    aboutSectionRef,
+    stackSectionRef,
+    portfolioSectionRef,
+    contactSectionRef,
+    stackFilter,
+    portfolioFilter
 },reff) => {
     const { ref, inView } = useInView({
         triggerOnce: false,
@@ -42,15 +47,48 @@ export const LinkList = forwardRef(({
             });            
             if (langValue === 'UA') {
                 heroSectionRef.current.style.height = '1265px';
-                aboutSectionRef.current.style.height='2017px'
+                aboutSectionRef.current.style.height='2017px';
+                if (stackFilter) {
+                    stackSectionRef.current.style.height='auto';
+                } else {
+                    stackSectionRef.current.style.height='4942px';
+                }
+                if (portfolioFilter) {
+                    portfolioSectionRef.current.style.height='auto';
+                } else {
+                    portfolioSectionRef.current.style.height='4137px';
+                }
+                contactSectionRef.current.style.height='1531px';
             }
             if (langValue === 'EN') {
                 heroSectionRef.current.style.height = '1265px';
-                aboutSectionRef.current.style.height='2017px'
+                aboutSectionRef.current.style.height='2017px';
+                if (stackFilter) {
+                    stackSectionRef.current.style.height='auto';
+                } else {
+                    stackSectionRef.current.style.height='4873px';
+                }
+                if (portfolioFilter) {
+                    portfolioSectionRef.current.style.height='auto';
+                } else {
+                    portfolioSectionRef.current.style.height='4137px';
+                }
+                contactSectionRef.current.style.height='1424px';                
             }
             if (langValue === 'RU') {
                 heroSectionRef.current.style.height = '1301px';
-                aboutSectionRef.current.style.height='2041px'
+                aboutSectionRef.current.style.height='2041px';
+                if (stackFilter) {
+                    stackSectionRef.current.style.height='auto';
+                } else {
+                    stackSectionRef.current.style.height='5096px';
+                }
+                if (portfolioFilter) {
+                    portfolioSectionRef.current.style.height='auto';
+                } else {
+                    portfolioSectionRef.current.style.height='4193px';
+                }
+                contactSectionRef.current.style.height='1579px';  
             }
             // const resizeObserver = new ResizeObserver(entries => {
             //     entries.forEach(entry => {
@@ -81,10 +119,23 @@ export const LinkList = forwardRef(({
             return () => resizeObserver.disconnect();
         } else {
             heroSectionRef.current.style.height = 'auto';
-            aboutSectionRef.current.style.height='auto'
+            aboutSectionRef.current.style.height='auto';
+            stackSectionRef.current.style.height='auto';
+            portfolioSectionRef.current.style.height='auto';
+            contactSectionRef.current.style.height='auto';  
             return
         }
-    },[aboutSectionRef, heroSectionRef, isResizeObserver, langValue]);
+    },[
+        aboutSectionRef, 
+        contactSectionRef, 
+        heroSectionRef, 
+        isResizeObserver, 
+        langValue, 
+        portfolioFilter, 
+        portfolioSectionRef, 
+        stackFilter, 
+        stackSectionRef
+    ]);
 
 
     return(

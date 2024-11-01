@@ -11,7 +11,8 @@ export const PortfolioSection = ({
     setPortfolioModalData,
     siteLanguage,
     projectLanguage,
-    isResizeObserver
+    isResizeObserver,
+    setPortfolioFilter
 }) => {
     const [filterType, setFilterType] = useState('All');
     const [portfolioData, setPortfolioData] = useState([]);
@@ -96,9 +97,20 @@ export const PortfolioSection = ({
         }
     }).sort((a, b) => {
         return new Date(b.createdAt) - new Date(a.createdAt);
-    });;
+    });
 
 
+    useEffect(() => {
+        if (typeof setPortfolioFilter === 'function') {
+            if (filterType === 'All') {
+                setPortfolioFilter(false);
+            } else {
+                setPortfolioFilter(true);
+            }
+        }
+    },[filterType, setPortfolioFilter])
+
+    
 
     const openModal = (id) => {
         const itemDetails = portfolioData.find((item) => item.id === id);

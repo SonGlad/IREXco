@@ -48,7 +48,12 @@ export const App= () => {
   const [isResizeObserver, setResizeObserver] = useState(false);
   const heroSectionRef = useRef(null);
   const aboutSectionRef = useRef(null);
-  
+  const stackSectionRef = useRef(null);
+  const portfolioSectionRef = useRef(null);
+  const contactSectionRef = useRef(null);
+  const [stackFilter, setStackFilter] = useState(false);
+  const [portfolioFilter, setPortfolioFilter] = useState(false);
+
  
 
   useEffect(() => {
@@ -159,6 +164,12 @@ export const App= () => {
         isResizeObserver={isResizeObserver}
         heroSectionRef={heroSectionRef}
         aboutSectionRef={aboutSectionRef}
+        stackSectionRef={stackSectionRef}
+        portfolioSectionRef={portfolioSectionRef}
+        contactSectionRef={contactSectionRef}
+        stackFilter={stackFilter}
+        portfolioFilter={portfolioFilter}
+
       />
       <HeroSection 
         propsId={'HeroSection'}
@@ -188,6 +199,7 @@ export const App= () => {
       </AboutSection>
       <StackSectionS 
         propsId={'StackSection'}
+        stackSectionRef={stackSectionRef}
       >
         <Container>
           <StackSection 
@@ -195,11 +207,13 @@ export const App= () => {
             siteLanguage={siteLanguage}
             projectLanguage={projectLanguage}
             isResizeObserver={isResizeObserver}
+            setStackFilter={setStackFilter}
           />
         </Container>
       </StackSectionS>
       <PortfolioSectionS 
         propsId={'PortfolioSection'}
+        portfolioSectionRef={portfolioSectionRef}
       >
         <Container>
           <PortfolioSection 
@@ -208,11 +222,13 @@ export const App= () => {
             siteLanguage={siteLanguage}
             projectLanguage={projectLanguage}
             isResizeObserver={isResizeObserver}
+            setPortfolioFilter={setPortfolioFilter}
           />
         </Container>
       </PortfolioSectionS>
       <ContactSection 
         propsId={'ContactSection'}
+        contactSectionRef={contactSectionRef}
       >
         <Container>
           <Contacts
