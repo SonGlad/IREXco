@@ -49,7 +49,7 @@ export const LinkList = forwardRef(({
                 heroSectionRef.current.style.height = '1265px';
                 aboutSectionRef.current.style.height='1941px';
                 if (!stackFilter) {
-                    stackSectionRef.current.style.height='4943px';
+                    stackSectionRef.current.style.height='5036px';
                 } else {
                     stackSectionRef.current.style.height='auto';
                 }
@@ -64,7 +64,7 @@ export const LinkList = forwardRef(({
                 heroSectionRef.current.style.height = '1265px';
                 aboutSectionRef.current.style.height='2037px';
                 if (!stackFilter) {
-                    stackSectionRef.current.style.height='4873px';
+                    stackSectionRef.current.style.height='4903px';
                 } else {
                     stackSectionRef.current.style.height='auto';
                 }
@@ -79,7 +79,7 @@ export const LinkList = forwardRef(({
                 heroSectionRef.current.style.height = '1301px';
                 aboutSectionRef.current.style.height='2061px';
                 if (!stackFilter) {
-                    stackSectionRef.current.style.height='5097px';
+                    stackSectionRef.current.style.height='5173px';
                 } else {
                     stackSectionRef.current.style.height='auto';
                 }

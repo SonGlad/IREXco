@@ -2,19 +2,23 @@ import { styled } from "styled-components";
 
 
 export const ProjectStyled = styled.div`
+    margin: 20px 0 40px 0;
 
+    @media screen and (min-width: 768px){
+        margin: 40px 0 40px 0;
+    }
 
     .list{
-        margin: 20px 0 40px 0;
         display: flex;
         align-items: center;
         flex-wrap: wrap;
         gap: 20px;
         font-size: 16px;
+        height: 459px;
 
         @media screen and (min-width: 768px){
             justify-content: space-between;
-            margin: 40px 0 40px 0;
+            height: auto;
         }
     }
 
