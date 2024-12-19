@@ -36,7 +36,7 @@ export const Footer = ({siteLanguage, profileLanguage}) => {
         <FooterStyled>
             <Container>
                 <div ref={ref} className={`footer-container ${inView ? 'visible' : ''}`}>
-                    <ScrollIntoView selector="#hero">
+                    <ScrollIntoView selector="#HeroSection">
                         <div className="footer-left-cont order-one">
                             <p className="footer-text-left"><span>{name1}</span> {name2}</p>
                         </div>

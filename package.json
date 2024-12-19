@@ -1,7 +1,7 @@
 {
   "name": "irexco",
   "version": "1.1.0",
-  "private": true, 
+  "private": true,
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@react-three/drei": "^9.114.0",
