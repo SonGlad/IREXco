@@ -56,11 +56,11 @@ export const ContactForm = ({openContactModal, setSuccess, setIsLoading, siteLan
             
             setIsLoading(true);
             emailjs.send(SERVICE_ID2, TEMPLATE_ID2, {
-                to_name: 'Oleg',
+                to_name: 'IReXWebDev',
                 from_name: values.name,
                 from_email: values.email,
                 from_phone: formattedNumber,
-                to_email: 'okoshevy@gmail.com',
+                to_email: 'irexwebdevelopment@gmail.com',
                 message: values.user_comment
             }, PUBLIC_KEY2)
             .then(() => {
