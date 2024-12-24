@@ -22,8 +22,8 @@ import ProfileRu from "../utils/profileRu.json";
 import ProjectsEn from "../utils/projectsEn.json";
 import ProjectsUa from "../utils/projectsUa.json";
 import ProjectsRu from "../utils/projectsRu.json";
-// import Facebook1 from "../tracking/Facebook1";
-// import Facebook2 from "../tracking/Facebook2";
+import Facebook1 from "../tracking/Facebook1";
+import Facebook2 from "../tracking/Facebook2";
 
 
 
@@ -152,8 +152,8 @@ export const App= () => {
   
   return (
     <>
-      {/* <Facebook1/> */}
-      {/* {isContactModal && <Facebook2/>} */}
+      <Facebook1/>
+      {isContactModal && <Facebook2/>}
       {isLoading && <FormLoading/>}
       {isParticles && <ParticlesComponent id='particles'/>}
       <Header 

@@ -13,9 +13,12 @@ import { AsYouType } from 'libphonenumber-js';
 import useGeoLocation from "react-ipgeolocation";
 
 
-const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
-const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
-const PUBLIC_KEY = process.env.REACT_APP_PUBLIC_KEY;
+// const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
+// const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
+// const PUBLIC_KEY = process.env.REACT_APP_PUBLIC_KEY;
+const SERVICE_ID2 = process.env.REACT_APP_SERVICE_ID2;
+const TEMPLATE_ID2 = process.env.REACT_APP_TEMPLATE_ID2;
+const PUBLIC_KEY2 = process.env.REACT_APP_PUBLIC_KEY2;
 
 
 export const ContactForm = ({openContactModal, setSuccess, setIsLoading, siteLanguage}) => {
@@ -52,14 +55,14 @@ export const ContactForm = ({openContactModal, setSuccess, setIsLoading, siteLan
             const formattedNumber = new AsYouType().input(phoneNumberWithPlus);
             
             setIsLoading(true);
-            emailjs.send(SERVICE_ID, TEMPLATE_ID, {
+            emailjs.send(SERVICE_ID2, TEMPLATE_ID2, {
                 to_name: 'Oleg',
                 from_name: values.name,
                 from_email: values.email,
                 from_phone: formattedNumber,
                 to_email: 'okoshevy@gmail.com',
                 message: values.user_comment
-            }, PUBLIC_KEY)
+            }, PUBLIC_KEY2)
             .then(() => {
                 setIsLoading(false);
                 setSuccess(true);

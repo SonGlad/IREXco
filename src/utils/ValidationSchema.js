@@ -10,7 +10,7 @@ const ContactFormSchema = (form) => Yup.object().shape({
     .required(form.validationNameRequired),
   email: Yup.string()
     .trim()
-    .matches(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/, form.validationEmailMatches)
+    .matches(/^[A-Za-zА-Яа-яЁёІіЇїЄєҐґ0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/, form.validationEmailMatches)
     .email(form.validationEmail)
     .required(form.validationEmailRequired),
   phone: Yup.string()
