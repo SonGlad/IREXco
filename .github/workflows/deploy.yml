@@ -21,6 +21,9 @@ jobs:
           REACT_APP_SERVICE_ID: ${{ secrets.REACT_APP_SERVICE_ID }}
           REACT_APP_TEMPLATE_ID: ${{ secrets.REACT_APP_TEMPLATE_ID }}
           REACT_APP_PUBLIC_KEY: ${{ secrets.REACT_APP_PUBLIC_KEY }}
+          REACT_APP_SERVICE_ID2: ${{ secrets.REACT_APP_SERVICE_ID2 }}
+          REACT_APP_TEMPLATE_ID2: ${{ secrets.REACT_APP_TEMPLATE_ID2 }}
+          REACT_APP_PUBLIC_KEY2: ${{ secrets.REACT_APP_PUBLIC_KEY2 }}
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.0
@@ -31,9 +34,15 @@ jobs:
           REACT_APP_PUBLIC_KEY: ${{ secrets.REACT_APP_PUBLIC_KEY }}
           REACT_APP_SERVICE_ID: ${{ secrets.REACT_APP_SERVICE_ID }}
           REACT_APP_TEMPLATE_ID: ${{ secrets.REACT_APP_TEMPLATE_ID }}
+          REACT_APP_PUBLIC_KEY2: ${{ secrets.REACT_APP_PUBLIC_KEY2 }}
+          REACT_APP_SERVICE_ID2: ${{ secrets.REACT_APP_SERVICE_ID2 }}
+          REACT_APP_TEMPLATE_ID2: ${{ secrets.REACT_APP_TEMPLATE_ID2 }}
 
       - name: Access environment variables
         run: |
           echo "REACT_APP_PUBLIC_KEY: ${{ secrets.REACT_APP_PUBLIC_KEY }}"
           echo "REACT_APP_SERVICE_ID: ${{ secrets.REACT_APP_SERVICE_ID }}"
           echo "REACT_APP_TEMPLATE_ID: ${{ secrets.REACT_APP_TEMPLATE_ID }}"
+          echo "REACT_APP_PUBLIC_KEY2: ${{ secrets.REACT_APP_PUBLIC_KEY2 }}"
+          echo "REACT_APP_SERVICE_ID2: ${{ secrets.REACT_APP_SERVICE_ID2 }}"
+          echo "REACT_APP_TEMPLATE_ID2: ${{ secrets.REACT_APP_TEMPLATE_ID2 }}"
